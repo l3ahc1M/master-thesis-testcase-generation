@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Execute a batch request to create a borrower party change request for loan UUID 98765432-10fe-dcba-3210-fedcba987654 with charge waiver, and propose a change for loan UUID 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /LoanContractBorrowerPartyChangeRequests HTTP/1.1\nContent-Type: application/json\n\n{\"LoanContractUUID\": \"98765432-10fe-dcba-3210-fedcba987654\", \"ChargeWaiverRequestedIndicator\": true}\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /ProposedLoanContractBorrowerPartyChangeRequest HTTP/1.1\nContent-Type: application/json\n\n{\"LoanContractUUID\": \"01234567-89ab-cdef-0123-456789abcdef\"}\n\n--request-separator--"
+  }
+}

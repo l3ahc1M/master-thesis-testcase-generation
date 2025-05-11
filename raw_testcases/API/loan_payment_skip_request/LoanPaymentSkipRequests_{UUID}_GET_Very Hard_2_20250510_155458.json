@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Get comprehensive details for the loan payment skip request with UUID 'abcdef12-3456-7890-abcd-ef1234567890', including every skippable item and related business processes.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanPaymentSkipRequests/abcdef12-3456-7890-abcd-ef1234567890?$expand=BusinessProcessChainAssignment,SkipItems&$select=*",
+    "body": {}
+  }
+}

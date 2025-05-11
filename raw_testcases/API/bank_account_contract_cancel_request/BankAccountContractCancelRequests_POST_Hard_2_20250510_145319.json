@@ -1,0 +1,21 @@
+{
+  "difficulty": "Hard",
+  "input": "Create a cancellation request with UUID 44445555-6666-7777-8888-999900001111, requiring immediate completion and a detailed process chain assignment.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractCancelRequests",
+    "body": {
+      "UUID": "44445555-6666-7777-8888-999900001111",
+      "BankAccountContractUUID": "44445555-6666-7777-8888-999900001111",
+      "ReasonCode": "110",
+      "ImmediateCompletionRequiredIndicator": true,
+      "ReceiptDate": "2023-10-09",
+      "PlannedCompletionDate": "2023-10-09",
+      "BankAccountSettlementRequiredIndicator": false,
+      "BusinessProcessChainAssignment": {
+        "BusinessProcessChainUUID": "55556666-7777-8888-9999-000011112222",
+        "BankingBusinessTransactionTypeCode": "100002"
+      }
+    }
+  }
+}

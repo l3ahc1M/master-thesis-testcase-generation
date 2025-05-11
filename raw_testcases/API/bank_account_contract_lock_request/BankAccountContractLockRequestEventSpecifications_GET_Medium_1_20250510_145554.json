@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Fetch the event specifications for bank account contract locks with event codes only.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequestEventSpecifications",
+    "body": {
+      "$select": [
+        "EventCode"
+      ]
+    }
+  }
+}

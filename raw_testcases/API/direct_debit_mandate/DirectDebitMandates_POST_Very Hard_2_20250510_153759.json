@@ -1,0 +1,14 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Create a mandate for creditor 'DE5566778899', signature date '2023-02-01', with 'One-Off' SEPA type and creditor reference 'CR2023'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/DirectDebitMandates",
+    "body": {
+      "CreditorPartyID": "DE5566778899",
+      "SignatureDate": "2023-02-01",
+      "DirectDebitCollectionSEPASequenceTypeCode": "OOFF",
+      "CreditorReferenceID": "CR2023"
+    }
+  }
+}

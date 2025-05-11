@@ -1,0 +1,11 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I want a detailed analysis of my lock request with ID 223344, including all specific selections and instructions.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/223344",
+    "body": {
+      "$expand": "BankCardContractSelections/ProductionControlFeatureLockInstructions"
+    }
+  }
+}

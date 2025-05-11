@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "I need details of prolongation requests that are active. Can you filter them?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests?$filter=LifeCycleStatusCode eq '3'",
+    "body": null
+  }
+}

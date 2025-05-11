@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you list all account holder change requests for the contract with UUID 01234567-89ab-cdef-0123-456789abcdef?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+    "body": null,
+    "query": {
+      "$filter": "BankAccountContractUUID eq '01234567-89ab-cdef-0123-456789abcdef'"
+    }
+  }
+}

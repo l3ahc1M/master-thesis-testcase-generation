@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Add a note for the payment transaction order with UUID 123e4567-e89b-12d3-a456-426614174000.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/123e4567-e89b-12d3-a456-426614174000/PaymentNotes",
+    "body": {
+      "Note": "This is a test note."
+    }
+  }
+}

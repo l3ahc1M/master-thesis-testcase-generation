@@ -1,0 +1,11 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Please provide an exhaustive report of bank card lock requests, sorted by their validity start date.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests",
+    "body": {
+      "$orderby": "ValidityStartDate"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Display all loan skip requests that have the ID '47938' and are in a 'Completed' state.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanPaymentSkipRequests?$filter=ID eq '47938' and LifeCycleStatusName eq 'Completed'",
+    "body": {}
+  }
+}

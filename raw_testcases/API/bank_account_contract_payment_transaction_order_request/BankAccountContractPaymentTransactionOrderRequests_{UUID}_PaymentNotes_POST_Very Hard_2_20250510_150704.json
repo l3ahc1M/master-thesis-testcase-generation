@@ -1,0 +1,11 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Add a comprehensive note for order UUID 345e6789-89ab-cdef-0123-456789abcdef stating 'Final reconciliation completed, account balances verified'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/345e6789-89ab-cdef-0123-456789abcdef/PaymentNotes",
+    "body": {
+      "Note": "Final reconciliation completed, account balances verified."
+    }
+  }
+}

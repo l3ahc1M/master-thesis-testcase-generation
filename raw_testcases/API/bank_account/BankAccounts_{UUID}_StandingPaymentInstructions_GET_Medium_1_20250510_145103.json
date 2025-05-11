@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Fetch the first 10 standing payment instructions for the bank account with UUID aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/StandingPaymentInstructions?$top=10",
+    "body": {}
+  }
+}

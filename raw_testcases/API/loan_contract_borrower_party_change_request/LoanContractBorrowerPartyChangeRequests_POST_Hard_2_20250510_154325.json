@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "Initiate a borrower party change request for loan 87654321-fedc-ba98-7654-3210fedcba98 with reason code 3 and a new borrower UUID 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests",
+    "body": {
+      "LoanContractUUID": "87654321-fedc-ba98-7654-3210fedcba98",
+      "ReasonCode": "3",
+      "NewBorrowerPartyIdentifyingElements": {
+        "PartyUUID": "01234567-89ab-cdef-0123-456789abcdef"
+      }
+    }
+  }
+}

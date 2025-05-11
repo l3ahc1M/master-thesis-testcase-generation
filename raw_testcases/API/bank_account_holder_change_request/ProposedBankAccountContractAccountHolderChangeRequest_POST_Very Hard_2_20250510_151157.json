@@ -1,0 +1,19 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Propose a change of account holder for UUID 88990011-2233-4455-6677-8899aabbccdd, ensuring compliance with all procedural requirements and including checklist items.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/ProposedBankAccountContractAccountHolderChangeRequest",
+    "body": {
+      "BankAccountContractUUID": "88990011-2233-4455-6677-8899aabbccdd",
+      "ChargeWaiverRequestedIndicator": true,
+      "Checklistitems": [
+        {
+          "Code": "19",
+          "Name": "Pending payment entry existence",
+          "Description": "At least one pending payment entry exists."
+        }
+      ]
+    }
+  }
+}

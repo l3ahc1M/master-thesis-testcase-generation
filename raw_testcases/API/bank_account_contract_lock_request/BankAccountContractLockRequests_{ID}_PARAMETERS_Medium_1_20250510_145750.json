@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Fetch the lock request by ID 105 along with the validity dates.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequests/105",
+    "body": {
+      "$select": [
+        "ValidityStartDate",
+        "ValidityEndDate"
+      ]
+    }
+  }
+}

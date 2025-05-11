@@ -1,0 +1,19 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Propose a new bank account holder for contract UUID 67890123-abcd-ef12-3456-7890abcdef, citing 'Marriage' as the reason, and include waiver of charges and additional activities.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+    "body": {
+      "BankAccountContractUUID": "67890123-abcd-ef12-3456-7890abcdef",
+      "ReasonCode": "5",
+      "ChargeWaiverRequestedIndicator": true,
+      "Activities": [
+        {
+          "Code": "13",
+          "Name": "Cancel bank account contract cancel request."
+        }
+      ]
+    }
+  }
+}

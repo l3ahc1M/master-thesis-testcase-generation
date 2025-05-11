@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the IDs and committed capital amounts for term agreements of UUID 9z8y7x6w-5v4u-3t2s-1r0q-p9o8n7m6l5k4.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/9z8y7x6w-5v4u-3t2s-1r0q-p9o8n7m6l5k4/TermAgreements?$select=ID,CommittedCapitalAmount",
+    "body": null
+  }
+}

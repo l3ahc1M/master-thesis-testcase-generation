@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "I need to see the contract selections related to my lock request ID 123123.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/123123/BankCardContractSelections"
+  }
+}

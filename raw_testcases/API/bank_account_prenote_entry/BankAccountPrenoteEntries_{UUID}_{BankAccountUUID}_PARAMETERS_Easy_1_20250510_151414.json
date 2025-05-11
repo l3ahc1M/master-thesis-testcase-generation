@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "Could you provide the details of the prenote entry with UUID 01234567-89ab-cdef-0123-456789abcdef and BankAccountUUID 12345678-abcd-ef01-2345-6789abcdef01?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountPrenoteEntries/01234567-89ab-cdef-0123-456789abcdef/12345678-abcd-ef01-2345-6789abcdef01"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "Start a new borrower party change request for loan ID 98765432-10fe-dcba-3210-fedcba987654 with charge waiver.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests",
+    "body": {
+      "LoanContractUUID": "98765432-10fe-dcba-3210-fedcba987654",
+      "ChargeWaiverRequestedIndicator": true
+    }
+  }
+}

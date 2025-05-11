@@ -1,0 +1,14 @@
+{
+  "difficulty": "Easy",
+  "input": "For request ID 124, change the currency amount lock type 059 to 250 USD.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/124/BankAccountCurrencyAmountLockInstructions/059",
+    "body": {
+      "Amount": {
+        "Content": 250,
+        "CurrencyCode": "USD"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Update the note for the order with UUID 789e4567-89ab-cdef-0123-456789abcdef, note ID 1, to state 'Transaction completed successfully'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/789e4567-89ab-cdef-0123-456789abcdef/PaymentNotes/1",
+    "body": {
+      "Note": "Transaction completed successfully."
+    }
+  }
+}

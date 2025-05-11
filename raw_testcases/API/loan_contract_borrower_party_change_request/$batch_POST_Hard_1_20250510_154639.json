@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Send a batch request to get borrower change requests completed on 2017-04-13 and create a new change request for loan UUID 12345678-90ab-cdef-1234-567890abcdef with reason code 2.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /LoanContractBorrowerPartyChangeRequests?$filter=CompletionDate eq 2017-04-13 HTTP/1.1\nAccept: application/json\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /LoanContractBorrowerPartyChangeRequests HTTP/1.1\nContent-Type: application/json\n\n{\"LoanContractUUID\": \"12345678-90ab-cdef-1234-567890abcdef\", \"ReasonCode\": \"2\"}\n\n--request-separator--"
+  }
+}

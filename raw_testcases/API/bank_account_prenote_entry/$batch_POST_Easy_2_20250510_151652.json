@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Send a batch request to delete prenote entries with UUIDs 12345678-aaaa-bbbb-cccc-123456789012 and 23456789-bbbb-cccc-dddd-234567890123.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nDELETE /BankAccountPrenoteEntries/12345678-aaaa-bbbb-cccc-123456789012/87654321-aaaa-bbbb-cccc-123456789012 HTTP/1.1\n\nDELETE /BankAccountPrenoteEntries/23456789-bbbb-cccc-dddd-234567890123/34567890-bbbb-cccc-dddd-234567890123 HTTP/1.1\n\n--request-separator--"
+  }
+}

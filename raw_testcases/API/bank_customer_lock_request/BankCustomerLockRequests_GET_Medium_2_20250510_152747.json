@@ -1,0 +1,15 @@
+{
+  "difficulty": "Medium",
+  "input": "Fetch lock requests where the event code is 103000 and include the note details.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCustomerLockRequests",
+    "body": {
+      "$filter": "EventCode eq '103000'",
+      "$select": [
+        "ID",
+        "Note"
+      ]
+    }
+  }
+}

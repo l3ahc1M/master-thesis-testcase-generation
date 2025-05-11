@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Get the cancellation request by UUID 44445555-6666-7777-8888-999900001111, and show only its status code and reason.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractCancelRequests/44445555-6666-7777-8888-999900001111?$select=LifeCycleStatusCode,ReasonName",
+    "body": null
+  }
+}

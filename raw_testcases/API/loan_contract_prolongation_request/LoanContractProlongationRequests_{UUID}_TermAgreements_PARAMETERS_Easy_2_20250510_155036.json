@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Fetch the term agreements for UUID 23456789-0abc-def1-2345-67890abcdef1.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/23456789-0abc-def1-2345-67890abcdef1/TermAgreements",
+    "body": null
+  }
+}

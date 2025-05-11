@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Find mandates with the scheme name 'SEPA Core' and status 'To be confirmed'.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates",
+    "body": {
+      "$filter": "DirectDebitSchemeName eq 'SEPA Core' and UserStatusCode eq '3'"
+    }
+  }
+}

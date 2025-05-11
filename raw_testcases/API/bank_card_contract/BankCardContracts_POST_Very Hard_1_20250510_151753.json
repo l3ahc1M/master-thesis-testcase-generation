@@ -1,0 +1,20 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Initialize a bank card contract for a user with ID 789012, including a detailed business process chain assignment and operational management ID.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContracts",
+    "body": {
+      "CardHolderPartyIdentifyingElements": {
+        "PartyID": "789012"
+      },
+      "BusinessProcessChainAssignment": {
+        "BankingBusinessTransactionTypeCode": "70000x"
+      },
+      "OperationalBankContractManagement": {
+        "ID": "50000608"
+      },
+      "UsageNote": "Detailed contract setup"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Retrieve lock request ID 805, showing everything, and expand production control feature lock instructions.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCustomerLockRequests/805",
+    "body": {
+      "$expand": [
+        "ProductionControlFeatureLockInstructions"
+      ]
+    }
+  }
+}

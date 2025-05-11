@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "Please retrieve the operational management details and usage note for the bank card contract with UUID ffeeddcc-bbaa-9988-7766-554433221100.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContracts/ffeeddcc-bbaa-9988-7766-554433221100?$select=OperationalBankContractManagement,UsageNote"
+  }
+}

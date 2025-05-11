@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Update the user status of lock request ID 120 to inactive.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankCustomerLockRequests/120",
+    "body": {
+      "UserStatusCode": "3"
+    }
+  }
+}

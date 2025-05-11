@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Fetch the details for mandate with UUID '01234567-89ab-cdef-0123-456789abcdef'.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates/01234567-89ab-cdef-0123-456789abcdef",
+    "body": {}
+  }
+}

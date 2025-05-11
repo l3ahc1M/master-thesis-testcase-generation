@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Create a payment note for the transaction identified by UUID 9a8b7c6d-5e4f-3210-a1b2-3c4d5e6f7g8h stating 'Funds transferred to recipient account'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/9a8b7c6d-5e4f-3210-a1b2-3c4d5e6f7g8h/PaymentNotes",
+    "body": {
+      "Note": "Funds transferred to recipient account."
+    }
+  }
+}

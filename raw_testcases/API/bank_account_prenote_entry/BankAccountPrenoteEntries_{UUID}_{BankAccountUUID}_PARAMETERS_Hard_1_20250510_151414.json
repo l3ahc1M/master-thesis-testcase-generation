@@ -1,0 +1,11 @@
+{
+  "difficulty": "Hard",
+  "input": "Can you update the note to 'Urgent Update' for the prenote entry with UUID 23456789-abcd-ef01-2345-6789abcdef01 and BankAccountUUID 34567890-abcd-ef01-2345-6789abcdef01?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountPrenoteEntries/23456789-abcd-ef01-2345-6789abcdef01/34567890-abcd-ef01-2345-6789abcdef01",
+    "body": {
+      "Note": "Urgent Update"
+    }
+  }
+}

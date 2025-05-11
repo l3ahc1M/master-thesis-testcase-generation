@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve the loan payment skip request for UUID '87654321-dcba-4321-lkji-0987654321ab', focusing on the previous and new installment amounts.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanPaymentSkipRequests/87654321-dcba-4321-lkji-0987654321ab?$select=PreviousInstallmentAmount,NewInstallmentAmount",
+    "body": {}
+  }
+}

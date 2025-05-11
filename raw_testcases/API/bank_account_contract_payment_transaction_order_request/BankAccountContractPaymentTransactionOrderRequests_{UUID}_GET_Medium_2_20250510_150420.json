@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Please fetch the planned execution date and bank account value date for the transaction with UUID 12op34qr-56st-78uv-90wx-yz12ab34cd56.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/12op34qr-56st-78uv-90wx-yz12ab34cd56",
+    "body": {
+      "$select": [
+        "PlannedExecutionDate",
+        "BankAccountValueDate"
+      ]
+    }
+  }
+}

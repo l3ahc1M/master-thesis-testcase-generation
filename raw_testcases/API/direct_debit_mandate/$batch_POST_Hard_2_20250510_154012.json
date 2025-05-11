@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Execute a batch request for mandates with 'One-Off' SEPA type and validity in 2023.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /DirectDebitMandates?$filter=DirectDebitCollectionSEPASequenceTypeCode eq 'OOFF' and year(ValidityPeriod/StartDate) eq 2023 HTTP/1.1\nAccept: application/json\n\n\n--request-separator--"
+  }
+}

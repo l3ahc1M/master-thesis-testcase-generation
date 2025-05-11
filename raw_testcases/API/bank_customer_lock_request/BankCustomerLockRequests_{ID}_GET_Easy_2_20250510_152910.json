@@ -1,0 +1,14 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you show me the event name and validity start date for lock request ID 110?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCustomerLockRequests/110",
+    "body": {
+      "$select": [
+        "EventName",
+        "ValidityStartDate"
+      ]
+    }
+  }
+}

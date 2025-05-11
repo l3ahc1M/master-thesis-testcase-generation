@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "I need details of bank accounts that have the currency code set to EUR.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts?$filter=CurrencyCode eq 'EUR'",
+    "body": {}
+  }
+}

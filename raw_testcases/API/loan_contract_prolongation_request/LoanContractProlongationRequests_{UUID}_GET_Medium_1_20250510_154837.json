@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you fetch the UUID 4e6d7a8b-9c0f-4b2a-b1bd-5d4a6e7f8c9d and display the penalty relevance indicator?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/4e6d7a8b-9c0f-4b2a-b1bd-5d4a6e7f8c9d?$select=PenaltyRelevanceIndicator",
+    "body": null
+  }
+}

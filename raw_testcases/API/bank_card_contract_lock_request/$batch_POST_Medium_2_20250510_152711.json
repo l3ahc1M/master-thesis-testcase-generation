@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Create a batch request to check event specifications and modify a lock request's end date.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContractLockRequestEventSpecifications HTTP/1.1\nAccept: application/json\n\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPATCH /BankCardContractLockRequests/789012 HTTP/1.1\nContent-Type: application/json\n\n{\"ValidityEndDate\": \"2024-12-31\"}\n\n\n--request-separator--"
+  }
+}

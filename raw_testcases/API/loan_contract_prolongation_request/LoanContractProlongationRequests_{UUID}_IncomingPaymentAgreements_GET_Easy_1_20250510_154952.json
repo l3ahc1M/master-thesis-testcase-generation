@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you list the incoming payment ID and period for the prolongation request with UUID 12345678-90ab-cdef-1234-567890abcdef?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/12345678-90ab-cdef-1234-567890abcdef/IncomingPaymentAgreements?$select=ID,Period",
+    "body": null
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "difficulty": "Very Hard",
+  "input": "For the account change request with UUID 555e7890-e23b-33e7-c345-765432109988, initiate the proposed action and apply all necessary business logic validations.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests/555e7890-e23b-33e7-c345-765432109988/SAP__self.ProposedByBACUUID",
+    "body": {
+      "BankAccountContractUUID": "555e7890-e23b-33e7-c345-765432109988"
+    }
+  }
+}

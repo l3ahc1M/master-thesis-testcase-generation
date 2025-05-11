@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Modify the currency amount lock for request ID 108 and entry type 053 to 500 JPY.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/108/BankAccountCurrencyAmountLockInstructions/053",
+    "body": {
+      "Amount": {
+        "Content": 500,
+        "CurrencyCode": "JPY"
+      }
+    }
+  }
+}

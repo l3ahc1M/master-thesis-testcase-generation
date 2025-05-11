@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Please execute a batch request to fetch change requests with reason code 1 and those that are pending.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /LoanContractBorrowerPartyChangeRequests?$filter=ReasonCode eq '1' HTTP/1.1\nAccept: application/json\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /LoanContractBorrowerPartyChangeRequests?$filter=LifeCycleStatusName eq 'Pending' HTTP/1.1\nAccept: application/json\n\n--request-separator--"
+  }
+}

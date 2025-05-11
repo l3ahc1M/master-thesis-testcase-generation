@@ -1,0 +1,17 @@
+{
+  "difficulty": "Hard",
+  "input": "Access the lock request with ID 605 and expand bank account entry lock instructions, but only show the validity dates.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCustomerLockRequests/605",
+    "body": {
+      "$select": [
+        "ValidityStartDate",
+        "ValidityEndDate"
+      ],
+      "$expand": [
+        "BankAccountEntryLockInstructions"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Commence the proposal process for borrower change with loan UUID 77777777-8888-9999-0000-111111111111, ensuring all default values are considered.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests/77777777-8888-9999-0000-111111111111/SAP__self.ProposedByLCUUID",
+    "body": {
+      "LoanContractUUID": "77777777-8888-9999-0000-111111111111"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Change the note content for payment transaction with UUID 456e1234-78ab-cdef-0123-456789abcdef, note ID 4, to 'Payment reviewed'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/456e1234-78ab-cdef-0123-456789abcdef/PaymentNotes/4",
+    "body": {
+      "Note": "Payment reviewed."
+    }
+  }
+}

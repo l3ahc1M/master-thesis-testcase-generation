@@ -1,0 +1,16 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need the account holder change request details for UUID 44556677-8899-aabb-ccdd-eeff00112233, focusing only on the lifecycle status, new account holder info, and pending activities.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests/44556677-8899-aabb-ccdd-eeff00112233",
+    "body": null,
+    "query": {
+      "$select": [
+        "LifeCycleStatusCode",
+        "NewAccountHolderPartyIdentifyingElements",
+        "Activities"
+      ]
+    }
+  }
+}

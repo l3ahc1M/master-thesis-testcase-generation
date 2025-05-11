@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Remove the prenote entry with UUID 78901234-aaaa-bbbb-cccc-789012345678 and BankAccountUUID 89012345-aaaa-bbbb-cccc-789012345678, ensuring all dependencies are properly handled.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/BankAccountPrenoteEntries/78901234-aaaa-bbbb-cccc-789012345678/89012345-aaaa-bbbb-cccc-789012345678"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Establish a lock request for account UUID 89012345-abcd-ef01-2345-67890abcdefg, with extensive features and transaction locks.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractLockRequests",
+    "body": {
+      "BankAccountContractUUID": "89012345-abcd-ef01-2345-67890abcdefg",
+      "EventCode": "9009",
+      "UserStatusCode": "7",
+      "ValidityStartDate": "2023-12-15",
+      "ValidityEndDate": "2024-03-15",
+      "Note": "Extensive lock request with multiple features and transaction locks",
+      "ProductionControlFeatureLockInstructions": [
+        {
+          "Code": "3",
+          "BankAccountContractProductionControlFeatures": [
+            {
+              "Code": "7",
+              "Name": "Special Feature Lock"
+            }
+          ]
+        }
+      ],
+      "BankAccountEntryLockInstructions": [
+        {
+          "BankPaymentTransactionLockInstructionCode": "0006",
+          "LowerBoundaryAmount": {
+            "Content": 500,
+            "CurrencyCode": "USD"
+          },
+          "UpperBoundaryAmount": {
+            "Content": 10000,
+            "CurrencyCode": "USD"
+          }
+        }
+      ]
+    }
+  }
+}

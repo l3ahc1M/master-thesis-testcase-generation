@@ -1,0 +1,24 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I want an exhaustive report on my lock request with ID 787878, including all attributes and related contract selections.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/787878",
+    "body": {
+      "$select": [
+        "ID",
+        "PartyIdentifyingElements",
+        "ChangeStateID",
+        "EventCode",
+        "EventName",
+        "UserStatusCode",
+        "UserStatusName",
+        "ValidityStartDate",
+        "ValidityEndDate",
+        "BusinessProcessChainAssignment",
+        "Note"
+      ],
+      "$expand": "BankCardContractSelections"
+    }
+  }
+}

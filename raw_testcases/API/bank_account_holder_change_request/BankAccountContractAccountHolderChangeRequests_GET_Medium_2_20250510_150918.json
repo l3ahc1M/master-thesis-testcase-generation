@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Fetch the details of account holder change requests having the reason code 5.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+    "body": null,
+    "query": {
+      "$filter": "ReasonCode eq '5'"
+    }
+  }
+}

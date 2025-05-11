@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "I need the complete list of bank card contracts for a user identified by UUID 01234567-89ab-cdef-0123-456789abcdef, showing every detail available.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContracts?$filter=CardHolderPartyIdentifyingElements/PartyUUID eq '01234567-89ab-cdef-0123-456789abcdef'&$select=BankCardContractUUID,ID,CurrencyCode,PaymentCardTypeCode,PaymentCardTypeName,PaymentCardID,PaymentCardSequenceID,PaymentCardValidFrom,PaymentCardValidTo,PaymentCardCharacterCode,PaymentCardCharacterName,FirstPaymentCardUUID,AdditionalPaymentCardIndicator,PaymentCardLifeCycleStatusCode,PaymentCardLifeCycleStatusName,PaymentCardRenewalStatusCode,PaymentCardRenewalStatusName,CancellationDate,BankAccount,UsageNote,SystemAdministrativeData,CardHolderPartyIdentifyingElements,ProductControl,OperationalBankContractManagement,BusinessProcessChainAssignment,ChangeStateID"
+  }
+}

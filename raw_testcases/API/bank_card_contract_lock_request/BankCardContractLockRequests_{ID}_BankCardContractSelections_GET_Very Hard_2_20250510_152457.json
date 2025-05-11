@@ -1,0 +1,16 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need a detailed report on my lock request ID 808080, showing all contract selections and their lock instructions.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/808080/BankCardContractSelections",
+    "body": {
+      "$expand": "ProductionControlFeatureLockInstructions",
+      "$select": [
+        "BankCardContractUUID",
+        "BankCardContractID",
+        "CardLockRequestedIndicator"
+      ]
+    }
+  }
+}

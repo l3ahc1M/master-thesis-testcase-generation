@@ -1,0 +1,17 @@
+{
+  "difficulty": "Hard",
+  "input": "I want the lock request with ID 505, showing the ID, event code, and expand all entities.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCustomerLockRequests/505",
+    "body": {
+      "$select": [
+        "ID",
+        "EventCode"
+      ],
+      "$expand": [
+        "*"
+      ]
+    }
+  }
+}

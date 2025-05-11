@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need a detailed analysis of production control lock instructions for my lock request ID 808080 and contract UUID 78901234-f012-3456-7890-1234f0123456.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/808080/BankCardContractSelections/78901234-f012-3456-7890-1234f0123456/ProductionControlFeatureLockInstructions"
+  }
+}

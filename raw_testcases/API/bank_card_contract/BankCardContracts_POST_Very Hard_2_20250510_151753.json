@@ -1,0 +1,16 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Establish a comprehensive bank card contract for user UUID 23456789-abcd-ef01-2345-6789abcdef01, specifying first card UUID and lifecycle as active.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContracts",
+    "body": {
+      "CardHolderPartyIdentifyingElements": {
+        "PartyUUID": "23456789-abcd-ef01-2345-6789abcdef01"
+      },
+      "FirstPaymentCardUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "PaymentCardLifeCycleStatusName": "Active",
+      "UsageNote": "Initiate with first card UUID"
+    }
+  }
+}

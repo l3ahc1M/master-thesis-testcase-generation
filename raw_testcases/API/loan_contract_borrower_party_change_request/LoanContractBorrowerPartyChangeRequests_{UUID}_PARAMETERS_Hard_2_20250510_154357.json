@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "Obtain the change request identified by UUID 22222222-3333-4444-5555-666666666666 and return ChangeStateID, ReasonCode, and NewClearingBankAccountContractUUID.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests/22222222-3333-4444-5555-666666666666",
+    "body": null,
+    "query": {
+      "$select": "ChangeStateID,ReasonCode,NewClearingBankAccountContractUUID"
+    }
+  }
+}

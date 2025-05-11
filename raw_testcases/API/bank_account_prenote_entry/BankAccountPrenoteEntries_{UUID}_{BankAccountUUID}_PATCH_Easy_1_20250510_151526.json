@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Update the additional note to 'Routine Check' for the prenote entry with UUID 22222222-abcd-ef01-2345-6789abcdef01 and BankAccountUUID 55555555-abcd-ef01-2345-6789abcdef01.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountPrenoteEntries/22222222-abcd-ef01-2345-6789abcdef01/55555555-abcd-ef01-2345-6789abcdef01",
+    "body": {
+      "AdditionalNote": "Routine Check"
+    }
+  }
+}

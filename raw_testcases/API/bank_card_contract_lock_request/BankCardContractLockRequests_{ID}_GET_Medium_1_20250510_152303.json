@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve the event details and note for my card lock request with ID 343434.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/343434",
+    "body": {
+      "$select": [
+        "EventName",
+        "Note"
+      ]
+    }
+  }
+}

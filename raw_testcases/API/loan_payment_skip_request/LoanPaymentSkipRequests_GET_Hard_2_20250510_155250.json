@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Find me the loan payment skip requests for the contract with UUID '01234567-89ab-cdef-0123-456789abcdef' and status code '3'.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanPaymentSkipRequests?$filter=LoanContractUUID eq '01234567-89ab-cdef-0123-456789abcdef' and LifeCycleStatusCode eq '3'",
+    "body": {}
+  }
+}

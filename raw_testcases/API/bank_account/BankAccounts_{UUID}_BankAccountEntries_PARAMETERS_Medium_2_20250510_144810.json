@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you fetch the bank account entries for UUID 88888888-jjjj-kkkk-llll-999999999999 and provide the total count?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/88888888-jjjj-kkkk-llll-999999999999/BankAccountEntries?$count=true",
+    "body": {}
+  }
+}

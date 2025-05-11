@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "Query the mandate with UUID 'fedcba98-7654-3210-fedc-ba9876543210' and expand the original creditor party details.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates/fedcba98-7654-3210-fedc-ba9876543210",
+    "body": {
+      "$expand": [
+        "OriginalCreditorParty"
+      ]
+    }
+  }
+}

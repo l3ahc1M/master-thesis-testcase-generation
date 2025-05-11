@@ -1,0 +1,11 @@
+{
+  "difficulty": "Hard",
+  "input": "Update note ID 2 for the transaction with UUID 78gh9012-34ij-56kl-78mn-90opqr12st34 to reflect 'Funds have been dispatched'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/78gh9012-34ij-56kl-78mn-90opqr12st34/PaymentNotes/2",
+    "body": {
+      "Note": "Funds have been dispatched."
+    }
+  }
+}

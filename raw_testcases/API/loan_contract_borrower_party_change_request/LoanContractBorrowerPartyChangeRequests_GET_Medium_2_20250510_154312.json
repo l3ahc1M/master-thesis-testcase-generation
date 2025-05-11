@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve borrower change requests with reason code 1.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests",
+    "body": null,
+    "query": {
+      "$filter": "ReasonCode eq '1'"
+    }
+  }
+}

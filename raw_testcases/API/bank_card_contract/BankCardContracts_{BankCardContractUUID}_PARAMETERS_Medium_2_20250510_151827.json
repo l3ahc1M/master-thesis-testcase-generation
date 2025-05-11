@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you provide me with the payment card ID and its valid-to date for the contract UUID 22334455-6677-8899-aabb-ccddeeff0011?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContracts/22334455-6677-8899-aabb-ccddeeff0011?$select=PaymentCardID,PaymentCardValidTo"
+  }
+}

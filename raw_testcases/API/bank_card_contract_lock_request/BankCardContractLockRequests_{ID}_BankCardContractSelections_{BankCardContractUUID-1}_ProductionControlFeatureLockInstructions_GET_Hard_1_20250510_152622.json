@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the detailed production control instructions for the lock request ID 505050 and contract UUID 45678901-cdef-0123-4567-8901cdef0123.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/505050/BankCardContractSelections/45678901-cdef-0123-4567-8901cdef0123/ProductionControlFeatureLockInstructions"
+  }
+}

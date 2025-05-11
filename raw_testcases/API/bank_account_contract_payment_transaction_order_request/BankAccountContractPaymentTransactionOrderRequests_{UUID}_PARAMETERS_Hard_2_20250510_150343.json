@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the bank account value date and transaction currency amount for the payment order with UUID 234e5678-89ab-cdef-0123-456789abcdef, including the sender item details.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/234e5678-89ab-cdef-0123-456789abcdef",
+    "body": {
+      "$select": [
+        "BankAccountValueDate",
+        "TransactionCurrencyAmount"
+      ],
+      "$expand": "SenderItem"
+    }
+  }
+}

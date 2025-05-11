@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "Terminate the loan payment skip request with UUID '0987abcd-6543-efgh-ij12-klmnopqrstuv', providing a business process chain UUID '12345678-90ab-cdef-1234-567890abcdef'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanPaymentSkipRequests/0987abcd-6543-efgh-ij12-klmnopqrstuv/SAP__self.CancelLoanPaymentSkipRequest",
+    "body": {
+      "BusinessProcessChainAssignment": {
+        "BusinessProcessChainUUID": "12345678-90ab-cdef-1234-567890abcdef"
+      }
+    }
+  }
+}

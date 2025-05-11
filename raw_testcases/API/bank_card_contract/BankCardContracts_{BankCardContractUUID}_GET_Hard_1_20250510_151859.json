@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "Fetch the full set of identifying elements and the lifecycle status of the bank card contract with UUID 11223344-5566-7788-99aa-bbccddeeff00.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContracts/11223344-5566-7788-99aa-bbccddeeff00?$select=CardHolderPartyIdentifyingElements,PaymentCardLifeCycleStatusName"
+  }
+}

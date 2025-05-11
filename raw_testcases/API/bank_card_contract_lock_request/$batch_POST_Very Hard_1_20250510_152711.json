@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Submit a batch request to retrieve and update lock requests including event details and user status updates.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContractLockRequestEventSpecifications?$select=EventCode,EventName HTTP/1.1\nAccept: application/json\n\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPATCH /BankCardContractLockRequests/123456 HTTP/1.1\nContent-Type: application/json\n\n{\"UserStatusCode\": \"3\"}\n\n\n--request-separator--"
+  }
+}

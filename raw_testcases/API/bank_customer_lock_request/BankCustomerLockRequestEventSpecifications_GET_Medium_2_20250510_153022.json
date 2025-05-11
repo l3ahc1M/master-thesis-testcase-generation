@@ -1,0 +1,15 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve the event codes and names, and include the count of items.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCustomerLockRequestEventSpecifications",
+    "body": {
+      "$select": [
+        "EventCode",
+        "EventName"
+      ],
+      "$count": true
+    }
+  }
+}

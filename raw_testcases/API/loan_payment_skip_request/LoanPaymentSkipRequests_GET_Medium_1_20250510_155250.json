@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve all loan payment skip requests where the life cycle status is 'Completed'.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanPaymentSkipRequests?$filter=LifeCycleStatusName eq 'Completed'",
+    "body": {}
+  }
+}

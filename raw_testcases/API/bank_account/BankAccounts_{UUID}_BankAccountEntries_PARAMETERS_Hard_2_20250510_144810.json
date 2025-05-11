@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "List the first 10 bank account entries for UUID bbbbbbbb-qqqq-rrrr-ssss-tttttttttttt and show the total count.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/bbbbbbbb-qqqq-rrrr-ssss-tttttttttttt/BankAccountEntries?$top=10&$count=true",
+    "body": {}
+  }
+}

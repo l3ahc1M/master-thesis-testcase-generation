@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "I need detailed information including the contract ID and lock status for the selections of lock request ID 456456.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/456456/BankCardContractSelections",
+    "body": {
+      "$select": [
+        "BankCardContractUUID",
+        "BankCardContractID",
+        "CardLockRequestedIndicator"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "difficulty": "Very Hard",
+  "input": "For the order with UUID 456e1234-78ab-cdef-0123-456789abcdef, update the transaction currency amount to 5000 GBP and change the direct debit mandate reference to ID 1234.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/456e1234-78ab-cdef-0123-456789abcdef",
+    "body": {
+      "TransactionCurrencyAmount": {
+        "Content": 5000,
+        "CurrencyCode": "GBP"
+      },
+      "RecipientItem": {
+        "DirectDebitMandateReference": {
+          "ID": "1234"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Change the end date of my lock request with ID 222222 to December 31st, 2023.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankCardContractLockRequests/222222",
+    "body": {
+      "ValidityEndDate": "2023-12-31"
+    }
+  }
+}

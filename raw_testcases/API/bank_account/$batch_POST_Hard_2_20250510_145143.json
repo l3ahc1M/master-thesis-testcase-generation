@@ -1,0 +1,19 @@
+{
+  "difficulty": "Hard",
+  "input": "Create a batch request to list bank accounts by standard ID 'DE65904199170010000707', including their UUID and bank routing ID.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "GET",
+          "url": "/BankAccounts?$filter=StandardID eq 'DE65904199170010000707'&$select=UUID,BankRoutingID",
+          "headers": {
+            "Accept": "application/json"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve the contract UUIDs and lock status indicators for my lock request ID 303030.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/303030/BankCardContractSelections",
+    "body": {
+      "$select": [
+        "BankCardContractUUID",
+        "CardLockRequestedIndicator"
+      ]
+    }
+  }
+}

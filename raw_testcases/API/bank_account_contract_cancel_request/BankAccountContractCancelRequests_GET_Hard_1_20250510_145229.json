@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Get me the cancellation requests with detailed summaries for bank account settlement.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractCancelRequests?$expand=BankAccountSettlementSummaries",
+    "body": null
+  }
+}

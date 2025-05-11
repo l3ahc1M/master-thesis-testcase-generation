@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need the cancellation requests for a specific bank account UUID with precise details like UUID, completion date, and cancellation charge amount, and also the summaries.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractCancelRequests?$filter=BankAccountContractUUID eq '01234567-89ab-cdef-0123-456789abcdef'&$select=UUID,CompletionDate,CancellationChargeAmount&$expand=BankAccountSettlementSummaries",
+    "body": null
+  }
+}

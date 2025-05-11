@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "For the UUID 11223344-5566-7788-99aa-bbccddeeff00, update the request to require immediate completion and a settlement.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractCancelRequests/11223344-5566-7788-99aa-bbccddeeff00",
+    "body": {
+      "ImmediateCompletionRequiredIndicator": true,
+      "BankAccountSettlementRequiredIndicator": true
+    }
+  }
+}

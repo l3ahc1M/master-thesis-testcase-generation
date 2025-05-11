@@ -1,0 +1,11 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need a filtered list of bank card contract lock request event specifications, sorted by event names.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequestEventSpecifications",
+    "body": {
+      "$orderby": "EventName"
+    }
+  }
+}

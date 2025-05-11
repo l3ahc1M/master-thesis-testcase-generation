@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the first 15 standing payment instructions for the bank account UUID efgh5678-1234-90ab-cdef-567890abcd12 and show the total count.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/efgh5678-1234-90ab-cdef-567890abcd12/StandingPaymentInstructions?$top=15&$count=true",
+    "body": {}
+  }
+}

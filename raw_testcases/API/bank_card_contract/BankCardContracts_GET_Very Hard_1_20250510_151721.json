@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Obtain bank card contracts for the user with ID 310867, focusing on cards that are active and have been renewed. List contract ID, card type, and renewal status.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContracts?$filter=CardHolderPartyIdentifyingElements/PartyID eq '310867' and PaymentCardLifeCycleStatusName eq 'Active' and PaymentCardRenewalStatusName eq 'Renewed'&$select=ID,PaymentCardTypeName,PaymentCardRenewalStatusName"
+  }
+}

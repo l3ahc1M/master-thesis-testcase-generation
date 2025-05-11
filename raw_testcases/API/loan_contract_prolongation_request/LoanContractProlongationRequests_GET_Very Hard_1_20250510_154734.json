@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I want to see prolongation requests with change state ID after a specific date and include term agreements.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests?$filter=ChangeStateID gt '2020-01-01T00:00:00Z'&$expand=TermAgreements",
+    "body": null
+  }
+}

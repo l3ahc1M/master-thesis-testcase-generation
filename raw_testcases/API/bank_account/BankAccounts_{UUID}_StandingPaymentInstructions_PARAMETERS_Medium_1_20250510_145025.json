@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Fetch the first 5 standing payment instructions for the bank account with UUID 456789ab-cdef-1234-5678-90abcdef1234.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/456789ab-cdef-1234-5678-90abcdef1234/StandingPaymentInstructions?$top=5",
+    "body": {}
+  }
+}

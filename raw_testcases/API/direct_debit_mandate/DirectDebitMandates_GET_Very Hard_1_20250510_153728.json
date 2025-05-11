@@ -1,0 +1,11 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need mandates signed in Berlin with SEPA Core scheme, created in a business process chain, and are still active.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates",
+    "body": {
+      "$filter": "SignatureCityName eq 'Berlin' and DirectDebitSchemeName eq 'SEPA Core' and UserStatusCode eq '2' and BusinessProcessChainAssignment ne null"
+    }
+  }
+}

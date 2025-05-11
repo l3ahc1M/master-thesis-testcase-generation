@@ -1,0 +1,17 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Fetch the direct debit mandate with UUID 'abcdef01-2345-6789-abcd-ef0123456789', selecting user status name and expanding both amendment history and utilisation entries.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates/abcdef01-2345-6789-abcd-ef0123456789",
+    "body": {
+      "$select": [
+        "UserStatusName"
+      ],
+      "$expand": [
+        "AmendmentHistoryItems",
+        "UtilisationEntries"
+      ]
+    }
+  }
+}

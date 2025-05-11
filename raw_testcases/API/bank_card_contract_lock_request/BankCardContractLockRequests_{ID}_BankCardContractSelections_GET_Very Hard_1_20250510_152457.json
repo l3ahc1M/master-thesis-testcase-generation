@@ -1,0 +1,11 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Provide a comprehensive list of all contract selections for lock request ID 707070, including production control features.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/707070/BankCardContractSelections",
+    "body": {
+      "$expand": "ProductionControlFeatureLockInstructions"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Create a complex borrower change request for loan 01234567-89ab-cdef-0123-456789abcdef with reason code 8, assign business process chain UUID 11111111-2222-3333-4444-555555555555, new borrower ID 234567, charge waiver requested, and include activity code 13.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests",
+    "body": {
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "ReasonCode": "8",
+      "BusinessProcessChainAssignment": {
+        "BusinessProcessChainUUID": "11111111-2222-3333-4444-555555555555"
+      },
+      "NewBorrowerPartyIdentifyingElements": {
+        "PartyID": "234567"
+      },
+      "ChargeWaiverRequestedIndicator": true,
+      "Activities": [
+        {
+          "Code": "13"
+        }
+      ]
+    }
+  }
+}

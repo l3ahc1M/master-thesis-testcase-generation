@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "I'd like to update my lock request ID 444444 to extend the lock until the end of next month.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankCardContractLockRequests/444444",
+    "body": {
+      "ValidityEndDate": "2024-01-31"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve the financial condition context value code and name for the term agreements of UUID 4f5e6d7c-8b9a-0c1d-2e3f-4a5b6c7d8e9f.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/4f5e6d7c-8b9a-0c1d-2e3f-4a5b6c7d8e9f/TermAgreements?$select=BankContractFinancialConditionContextValueCode,BankContractFinancialConditionContextValueName",
+    "body": null
+  }
+}

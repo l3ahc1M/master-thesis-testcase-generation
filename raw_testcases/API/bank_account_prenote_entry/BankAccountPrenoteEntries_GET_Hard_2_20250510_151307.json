@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "Retrieve all prenote entries with a specific communication channel 'EFT' and show only the UUID and BankAccountUUID.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountPrenoteEntries?$filter=BankPaymentCommunicationChannelName eq 'EFT'&$select=UUID,BankAccountUUID"
+  }
+}

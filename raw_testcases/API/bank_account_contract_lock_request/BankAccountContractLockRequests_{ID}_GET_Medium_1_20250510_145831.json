@@ -1,0 +1,15 @@
+{
+  "difficulty": "Medium",
+  "input": "Please retrieve the lock request with ID 108, focusing on its change state ID and validity dates.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequests/108",
+    "body": {
+      "$select": [
+        "ChangeStateID",
+        "ValidityStartDate",
+        "ValidityEndDate"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Create a prenote entry for bank account 55667788-abcd-ef01-2345-6789abcdef01, with transaction currency amount of 1000 EUR, and include a reference to cheque ID CHEQUE-1234.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountPrenoteEntries",
+    "body": {
+      "BankAccountUUID": "55667788-abcd-ef01-2345-6789abcdef01",
+      "TransactionCurrencyAmount": {
+        "Content": "1000",
+        "CurrencyCode": "EUR"
+      },
+      "Reference": {
+        "ChequeReferenceID": "CHEQUE-1234"
+      }
+    }
+  }
+}

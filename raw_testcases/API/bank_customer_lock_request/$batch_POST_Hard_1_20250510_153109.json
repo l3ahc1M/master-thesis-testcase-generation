@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Execute a batch request to update a lock request's user status and fetch details of another lock request simultaneously.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPATCH /BankCustomerLockRequests/105 HTTP/1.1\nContent-Type: application/json\n\n{\"UserStatusCode\":\"3\"}\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCustomerLockRequests/210 HTTP/1.1\nAccept: application/json\n\n--request-separator--"
+  }
+}

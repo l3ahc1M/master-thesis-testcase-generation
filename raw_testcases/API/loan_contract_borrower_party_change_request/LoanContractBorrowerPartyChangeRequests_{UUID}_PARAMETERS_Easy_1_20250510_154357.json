@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Retrieve the borrower change request details for UUID 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests/01234567-89ab-cdef-0123-456789abcdef",
+    "body": null
+  }
+}

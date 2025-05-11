@@ -1,0 +1,14 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Amend lock request ID 720 to update both user status to suspended and change the business process chain UUID to a new one.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankCustomerLockRequests/720",
+    "body": {
+      "UserStatusCode": "5",
+      "BusinessProcessChainAssignment": {
+        "BusinessProcessChainUUID": "87654321-12ab-cdef-0123-456789abcdef"
+      }
+    }
+  }
+}

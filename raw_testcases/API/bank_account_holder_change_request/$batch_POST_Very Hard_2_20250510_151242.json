@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Initiate an advanced batch request to perform multiple operations including retrieving, proposing, and updating account holder change requests.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankAccountContractAccountHolderChangeRequests/33445566-7788-99aa-bbcc-ddeeff223344 HTTP/1.1\nAccept: application/json\n\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /ProposedBankAccountContractAccountHolderChangeRequest HTTP/1.1\nContent-Type: application/json\n\n{\"BankAccountContractUUID\": \"44556677-8899-aabb-ccdd-eeff22334455\"}\n\n--request-separator--"
+  }
+}

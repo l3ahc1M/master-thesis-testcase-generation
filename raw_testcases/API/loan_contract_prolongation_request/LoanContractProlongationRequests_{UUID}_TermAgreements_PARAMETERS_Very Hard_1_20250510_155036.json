@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Provide a full list of term agreements with ID, committed capital, and fixing period for UUID 78901234-5f01-6789-0123-4abcdef5678.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/78901234-5f01-6789-0123-4abcdef5678/TermAgreements?$select=ID,CommittedCapitalAmount,FixingPeriod",
+    "body": null
+  }
+}

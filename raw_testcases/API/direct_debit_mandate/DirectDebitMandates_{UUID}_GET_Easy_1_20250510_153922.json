@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you show me the details of the mandate with UUID '123e4567-e89b-12d3-a456-426614174000'?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates/123e4567-e89b-12d3-a456-426614174000",
+    "body": {}
+  }
+}

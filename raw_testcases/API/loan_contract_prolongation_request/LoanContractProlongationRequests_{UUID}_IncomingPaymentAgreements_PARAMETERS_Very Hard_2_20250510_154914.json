@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Provide an exhaustive list of all incoming payment agreements with all attributes for UUID 7o8p9q0r-1s2t-3u4v-5w6x-7y8z9a0b1c2d.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/7o8p9q0r-1s2t-3u4v-5w6x-7y8z9a0b1c2d/IncomingPaymentAgreements?$select=ID,Period,PlannedFinalPaymentAmount,LastPaymentDatePeriodEndAdjustmentIndicator",
+    "body": null
+  }
+}

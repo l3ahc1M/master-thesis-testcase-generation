@@ -1,0 +1,14 @@
+{
+  "difficulty": "Hard",
+  "input": "Retrieve comprehensive information on the bank card lock event indicated by event code 306000.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequestEventSpecifications/306000",
+    "body": {
+      "$select": [
+        "EventCode",
+        "EventName"
+      ]
+    }
+  }
+}

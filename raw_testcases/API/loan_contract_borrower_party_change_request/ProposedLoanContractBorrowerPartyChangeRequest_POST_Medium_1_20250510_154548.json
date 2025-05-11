@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Propose a borrower party change for loan UUID 11111111-2222-3333-4444-555555555555 with reason code 3.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/ProposedLoanContractBorrowerPartyChangeRequest",
+    "body": {
+      "LoanContractUUID": "11111111-2222-3333-4444-555555555555",
+      "ReasonCode": "3"
+    }
+  }
+}

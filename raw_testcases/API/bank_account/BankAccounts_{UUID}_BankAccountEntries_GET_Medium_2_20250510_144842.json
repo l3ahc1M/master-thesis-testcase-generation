@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you provide a count of entries for the bank account with UUID 87654321-ba98-fedc-4321-098765fedcba?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/87654321-ba98-fedc-4321-098765fedcba/BankAccountEntries?$count=true",
+    "body": {}
+  }
+}

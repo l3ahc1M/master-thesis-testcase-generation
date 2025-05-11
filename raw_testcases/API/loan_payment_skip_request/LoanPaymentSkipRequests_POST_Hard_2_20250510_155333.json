@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "Can you process a new skip request for contract UUID '123e4567-e89b-12d3-a456-426614174004', indicating the cancellation reason as 'Error processing'?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanPaymentSkipRequests",
+    "body": {
+      "LoanContractUUID": "123e4567-e89b-12d3-a456-426614174004",
+      "CancellationReasonCode": "1",
+      "CancellationReasonName": "Error processing"
+    }
+  }
+}

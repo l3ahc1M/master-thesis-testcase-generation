@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "For the prolongation request with UUID 2d3e4f5g-6h7i-8j9k-0l1m-2n3o4p5q6r7s, show all incoming payment agreement details.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/2d3e4f5g-6h7i-8j9k-0l1m-2n3o4p5q6r7s/IncomingPaymentAgreements?$select=ID,Period,PlannedFinalPaymentAmount,LastPaymentDatePeriodEndAdjustmentIndicator",
+    "body": null
+  }
+}

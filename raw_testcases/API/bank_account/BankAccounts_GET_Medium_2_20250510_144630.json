@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Please list bank accounts with their basic bank account numbers and routing IDs.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts?$select=ID,BankRoutingID",
+    "body": {}
+  }
+}

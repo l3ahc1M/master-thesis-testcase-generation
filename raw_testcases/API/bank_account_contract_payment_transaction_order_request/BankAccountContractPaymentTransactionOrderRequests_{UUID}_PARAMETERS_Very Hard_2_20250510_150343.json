@@ -1,0 +1,14 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need every piece of information for the transaction order identified by UUID 567e8901-89ab-cdef-0123-456789abcdef, including business process chain assignments and all notes.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/567e8901-89ab-cdef-0123-456789abcdef",
+    "body": {
+      "$expand": [
+        "BusinessProcessChainAssignment",
+        "PaymentNotes"
+      ]
+    }
+  }
+}

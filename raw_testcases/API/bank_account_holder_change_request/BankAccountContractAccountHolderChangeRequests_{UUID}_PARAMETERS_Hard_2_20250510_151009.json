@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "Can you fetch the details for the account holder change request with UUID 22334455-6677-8899-aabb-ccddeeff1122, specifically requesting the BusinessProcessChainAssignment and Activities?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests/22334455-6677-8899-aabb-ccddeeff1122",
+    "body": null,
+    "query": {
+      "$select": [
+        "BusinessProcessChainAssignment",
+        "Activities"
+      ]
+    }
+  }
+}

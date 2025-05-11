@@ -1,0 +1,19 @@
+{
+  "difficulty": "Hard",
+  "input": "Please initiate a lock on my bank card contract for a temporary period.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContractLockRequests",
+    "body": {
+      "PartyIdentifyingElements": {
+        "PartyUUID": "67890123-45f0-6789-0123-456789012345",
+        "PartyID": "123123"
+      },
+      "EventCode": "306000",
+      "UserStatusCode": "1",
+      "ValidityStartDate": "2023-12-15",
+      "ValidityEndDate": "2024-01-15",
+      "Note": "Temporary lock for holiday period."
+    }
+  }
+}

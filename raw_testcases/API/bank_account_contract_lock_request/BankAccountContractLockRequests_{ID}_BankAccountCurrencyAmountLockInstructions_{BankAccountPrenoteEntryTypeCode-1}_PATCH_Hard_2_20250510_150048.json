@@ -1,0 +1,14 @@
+{
+  "difficulty": "Hard",
+  "input": "Change the amount locked to 900 AUD for request ID 128's currency instruction type 063.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/128/BankAccountCurrencyAmountLockInstructions/063",
+    "body": {
+      "Amount": {
+        "Content": 900,
+        "CurrencyCode": "AUD"
+      }
+    }
+  }
+}

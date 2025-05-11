@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Send a batch request to retrieve and update the same prenote entry's validity end date.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankAccountPrenoteEntries/55555555-abcd-ef01-2345-6789abcdef01/66666666-abcd-ef01-2345-6789abcdef01 HTTP/1.1\n\nPATCH /BankAccountPrenoteEntries/55555555-abcd-ef01-2345-6789abcdef01/66666666-abcd-ef01-2345-6789abcdef01 HTTP/1.1\nContent-Type: application/json\n\n{\"ValidityEndDate\": \"2025-12-31\"}\n\n--request-separator--"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "difficulty": "Easy",
+  "input": "I'd like to create a lock request for my account with UUID 12345678-90ab-cdef-1234-567890abcdef due to a lost debit card.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractLockRequests",
+    "body": {
+      "BankAccountContractUUID": "12345678-90ab-cdef-1234-567890abcdef",
+      "EventCode": "4841",
+      "UserStatusCode": "1",
+      "ValidityStartDate": "2023-10-01",
+      "ValidityEndDate": "2023-10-31",
+      "Note": "Lock due to lost debit card"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "I need the list of standing payment instructions for the account identified by UUID 66666666-7777-8888-9999-000000000000.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/66666666-7777-8888-9999-000000000000/StandingPaymentInstructions",
+    "body": {}
+  }
+}

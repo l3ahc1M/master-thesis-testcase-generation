@@ -1,0 +1,16 @@
+{
+  "difficulty": "Easy",
+  "input": "Please set up a lock request for my account 98765432-abcd-ef01-2345-67890abcdefg. The event is a temporary account freeze.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractLockRequests",
+    "body": {
+      "BankAccountContractUUID": "98765432-abcd-ef01-2345-67890abcdefg",
+      "EventCode": "3000",
+      "UserStatusCode": "1",
+      "ValidityStartDate": "2023-11-01",
+      "ValidityEndDate": "2023-11-15",
+      "Note": "Temporary freeze requested"
+    }
+  }
+}

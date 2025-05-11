@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Fetch bank accounts with the currency code EUR and include their UUID and standard ID.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts?$filter=CurrencyCode eq 'EUR'&$select=UUID,StandardID",
+    "body": {}
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "Show me all borrower party change requests with status code 3.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests",
+    "body": null,
+    "query": {
+      "$filter": "LifeCycleStatusCode eq '3'"
+    }
+  }
+}

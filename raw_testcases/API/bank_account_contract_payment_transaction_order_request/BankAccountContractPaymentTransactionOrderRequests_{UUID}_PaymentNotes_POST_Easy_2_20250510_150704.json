@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Create a note for the transaction with UUID 78gh9012-34ij-56kl-78mn-90opqr12st34 saying the payment was completed successfully.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/78gh9012-34ij-56kl-78mn-90opqr12st34/PaymentNotes",
+    "body": {
+      "Note": "Payment completed successfully."
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "difficulty": "Hard",
+  "input": "I'd like to check the details of my bank card lock request with ID 987654, including the change state and business process assignment.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/987654",
+    "body": {
+      "$select": [
+        "ChangeStateID",
+        "BusinessProcessChainAssignment"
+      ]
+    }
+  }
+}

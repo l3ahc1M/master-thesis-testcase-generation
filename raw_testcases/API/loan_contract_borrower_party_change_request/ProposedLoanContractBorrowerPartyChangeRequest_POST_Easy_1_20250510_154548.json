@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Propose a new borrower change request for loan UUID 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/ProposedLoanContractBorrowerPartyChangeRequest",
+    "body": {
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef"
+    }
+  }
+}

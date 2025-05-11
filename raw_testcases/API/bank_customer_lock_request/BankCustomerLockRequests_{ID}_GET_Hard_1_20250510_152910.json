@@ -1,0 +1,17 @@
+{
+  "difficulty": "Hard",
+  "input": "I need the lock request with ID 510, showing ID, validity end date, and expand all entities.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCustomerLockRequests/510",
+    "body": {
+      "$select": [
+        "ID",
+        "ValidityEndDate"
+      ],
+      "$expand": [
+        "*"
+      ]
+    }
+  }
+}

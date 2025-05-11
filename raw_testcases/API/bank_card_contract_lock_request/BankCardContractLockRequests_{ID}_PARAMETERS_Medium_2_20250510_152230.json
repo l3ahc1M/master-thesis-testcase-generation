@@ -1,0 +1,15 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you provide the validity dates and note for the lock request with ID 345678?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/345678",
+    "body": {
+      "$select": [
+        "ValidityStartDate",
+        "ValidityEndDate",
+        "Note"
+      ]
+    }
+  }
+}

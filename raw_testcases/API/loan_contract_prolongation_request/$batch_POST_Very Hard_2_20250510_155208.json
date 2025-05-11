@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Execute a batch request that combines retrieving all details of prolongation requests, including agreements and business process assignments.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /LoanContractProlongationRequests?$select=*&$expand=BusinessProcessChainAssignment,TermAgreements,IncomingPaymentAgreements HTTP/1.1\nAccept: application/json\n\n--request-separator--"
+  }
+}

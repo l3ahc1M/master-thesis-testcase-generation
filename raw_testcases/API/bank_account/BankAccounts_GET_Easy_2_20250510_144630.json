@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Retrieve all bank accounts with their UUIDs and internal IDs.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts?$select=UUID,InternalID",
+    "body": {}
+  }
+}

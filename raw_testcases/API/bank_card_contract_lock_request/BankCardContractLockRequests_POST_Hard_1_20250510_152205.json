@@ -1,0 +1,19 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to create a lock request for my bank card contract, ensuring all future transactions are blocked.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContractLockRequests",
+    "body": {
+      "PartyIdentifyingElements": {
+        "PartyUUID": "56789012-34ef-5678-9012-345678901234",
+        "PartyID": "778899"
+      },
+      "EventCode": "305000",
+      "UserStatusCode": "4",
+      "ValidityStartDate": "2023-12-10",
+      "ValidityEndDate": "2024-12-10",
+      "Note": "Block all future transactions."
+    }
+  }
+}

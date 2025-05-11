@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "I need to see the account holder change request details for UUID faa12345-6789-0abc-def1-23456789abcd and include the LifeCycleStatusName.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests/faa12345-6789-0abc-def1-23456789abcd",
+    "body": null,
+    "query": {
+      "$select": [
+        "LifeCycleStatusName"
+      ]
+    }
+  }
+}

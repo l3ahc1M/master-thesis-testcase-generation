@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you list loan contract prolongations with ID and UUID?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests?$select=ID,UUID",
+    "body": null
+  }
+}

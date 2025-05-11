@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve the event specifications for locking a debit card.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequestEventSpecifications",
+    "body": {
+      "$filter": "EventName eq 'Debit Card Lock'"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the UUID, bank account number, and bank country code for the bank account with UUID 56789012-34ef-4567-890a-bcdef1234567.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/56789012-34ef-4567-890a-bcdef1234567?$select=UUID,ID,BankCountryCode",
+    "body": {}
+  }
+}

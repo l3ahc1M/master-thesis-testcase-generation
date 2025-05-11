@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Batch request to create a lock request and change the user status of an existing lock request.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /BankCustomerLockRequests HTTP/1.1\nContent-Type: application/json\n\n{\"PartyIdentifyingElements\":{\"PartyID\":\"310867\"},\"EventCode\":\"209000\",\"UserStatusCode\":\"4\",\"ValidityStartDate\":\"2023-10-17\",\"ValidityEndDate\":\"2024-10-17\",\"Note\":\"Lock due to suspected fraudulent activity.\"}\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPATCH /BankCustomerLockRequests/120 HTTP/1.1\nContent-Type: application/json\n\n{\"UserStatusCode\":\"5\"}\n\n--request-separator--"
+  }
+}

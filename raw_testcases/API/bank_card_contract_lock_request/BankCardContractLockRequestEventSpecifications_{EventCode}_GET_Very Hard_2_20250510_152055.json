@@ -1,0 +1,14 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I want an exhaustive report on the bank card lock event for code 301080, make sure to include every attribute.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequestEventSpecifications/301080",
+    "body": {
+      "$select": [
+        "EventCode",
+        "EventName"
+      ]
+    }
+  }
+}

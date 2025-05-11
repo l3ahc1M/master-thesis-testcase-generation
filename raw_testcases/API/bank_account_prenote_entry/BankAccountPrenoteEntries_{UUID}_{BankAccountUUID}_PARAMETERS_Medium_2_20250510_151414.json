@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve the prenote entry with UUID 12345678-abcd-ef01-2345-6789abcdef01 and BankAccountUUID 98765432-abcd-ef01-2345-6789abcdef01, including its payment notes.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountPrenoteEntries/12345678-abcd-ef01-2345-6789abcdef01/98765432-abcd-ef01-2345-6789abcdef01?$expand=PaymentNotes"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "I need to know the validity period of the card contract with UUID 21098765-4321-fedc-ba98-76543210fedc.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContracts/21098765-4321-fedc-ba98-76543210fedc?$select=PaymentCardValidFrom,PaymentCardValidTo"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Could you modify the prenote entry for lock request ID 125, entry type 060, to reflect 450 GBP?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/125/BankAccountCurrencyAmountLockInstructions/060",
+    "body": {
+      "Amount": {
+        "Content": 450,
+        "CurrencyCode": "GBP"
+      }
+    }
+  }
+}

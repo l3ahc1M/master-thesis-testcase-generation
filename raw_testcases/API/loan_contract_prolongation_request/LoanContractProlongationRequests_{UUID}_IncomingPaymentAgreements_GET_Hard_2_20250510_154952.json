@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Get all incoming payment agreements data including period and adjustment indicator for UUID 67890123-4ef0-5678-9012-3abcdef4567.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/67890123-4ef0-5678-9012-3abcdef4567/IncomingPaymentAgreements?$select=Period,LastPaymentDatePeriodEndAdjustmentIndicator",
+    "body": null
+  }
+}

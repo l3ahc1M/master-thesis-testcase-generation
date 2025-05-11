@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Could you provide the life cycle status of the prolongation request with UUID 58f9f1a4-c6a8-4f5b-ae5a-2a4b5f5b6d9e?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/58f9f1a4-c6a8-4f5b-ae5a-2a4b5f5b6d9e?$select=LifeCycleStatusCode,LifeCycleStatusName",
+    "body": null
+  }
+}

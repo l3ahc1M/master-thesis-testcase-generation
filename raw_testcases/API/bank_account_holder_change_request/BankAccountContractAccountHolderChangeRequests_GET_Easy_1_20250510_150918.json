@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "Show me all account holder change requests with the ID 47938.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+    "body": null,
+    "query": {
+      "$filter": "ID eq '47938'"
+    }
+  }
+}

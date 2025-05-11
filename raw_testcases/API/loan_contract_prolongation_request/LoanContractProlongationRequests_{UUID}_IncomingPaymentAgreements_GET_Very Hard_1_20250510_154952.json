@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Provide a full list of incoming payment agreements with all available details for UUID 78901234-5f01-6789-0123-4abcdef5678.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/78901234-5f01-6789-0123-4abcdef5678/IncomingPaymentAgreements?$select=ID,Period,PlannedFinalPaymentAmount,LastPaymentDatePeriodEndAdjustmentIndicator",
+    "body": null
+  }
+}

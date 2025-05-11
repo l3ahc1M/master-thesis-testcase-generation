@@ -1,0 +1,11 @@
+{
+  "difficulty": "Hard",
+  "input": "Add a note specifying 'Verification completed and funds released' for the transaction order with UUID ef78gh12-34ij-56kl-78mn-90opqr12st34.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/ef78gh12-34ij-56kl-78mn-90opqr12st34/PaymentNotes",
+    "body": {
+      "Note": "Verification completed and funds released."
+    }
+  }
+}

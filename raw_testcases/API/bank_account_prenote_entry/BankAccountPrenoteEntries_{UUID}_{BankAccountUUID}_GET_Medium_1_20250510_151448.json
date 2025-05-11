@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "Fetch the details including the validity start and end dates for the prenote entry with UUID 22222222-aaaa-bbbb-cccc-333333333333 associated with BankAccountUUID 44444444-eeee-ffff-gggg-555555555555.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountPrenoteEntries/22222222-aaaa-bbbb-cccc-333333333333/44444444-eeee-ffff-gggg-555555555555?$select=ValidityStartDate,ValidityEndDate"
+  }
+}

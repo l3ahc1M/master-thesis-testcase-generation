@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "I need lock requests for customer 310867 with active status, show UserStatusName and EventName.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCustomerLockRequests",
+    "body": {
+      "$filter": "PartyIdentifyingElements/PartyID eq '310867' and UserStatusCode eq '2'",
+      "$select": [
+        "UserStatusName",
+        "EventName"
+      ]
+    }
+  }
+}

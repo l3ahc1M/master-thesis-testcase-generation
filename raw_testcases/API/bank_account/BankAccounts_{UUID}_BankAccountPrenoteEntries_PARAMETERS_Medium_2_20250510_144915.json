@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you provide a count of prenote entries for the bank account with UUID dddddddd-eeee-ffff-1111-222222222222?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/dddddddd-eeee-ffff-1111-222222222222/BankAccountPrenoteEntries?$count=true",
+    "body": {}
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Adjust the prenote entry amount to 4000 CNY for lock request ID 130, entry type 065, with precise currency details.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/130/BankAccountCurrencyAmountLockInstructions/065",
+    "body": {
+      "Amount": {
+        "Content": 4000,
+        "CurrencyCode": "CNY"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you show me the borrower change request details for the UUID 33333333-4444-5555-6666-777777777777?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests/33333333-4444-5555-6666-777777777777",
+    "body": null
+  }
+}

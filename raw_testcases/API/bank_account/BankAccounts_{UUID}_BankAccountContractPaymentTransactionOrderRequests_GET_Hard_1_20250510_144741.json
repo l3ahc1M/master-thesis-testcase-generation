@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "List the transaction requests for the account with UUID 12345678-1234-5678-9012-345678901234, skipping the first 15 entries.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/12345678-1234-5678-9012-345678901234/BankAccountContractPaymentTransactionOrderRequests?$skip=15",
+    "body": {}
+  }
+}

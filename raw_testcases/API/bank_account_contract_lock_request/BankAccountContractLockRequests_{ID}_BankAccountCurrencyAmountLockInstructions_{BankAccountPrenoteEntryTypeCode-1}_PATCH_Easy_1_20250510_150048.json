@@ -1,0 +1,14 @@
+{
+  "difficulty": "Easy",
+  "input": "Please update the amount for lock request ID 123 with prenote entry type 058 to 100 EUR.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/123/BankAccountCurrencyAmountLockInstructions/058",
+    "body": {
+      "Amount": {
+        "Content": 100,
+        "CurrencyCode": "EUR"
+      }
+    }
+  }
+}

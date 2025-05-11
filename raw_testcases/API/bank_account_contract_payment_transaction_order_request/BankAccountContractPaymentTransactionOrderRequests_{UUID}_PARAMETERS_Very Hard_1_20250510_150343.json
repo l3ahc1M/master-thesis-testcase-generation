@@ -1,0 +1,15 @@
+{
+  "difficulty": "Very Hard",
+  "input": "For the payment transaction order with UUID 345e6789-89ab-cdef-0123-456789abcdef, show all details, including payment notes and both sender and recipient items.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/345e6789-89ab-cdef-0123-456789abcdef",
+    "body": {
+      "$expand": [
+        "PaymentNotes",
+        "SenderItem",
+        "RecipientItem"
+      ]
+    }
+  }
+}

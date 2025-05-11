@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Update the content of payment note ID 7 for the transaction with UUID 34ef5678-12ab-cdef-0123-456789abcdef to 'Note updated for clarity'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/34ef5678-12ab-cdef-0123-456789abcdef/PaymentNotes/7",
+    "body": {
+      "Note": "Note updated for clarity."
+    }
+  }
+}

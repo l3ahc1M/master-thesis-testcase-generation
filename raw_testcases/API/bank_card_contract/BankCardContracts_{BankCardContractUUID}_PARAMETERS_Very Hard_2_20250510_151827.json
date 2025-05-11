@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Retrieve an exhaustive report on the bank card contract with UUID 77889900-bbcc-ddee-ff11-223344556677, ensuring all data points including system admin data.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContracts/77889900-bbcc-ddee-ff11-223344556677?$select=BankCardContractUUID,ID,CurrencyCode,PaymentCardTypeCode,PaymentCardTypeName,PaymentCardID,PaymentCardSequenceID,PaymentCardValidFrom,PaymentCardValidTo,PaymentCardCharacterCode,PaymentCardCharacterName,FirstPaymentCardUUID,AdditionalPaymentCardIndicator,PaymentCardLifeCycleStatusCode,PaymentCardLifeCycleStatusName,PaymentCardRenewalStatusCode,PaymentCardRenewalStatusName,CancellationDate,BankAccount,UsageNote,SystemAdministrativeData,CardHolderPartyIdentifyingElements,ProductControl,OperationalBankContractManagement,BusinessProcessChainAssignment,ChangeStateID"
+  }
+}

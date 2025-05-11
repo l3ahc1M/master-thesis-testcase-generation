@@ -1,0 +1,11 @@
+{
+  "difficulty": "Hard",
+  "input": "List payment orders where the post or cancel requested indicator is set to true.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests",
+    "body": {
+      "$filter": "PostOrCancelRequestedIndicator eq true"
+    }
+  }
+}

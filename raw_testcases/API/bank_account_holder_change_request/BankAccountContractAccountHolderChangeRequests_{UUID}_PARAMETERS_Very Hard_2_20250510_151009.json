@@ -1,0 +1,16 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need the details for the account holder change request with UUID 44556677-8899-aabb-ccdd-eeff11223344, focusing only on the lifecycle status, reason details, and the former account holder's info.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests/44556677-8899-aabb-ccdd-eeff11223344",
+    "body": null,
+    "query": {
+      "$select": [
+        "LifeCycleStatusCode",
+        "ReasonName",
+        "FormerAccountHolderPartyIdentifyingElements"
+      ]
+    }
+  }
+}

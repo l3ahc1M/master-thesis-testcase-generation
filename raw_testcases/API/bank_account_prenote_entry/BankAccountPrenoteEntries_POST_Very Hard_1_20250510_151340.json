@@ -1,0 +1,14 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Submit a prenote entry for bank account 11223344-abcd-ef01-2345-6789abcdef01, planning validity end on 2024-06-01, and deactivate both limit checks and material checks.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountPrenoteEntries",
+    "body": {
+      "BankAccountUUID": "11223344-abcd-ef01-2345-6789abcdef01",
+      "PlannedValidityEndDate": "2024-06-01",
+      "LimitCheckDeactivationRequestedIndicator": true,
+      "AdditionalMaterialChecksDeactivationRequestedIndicator": true
+    }
+  }
+}

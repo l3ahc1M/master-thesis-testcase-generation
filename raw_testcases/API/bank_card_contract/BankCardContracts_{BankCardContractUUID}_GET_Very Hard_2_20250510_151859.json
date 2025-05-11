@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Retrieve the bank card contract details for UUID 55667788-99aa-bbcc-ddee-ff1122334455, ensuring you include all lifecycle and renewal status data.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContracts/55667788-99aa-bbcc-ddee-ff1122334455?$select=PaymentCardLifeCycleStatusCode,PaymentCardLifeCycleStatusName,PaymentCardRenewalStatusCode,PaymentCardRenewalStatusName"
+  }
+}

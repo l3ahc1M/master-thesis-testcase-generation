@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Retrieve prenote entries for the bank account with UUID 45678901-def0-4567-hijk-890123abcdef and skip the first 20.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/45678901-def0-4567-hijk-890123abcdef/BankAccountPrenoteEntries?$skip=20",
+    "body": {}
+  }
+}

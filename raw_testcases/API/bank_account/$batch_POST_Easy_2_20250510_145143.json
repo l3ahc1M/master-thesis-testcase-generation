@@ -1,0 +1,19 @@
+{
+  "difficulty": "Easy",
+  "input": "Execute a batch request to list all bank accounts and their UUIDs.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "GET",
+          "url": "/BankAccounts?$select=UUID",
+          "headers": {
+            "Accept": "application/json"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Launch a comprehensive lock request for account UUID 78901234-abcd-ef01-2345-67890abcdefg. Include instructions for cheque and direct debit locks.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractLockRequests",
+    "body": {
+      "BankAccountContractUUID": "78901234-abcd-ef01-2345-67890abcdefg",
+      "EventCode": "8008",
+      "UserStatusCode": "6",
+      "ValidityStartDate": "2023-12-01",
+      "ValidityEndDate": "2024-03-01",
+      "Note": "Comprehensive lock including cheque and direct debit",
+      "ChequeLockInstructions": [
+        {
+          "ChequeID": "47114712",
+          "ChequeTypeCode": "0020"
+        }
+      ],
+      "DirectDebitMandateLockInstructions": [
+        {
+          "DirectDebitMandateID": "D12345",
+          "CreditorPartyID": "DE51ZZZ12345678902"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you show me the cardholder and the currency of the contract with UUID abcdef12-3456-7890-abcd-ef1234567890?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContracts/abcdef12-3456-7890-abcd-ef1234567890?$select=CardHolderPartyIdentifyingElements,CurrencyCode"
+  }
+}

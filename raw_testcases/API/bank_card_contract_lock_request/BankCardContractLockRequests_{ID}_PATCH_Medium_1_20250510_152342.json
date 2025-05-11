@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you update the note on my lock request ID 333333 to say 'urgent request to lock due to travel'?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankCardContractLockRequests/333333",
+    "body": {
+      "Note": "Urgent request to lock due to travel"
+    }
+  }
+}

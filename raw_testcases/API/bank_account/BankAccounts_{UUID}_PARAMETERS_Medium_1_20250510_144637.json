@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "I need the UUID, internal ID, and currency code of the bank account with UUID 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/01234567-89ab-cdef-0123-456789abcdef?$select=UUID,InternalID,CurrencyCode",
+    "body": {}
+  }
+}

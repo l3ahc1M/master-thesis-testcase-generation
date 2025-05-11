@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need a comprehensive list of standing payment instructions for account UUID 23456789-0123-4567-89ab-cdef01234567, with pagination showing 25 items per page, starting from the 50th.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/23456789-0123-4567-89ab-cdef01234567/StandingPaymentInstructions?$top=25&$skip=50",
+    "body": {}
+  }
+}

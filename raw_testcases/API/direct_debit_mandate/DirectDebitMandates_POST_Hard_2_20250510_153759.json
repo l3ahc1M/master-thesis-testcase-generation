@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "Add a new mandate with creditor ID 'DE9988776655', 'Recurring' SEPA sequence type, and validity until 2024-12-31.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/DirectDebitMandates",
+    "body": {
+      "CreditorPartyID": "DE9988776655",
+      "DirectDebitCollectionSEPASequenceTypeCode": "RCUR",
+      "ValidityPeriod": {
+        "EndDate": "2024-12-31"
+      }
+    }
+  }
+}

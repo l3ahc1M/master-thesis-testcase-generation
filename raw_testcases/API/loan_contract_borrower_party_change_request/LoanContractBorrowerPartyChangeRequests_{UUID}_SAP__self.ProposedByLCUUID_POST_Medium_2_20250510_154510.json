@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Propose a new borrower party for the loan identified by UUID 33333333-4444-5555-6666-777777777777.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests/33333333-4444-5555-6666-777777777777/SAP__self.ProposedByLCUUID",
+    "body": {
+      "LoanContractUUID": "33333333-4444-5555-6666-777777777777"
+    }
+  }
+}

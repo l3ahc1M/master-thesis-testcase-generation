@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Create a batch request to get mandates with creditor reference 'CR5678' and signed in 'Hamburg'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /DirectDebitMandates?$filter=CreditorReferenceID eq 'CR5678' and SignatureCityName eq 'Hamburg' HTTP/1.1\nAccept: application/json\n\n\n--request-separator--"
+  }
+}

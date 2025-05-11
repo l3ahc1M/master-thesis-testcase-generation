@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "Retrieve the account holder change request for UUID 66778899-aabb-ccdd-eeff-001122334455, showing only the NewAccountHolderPartyIdentifyingElements and BusinessProcessChainAssignment.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests/66778899-aabb-ccdd-eeff-001122334455",
+    "body": null,
+    "query": {
+      "$select": [
+        "NewAccountHolderPartyIdentifyingElements",
+        "BusinessProcessChainAssignment"
+      ]
+    }
+  }
+}

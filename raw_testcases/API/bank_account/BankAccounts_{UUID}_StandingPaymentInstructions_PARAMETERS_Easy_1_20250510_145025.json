@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Please show me all standing payment instructions for the bank account with UUID abcdefab-2345-6789-0123-456789abcdef.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/abcdefab-2345-6789-0123-456789abcdef/StandingPaymentInstructions",
+    "body": {}
+  }
+}

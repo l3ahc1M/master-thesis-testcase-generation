@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Fetch the account holder change request data for UUID ff112233-4455-6677-8899-aabbccddeeff, focusing on the LifeCycleStatusName.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests/ff112233-4455-6677-8899-aabbccddeeff",
+    "body": null,
+    "query": {
+      "$select": [
+        "LifeCycleStatusName"
+      ]
+    }
+  }
+}

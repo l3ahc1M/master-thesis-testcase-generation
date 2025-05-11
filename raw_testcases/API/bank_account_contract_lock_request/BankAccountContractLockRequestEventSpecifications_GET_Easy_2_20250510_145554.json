@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "I need to see all the types of lock events available. Can you show them to me?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequestEventSpecifications",
+    "body": {}
+  }
+}

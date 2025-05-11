@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "Can you show me a comprehensive report of all event codes for bank account lock requests?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequestEventSpecifications",
+    "body": {
+      "$select": [
+        "EventCode"
+      ]
+    }
+  }
+}

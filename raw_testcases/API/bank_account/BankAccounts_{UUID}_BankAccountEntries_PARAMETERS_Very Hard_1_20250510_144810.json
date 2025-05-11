@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Provide a detailed list of entries for account UUID cccccccc-uuuu-vvvv-wwww-xxxxxxxxxxxx, starting from the 15th entry, show 20, and count total entries.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/cccccccc-uuuu-vvvv-wwww-xxxxxxxxxxxx/BankAccountEntries?$top=20&$skip=15&$count=true",
+    "body": {}
+  }
+}

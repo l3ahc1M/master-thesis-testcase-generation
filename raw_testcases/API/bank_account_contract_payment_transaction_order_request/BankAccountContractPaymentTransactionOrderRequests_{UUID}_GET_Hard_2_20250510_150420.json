@@ -1,0 +1,14 @@
+{
+  "difficulty": "Hard",
+  "input": "Get details including the recipient item and business process chain assignment for the payment order with UUID 78mn90op-12qr-34st-56uv-78wx90yz12ab.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/78mn90op-12qr-34st-56uv-78wx90yz12ab",
+    "body": {
+      "$expand": [
+        "RecipientItem",
+        "BusinessProcessChainAssignment"
+      ]
+    }
+  }
+}

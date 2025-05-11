@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Create a batch request to retrieve lifecycle statuses and UUIDs for all prolongation requests.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /LoanContractProlongationRequests?$select=UUID,LifeCycleStatusName HTTP/1.1\nAccept: application/json\n\n--request-separator--"
+  }
+}

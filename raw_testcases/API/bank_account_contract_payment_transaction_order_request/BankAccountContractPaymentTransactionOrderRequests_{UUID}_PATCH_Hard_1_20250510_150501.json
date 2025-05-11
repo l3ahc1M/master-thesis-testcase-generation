@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "For the transaction order with UUID 234e5678-89ab-cdef-0123-456789abcdef, update the planned execution date and transaction currency amount to 2023-06-01 and 2000 EUR respectively.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/234e5678-89ab-cdef-0123-456789abcdef",
+    "body": {
+      "PlannedExecutionDate": "2023-06-01",
+      "TransactionCurrencyAmount": {
+        "Content": 2000,
+        "CurrencyCode": "EUR"
+      }
+    }
+  }
+}

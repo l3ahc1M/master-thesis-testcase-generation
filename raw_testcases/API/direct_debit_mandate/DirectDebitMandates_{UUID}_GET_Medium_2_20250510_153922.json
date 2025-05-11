@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "I need the signature date and user status for the mandate with UUID 'abcdefab-cdef-abcd-efab-cdefabcdefab'.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates/abcdefab-cdef-abcd-efab-cdefabcdefab",
+    "body": {
+      "$select": [
+        "SignatureDate",
+        "UserStatusCode"
+      ]
+    }
+  }
+}

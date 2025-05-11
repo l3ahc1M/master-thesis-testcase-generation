@@ -1,0 +1,14 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Retrieve lock requests for customer ID 310867 that have ended by 2019-07-13T13:34:46Z and provide all bank account entry lock instructions.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCustomerLockRequests",
+    "body": {
+      "$filter": "PartyIdentifyingElements/PartyID eq '310867' and ChangeStateID eq '2019-07-13T13:34:46Z'",
+      "$expand": [
+        "BankAccountEntryLockInstructions"
+      ]
+    }
+  }
+}

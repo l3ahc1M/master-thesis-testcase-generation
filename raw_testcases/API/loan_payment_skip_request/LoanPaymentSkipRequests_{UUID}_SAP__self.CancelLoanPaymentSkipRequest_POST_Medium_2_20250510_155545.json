@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "I want to cancel the skip request for the loan payment identified by UUID 'fedcba98-7654-3210-fedc-ba9876543210', with the reason 'Error processing'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanPaymentSkipRequests/fedcba98-7654-3210-fedc-ba9876543210/SAP__self.CancelLoanPaymentSkipRequest",
+    "body": {
+      "CancellationReasonCode": "1"
+    }
+  }
+}

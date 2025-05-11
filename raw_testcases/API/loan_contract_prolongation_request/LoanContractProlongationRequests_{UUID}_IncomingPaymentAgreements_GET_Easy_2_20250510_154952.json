@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Show me the planned final payment amount for the incoming payment agreement linked to UUID 23456789-0abc-def1-2345-67890abcdef1.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/23456789-0abc-def1-2345-67890abcdef1/IncomingPaymentAgreements?$select=PlannedFinalPaymentAmount",
+    "body": null
+  }
+}

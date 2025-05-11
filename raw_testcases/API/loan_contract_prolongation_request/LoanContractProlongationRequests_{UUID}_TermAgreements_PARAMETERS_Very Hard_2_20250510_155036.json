@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "For UUID 89012345-6f12-7890-1234-5abcdef6789, show all details of term agreements including every attribute.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/89012345-6f12-7890-1234-5abcdef6789/TermAgreements?$select=ID,CommittedCapitalAmount,BankContractFinancialConditionContextValueCode,BankContractFinancialConditionContextValueName,FixingPeriod",
+    "body": null
+  }
+}

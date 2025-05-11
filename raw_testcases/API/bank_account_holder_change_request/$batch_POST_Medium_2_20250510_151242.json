@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Prepare a batch request that retrieves specific account holder change requests based on various filters.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankAccountContractAccountHolderChangeRequests?$filter=ID eq '47938' HTTP/1.1\nAccept: application/json\n\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankAccountContractAccountHolderChangeRequests?$filter=LifeCycleStatusCode eq '3' HTTP/1.1\nAccept: application/json\n\n\n--request-separator--"
+  }
+}

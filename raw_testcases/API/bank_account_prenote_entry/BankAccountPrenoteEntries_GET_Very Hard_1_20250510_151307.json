@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Fetch all prenote entries where the available amount relevance is true and sort them by the validity start date in descending order.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountPrenoteEntries?$filter=BankAccountAvailableAmountRelevanceIndicator eq true&$orderby=ValidityStartDate desc"
+  }
+}

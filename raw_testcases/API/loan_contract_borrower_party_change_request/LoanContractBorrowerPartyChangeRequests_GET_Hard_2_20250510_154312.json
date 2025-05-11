@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need the change requests with a completion date of 2017-04-13.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests",
+    "body": null,
+    "query": {
+      "$filter": "CompletionDate eq 2017-04-13"
+    }
+  }
+}

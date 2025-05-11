@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "I need a list of bank account prenote entries with only their UUIDs and LifeCycleStatusNames.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountPrenoteEntries?$select=UUID,LifeCycleStatusName"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "List the change requests where the new borrower party ID is 310867.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests",
+    "body": null,
+    "query": {
+      "$filter": "NewBorrowerPartyIdentifyingElements/PartyID eq '310867'"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Provide the payment transaction orders for account UUID 11112222-3333-4444-5555-666677778888, starting from the 5th entry, show 10, and count total entries.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/11112222-3333-4444-5555-666677778888/BankAccountContractPaymentTransactionOrderRequests?$top=10&$skip=5&$count=true",
+    "body": {}
+  }
+}

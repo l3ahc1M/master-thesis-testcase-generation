@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you find the details for my lock request with ID 121212?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/121212"
+  }
+}

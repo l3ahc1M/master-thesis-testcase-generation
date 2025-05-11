@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I require a detailed view of the bank account with UUID 01234567-89ab-cdef-0123-456789abcdef, including UUID, standard ID, currency code, and bank account contract ID.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/01234567-89ab-cdef-0123-456789abcdef?$select=UUID,StandardID,CurrencyCode,BankAccountContractID",
+    "body": {}
+  }
+}

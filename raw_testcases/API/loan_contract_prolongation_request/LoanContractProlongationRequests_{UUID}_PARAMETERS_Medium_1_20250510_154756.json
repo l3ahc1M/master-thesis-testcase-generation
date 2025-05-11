@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve the prolongation request for UUID 01234567-89ab-cdef-0123-456789abcdef and include details about the final payment.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/01234567-89ab-cdef-0123-456789abcdef?$select=FinalPaymentAmount,FinalPaymentDate",
+    "body": null
+  }
+}

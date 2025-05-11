@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Cancel the loan payment skip request with UUID '98765432-10dc-ba98-7654-321098765432' and specify 'Customer Request' as the cancellation reason.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanPaymentSkipRequests/98765432-10dc-ba98-7654-321098765432/SAP__self.CancelLoanPaymentSkipRequest",
+    "body": {
+      "CancellationReasonCode": "1",
+      "BusinessProcessChainAssignment": {
+        "BusinessProcessChainUUID": "01234567-89ab-cdef-0123-456789abcdef"
+      }
+    }
+  }
+}

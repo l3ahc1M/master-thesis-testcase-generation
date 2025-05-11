@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Initiate a proposal for borrower change on loan UUID 22222222-3333-4444-5555-666666666666 with charge waiver requested.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/ProposedLoanContractBorrowerPartyChangeRequest",
+    "body": {
+      "LoanContractUUID": "22222222-3333-4444-5555-666666666666",
+      "ChargeWaiverRequestedIndicator": true
+    }
+  }
+}

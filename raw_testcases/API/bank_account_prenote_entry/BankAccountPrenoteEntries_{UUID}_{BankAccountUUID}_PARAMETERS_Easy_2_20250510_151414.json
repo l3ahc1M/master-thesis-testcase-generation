@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "Show me the UUID and TypeName of the prenote entry with UUID 98765432-10ab-cdef-0123-456789abcdef and BankAccountUUID 11223344-abcd-ef01-2345-6789abcdef01.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountPrenoteEntries/98765432-10ab-cdef-0123-456789abcdef/11223344-abcd-ef01-2345-6789abcdef01?$select=UUID,TypeName"
+  }
+}

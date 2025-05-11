@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Could you provide me with details of the account holder change request using UUID 01234567-89ab-cdef-0123-456789abcdef?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests/01234567-89ab-cdef-0123-456789abcdef",
+    "body": null
+  }
+}

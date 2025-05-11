@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "List the payment transaction orders for bank account UUID 55e78901-g23b-67i7-f890-426614174006, show first 20, skip first 5, and include total count.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/55e78901-g23b-67i7-f890-426614174006/BankAccountContractPaymentTransactionOrderRequests?$top=20&$skip=5&$count=true",
+    "body": {}
+  }
+}

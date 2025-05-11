@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you list the payment orders with a lifecycle status of 'Active'?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests",
+    "body": {
+      "$filter": "LifeCycleStatusName eq 'Active'"
+    }
+  }
+}

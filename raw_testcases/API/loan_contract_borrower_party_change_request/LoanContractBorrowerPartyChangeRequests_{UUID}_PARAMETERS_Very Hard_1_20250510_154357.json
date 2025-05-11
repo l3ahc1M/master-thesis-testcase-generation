@@ -1,0 +1,12 @@
+{
+  "difficulty": "Very Hard",
+  "input": "For the borrower change request with UUID 33333333-4444-5555-6666-777777777777, select all fields and ensure ChargeWaiverRequestedIndicator is included.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests/33333333-4444-5555-6666-777777777777",
+    "body": null,
+    "query": {
+      "$select": "UUID,ID,LoanContractUUID,ChangeStateID,LifeCycleStatusCode,LifeCycleStatusName,ReasonCode,ReasonName,BusinessProcessChainAssignment,NewBorrowerPartyIdentifyingElements,FormerBorrowerPartyIdentifyingElements,NewClearingBankAccountContractUUID,ChargeWaiverRequestedIndicator,CompletionDate"
+    }
+  }
+}

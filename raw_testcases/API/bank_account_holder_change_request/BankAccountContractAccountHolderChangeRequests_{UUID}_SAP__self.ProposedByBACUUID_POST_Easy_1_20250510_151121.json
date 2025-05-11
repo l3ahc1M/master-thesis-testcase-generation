@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Propose a bank account holder change for UUID 123e4567-e89b-12d3-a456-426614174000.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests/123e4567-e89b-12d3-a456-426614174000/SAP__self.ProposedByBACUUID",
+    "body": {
+      "BankAccountContractUUID": "123e4567-e89b-12d3-a456-426614174000"
+    }
+  }
+}

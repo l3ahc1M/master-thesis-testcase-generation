@@ -1,0 +1,18 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to create a lock request for customer UUID 98765432-10ab-cdef-0123-456789abcdef with a start date of last month and an end date next year, related to a deposit account.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCustomerLockRequests",
+    "body": {
+      "PartyIdentifyingElements": {
+        "PartyUUID": "98765432-10ab-cdef-0123-456789abcdef"
+      },
+      "EventCode": "107000",
+      "UserStatusCode": "2",
+      "ValidityStartDate": "2023-09-17",
+      "ValidityEndDate": "2024-10-17",
+      "Note": "Lock related to deposit account conditions."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "Please adjust the business process chain assignment for my lock request ID 666666 to a new UUID.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankCardContractLockRequests/666666",
+    "body": {
+      "BusinessProcessChainAssignment": {
+        "BusinessProcessChainUUID": "09876543-21fe-dcba-4321-fedcba098765"
+      }
+    }
+  }
+}

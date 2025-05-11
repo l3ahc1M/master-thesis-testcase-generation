@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Batch request for bank card contracts of users with UUIDs 01234567-89ab-cdef-0123-456789abcdef and 09876543-21ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContracts?$filter=CardHolderPartyIdentifyingElements/PartyUUID eq '01234567-89ab-cdef-0123-456789abcdef' HTTP/1.1\nAccept: application/json\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContracts?$filter=CardHolderPartyIdentifyingElements/PartyUUID eq '09876543-21ab-cdef-0123-456789abcdef' HTTP/1.1\nAccept: application/json\n\n--request-separator--"
+  }
+}

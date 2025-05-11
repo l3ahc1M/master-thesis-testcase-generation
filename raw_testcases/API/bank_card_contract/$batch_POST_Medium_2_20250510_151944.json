@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Batch request to get lifecycle status and renewal status for contracts with UUIDs 22334455-6677-8899-aabb-ccddeeff0011 and 44556677-8899-aabb-ccdd-eeff11223344.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContracts/22334455-6677-8899-aabb-ccddeeff0011?$select=PaymentCardLifeCycleStatusName,PaymentCardRenewalStatusName HTTP/1.1\nAccept: application/json\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContracts/44556677-8899-aabb-ccdd-eeff11223344?$select=PaymentCardLifeCycleStatusName,PaymentCardRenewalStatusName HTTP/1.1\nAccept: application/json\n\n--request-separator--"
+  }
+}

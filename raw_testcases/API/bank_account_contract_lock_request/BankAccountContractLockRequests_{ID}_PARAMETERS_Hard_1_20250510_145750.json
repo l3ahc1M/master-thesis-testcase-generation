@@ -1,0 +1,18 @@
+{
+  "difficulty": "Hard",
+  "input": "Can you provide the lock request details for ID 105, including all related instructions?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequests/105",
+    "body": {
+      "$expand": [
+        "BankAccountCurrencyAmountLockInstructions",
+        "BankAccountEntryLockInstructions",
+        "ChequeLockInstructions",
+        "DirectDebitCreditorLockInstructions",
+        "DirectDebitMandateLockInstructions",
+        "ProductionControlFeatureLockInstructions"
+      ]
+    }
+  }
+}

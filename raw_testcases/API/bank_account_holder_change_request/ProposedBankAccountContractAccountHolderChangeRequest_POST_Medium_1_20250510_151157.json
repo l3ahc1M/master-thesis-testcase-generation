@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Start a proposal for account holder change for the contract with UUID 33445566-7788-99aa-bbcc-ddeeff223344.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/ProposedBankAccountContractAccountHolderChangeRequest",
+    "body": {
+      "BankAccountContractUUID": "33445566-7788-99aa-bbcc-ddeeff223344"
+    }
+  }
+}

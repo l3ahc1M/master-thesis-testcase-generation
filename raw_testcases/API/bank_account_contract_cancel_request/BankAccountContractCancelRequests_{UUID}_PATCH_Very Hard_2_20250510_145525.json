@@ -1,0 +1,20 @@
+{
+  "difficulty": "Very Hard",
+  "input": "For request UUID 99887766-5544-3322-1100-aabbccddeeff, update with complex business process chain assignment and financial condition type.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractCancelRequests/99887766-5544-3322-1100-aabbccddeeff",
+    "body": {
+      "BusinessProcessChainAssignment": {
+        "BusinessProcessChainUUID": "22334455-6677-8899-aabb-ccddeeff0011",
+        "BankingBusinessTransactionTypeCode": "400002"
+      },
+      "BankAccountSettlementSummaries": [
+        {
+          "FinancialConditionTypeCode": "105110",
+          "FinancialConditionTypeName": "Credit Interest"
+        }
+      ]
+    }
+  }
+}

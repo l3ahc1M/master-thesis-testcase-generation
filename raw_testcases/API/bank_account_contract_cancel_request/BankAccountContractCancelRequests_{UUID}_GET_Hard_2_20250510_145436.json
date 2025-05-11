@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Fetch the UUID and business process chain assignment for the cancellation request with UUID 99887766-5544-3322-1100-aabbccddeeff.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractCancelRequests/99887766-5544-3322-1100-aabbccddeeff?$select=UUID&$expand=BusinessProcessChainAssignment",
+    "body": null
+  }
+}

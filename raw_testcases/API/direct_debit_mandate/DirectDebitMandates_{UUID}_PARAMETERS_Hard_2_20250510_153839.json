@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "Query the mandate with UUID '89012345-6789-abcd-ef01-23456789abcd', expand related creditor party details.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates/89012345-6789-abcd-ef01-23456789abcd",
+    "body": {
+      "$expand": [
+        "RelatedCreditorParty"
+      ]
+    }
+  }
+}

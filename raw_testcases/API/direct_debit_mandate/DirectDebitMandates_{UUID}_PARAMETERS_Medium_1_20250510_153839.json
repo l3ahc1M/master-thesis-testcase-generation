@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve the mandate with UUID '12345678-abcd-ef01-2345-6789abcdef01', and show only the signature date and city.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates/12345678-abcd-ef01-2345-6789abcdef01",
+    "body": {
+      "$select": [
+        "SignatureDate",
+        "SignatureCityName"
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Fetch the entries for account UUID abcdef12-3456-7890-abcd-ef1234567890, skipping the first 20.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/abcdef12-3456-7890-abcd-ef1234567890/BankAccountEntries?$skip=20",
+    "body": {}
+  }
+}

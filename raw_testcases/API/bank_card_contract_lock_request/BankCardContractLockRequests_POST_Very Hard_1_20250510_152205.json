@@ -1,0 +1,23 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Create a complex lock request for my bank card contract, involving multiple conditions and instructions.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContractLockRequests",
+    "body": {
+      "PartyIdentifyingElements": {
+        "PartyUUID": "78901234-56f1-7890-1234-567890123456",
+        "PartyID": "456456"
+      },
+      "EventCode": "307000",
+      "UserStatusCode": "5",
+      "ValidityStartDate": "2023-12-20",
+      "ValidityEndDate": "2025-12-20",
+      "BusinessProcessChainAssignment": {
+        "BusinessProcessChainUUID": "89012345-67f2-8901-2345-678901234567",
+        "BankingBusinessTransactionTypeCode": "110001"
+      },
+      "Note": "Complex lock with multiple conditions."
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Batch request to create multiple lock requests and update a third one with a new note and end date.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /BankCustomerLockRequests HTTP/1.1\nContent-Type: application/json\n\n{\"PartyIdentifyingElements\":{\"PartyUUID\":\"12345678-90ab-cdef-0123-456789abcdef\"},\"EventCode\":\"104000\",\"UserStatusCode\":\"2\",\"ValidityStartDate\":\"2023-10-17\",\"Note\":\"Request related to loan contract.\"}\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /BankCustomerLockRequests HTTP/1.1\nContent-Type: application/json\n\n{\"PartyIdentifyingElements\":{\"PartyID\":\"312345\"},\"EventCode\":\"206000\",\"UserStatusCode\":\"1\",\"Note\":\"This lock is due to a specific customer request event.\"}\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPATCH /BankCustomerLockRequests/220 HTTP/1.1\nContent-Type: application/json\n\n{\"Note\":\"Customer has relocated to a new address.\",\"ValidityEndDate\":\"2024-12-31\"}\n\n--request-separator--"
+  }
+}

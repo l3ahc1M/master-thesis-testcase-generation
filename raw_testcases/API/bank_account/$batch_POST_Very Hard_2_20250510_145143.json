@@ -1,0 +1,19 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Send a batch request to provide a comprehensive overview of bank accounts with bank country code 'US' and routing ID '12345678', including UUID, internal ID, and currency code.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "GET",
+          "url": "/BankAccounts?$filter=BankCountryCode eq 'US' and BankRoutingID eq '12345678'&$select=UUID,InternalID,CurrencyCode",
+          "headers": {
+            "Accept": "application/json"
+          }
+        }
+      ]
+    }
+  }
+}

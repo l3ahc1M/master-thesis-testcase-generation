@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you provide the UUID and TypeCode of the prenote entry identified by UUID 77777777-aaaa-bbbb-cccc-888888888888 and BankAccountUUID 99999999-eeee-ffff-gggg-101010101010?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountPrenoteEntries/77777777-aaaa-bbbb-cccc-888888888888/99999999-eeee-ffff-gggg-101010101010?$select=UUID,TypeCode"
+  }
+}

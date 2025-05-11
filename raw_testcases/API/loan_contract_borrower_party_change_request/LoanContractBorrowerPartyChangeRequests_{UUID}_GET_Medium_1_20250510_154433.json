@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve the borrower change request for UUID 66666666-7777-8888-9999-000000000000 and include UUID and ReasonCode.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests/66666666-7777-8888-9999-000000000000",
+    "body": null,
+    "query": {
+      "$select": "UUID,ReasonCode"
+    }
+  }
+}

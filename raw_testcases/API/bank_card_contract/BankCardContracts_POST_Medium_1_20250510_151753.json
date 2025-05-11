@@ -1,0 +1,19 @@
+{
+  "difficulty": "Medium",
+  "input": "Please create a bank card contract for a customer with ID 512345, linking it to a bank account with IBAN 'DE12345678901234567890'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContracts",
+    "body": {
+      "CardHolderPartyIdentifyingElements": {
+        "PartyID": "512345"
+      },
+      "BankAccount": {
+        "IdentifyingElements": {
+          "StandardID": "DE12345678901234567890"
+        }
+      },
+      "UsageNote": "Link to specific IBAN"
+    }
+  }
+}

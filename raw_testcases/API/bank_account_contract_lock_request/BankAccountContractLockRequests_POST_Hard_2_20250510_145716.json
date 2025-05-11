@@ -1,0 +1,16 @@
+{
+  "difficulty": "Hard",
+  "input": "Create a lock request for account UUID 67890123-abcd-ef01-2345-67890abcdefg. Reason: pending regulatory compliance review.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractLockRequests",
+    "body": {
+      "BankAccountContractUUID": "67890123-abcd-ef01-2345-67890abcdefg",
+      "EventCode": "7007",
+      "UserStatusCode": "5",
+      "ValidityStartDate": "2023-11-05",
+      "ValidityEndDate": "2024-02-05",
+      "Note": "Pending regulatory compliance review"
+    }
+  }
+}

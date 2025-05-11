@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Show me the skip request details for loan with UUID 'fedcba98-7654-3210-fedc-ba9876543210'.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanPaymentSkipRequests/fedcba98-7654-3210-fedc-ba9876543210",
+    "body": {}
+  }
+}

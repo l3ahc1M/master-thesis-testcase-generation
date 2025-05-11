@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "I need to cancel the skip request for loan payment with UUID 'abcdef12-3456-7890-abcd-ef1234567890'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanPaymentSkipRequests/abcdef12-3456-7890-abcd-ef1234567890/SAP__self.CancelLoanPaymentSkipRequest",
+    "body": {
+      "CancellationReasonCode": ""
+    }
+  }
+}

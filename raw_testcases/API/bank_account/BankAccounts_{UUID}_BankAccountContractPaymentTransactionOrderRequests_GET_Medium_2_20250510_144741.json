@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you get the transaction order requests for the bank account UUID cccccccc-dddd-eeee-ffff-gggggggggggg, and include the count of items?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/cccccccc-dddd-eeee-ffff-gggggggggggg/BankAccountContractPaymentTransactionOrderRequests?$count=true",
+    "body": {}
+  }
+}

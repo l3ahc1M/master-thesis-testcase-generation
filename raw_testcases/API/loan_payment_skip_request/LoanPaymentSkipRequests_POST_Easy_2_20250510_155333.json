@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Please initiate a skip request for my loan with ID '54321'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanPaymentSkipRequests",
+    "body": {
+      "ID": "54321"
+    }
+  }
+}

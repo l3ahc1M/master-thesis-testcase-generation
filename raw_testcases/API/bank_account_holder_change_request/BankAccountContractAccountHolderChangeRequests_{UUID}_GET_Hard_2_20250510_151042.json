@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "Can you get the details of the account holder change request with UUID 88990011-2233-4455-6677-8899aabbccdd, specifically the ReasonCode and ChargeWaiverRequestedIndicator?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests/88990011-2233-4455-6677-8899aabbccdd",
+    "body": null,
+    "query": {
+      "$select": [
+        "ReasonCode",
+        "ChargeWaiverRequestedIndicator"
+      ]
+    }
+  }
+}

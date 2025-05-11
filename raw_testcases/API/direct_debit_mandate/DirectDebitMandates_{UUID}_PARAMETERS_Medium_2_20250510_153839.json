@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Find the mandate with UUID 'abcdef12-3456-7890-abcd-ef1234567890' and display creditor ID and user status.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates/abcdef12-3456-7890-abcd-ef1234567890",
+    "body": {
+      "$select": [
+        "CreditorPartyID",
+        "UserStatusCode"
+      ]
+    }
+  }
+}

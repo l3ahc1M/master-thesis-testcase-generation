@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Retrieve prolongation requests and include related incoming payment agreements.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests?$expand=IncomingPaymentAgreements",
+    "body": null
+  }
+}

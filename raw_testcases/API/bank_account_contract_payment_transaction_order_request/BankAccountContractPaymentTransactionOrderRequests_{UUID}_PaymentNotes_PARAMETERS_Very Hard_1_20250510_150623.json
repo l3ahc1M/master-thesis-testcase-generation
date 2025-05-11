@@ -1,0 +1,33 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Add multiple notes for the payment order with UUID 567e8901-89ab-cdef-0123-456789abcdef, detailing various transaction stages.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests/567e8901-89ab-cdef-0123-456789abcdef/PaymentNotes",
+          "body": {
+            "Note": "Initial transaction stage completed."
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests/567e8901-89ab-cdef-0123-456789abcdef/PaymentNotes",
+          "body": {
+            "Note": "Verification stage in progress."
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests/567e8901-89ab-cdef-0123-456789abcdef/PaymentNotes",
+          "body": {
+            "Note": "Final approval stage completed."
+          }
+        }
+      ]
+    }
+  }
+}

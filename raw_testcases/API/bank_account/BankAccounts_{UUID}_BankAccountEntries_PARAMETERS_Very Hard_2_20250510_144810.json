@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need a comprehensive list of entries for account UUID dddddddd-yyyy-zzzz-aaaa-bbbbbbbbbbbb, with pagination showing 30 items per page, starting from the 25th.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/dddddddd-yyyy-zzzz-aaaa-bbbbbbbbbbbb/BankAccountEntries?$top=30&$skip=25",
+    "body": {}
+  }
+}

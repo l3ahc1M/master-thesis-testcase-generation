@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Get all information for the mandate identified by UUID 'fedcba98-7654-3210-fedc-ba9876543210'.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates/fedcba98-7654-3210-fedc-ba9876543210",
+    "body": {}
+  }
+}

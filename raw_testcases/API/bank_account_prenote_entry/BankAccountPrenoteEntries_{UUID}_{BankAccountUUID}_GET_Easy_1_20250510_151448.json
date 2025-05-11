@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "Retrieve the details of the prenote entry with UUID 33333333-aaaa-bbbb-cccc-444444444444 for the bank account with UUID 55555555-eeee-ffff-gggg-666666666666?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountPrenoteEntries/33333333-aaaa-bbbb-cccc-444444444444/55555555-eeee-ffff-gggg-666666666666"
+  }
+}

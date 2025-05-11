@@ -1,0 +1,14 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you update the amount for currency lock instruction with ID 105 and entry type 050 to 200 EUR?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/105/BankAccountCurrencyAmountLockInstructions/050",
+    "body": {
+      "Amount": {
+        "Content": 200,
+        "CurrencyCode": "EUR"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "Permanently delete the prenote entry with UUID 56789012-eeee-ffff-aaaa-567890123456 for the bank account with UUID 67890123-eeee-ffff-aaaa-567890123456, ensuring no related data is retained.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/BankAccountPrenoteEntries/56789012-eeee-ffff-aaaa-567890123456/67890123-eeee-ffff-aaaa-567890123456"
+  }
+}

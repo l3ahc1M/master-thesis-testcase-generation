@@ -1,0 +1,16 @@
+{
+  "difficulty": "Medium",
+  "input": "Fetch details of lock request ID 410 and include the note and all bank account contracts.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCustomerLockRequests/410",
+    "body": {
+      "$select": [
+        "Note"
+      ],
+      "$expand": [
+        "BankAccountContracts"
+      ]
+    }
+  }
+}

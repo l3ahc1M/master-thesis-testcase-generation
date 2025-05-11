@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "Fetch bank card contracts for a user with the party ID 310867 and include details like contract ID, card type, and validity dates.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContracts?$filter=CardHolderPartyIdentifyingElements/PartyID eq '310867'&$select=ID,PaymentCardTypeName,PaymentCardValidFrom,PaymentCardValidTo"
+  }
+}

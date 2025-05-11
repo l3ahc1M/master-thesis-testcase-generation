@@ -1,0 +1,15 @@
+{
+  "difficulty": "Easy",
+  "input": "Initiate a bank card contract for the user with UUID 09876543-21ab-cdef-0123-456789abcdef, with the card starting validity from today.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContracts",
+    "body": {
+      "CardHolderPartyIdentifyingElements": {
+        "PartyUUID": "09876543-21ab-cdef-0123-456789abcdef"
+      },
+      "PaymentCardValidFrom": "2023-10-01",
+      "UsageNote": "Contract initiated"
+    }
+  }
+}

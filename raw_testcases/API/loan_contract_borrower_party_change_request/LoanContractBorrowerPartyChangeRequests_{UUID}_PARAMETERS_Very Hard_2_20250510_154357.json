@@ -1,0 +1,12 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Access the comprehensive details of a borrower change request using UUID 44444444-5555-6666-7777-888888888888, ensuring to include all identifying and process information.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests/44444444-5555-6666-7777-888888888888",
+    "body": null,
+    "query": {
+      "$select": "UUID,ID,LoanContractUUID,ChangeStateID,LifeCycleStatusCode,LifeCycleStatusName,ReasonCode,ReasonName,BusinessProcessChainAssignment,NewBorrowerPartyIdentifyingElements,FormerBorrowerPartyIdentifyingElements,NewClearingBankAccountContractUUID,ChargeWaiverRequestedIndicator,CompletionDate"
+    }
+  }
+}

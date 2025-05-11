@@ -1,0 +1,16 @@
+{
+  "difficulty": "Medium",
+  "input": "Submit a lock request for customer ID 312345 with event code 206000 and include a detailed note.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCustomerLockRequests",
+    "body": {
+      "PartyIdentifyingElements": {
+        "PartyID": "312345"
+      },
+      "EventCode": "206000",
+      "UserStatusCode": "1",
+      "Note": "This lock is due to a specific customer request event."
+    }
+  }
+}

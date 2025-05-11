@@ -1,0 +1,19 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Get me all available information for lock request ID 112, including related cheque and direct debit instructions.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequests/112",
+    "body": {
+      "$select": [
+        "ID",
+        "EventCode",
+        "UserStatusName"
+      ],
+      "$expand": [
+        "ChequeLockInstructions",
+        "DirectDebitMandateLockInstructions"
+      ]
+    }
+  }
+}

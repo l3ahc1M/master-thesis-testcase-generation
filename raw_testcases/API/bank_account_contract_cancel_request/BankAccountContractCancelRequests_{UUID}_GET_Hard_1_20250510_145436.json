@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "I'd like information on the request with UUID 11223344-5566-7788-99aa-bbccddeeff00, specifically the cancellation date and whether immediate completion was required.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractCancelRequests/11223344-5566-7788-99aa-bbccddeeff00?$select=CancellationDate,ImmediateCompletionRequiredIndicator",
+    "body": null
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Update the planned execution date for the transaction order with UUID 123e4567-e89b-12d3-a456-426614174000 to May 5, 2023.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/123e4567-e89b-12d3-a456-426614174000",
+    "body": {
+      "PlannedExecutionDate": "2023-05-05"
+    }
+  }
+}

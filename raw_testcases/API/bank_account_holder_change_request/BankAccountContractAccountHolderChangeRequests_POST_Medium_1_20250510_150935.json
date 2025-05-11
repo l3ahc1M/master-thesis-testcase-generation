@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Submit a change request to update the account holder for the bank contract UUID 87654321-abcd-ef12-3456-7890abcdef because of a marriage.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+    "body": {
+      "BankAccountContractUUID": "87654321-abcd-ef12-3456-7890abcdef",
+      "ReasonCode": "5"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Update the user status of my lock request with ID 111111 to 'active'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankCardContractLockRequests/111111",
+    "body": {
+      "UserStatusCode": "1"
+    }
+  }
+}

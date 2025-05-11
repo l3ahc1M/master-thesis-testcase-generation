@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve the lock request with ID 305, and include any related bank account contracts.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCustomerLockRequests/305",
+    "body": {
+      "$expand": [
+        "BankAccountContracts"
+      ]
+    }
+  }
+}

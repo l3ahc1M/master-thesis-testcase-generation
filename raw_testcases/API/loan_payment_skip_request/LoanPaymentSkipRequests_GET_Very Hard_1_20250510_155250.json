@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need detailed skip requests data, including UUID, ID, and LoanContractUUID for contracts completed in 2023 with skipped installment payment mode 'Term Change'.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanPaymentSkipRequests?$filter=LifeCycleStatusName eq 'Completed' and LoanPaymentPlanSkippedInstallmentPaymentModeName eq 'Term Change'&$select=UUID,ID,LoanContractUUID",
+    "body": {}
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you create a lock request for my account with UUID efg56789-0123-4567-89ab-cdef12345678, citing a legal hold as the reason?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractLockRequests",
+    "body": {
+      "BankAccountContractUUID": "efg56789-0123-4567-89ab-cdef12345678",
+      "EventCode": "6002",
+      "UserStatusCode": "2",
+      "ValidityStartDate": "2023-09-01",
+      "ValidityEndDate": "2024-09-01",
+      "Note": "Legal hold placed on the account"
+    }
+  }
+}

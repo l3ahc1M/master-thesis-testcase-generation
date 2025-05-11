@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you show the user status and note for lock request ID 109?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequests/109",
+    "body": {
+      "$select": [
+        "UserStatusName",
+        "Note"
+      ]
+    }
+  }
+}

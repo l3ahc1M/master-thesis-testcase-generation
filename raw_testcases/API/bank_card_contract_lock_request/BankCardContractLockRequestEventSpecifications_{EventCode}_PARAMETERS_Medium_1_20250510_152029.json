@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Could you provide the event name for the lock request with event code 303000?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequestEventSpecifications/303000",
+    "body": {
+      "$select": [
+        "EventName"
+      ]
+    }
+  }
+}

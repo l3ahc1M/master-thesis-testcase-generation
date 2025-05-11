@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Show me all the prenote entries for the bank account identified by UUID 98765432-aaaa-bbbb-cccc-123456789abc.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/98765432-aaaa-bbbb-cccc-123456789abc/BankAccountPrenoteEntries",
+    "body": {}
+  }
+}

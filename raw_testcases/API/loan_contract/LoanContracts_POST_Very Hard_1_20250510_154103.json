@@ -1,0 +1,22 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Set up a comprehensive loan contract with the following details: currency JPY, Party ID 456789, product control GIROMAX, and a specific start date for the business event.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts",
+    "body": {
+      "CurrencyCode": "JPY",
+      "BorrowerPartyIdentifyingElements": {
+        "PartyID": "456789"
+      },
+      "Product": {
+        "ProductionControl": {
+          "ID": "GIROMAX"
+        }
+      },
+      "BusinessEventRecord": {
+        "StartDate": "2023-12-01"
+      }
+    }
+  }
+}

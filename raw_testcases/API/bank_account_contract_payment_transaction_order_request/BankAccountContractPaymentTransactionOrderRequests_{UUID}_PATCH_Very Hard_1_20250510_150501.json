@@ -1,0 +1,14 @@
+{
+  "difficulty": "Very Hard",
+  "input": "For the payment order with UUID ef78gh12-34ij-56kl-78mn-90opqr12st34, update both the planned execution date to July 1, 2023, and include a new business process chain UUID 567f8901-bcde-3456-789a-bcdef1234567.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/ef78gh12-34ij-56kl-78mn-90opqr12st34",
+    "body": {
+      "PlannedExecutionDate": "2023-07-01",
+      "BusinessProcessChainAssignment": {
+        "BusinessProcessChainUUID": "567f8901-bcde-3456-789a-bcdef1234567"
+      }
+    }
+  }
+}

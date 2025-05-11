@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Remove the payment note with ID 4 for transaction UUID 876e1234-56ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/876e1234-56ab-cdef-0123-456789abcdef/PaymentNotes/4",
+    "body": {}
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Provide all relevant details about the cancellation request with UUID 77665544-3322-1100-99aa-bbccddeeffff, including lifecycle status and all related entities.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractCancelRequests/77665544-3322-1100-99aa-bbccddeeffff?$expand=*&$select=UUID,LifeCycleStatusCode,LifeCycleStatusName",
+    "body": null
+  }
+}

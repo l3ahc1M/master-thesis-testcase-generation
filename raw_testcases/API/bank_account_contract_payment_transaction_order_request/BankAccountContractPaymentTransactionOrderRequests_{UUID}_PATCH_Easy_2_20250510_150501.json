@@ -1,0 +1,14 @@
+{
+  "difficulty": "Easy",
+  "input": "Change the transaction currency amount of the payment order with UUID ab12cd34-56ef-78gh-90ij-kl12mn34op56 to 1500 USD.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/ab12cd34-56ef-78gh-90ij-kl12mn34op56",
+    "body": {
+      "TransactionCurrencyAmount": {
+        "Content": 1500,
+        "CurrencyCode": "USD"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "difficulty": "Easy",
+  "input": "Create a new cancellation request for my bank account with UUID 123e4567-e89b-12d3-a456-426614174000.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractCancelRequests",
+    "body": {
+      "UUID": "123e4567-e89b-12d3-a456-426614174000",
+      "BankAccountContractUUID": "123e4567-e89b-12d3-a456-426614174000",
+      "ReasonCode": "107",
+      "ImmediateCompletionRequiredIndicator": false,
+      "ReceiptDate": "2023-10-01",
+      "PlannedCompletionDate": "2023-10-10",
+      "BankAccountSettlementRequiredIndicator": true
+    }
+  }
+}

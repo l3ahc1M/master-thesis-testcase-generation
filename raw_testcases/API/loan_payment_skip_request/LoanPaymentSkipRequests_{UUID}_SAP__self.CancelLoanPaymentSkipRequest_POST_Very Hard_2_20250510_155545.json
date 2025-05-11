@@ -1,0 +1,15 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need to revoke the skip request for UUID 'abcdef12-3456-7890-abcd-ef1234567890' due to 'Error processing', and provide business transaction details for auditing.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanPaymentSkipRequests/abcdef12-3456-7890-abcd-ef1234567890/SAP__self.CancelLoanPaymentSkipRequest",
+    "body": {
+      "CancellationReasonCode": "1",
+      "BusinessProcessChainAssignment": {
+        "BusinessProcessChainUUID": "01234567-89ab-cdef-0123-456789abcdef",
+        "BankingBusinessTransactionTypeCode": "200009"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Create a proposal for changing the account holder for UUID 77889900-aabb-ccdd-eeff-112233445566, with a charge waiver and activities included.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/ProposedBankAccountContractAccountHolderChangeRequest",
+    "body": {
+      "BankAccountContractUUID": "77889900-aabb-ccdd-eeff-112233445566",
+      "ChargeWaiverRequestedIndicator": true,
+      "Activities": [
+        {
+          "Code": "13",
+          "Name": "Cancel bank account contract cancel request."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Provide a comprehensive overview of the bank card lock request event with code 301070, including all details.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequestEventSpecifications/301070",
+    "body": {
+      "$select": [
+        "EventCode",
+        "EventName"
+      ]
+    }
+  }
+}

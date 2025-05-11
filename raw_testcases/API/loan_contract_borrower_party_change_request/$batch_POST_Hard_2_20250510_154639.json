@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Execute a batch request to propose borrower changes for loan UUIDs 87654321-fedc-ba98-7654-3210fedcba98 and 33333333-4444-5555-6666-777777777777, including default values.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /LoanContractBorrowerPartyChangeRequests/87654321-fedc-ba98-7654-3210fedcba98/SAP__self.ProposedByLCUUID HTTP/1.1\nContent-Type: application/json\n\n{\"LoanContractUUID\": \"87654321-fedc-ba98-7654-3210fedcba98\"}\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /LoanContractBorrowerPartyChangeRequests/33333333-4444-5555-6666-777777777777/SAP__self.ProposedByLCUUID HTTP/1.1\nContent-Type: application/json\n\n{\"LoanContractUUID\": \"33333333-4444-5555-6666-777777777777\"}\n\n--request-separator--"
+  }
+}

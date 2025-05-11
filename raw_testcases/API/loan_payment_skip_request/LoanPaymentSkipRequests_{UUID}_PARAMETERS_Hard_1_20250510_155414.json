@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to know the loan payment skip request for UUID 'abcdef12-3456-7890-abcd-ef1234567890', including life cycle status and all skippable items.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanPaymentSkipRequests/abcdef12-3456-7890-abcd-ef1234567890?$expand=SkipItems&$select=LifeCycleStatusName",
+    "body": {}
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Fetch cancellation requests with the status 'Active' and include all possible related entities.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractCancelRequests?$filter=LifeCycleStatusCode eq '3'&$expand=*",
+    "body": null
+  }
+}

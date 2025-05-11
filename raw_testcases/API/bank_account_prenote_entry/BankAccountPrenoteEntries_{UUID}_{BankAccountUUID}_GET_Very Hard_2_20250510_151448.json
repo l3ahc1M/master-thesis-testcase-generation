@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Fetch details of the prenote entry with UUID 55555555-abcd-ef01-2345-6789abcdef01 and BankAccountUUID 66666666-abcd-ef01-2345-6789abcdef01, selecting UUID, BankAccountUUID, and adding a filter to show only those with a rejection reason named 'Insufficient Funds'.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountPrenoteEntries/55555555-abcd-ef01-2345-6789abcdef01/66666666-abcd-ef01-2345-6789abcdef01?$select=UUID,BankAccountUUID&$filter=RejectionReasonName eq 'Insufficient Funds'"
+  }
+}

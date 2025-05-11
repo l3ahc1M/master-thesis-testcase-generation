@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Initiate a batch request to query account holder change requests with different lifecycle statuses and specific UUIDs.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankAccountContractAccountHolderChangeRequests?$filter=LifeCycleStatusCode eq '3' HTTP/1.1\nAccept: application/json\n\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankAccountContractAccountHolderChangeRequests/55667788-99aa-bbcc-ddee-ff1122334455 HTTP/1.1\nAccept: application/json\n\n\n--request-separator--"
+  }
+}

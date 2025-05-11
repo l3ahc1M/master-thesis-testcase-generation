@@ -1,0 +1,15 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you give me the validity dates and user status of the lock request with ID 454545?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/454545",
+    "body": {
+      "$select": [
+        "ValidityStartDate",
+        "ValidityEndDate",
+        "UserStatusName"
+      ]
+    }
+  }
+}

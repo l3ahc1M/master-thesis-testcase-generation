@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Retrieve direct debit mandates signed in Berlin.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates",
+    "body": {
+      "$filter": "SignatureCityName eq 'Berlin'"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Get the details for the loan payment skip request with UUID '87654321-abcd-4321-bacd-123456789abc', focusing on the status and reason.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanPaymentSkipRequests/87654321-abcd-4321-bacd-123456789abc?$select=LifeCycleStatusCode,ReasonName",
+    "body": {}
+  }
+}

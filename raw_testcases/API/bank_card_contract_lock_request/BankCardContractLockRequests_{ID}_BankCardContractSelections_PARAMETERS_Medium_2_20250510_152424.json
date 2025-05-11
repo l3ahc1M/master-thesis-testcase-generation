@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you provide me with the contract selection UUIDs for lock request ID 345345?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/345345/BankCardContractSelections",
+    "body": {
+      "$select": [
+        "BankCardContractUUID"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve details of transactions with a bank account currency amount greater than 5000.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests",
+    "body": {
+      "$filter": "BankAccountCurrencyAmount gt 5000"
+    }
+  }
+}

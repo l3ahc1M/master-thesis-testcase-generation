@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Update the business process chain assignment for the order with UUID 90uv12wx-34yz-56ab-78cd-90ef12gh34ij to a new chain with UUID 876e1234-56ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/90uv12wx-34yz-56ab-78cd-90ef12gh34ij",
+    "body": {
+      "BusinessProcessChainAssignment": {
+        "BusinessProcessChainUUID": "876e1234-56ab-cdef-0123-456789abcdef"
+      }
+    }
+  }
+}

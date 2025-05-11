@@ -1,0 +1,15 @@
+{
+  "difficulty": "Medium",
+  "input": "Please get me the specifics of the account holder change request by UUID 12345678-9abc-def0-1234-56789abcdef0, focusing on the ReasonCode and CompletionDate.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests/12345678-9abc-def0-1234-56789abcdef0",
+    "body": null,
+    "query": {
+      "$select": [
+        "ReasonCode",
+        "CompletionDate"
+      ]
+    }
+  }
+}

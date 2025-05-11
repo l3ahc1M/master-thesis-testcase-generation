@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Find all payment transaction orders with more than one recipient.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests",
+    "body": {
+      "$filter": "MoreRecipientsAvailableIndicator eq true"
+    }
+  }
+}

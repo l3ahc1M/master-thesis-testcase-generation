@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve details including the reason and planned completion date for the request with UUID 87654321-abcd-efgh-ijkl-1234567890ab.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractCancelRequests/87654321-abcd-efgh-ijkl-1234567890ab?$select=ReasonName,PlannedCompletionDate",
+    "body": null
+  }
+}

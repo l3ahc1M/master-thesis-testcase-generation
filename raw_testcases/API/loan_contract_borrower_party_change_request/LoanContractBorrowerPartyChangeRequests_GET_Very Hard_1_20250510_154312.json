@@ -1,0 +1,12 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Get me all the borrower change requests that are completed and have a charge waiver requested.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests",
+    "body": null,
+    "query": {
+      "$filter": "LifeCycleStatusCode eq '3' and ChargeWaiverRequestedIndicator eq true"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Find the account holder change request information for the UUID 98765432-10ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests/98765432-10ab-cdef-0123-456789abcdef",
+    "body": null
+  }
+}

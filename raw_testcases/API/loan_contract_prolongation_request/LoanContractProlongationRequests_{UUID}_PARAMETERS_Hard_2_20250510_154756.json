@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Fetch the prolongation request for UUID 01234567-89ab-cdef-0123-456789abcdef with associated term agreements.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/01234567-89ab-cdef-0123-456789abcdef?$expand=TermAgreements",
+    "body": null
+  }
+}

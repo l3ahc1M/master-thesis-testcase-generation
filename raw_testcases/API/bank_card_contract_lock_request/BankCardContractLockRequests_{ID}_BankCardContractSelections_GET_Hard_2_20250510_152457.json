@@ -1,0 +1,11 @@
+{
+  "difficulty": "Hard",
+  "input": "Can you show me all details of the bank card contract selections tied to my lock request ID 606060?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/606060/BankCardContractSelections",
+    "body": {
+      "$expand": "*"
+    }
+  }
+}

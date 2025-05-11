@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you show me the list of all bank accounts?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts",
+    "body": {}
+  }
+}

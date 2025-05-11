@@ -1,0 +1,26 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Batch update multiple notes for transaction UUID 789e4567-89ab-cdef-0123-456789abcdef: note ID 6 to 'Confirmed', and note ID 7 to 'Finalized'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "PATCH",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests/789e4567-89ab-cdef-0123-456789abcdef/PaymentNotes/6",
+          "body": {
+            "Note": "Confirmed."
+          }
+        },
+        {
+          "method": "PATCH",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests/789e4567-89ab-cdef-0123-456789abcdef/PaymentNotes/7",
+          "body": {
+            "Note": "Finalized."
+          }
+        }
+      ]
+    }
+  }
+}

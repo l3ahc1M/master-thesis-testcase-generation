@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "Find all prenote entries for bank account UUID 123e4567-e89b-12d3-a456-426614174000 and include their payment notes.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountPrenoteEntries?$filter=BankAccountUUID eq '123e4567-e89b-12d3-a456-426614174000'&$expand=PaymentNotes"
+  }
+}

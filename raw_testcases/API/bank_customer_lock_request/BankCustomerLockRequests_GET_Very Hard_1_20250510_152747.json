@@ -1,0 +1,11 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Show me lock requests for business process chain UUID 01234567-89ab-cdef-0123-456789abcdef with negative credit rating events.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCustomerLockRequests",
+    "body": {
+      "$filter": "BusinessProcessChainAssignment/BusinessProcessChainUUID eq '01234567-89ab-cdef-0123-456789abcdef' and EventName eq 'Negative Credit Rating'"
+    }
+  }
+}

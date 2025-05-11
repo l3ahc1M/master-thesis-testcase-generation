@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Modify the business process chain assignment for lock request ID 118.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/118",
+    "body": {
+      "BusinessProcessChainAssignment": {
+        "BusinessProcessChainUUID": "12345678-1234-5678-1234-567812345678"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "I need to see the currency and card type of the contract with UUID 11112222-3333-4444-5555-666677778888.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContracts/11112222-3333-4444-5555-666677778888?$select=CurrencyCode,PaymentCardTypeName"
+  }
+}

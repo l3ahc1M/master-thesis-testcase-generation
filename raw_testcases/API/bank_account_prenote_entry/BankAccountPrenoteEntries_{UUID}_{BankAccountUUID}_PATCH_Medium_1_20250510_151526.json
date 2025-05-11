@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "For the prenote entry with UUID 44444444-abcd-ef01-2345-6789abcdef01 and BankAccountUUID 77777777-abcd-ef01-2345-6789abcdef01, update the material check note to 'Check Complete'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountPrenoteEntries/44444444-abcd-ef01-2345-6789abcdef01/77777777-abcd-ef01-2345-6789abcdef01",
+    "body": {
+      "MaterialCheckNote": "Check Complete"
+    }
+  }
+}

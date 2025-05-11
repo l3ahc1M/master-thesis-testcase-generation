@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Insert a new prenote entry for account UUID 23456789-abcd-ef01-2345-6789abcdef01, with communication channel code 3 and validity end date 2024-01-01.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountPrenoteEntries",
+    "body": {
+      "BankAccountUUID": "23456789-abcd-ef01-2345-6789abcdef01",
+      "BankPaymentCommunicationChannelCode": "3",
+      "ValidityEndDate": "2024-01-01"
+    }
+  }
+}

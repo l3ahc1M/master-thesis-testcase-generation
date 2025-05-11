@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Please display the fixing period for term agreements linked to UUID 5g6h7i8j-9k0l-1m2n-3o4p-5q6r7s8t9u0v.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/5g6h7i8j-9k0l-1m2n-3o4p-5q6r7s8t9u0v/TermAgreements?$select=FixingPeriod",
+    "body": null
+  }
+}

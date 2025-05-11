@@ -1,0 +1,12 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Show all change requests for contract UUID 01234567-89ab-cdef-0123-456789abcdef, with 'Marriage' as the reason and completed.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+    "body": null,
+    "query": {
+      "$filter": "BankAccountContractUUID eq '01234567-89ab-cdef-0123-456789abcdef' and LifeCycleStatusCode eq '3' and ReasonName eq 'Marriage'"
+    }
+  }
+}

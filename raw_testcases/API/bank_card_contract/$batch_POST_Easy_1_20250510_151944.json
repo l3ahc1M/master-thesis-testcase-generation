@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to send multiple requests together to fetch bank card contracts for users with party IDs 310867 and 410123.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContracts?$filter=CardHolderPartyIdentifyingElements/PartyID eq '310867' HTTP/1.1\nAccept: application/json\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContracts?$filter=CardHolderPartyIdentifyingElements/PartyID eq '410123' HTTP/1.1\nAccept: application/json\n\n--request-separator--"
+  }
+}

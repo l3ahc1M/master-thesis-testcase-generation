@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Please provide bank card lock requests that include notes about the lock.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests",
+    "body": {
+      "$select": [
+        "ID",
+        "Note"
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "I need the information on the payment request identified by UUID ab12cd34-56ef-78gh-90ij-kl12mn34op56.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/ab12cd34-56ef-78gh-90ij-kl12mn34op56",
+    "body": {}
+  }
+}

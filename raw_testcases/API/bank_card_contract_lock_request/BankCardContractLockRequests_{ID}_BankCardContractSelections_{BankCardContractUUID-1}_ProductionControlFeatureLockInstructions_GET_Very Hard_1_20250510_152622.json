@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Provide an exhaustive list of production control feature lock instructions for lock request ID 707070 and contract UUID 67890123-ef01-2345-6789-0123ef012345.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests/707070/BankCardContractSelections/67890123-ef01-2345-6789-0123ef012345/ProductionControlFeatureLockInstructions"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "difficulty": "Hard",
+  "input": "List all direct debit mandates that have a creditor party ID starting with 'DE12' and are still active.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates",
+    "body": {
+      "$filter": "startswith(CreditorPartyID, 'DE12') and UserStatusCode eq '2'"
+    }
+  }
+}

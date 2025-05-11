@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "Create a new direct debit mandate with ID 'MAND123' and creditor ID 'DE345678901'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/DirectDebitMandates",
+    "body": {
+      "ID": "MAND123",
+      "CreditorPartyID": "DE345678901"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Get the full details of the loan payment skip request for UUID '654321dc-ba98-7654-3210-9876543210ab', showing all properties and expanded related entities.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanPaymentSkipRequests/654321dc-ba98-7654-3210-9876543210ab?$expand=*&$select=*",
+    "body": {}
+  }
+}

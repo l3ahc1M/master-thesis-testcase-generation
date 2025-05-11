@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Fetch the loan skip request with UUID 'abcdef12-3456-7890-abcd-ef1234567890', and provide all related business process chain assignments and skip items.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanPaymentSkipRequests/abcdef12-3456-7890-abcd-ef1234567890?$expand=BusinessProcessChainAssignment,SkipItems",
+    "body": {}
+  }
+}

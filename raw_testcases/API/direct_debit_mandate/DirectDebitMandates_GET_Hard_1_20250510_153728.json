@@ -1,0 +1,11 @@
+{
+  "difficulty": "Hard",
+  "input": "Can you show me mandates that were signed in 2017 and have the status 'Locked'?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates",
+    "body": {
+      "$filter": "year(SignatureDate) eq 2017 and UserStatusCode eq '4'"
+    }
+  }
+}

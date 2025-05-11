@@ -1,0 +1,16 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to issue a lock request for account UUID 34567890-abcd-ef01-2345-67890abcdefg due to a high-risk transaction alert.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractLockRequests",
+    "body": {
+      "BankAccountContractUUID": "34567890-abcd-ef01-2345-67890abcdefg",
+      "EventCode": "5005",
+      "UserStatusCode": "4",
+      "ValidityStartDate": "2023-10-20",
+      "ValidityEndDate": "2024-01-20",
+      "Note": "Lock due to high-risk transaction"
+    }
+  }
+}

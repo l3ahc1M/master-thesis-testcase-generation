@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Set the planned validity end date to 2023-12-15 for the prenote entry with UUID 55555555-abcd-ef01-2345-6789abcdef01 and BankAccountUUID 88888888-abcd-ef01-2345-6789abcdef01.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountPrenoteEntries/55555555-abcd-ef01-2345-6789abcdef01/88888888-abcd-ef01-2345-6789abcdef01",
+    "body": {
+      "PlannedValidityEndDate": "2023-12-15"
+    }
+  }
+}

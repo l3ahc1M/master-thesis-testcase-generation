@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Execute a batch to retrieve mandates with 'SEPA B2B' scheme.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /DirectDebitMandates?$filter=DirectDebitSchemeName eq 'SEPA B2B' HTTP/1.1\nAccept: application/json\n\n\n--request-separator--"
+  }
+}

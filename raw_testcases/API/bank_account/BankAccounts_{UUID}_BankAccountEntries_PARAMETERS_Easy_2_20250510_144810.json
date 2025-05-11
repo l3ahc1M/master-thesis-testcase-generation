@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to see the bank account entries for the account with UUID 44444444-dddd-eeee-ffff-555555555555.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/44444444-dddd-eeee-ffff-555555555555/BankAccountEntries",
+    "body": {}
+  }
+}

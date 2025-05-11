@@ -1,0 +1,15 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you fetch the lock request IDs and their event names for the account UUID 01234567-89ab-cdef-0123-456789abcdef?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequests",
+    "body": {
+      "$filter": "BankAccountContractUUID eq '01234567-89ab-cdef-0123-456789abcdef'",
+      "$select": [
+        "ID",
+        "EventName"
+      ]
+    }
+  }
+}

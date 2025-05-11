@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Modify the existing note for order UUID ab12cd34-56ef-78gh-90ij-kl12mn34op56, note ID 3, to include additional transaction details.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/ab12cd34-56ef-78gh-90ij-kl12mn34op56/PaymentNotes/3",
+    "body": {
+      "Note": "Additional transaction details have been added."
+    }
+  }
+}

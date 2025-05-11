@@ -1,0 +1,16 @@
+{
+  "difficulty": "Medium",
+  "input": "Fetch lock request ID 405 with the note and all production control feature lock instructions.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCustomerLockRequests/405",
+    "body": {
+      "$select": [
+        "Note"
+      ],
+      "$expand": [
+        "ProductionControlFeatureLockInstructions"
+      ]
+    }
+  }
+}

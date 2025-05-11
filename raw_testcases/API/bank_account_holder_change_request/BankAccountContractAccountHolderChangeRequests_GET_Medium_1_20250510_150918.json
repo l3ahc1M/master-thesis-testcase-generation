@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "I need the account holder change requests that are completed.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+    "body": null,
+    "query": {
+      "$filter": "LifeCycleStatusCode eq '3'"
+    }
+  }
+}

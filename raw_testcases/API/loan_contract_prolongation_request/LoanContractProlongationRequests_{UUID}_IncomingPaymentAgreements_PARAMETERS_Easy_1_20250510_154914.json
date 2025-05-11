@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you show me the incoming payment agreements for the prolongation request with UUID 3f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/3f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c/IncomingPaymentAgreements",
+    "body": null
+  }
+}

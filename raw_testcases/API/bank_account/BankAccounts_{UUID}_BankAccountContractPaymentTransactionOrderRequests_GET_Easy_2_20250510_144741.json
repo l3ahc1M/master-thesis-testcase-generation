@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "I need to view the transaction order requests for bank account UUID 88888888-9999-0000-aaaa-bbbbbbbbbbbb.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/88888888-9999-0000-aaaa-bbbbbbbbbbbb/BankAccountContractPaymentTransactionOrderRequests",
+    "body": {}
+  }
+}

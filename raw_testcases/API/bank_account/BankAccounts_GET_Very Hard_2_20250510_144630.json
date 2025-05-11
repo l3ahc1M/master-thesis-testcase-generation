@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "List all bank accounts with the country code 'DE' and routing ID '90419917', and show their UUID and internal ID.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts?$filter=BankCountryCode eq 'DE' and BankRoutingID eq '90419917'&$select=UUID,InternalID",
+    "body": {}
+  }
+}

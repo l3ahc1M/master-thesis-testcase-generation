@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you show me all active direct debit mandates?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates",
+    "body": {
+      "$filter": "UserStatusCode eq '2'"
+    }
+  }
+}

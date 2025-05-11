@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "Please create an account holder change request for the contract with UUID 45678901-abcd-ef12-3456-7890abcdef due to marriage, and ensure no charges are applied.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+    "body": {
+      "BankAccountContractUUID": "45678901-abcd-ef12-3456-7890abcdef",
+      "ReasonCode": "5",
+      "ChargeWaiverRequestedIndicator": true
+    }
+  }
+}

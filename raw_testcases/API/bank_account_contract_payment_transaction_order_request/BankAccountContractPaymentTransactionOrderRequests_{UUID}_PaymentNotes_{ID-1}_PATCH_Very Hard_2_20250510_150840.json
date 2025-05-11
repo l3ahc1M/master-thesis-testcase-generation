@@ -1,0 +1,26 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Update multiple notes for order UUID 234e5678-89ab-cdef-0123-456789abcdef, setting note ID 8 to 'Preliminary checks passed' and note ID 9 to 'Ready for settlement'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "PATCH",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests/234e5678-89ab-cdef-0123-456789abcdef/PaymentNotes/8",
+          "body": {
+            "Note": "Preliminary checks passed."
+          }
+        },
+        {
+          "method": "PATCH",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests/234e5678-89ab-cdef-0123-456789abcdef/PaymentNotes/9",
+          "body": {
+            "Note": "Ready for settlement."
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "difficulty": "Medium",
+  "input": "Initiate a cancellation request for my account with UUID 22334455-6677-8899-aabb-ccddeeff0011, and include the request for settlement.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractCancelRequests",
+    "body": {
+      "UUID": "22334455-6677-8899-aabb-ccddeeff0011",
+      "BankAccountContractUUID": "22334455-6677-8899-aabb-ccddeeff0011",
+      "ReasonCode": "108",
+      "ImmediateCompletionRequiredIndicator": false,
+      "ReceiptDate": "2023-09-30",
+      "PlannedCompletionDate": "2023-10-15",
+      "BankAccountSettlementRequiredIndicator": true,
+      "BankAccountSettlementRequestedValueDate": "2023-10-15"
+    }
+  }
+}

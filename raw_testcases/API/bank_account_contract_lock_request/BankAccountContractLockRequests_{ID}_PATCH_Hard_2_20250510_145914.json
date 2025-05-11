@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "Update the note and change the user status for lock request ID 120.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/120",
+    "body": {
+      "Note": "Status changed due to policy update",
+      "UserStatusCode": "1"
+    }
+  }
+}

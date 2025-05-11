@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Delete the prenote entry with UUID 89012345-bbbb-cccc-dddd-890123456789 tied to BankAccountUUID 90123456-bbbb-cccc-dddd-890123456789, taking care to clear all linked references.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/BankAccountPrenoteEntries/89012345-bbbb-cccc-dddd-890123456789/90123456-bbbb-cccc-dddd-890123456789"
+  }
+}

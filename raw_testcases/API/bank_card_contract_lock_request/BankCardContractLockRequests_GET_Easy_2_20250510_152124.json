@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "Fetch all bank card lock requests for account holders.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests"
+  }
+}

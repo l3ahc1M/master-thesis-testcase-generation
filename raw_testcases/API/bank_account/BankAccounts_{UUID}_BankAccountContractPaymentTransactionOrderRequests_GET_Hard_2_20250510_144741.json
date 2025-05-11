@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Fetch the first 20 transaction order requests for bank account UUID 98765432-1098-7654-3210-987654321098, and include a count of total items.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/98765432-1098-7654-3210-987654321098/BankAccountContractPaymentTransactionOrderRequests?$top=20&$count=true",
+    "body": {}
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Batch request to obtain mandates signed in 2021 with 'Locked' status and creditor ID starting with 'DE56'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /DirectDebitMandates?$filter=year(SignatureDate) eq 2021 and UserStatusCode eq '4' and startswith(CreditorPartyID, 'DE56') HTTP/1.1\nAccept: application/json\n\n\n--request-separator--"
+  }
+}

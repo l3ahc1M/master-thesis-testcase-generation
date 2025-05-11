@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Retrieve all information related to the mandate identified by UUID '98765432-1abc-4def-5678-9abcdef01234'.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates/98765432-1abc-4def-5678-9abcdef01234",
+    "body": {}
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "Get complete information on the prenote entry with UUID 98765432-ffff-eeee-dddd-123456789012 and BankAccountUUID 21098765-cccc-bbbb-aaaa-098765432109, including material check notes.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountPrenoteEntries/98765432-ffff-eeee-dddd-123456789012/21098765-cccc-bbbb-aaaa-098765432109?$expand=MaterialCheckNote"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "difficulty": "Hard",
+  "input": "Change the locked amount to 1000 CAD for the currency instruction of lock request ID 109 with entry type 054.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/109/BankAccountCurrencyAmountLockInstructions/054",
+    "body": {
+      "Amount": {
+        "Content": 1000,
+        "CurrencyCode": "CAD"
+      }
+    }
+  }
+}

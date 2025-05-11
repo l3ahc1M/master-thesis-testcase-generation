@@ -1,0 +1,12 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Retrieve event specifications, showing all details and include pagination.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCustomerLockRequestEventSpecifications",
+    "body": {
+      "$top": 10,
+      "$skip": 0
+    }
+  }
+}

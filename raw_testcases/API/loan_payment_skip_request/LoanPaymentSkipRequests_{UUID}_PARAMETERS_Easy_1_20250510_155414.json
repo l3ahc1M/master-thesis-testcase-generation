@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you fetch the loan payment skip request with the UUID '98765432-10dc-ba98-7654-321098765432'?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanPaymentSkipRequests/98765432-10dc-ba98-7654-321098765432",
+    "body": {}
+  }
+}

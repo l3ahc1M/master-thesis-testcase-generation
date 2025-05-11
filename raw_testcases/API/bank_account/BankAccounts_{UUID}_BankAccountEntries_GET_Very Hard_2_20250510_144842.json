@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need a comprehensive list of entries for account UUID 09876543-210f-edcb-a987-6543210fedcb, with pagination showing 20 items per page, starting from the 30th.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/09876543-210f-edcb-a987-6543210fedcb/BankAccountEntries?$top=20&$skip=30",
+    "body": {}
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "difficulty": "Easy",
+  "input": "Show me just the event name and user status for lock request ID 205.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCustomerLockRequests/205",
+    "body": {
+      "$select": [
+        "EventName",
+        "UserStatusName"
+      ]
+    }
+  }
+}

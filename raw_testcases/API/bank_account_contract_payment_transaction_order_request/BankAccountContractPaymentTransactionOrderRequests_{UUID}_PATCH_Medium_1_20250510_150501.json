@@ -1,0 +1,16 @@
+{
+  "difficulty": "Medium",
+  "input": "Modify the recipient item for the payment transaction with UUID 567e8901-89ab-cdef-0123-456789abcdef to include a new direct debit mandate reference.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/567e8901-89ab-cdef-0123-456789abcdef",
+    "body": {
+      "RecipientItem": {
+        "DirectDebitMandateReference": {
+          "ID": "9876",
+          "CreditorReferenceID": "US82ZZZ00000001015"
+        }
+      }
+    }
+  }
+}

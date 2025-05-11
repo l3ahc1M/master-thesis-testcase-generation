@@ -1,0 +1,14 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Revise the currency lock instruction for request ID 129 and type 064 to 2500 INR, ensuring accuracy in currency.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/129/BankAccountCurrencyAmountLockInstructions/064",
+    "body": {
+      "Amount": {
+        "Content": 2500,
+        "CurrencyCode": "INR"
+      }
+    }
+  }
+}

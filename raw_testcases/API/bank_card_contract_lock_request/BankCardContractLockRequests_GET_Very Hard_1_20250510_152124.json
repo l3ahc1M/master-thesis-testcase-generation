@@ -1,0 +1,11 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Retrieve a comprehensive list of bank card contract lock requests, including all details and related contracts.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequests",
+    "body": {
+      "$expand": "BankCardContractSelections"
+    }
+  }
+}

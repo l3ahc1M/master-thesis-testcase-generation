@@ -1,0 +1,11 @@
+{
+  "difficulty": "Hard",
+  "input": "Adjust the planned validity end date to 2025-12-31 for the prenote entry with UUID 09876543-abcd-ef01-2345-6789abcdef01 and BankAccountUUID 21098765-abcd-ef01-2345-6789abcdef01.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountPrenoteEntries/09876543-abcd-ef01-2345-6789abcdef01/21098765-abcd-ef01-2345-6789abcdef01",
+    "body": {
+      "PlannedValidityEndDate": "2025-12-31"
+    }
+  }
+}

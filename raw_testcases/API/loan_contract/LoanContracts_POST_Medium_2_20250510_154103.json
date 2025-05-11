@@ -1,0 +1,20 @@
+{
+  "difficulty": "Medium",
+  "input": "I want to create a loan contract for borrower ID 654321 using Canadian dollars. Include a product description if possible.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts",
+    "body": {
+      "CurrencyCode": "CAD",
+      "BorrowerPartyIdentifyingElements": {
+        "PartyID": "654321"
+      },
+      "Product": {
+        "ProductionControl": {
+          "ID": "GIROMAX",
+          "Description": "Loan with max features"
+        }
+      }
+    }
+  }
+}

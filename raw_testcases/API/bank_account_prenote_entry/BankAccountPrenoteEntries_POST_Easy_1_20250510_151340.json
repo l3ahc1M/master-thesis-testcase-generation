@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "Create a prenote entry for bank account 987e6543-21ab-cdef-1234-56789abcdef0 with a type code of 30.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountPrenoteEntries",
+    "body": {
+      "BankAccountUUID": "987e6543-21ab-cdef-1234-56789abcdef0",
+      "TypeCode": "30"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "difficulty": "Medium",
+  "input": "Set up a future lock on my bank card contract with a note on my relocation.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContractLockRequests",
+    "body": {
+      "PartyIdentifyingElements": {
+        "PartyUUID": "45678901-23de-f456-7890-1234def56789",
+        "PartyID": "445566"
+      },
+      "EventCode": "304000",
+      "UserStatusCode": "2",
+      "ValidityStartDate": "2024-01-01",
+      "ValidityEndDate": "2024-01-15",
+      "Note": "Customer relocating."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Retrieve the mandate with UUID '01234567-89ab-cdef-0123-456789abcdef' with selected properties and all related entities.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/DirectDebitMandates/01234567-89ab-cdef-0123-456789abcdef",
+    "body": {
+      "$select": [
+        "UUID",
+        "ID",
+        "UserStatusName"
+      ],
+      "$expand": [
+        "*"
+      ]
+    }
+  }
+}

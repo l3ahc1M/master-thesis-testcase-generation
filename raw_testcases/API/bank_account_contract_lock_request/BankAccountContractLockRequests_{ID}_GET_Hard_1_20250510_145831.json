@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I would like to see the lock request details for ID 110, including all business process chain assignments.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequests/110",
+    "body": {
+      "$select": [
+        "BusinessProcessChainAssignment"
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "Fetch the details of skip request associated with UUID '12345678-abcd-efgh-ijkl-1234567890ab'.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanPaymentSkipRequests/12345678-abcd-efgh-ijkl-1234567890ab",
+    "body": {}
+  }
+}

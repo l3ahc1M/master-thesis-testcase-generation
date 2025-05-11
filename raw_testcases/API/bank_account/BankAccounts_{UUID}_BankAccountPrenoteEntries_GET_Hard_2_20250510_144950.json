@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the first 15 prenote entries for the account with UUID 56789012-ef01-5678-ijkl-901234abcdef and include a count of total entries.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/56789012-ef01-5678-ijkl-901234abcdef/BankAccountPrenoteEntries?$top=15&$count=true",
+    "body": {}
+  }
+}

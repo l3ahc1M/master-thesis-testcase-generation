@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Change the note for lock request ID 220 to mention customer has relocated.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankCustomerLockRequests/220",
+    "body": {
+      "Note": "Customer has relocated to a new address."
+    }
+  }
+}

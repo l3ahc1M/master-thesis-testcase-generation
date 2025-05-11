@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Show me cancellation requests where the completion is immediate and settlement is required.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractCancelRequests?$filter=ImmediateCompletionRequiredIndicator eq true and BankAccountSettlementRequiredIndicator eq true",
+    "body": null
+  }
+}

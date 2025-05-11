@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need detailed prenote entries for the bank account UUID 78901234-0123-7890-klmn-123456abcdef, paginated 20 per page, starting from the 40th entry, and include total count.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/78901234-0123-7890-klmn-123456abcdef/BankAccountPrenoteEntries?$top=20&$skip=40&$count=true",
+    "body": {}
+  }
+}

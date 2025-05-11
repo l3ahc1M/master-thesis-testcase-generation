@@ -1,0 +1,19 @@
+{
+  "difficulty": "Easy",
+  "input": "Could you place a lock on my bank card contract starting next week?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContractLockRequests",
+    "body": {
+      "PartyIdentifyingElements": {
+        "PartyUUID": "23456789-01bc-def2-3456-678901cdef23",
+        "PartyID": "654321"
+      },
+      "EventCode": "302000",
+      "UserStatusCode": "1",
+      "ValidityStartDate": "2023-12-08",
+      "ValidityEndDate": "2023-12-15",
+      "Note": "Scheduled lock for next week."
+    }
+  }
+}

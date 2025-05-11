@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "Provide a detailed report for lock request ID 111, including the event and any applicable notes.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequests/111",
+    "body": {
+      "$select": [
+        "EventCode",
+        "EventName",
+        "Note"
+      ]
+    }
+  }
+}

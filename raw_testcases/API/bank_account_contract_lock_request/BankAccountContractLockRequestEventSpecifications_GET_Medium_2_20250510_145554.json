@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "I want detailed information on lock request events, but just the names.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequestEventSpecifications",
+    "body": {
+      "$select": [
+        "EventName"
+      ]
+    }
+  }
+}

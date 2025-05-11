@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve the committed capital amount and ID for term agreements of UUID 34567890-1bcd-ef23-4567-890abcdef12.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/34567890-1bcd-ef23-4567-890abcdef12/TermAgreements?$select=CommittedCapitalAmount,ID",
+    "body": null
+  }
+}

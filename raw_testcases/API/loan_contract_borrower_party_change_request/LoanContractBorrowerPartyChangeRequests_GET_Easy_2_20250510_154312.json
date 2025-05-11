@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you get me the change requests for loan contract ID 01234567-89ab-cdef-0123-456789abcdef?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests",
+    "body": null,
+    "query": {
+      "$filter": "LoanContractUUID eq '01234567-89ab-cdef-0123-456789abcdef'"
+    }
+  }
+}

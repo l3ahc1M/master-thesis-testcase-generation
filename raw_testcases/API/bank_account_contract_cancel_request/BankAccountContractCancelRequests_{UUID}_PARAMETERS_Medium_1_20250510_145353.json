@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Please retrieve the cancellation request details for UUID 33334444-5555-6666-7777-888899990000 and include the lifecycle status name.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractCancelRequests/33334444-5555-6666-7777-888899990000?$select=UUID,LifeCycleStatusName",
+    "body": null
+  }
+}

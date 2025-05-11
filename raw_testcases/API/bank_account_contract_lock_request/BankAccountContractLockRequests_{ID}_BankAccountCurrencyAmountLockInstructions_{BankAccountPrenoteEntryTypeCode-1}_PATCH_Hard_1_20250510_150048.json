@@ -1,0 +1,14 @@
+{
+  "difficulty": "Hard",
+  "input": "For lock request ID 127 with entry type 062, adjust the currency lock amount to 1200 CAD.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/127/BankAccountCurrencyAmountLockInstructions/062",
+    "body": {
+      "Amount": {
+        "Content": 1200,
+        "CurrencyCode": "CAD"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "difficulty": "Easy",
+  "input": "Create a new lock request for customer UUID 01234567-89ab-cdef-0123-456789abcdef with a start date of today.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCustomerLockRequests",
+    "body": {
+      "PartyIdentifyingElements": {
+        "PartyUUID": "01234567-89ab-cdef-0123-456789abcdef"
+      },
+      "EventCode": "103000",
+      "UserStatusCode": "1",
+      "ValidityStartDate": "2023-10-17",
+      "ValidityEndDate": "2023-12-31"
+    }
+  }
+}

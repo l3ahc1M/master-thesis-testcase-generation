@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Could you get the event name for the bank card lock event code 301040?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankCardContractLockRequestEventSpecifications/301040",
+    "body": {
+      "$select": [
+        "EventName"
+      ]
+    }
+  }
+}

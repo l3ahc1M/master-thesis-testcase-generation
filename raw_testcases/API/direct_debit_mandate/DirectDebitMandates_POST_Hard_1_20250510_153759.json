@@ -1,0 +1,14 @@
+{
+  "difficulty": "Hard",
+  "input": "Register a mandate with creditor ID 'DE1122334455', signed in Munich on 2023-03-15, and status 'To be confirmed'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/DirectDebitMandates",
+    "body": {
+      "CreditorPartyID": "DE1122334455",
+      "SignatureCityName": "Munich",
+      "SignatureDate": "2023-03-15",
+      "UserStatusCode": "3"
+    }
+  }
+}

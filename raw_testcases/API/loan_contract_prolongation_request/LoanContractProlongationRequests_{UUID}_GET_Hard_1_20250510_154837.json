@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to know the UUID 3f4a5b6c-7d8e-9f0a-b1c2-d3e4f5a6b7c8, including the early repayment compensation amount.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/3f4a5b6c-7d8e-9f0a-b1c2-d3e4f5a6b7c8?$select=EarlyRepaymentCompensationAmount",
+    "body": null
+  }
+}

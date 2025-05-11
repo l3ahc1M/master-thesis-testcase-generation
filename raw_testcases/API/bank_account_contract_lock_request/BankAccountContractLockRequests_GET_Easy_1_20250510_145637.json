@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you fetch all lock requests for my bank account with UUID 01234567-89ab-cdef-0123-456789abcdef?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequests",
+    "body": {
+      "$filter": "BankAccountContractUUID eq '01234567-89ab-cdef-0123-456789abcdef'"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "List prenote entries for bank account UUID 123e4567-e89b-12d3-a456-426614174000, including entries that have a planned end date before 2023-12-31.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountPrenoteEntries?$filter=BankAccountUUID eq '123e4567-e89b-12d3-a456-426614174000' and PlannedValidityEndDate lt 2023-12-31"
+  }
+}

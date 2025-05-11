@@ -1,0 +1,19 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you set up a loan contract for me with a borrower ID 310867 and use USD as the currency?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts",
+    "body": {
+      "CurrencyCode": "USD",
+      "BorrowerPartyIdentifyingElements": {
+        "PartyID": "310867"
+      },
+      "Product": {
+        "ProductionControl": {
+          "ID": "GIROMAX"
+        }
+      }
+    }
+  }
+}

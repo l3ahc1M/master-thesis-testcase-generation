@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Initiate a proposal for the bank account holder change for the request with UUID 223e4455-c66b-77d8-e890-1245789630aa.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests/223e4455-c66b-77d8-e890-1245789630aa/SAP__self.ProposedByBACUUID",
+    "body": {
+      "BankAccountContractUUID": "223e4455-c66b-77d8-e890-1245789630aa"
+    }
+  }
+}

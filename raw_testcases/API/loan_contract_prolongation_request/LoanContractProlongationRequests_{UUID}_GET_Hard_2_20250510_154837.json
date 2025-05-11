@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Fetch UUID 2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d and display the complete reimbursement and final payment details.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d?$select=ReimbursementAmount,FinalPaymentAmount,FinalPaymentDate",
+    "body": null
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve all incoming payment agreements for the UUID 45678901-2cde-f345-6789-0abcdef1234.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractProlongationRequests/45678901-2cde-f345-6789-0abcdef1234/IncomingPaymentAgreements",
+    "body": null
+  }
+}

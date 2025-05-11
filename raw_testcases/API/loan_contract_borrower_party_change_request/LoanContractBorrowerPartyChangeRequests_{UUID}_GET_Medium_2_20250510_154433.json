@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Get the change request details by UUID 77777777-8888-9999-0000-111111111111, focusing on ID and NewBorrowerPartyIdentifyingElements.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests/77777777-8888-9999-0000-111111111111",
+    "body": null,
+    "query": {
+      "$select": "ID,NewBorrowerPartyIdentifyingElements"
+    }
+  }
+}

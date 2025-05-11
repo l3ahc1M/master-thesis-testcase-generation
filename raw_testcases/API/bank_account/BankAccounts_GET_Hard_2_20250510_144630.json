@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Find bank accounts in Germany (DE) and show their internal and standard IDs.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts?$filter=BankCountryCode eq 'DE'&$select=InternalID,StandardID",
+    "body": {}
+  }
+}
