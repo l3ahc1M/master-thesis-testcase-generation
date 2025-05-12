@@ -1,0 +1,13 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need to retrieve the bank account information for the standard ID DE65904199170010000707, along with the bank routing ID 90419917 and country code DE.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts",
+    "body": {
+      "StandardID": "DE65904199170010000707",
+      "BankRoutingID": "90419917",
+      "BankCountryCode": "DE"
+    }
+  }
+}

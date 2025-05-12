@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "Retrieve the bank account information for the UUID 23456789-90ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/23456789-90ab-cdef-0123-456789abcdef"
+  }
+}

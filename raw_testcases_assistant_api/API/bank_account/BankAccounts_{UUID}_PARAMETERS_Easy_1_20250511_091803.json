@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you give me the details of the bank account with UUID 01234567-89ab-cdef-0123-456789abcdef?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/01234567-89ab-cdef-0123-456789abcdef"
+  }
+}

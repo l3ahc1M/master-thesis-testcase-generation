@@ -1,0 +1,12 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Fetch the bank account details using the BankAccountContractUUID 01234567-89ab-cdef-0123-456789abcdef and the bank account ID 0010000707.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts",
+    "body": {
+      "BankAccountContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "ID": "0010000707"
+    }
+  }
+}
