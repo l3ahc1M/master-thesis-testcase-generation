@@ -4,7 +4,7 @@ import json
 from llm_connector import OpenAIConnector
 
 # Original path to the folder containing test cases
-base_path = "raw_testcases_assistant_api/API"
+base_path = "raw_testcases/API"
 # Destination base path for updated test cases
 updated_base_path = "updated_testcases_assistant/API"
 
@@ -94,10 +94,8 @@ def evaluate_folders(folder1, folder2):
                     print(f"Files differ beyond 'input': {file1} and {file2}")
 
 if __name__ == "__main__":
+    # Create updated test cases
     humanize_testcases()
-    # Define the paths to the two folder structures to compare
-    folder1 = "raw_testcases_assistant_api/api"
-    folder2 = "updated_testcases_assistant/api"
 
-    # Call the evaluation function
-    evaluate_folders(folder1, folder2)
+    # Evaluate update test cases
+    evaluate_folders(base_path, updated_base_path)
