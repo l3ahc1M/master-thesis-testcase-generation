@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Fetch all prolongation requests for a specific loan contract using its UUID.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests?$filter=LoanContract/UUID eq '01234567-89ab-cdef-0123-456789abcdef'",
-    "body": null
-  }
-}

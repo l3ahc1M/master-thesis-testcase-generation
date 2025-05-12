@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Can you show me the loan payment skip request details for UUID 'abcd1234-5678-90ef-ghij-klmn12345678'?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanPaymentSkipRequests/abcd1234-5678-90ef-ghij-klmn12345678",
-    "body": {}
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Please get the prenote entries for account UUID aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee, skipping the first 15.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/BankAccountPrenoteEntries?$skip=15",
-    "body": {}
-  }
-}

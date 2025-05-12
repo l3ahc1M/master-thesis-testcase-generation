@@ -1,8 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Give me the details of the bank card lock event specification with event code 301000.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContractLockRequestEventSpecifications/301000"
-  }
-}

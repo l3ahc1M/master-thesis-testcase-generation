@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Submit a batch request to create a new lock request and retrieve existing lock requests for a specific business event.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /BankCustomerLockRequests HTTP/1.1\nContent-Type: application/json\n\n{\"PartyIdentifyingElements\":{\"PartyID\":\"310867\"},\"EventCode\":\"103000\",\"UserStatusCode\":\"1\",\"ValidityStartDate\":\"2023-10-17\",\"ValidityEndDate\":\"2023-12-31\"}\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCustomerLockRequests?$filter=EventCode eq '103000' HTTP/1.1\nAccept: application/json\n\n--request-separator--"
-  }
-}

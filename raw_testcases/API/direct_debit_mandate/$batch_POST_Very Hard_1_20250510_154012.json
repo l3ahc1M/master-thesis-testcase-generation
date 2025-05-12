@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Batch request for mandates with 'SEPA Core' scheme, signed in 'Berlin', attached to a business process chain, and are 'To be confirmed'.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /DirectDebitMandates?$filter=DirectDebitSchemeName eq 'SEPA Core' and SignatureCityName eq 'Berlin' and BusinessProcessChainAssignment ne null and UserStatusCode eq '3' HTTP/1.1\nAccept: application/json\n\n\n--request-separator--"
-  }
-}

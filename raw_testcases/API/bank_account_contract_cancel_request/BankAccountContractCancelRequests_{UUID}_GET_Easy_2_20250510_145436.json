@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "I want to see the cancellation request for UUID abcd1234-5678-90ef-ghij-klmn4567opqr.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractCancelRequests/abcd1234-5678-90ef-ghij-klmn4567opqr",
-    "body": null
-  }
-}

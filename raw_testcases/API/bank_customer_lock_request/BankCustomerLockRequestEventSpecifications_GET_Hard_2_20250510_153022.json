@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Get detailed information on all lock request event specifications.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCustomerLockRequestEventSpecifications",
-    "body": {}
-  }
-}

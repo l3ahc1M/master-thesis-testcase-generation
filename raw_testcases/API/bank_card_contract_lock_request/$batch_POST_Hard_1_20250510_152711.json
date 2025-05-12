@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "I need a batch request to fetch lock request details and lock event specifications with filtering.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContractLockRequestEventSpecifications?$filter=EventCode eq '301000' HTTP/1.1\nAccept: application/json\n\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContractLockRequests?$filter=UserStatusCode eq '2' HTTP/1.1\nAccept: application/json\n\n\n--request-separator--"
-  }
-}

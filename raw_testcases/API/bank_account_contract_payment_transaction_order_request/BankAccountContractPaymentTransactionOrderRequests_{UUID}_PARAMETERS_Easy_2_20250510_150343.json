@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "I need to check the transaction order information using the UUID 987f6543-b21c-32d1-c456-426655440000.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/987f6543-b21c-32d1-c456-426655440000",
-    "body": {}
-  }
-}

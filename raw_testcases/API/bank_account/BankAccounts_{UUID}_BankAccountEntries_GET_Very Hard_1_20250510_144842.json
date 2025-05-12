@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Provide a detailed list of entries for account UUID fedcba98-7654-3210-fedc-ba9876543210, starting from the 25th, show 10 entries, and count total entries.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/fedcba98-7654-3210-fedc-ba9876543210/BankAccountEntries?$top=10&$skip=25&$count=true",
-    "body": {}
-  }
-}

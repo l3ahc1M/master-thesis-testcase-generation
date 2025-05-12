@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Send a batch request to retrieve lock request events and update a specific lock request note.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCustomerLockRequestEventSpecifications HTTP/1.1\nAccept: application/json\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPATCH /BankCustomerLockRequests/220 HTTP/1.1\nContent-Type: application/json\n\n{\"Note\":\"Updated due to customer feedback.\"}\n\n--request-separator--"
-  }
-}

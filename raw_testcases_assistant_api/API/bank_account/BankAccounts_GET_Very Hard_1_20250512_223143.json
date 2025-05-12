@@ -1,0 +1,12 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Please provide the UUID for the bank account with the BankAccountContractUUID 98765432-10ab-cdef-0123-456789abcdef and the ID 0010000707.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts",
+    "body": {
+      "BankAccountContractUUID": "98765432-10ab-cdef-0123-456789abcdef",
+      "ID": "0010000707"
+    }
+  }
+}

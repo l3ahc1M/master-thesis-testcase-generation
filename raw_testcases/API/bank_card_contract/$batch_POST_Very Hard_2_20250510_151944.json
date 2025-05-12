@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Construct a batch request involving contracts with UUIDs 33445566-7788-99aa-bbcc-ddeeff001122 and 44556677-8899-aabb-ccdd-eeff11223344, focusing on lifecycle status and administrative data.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContracts/33445566-7788-99aa-bbcc-ddeeff001122?$select=PaymentCardLifeCycleStatusName,SystemAdministrativeData HTTP/1.1\nAccept: application/json\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContracts/44556677-8899-aabb-ccdd-eeff11223344?$select=PaymentCardLifeCycleStatusName,SystemAdministrativeData HTTP/1.1\nAccept: application/json\n\n--request-separator--"
-  }
-}

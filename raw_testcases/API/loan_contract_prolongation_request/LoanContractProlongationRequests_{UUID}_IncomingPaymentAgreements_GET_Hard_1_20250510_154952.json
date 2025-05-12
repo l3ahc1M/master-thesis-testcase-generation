@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "I need details of incoming payment agreements showing ID and planned final payment for UUID 56789012-3def-4567-8901-2abcdef3456.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests/56789012-3def-4567-8901-2abcdef3456/IncomingPaymentAgreements?$select=ID,PlannedFinalPaymentAmount",
-    "body": null
-  }
-}

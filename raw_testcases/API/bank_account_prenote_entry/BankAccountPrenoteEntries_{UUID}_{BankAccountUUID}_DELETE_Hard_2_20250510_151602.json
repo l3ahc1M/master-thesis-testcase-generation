@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Execute deletion of the prenote entry with UUID 67890123-ffff-aaaa-bbbb-678901234567 linked to BankAccountUUID 78901234-ffff-aaaa-bbbb-678901234567, while maintaining system integrity.",
-  "output": {
-    "method": "DELETE",
-    "endpoint": "/BankAccountPrenoteEntries/67890123-ffff-aaaa-bbbb-678901234567/78901234-ffff-aaaa-bbbb-678901234567"
-  }
-}

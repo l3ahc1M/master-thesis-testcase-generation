@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Fetch the entire fixing period for term agreements for the prolongation request with UUID 67890123-4ef0-5678-9012-3abcdef4567.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests/67890123-4ef0-5678-9012-3abcdef4567/TermAgreements?$select=FixingPeriod",
-    "body": null
-  }
-}

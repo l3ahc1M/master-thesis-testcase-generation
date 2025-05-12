@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Retrieve the prenote entry with UUID 44444444-abcd-ef01-2345-567890abcdef and BankAccountUUID 33333333-abcd-ef01-2345-678901abcdef. Include all related payment notes and sort the results by the change state ID in ascending order.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountPrenoteEntries/44444444-abcd-ef01-2345-567890abcdef/33333333-abcd-ef01-2345-678901abcdef?$expand=PaymentNotes&$orderby=ChangeStateID asc"
-  }
-}

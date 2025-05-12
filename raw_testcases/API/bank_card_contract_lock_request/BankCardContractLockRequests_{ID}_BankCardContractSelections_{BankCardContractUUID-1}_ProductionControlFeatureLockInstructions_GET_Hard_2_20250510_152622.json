@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "I'd like to review all production control feature lock instructions linked to my request ID 606060 and contract UUID 56789012-def0-1234-5678-9012def01234.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContractLockRequests/606060/BankCardContractSelections/56789012-def0-1234-5678-9012def01234/ProductionControlFeatureLockInstructions"
-  }
-}

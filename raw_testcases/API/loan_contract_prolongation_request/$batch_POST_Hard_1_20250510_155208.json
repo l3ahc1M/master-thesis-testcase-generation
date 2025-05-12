@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Initiate a batch request to retrieve all active loan contract prolongation requests including their change state IDs.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /LoanContractProlongationRequests?$filter=LifeCycleStatusCode eq '3'&$select=ChangeStateID HTTP/1.1\nAccept: application/json\n\n--request-separator--"
-  }
-}

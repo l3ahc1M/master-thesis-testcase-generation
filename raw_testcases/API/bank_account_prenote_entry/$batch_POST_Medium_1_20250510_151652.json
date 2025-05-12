@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Execute a batch request to create two prenote entries for different bank accounts with predefined type codes and notes.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /BankAccountPrenoteEntries HTTP/1.1\nContent-Type: application/json\n\n{\"BankAccountUUID\": \"98765432-abcd-ef01-2345-6789abcdef01\", \"TypeCode\": \"30\", \"Note\": \"Monthly Payment\"}\n\nPOST /BankAccountPrenoteEntries HTTP/1.1\nContent-Type: application/json\n\n{\"BankAccountUUID\": \"12345678-abcd-ef01-2345-6789abcdef01\", \"TypeCode\": \"40\", \"Note\": \"Quarterly Fee\"}\n\n--request-separator--"
-  }
-}

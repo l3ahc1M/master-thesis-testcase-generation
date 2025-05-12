@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Provide details of loan contract prolongation requests that are either completed or active and include both incoming payment and term agreements.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests?$filter=LifeCycleStatusCode eq '5' or LifeCycleStatusCode eq '3'&$expand=IncomingPaymentAgreements,TermAgreements",
-    "body": null
-  }
-}

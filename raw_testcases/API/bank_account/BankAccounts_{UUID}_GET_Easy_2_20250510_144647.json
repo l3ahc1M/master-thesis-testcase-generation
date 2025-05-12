@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Please provide the bank account information for UUID 23456789-01bc-def2-3456-7890abcdef12.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/23456789-01bc-def2-3456-7890abcdef12",
-    "body": {}
-  }
-}

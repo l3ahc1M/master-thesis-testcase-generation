@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Send a batch request to retrieve lock requests for customer 310867 and list all event specifications.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCustomerLockRequests?$filter=PartyIdentifyingElements/PartyID eq '310867' HTTP/1.1\nAccept: application/json\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCustomerLockRequestEventSpecifications HTTP/1.1\nAccept: application/json\n\n--request-separator--"
-  }
-}

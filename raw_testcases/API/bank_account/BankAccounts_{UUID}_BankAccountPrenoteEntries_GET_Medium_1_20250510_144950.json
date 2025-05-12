@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "List the first 10 prenote entries for the bank account with UUID 23456789-bcde-2345-fghi-678901abcdef.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/23456789-bcde-2345-fghi-678901abcdef/BankAccountPrenoteEntries?$top=10",
-    "body": {}
-  }
-}

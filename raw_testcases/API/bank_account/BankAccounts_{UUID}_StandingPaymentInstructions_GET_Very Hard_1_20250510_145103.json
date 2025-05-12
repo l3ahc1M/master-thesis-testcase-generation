@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Provide a detailed list of standing payment instructions for account UUID 78901234-5678-90ab-cdef-1234567890ab, showing 15 per page, starting from the 10th instruction, and include total count.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/78901234-5678-90ab-cdef-1234567890ab/StandingPaymentInstructions?$top=15&$skip=10&$count=true",
-    "body": {}
-  }
-}

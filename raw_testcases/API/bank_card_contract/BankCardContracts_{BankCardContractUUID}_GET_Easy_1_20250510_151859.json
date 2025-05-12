@@ -1,8 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Give me the payment card type and renewal status for the contract identified by UUID 123e4567-e89b-12d3-a456-426614174000.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContracts/123e4567-e89b-12d3-a456-426614174000?$select=PaymentCardTypeName,PaymentCardRenewalStatusName"
-  }
-}

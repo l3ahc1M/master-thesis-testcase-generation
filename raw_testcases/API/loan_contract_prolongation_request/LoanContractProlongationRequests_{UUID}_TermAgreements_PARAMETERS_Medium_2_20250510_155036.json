@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Can you show the financial condition context value code for term agreements linked to UUID 45678901-2cde-f345-6789-0abcdef1234?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests/45678901-2cde-f345-6789-0abcdef1234/TermAgreements?$select=BankContractFinancialConditionContextValueCode",
-    "body": null
-  }
-}

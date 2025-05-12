@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Retrieve the payment transaction requests for the account with UUID ffffffff-gggg-hhhh-iiii-jjjjjjjjjjjj, but only show the first 3 entries.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/ffffffff-gggg-hhhh-iiii-jjjjjjjjjjjj/BankAccountContractPaymentTransactionOrderRequests?$top=3",
-    "body": {}
-  }
-}

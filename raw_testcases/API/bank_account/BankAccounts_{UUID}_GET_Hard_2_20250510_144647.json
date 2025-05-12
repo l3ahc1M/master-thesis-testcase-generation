@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "I need the UUID, standard ID, and bank account contract UUID for the account with UUID 67890123-45f0-6789-0abc-def123456789.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/67890123-45f0-6789-0abc-def123456789?$select=UUID,StandardID,BankAccountContractUUID",
-    "body": {}
-  }
-}

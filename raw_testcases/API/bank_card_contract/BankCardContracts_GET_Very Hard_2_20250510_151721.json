@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "List all bank card contracts for user with UUID 01234567-89ab-cdef-0123-456789abcdef, but only show active contracts with a specific bank account 'DE84900000010000000976' and include contract UUID, cardholder, and bank account.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContracts?$filter=CardHolderPartyIdentifyingElements/PartyUUID eq '01234567-89ab-cdef-0123-456789abcdef' and PaymentCardLifeCycleStatusName eq 'Active' and BankAccount/IdentifyingElements/StandardID eq 'DE84900000010000000976'&$select=BankCardContractUUID,CardHolderPartyIdentifyingElements,BankAccount"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Can you provide the production control lock instructions for lock request ID 202020 and contract UUID 12345678-90ab-cdef-1234-567890abcdef?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContractLockRequests/202020/BankCardContractSelections/12345678-90ab-cdef-1234-567890abcdef/ProductionControlFeatureLockInstructions"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Retrieve prenote entries for the bank account with UUID 123e4567-e89b-12d3-a456-426614174000 that have been discarded.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountPrenoteEntries?$filter=BankAccountUUID eq '123e4567-e89b-12d3-a456-426614174000' and LifeCycleStatusCode eq '5'"
-  }
-}

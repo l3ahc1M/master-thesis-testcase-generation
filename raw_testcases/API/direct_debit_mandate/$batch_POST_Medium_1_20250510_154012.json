@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Batch request to fetch mandates with 'Recurring' SEPA sequence type and 'Active' status.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /DirectDebitMandates?$filter=DirectDebitCollectionSEPASequenceTypeName eq 'Recurring' and UserStatusCode eq '2' HTTP/1.1\nAccept: application/json\n\n\n--request-separator--"
-  }
-}

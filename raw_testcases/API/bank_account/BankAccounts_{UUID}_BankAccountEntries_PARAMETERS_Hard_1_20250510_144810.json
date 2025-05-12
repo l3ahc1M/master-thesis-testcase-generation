@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Please get the entries for account UUID aaaaaaaa-mmmm-nnnn-oooo-pppppppppppp, skipping the first 10.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/aaaaaaaa-mmmm-nnnn-oooo-pppppppppppp/BankAccountEntries?$skip=10",
-    "body": {}
-  }
-}

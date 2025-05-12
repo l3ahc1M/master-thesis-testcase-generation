@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Fetch the loan payment skip request for UUID '3210dcba-9876-fedc-ba98-76543210abcd', and provide all properties with expanded skip items and business process chain.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanPaymentSkipRequests/3210dcba-9876-fedc-ba98-76543210abcd?$expand=SkipItems,BusinessProcessChainAssignment&$select=*",
-    "body": {}
-  }
-}

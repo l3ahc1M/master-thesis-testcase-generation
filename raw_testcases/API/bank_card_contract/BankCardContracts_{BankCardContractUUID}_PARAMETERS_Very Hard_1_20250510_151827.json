@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "List all pertinent details for the contract with UUID 66778899-aabb-ccdd-eeff-112233445566, focusing on active cards with specific bank account details.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContracts/66778899-aabb-ccdd-eeff-112233445566?$filter=PaymentCardLifeCycleStatusName eq 'Active'&$select=BankAccount,PaymentCardLifeCycleStatusName"
-  }
-}

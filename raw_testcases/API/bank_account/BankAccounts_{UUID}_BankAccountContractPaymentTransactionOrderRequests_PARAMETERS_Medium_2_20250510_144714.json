@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Please fetch the payment order requests for account UUID 22b45678-d90c-34e4-c567-426614174003 and include a count of items.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/22b45678-d90c-34e4-c567-426614174003/BankAccountContractPaymentTransactionOrderRequests?$count=true",
-    "body": {}
-  }
-}

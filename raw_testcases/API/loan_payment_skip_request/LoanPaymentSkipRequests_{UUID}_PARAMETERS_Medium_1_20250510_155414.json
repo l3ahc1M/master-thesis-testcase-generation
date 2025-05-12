@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Retrieve loan payment skip request identified by UUID '12345678-1234-1234-1234-123456789abc', but only show UUID, ID, and LoanContractUUID.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanPaymentSkipRequests/12345678-1234-1234-1234-123456789abc?$select=UUID,ID,LoanContractUUID",
-    "body": {}
-  }
-}

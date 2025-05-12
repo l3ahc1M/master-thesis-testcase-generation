@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Remove the payment note with ID 10 for the transaction order with UUID ef78gh12-34ij-56kl-78mn-90opqr12st34 and verify its removal.",
-  "output": {
-    "method": "DELETE",
-    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/ef78gh12-34ij-56kl-78mn-90opqr12st34/PaymentNotes/10",
-    "body": {}
-  }
-}

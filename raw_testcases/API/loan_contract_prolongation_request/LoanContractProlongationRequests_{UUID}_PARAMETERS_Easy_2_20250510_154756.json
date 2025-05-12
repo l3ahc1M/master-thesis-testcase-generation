@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "I need basic information for prolongation request with UUID: 01234567-89ab-cdef-0123-456789abcdef.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests/01234567-89ab-cdef-0123-456789abcdef?$select=ID,LifeCycleStatusName",
-    "body": null
-  }
-}

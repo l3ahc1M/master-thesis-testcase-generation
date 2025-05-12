@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Get all term agreements data including context value names for UUID 56789012-3def-4567-8901-2abcdef3456.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests/56789012-3def-4567-8901-2abcdef3456/TermAgreements?$select=BankContractFinancialConditionContextValueName",
-    "body": null
-  }
-}

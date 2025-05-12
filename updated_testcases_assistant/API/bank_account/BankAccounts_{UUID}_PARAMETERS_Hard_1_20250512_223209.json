@@ -1,0 +1,12 @@
+{
+    "difficulty": "Hard",
+    "input": "I need to find the bank account with the Standard ID DE98765432109876543210 and the currency in Japanese Yen.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccounts",
+        "body": {
+            "StandardID": "DE98765432109876543210",
+            "CurrencyCode": "JPY"
+        }
+    }
+}

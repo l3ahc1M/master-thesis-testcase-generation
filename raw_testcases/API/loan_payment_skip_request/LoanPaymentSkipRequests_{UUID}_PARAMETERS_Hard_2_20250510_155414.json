@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Provide comprehensive details of the skip request for UUID '01234567-89ab-cdef-0123-456789abcdef', including change state ID and skipped installment mode.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanPaymentSkipRequests/01234567-89ab-cdef-0123-456789abcdef?$select=ChangeStateID,LoanPaymentPlanSkippedInstallmentPaymentModeName",
-    "body": {}
-  }
-}

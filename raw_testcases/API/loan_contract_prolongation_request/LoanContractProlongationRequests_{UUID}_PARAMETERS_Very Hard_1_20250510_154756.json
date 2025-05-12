@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Provide comprehensive details of UUID 01234567-89ab-cdef-0123-456789abcdef, including planned and actual loan contract payment balances.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests/01234567-89ab-cdef-0123-456789abcdef?$select=LoanContractPaymentPlanPlannedBalanceAmount,LoanContractPaymentPlanActualBalanceAmount",
-    "body": null
-  }
-}

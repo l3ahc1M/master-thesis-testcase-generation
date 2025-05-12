@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Fetch the committed capital amount for term agreements associated with UUID 3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests/3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b/TermAgreements?$select=CommittedCapitalAmount",
-    "body": null
-  }
-}

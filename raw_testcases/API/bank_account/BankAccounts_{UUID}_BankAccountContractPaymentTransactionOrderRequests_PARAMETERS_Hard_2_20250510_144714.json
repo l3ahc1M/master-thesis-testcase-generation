@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Provide the transaction order requests for the account with UUID 44d67890-f12a-56h6-e789-426614174005, showing only the first 10 and counting total entries.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/44d67890-f12a-56h6-e789-426614174005/BankAccountContractPaymentTransactionOrderRequests?$top=10&$count=true",
-    "body": {}
-  }
-}

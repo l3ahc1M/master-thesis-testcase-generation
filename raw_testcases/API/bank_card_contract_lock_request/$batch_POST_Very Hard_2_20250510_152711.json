@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Initiate a batch request to query lock requests, update a contract's user status, and add a new note.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContractLockRequests?$select=ID,EventName HTTP/1.1\nAccept: application/json\n\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPATCH /BankCardContractLockRequests/232323 HTTP/1.1\nContent-Type: application/json\n\n{\"UserStatusCode\": \"5\", \"Note\": \"Updated after review.\"}\n\n\n--request-separator--"
-  }
-}

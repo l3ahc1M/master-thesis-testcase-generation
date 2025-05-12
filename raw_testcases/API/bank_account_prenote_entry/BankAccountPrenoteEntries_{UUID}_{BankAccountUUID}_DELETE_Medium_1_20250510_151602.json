@@ -1,8 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Please delete the prenote entry with UUID 34567890-cccc-dddd-eeee-345678901234 associated with BankAccountUUID 45678901-cccc-dddd-eeee-345678901234.",
-  "output": {
-    "method": "DELETE",
-    "endpoint": "/BankAccountPrenoteEntries/34567890-cccc-dddd-eeee-345678901234/45678901-cccc-dddd-eeee-345678901234"
-  }
-}

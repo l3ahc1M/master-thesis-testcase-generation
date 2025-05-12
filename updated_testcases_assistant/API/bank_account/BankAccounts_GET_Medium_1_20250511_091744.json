@@ -1,0 +1,11 @@
+{
+    "difficulty": "Medium",
+    "input": "Get the bank account details using the Bank Account Contract UUID 01234567-89ab-cdef-0123-456789abcdef.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccounts",
+        "body": {
+            "BankAccountContractUUID": "01234567-89ab-cdef-0123-456789abcdef"
+        }
+    }
+}

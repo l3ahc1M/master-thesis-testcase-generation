@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Fetch the first 10 prenote entries for the bank account with UUID 88888888-9999-aaaa-bbbb-cccccccccccc.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/88888888-9999-aaaa-bbbb-cccccccccccc/BankAccountPrenoteEntries?$top=10",
-    "body": {}
-  }
-}

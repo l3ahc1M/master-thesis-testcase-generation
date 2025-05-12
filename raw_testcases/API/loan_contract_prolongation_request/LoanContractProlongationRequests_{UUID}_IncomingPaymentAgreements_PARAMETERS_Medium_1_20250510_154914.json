@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Retrieve the incoming payment ID and period for the prolongation request identified by UUID 8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests/8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e/IncomingPaymentAgreements?$select=ID,Period",
-    "body": null
-  }
-}

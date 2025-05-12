@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Execute a batch request to fetch, update, and delete different lock requests at once.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCustomerLockRequests/305 HTTP/1.1\nAccept: application/json\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPATCH /BankCustomerLockRequests/420 HTTP/1.1\nContent-Type: application/json\n\n{\"UserStatusCode\":\"2\",\"Note\":\"Updated for compliance.\"}\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nDELETE /BankCustomerLockRequests/520 HTTP/1.1\n\n--request-separator--"
-  }
-}

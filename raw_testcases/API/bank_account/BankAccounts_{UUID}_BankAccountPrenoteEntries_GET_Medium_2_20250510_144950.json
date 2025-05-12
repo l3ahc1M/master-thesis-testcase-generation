@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Can you provide the total count of prenote entries for the account with UUID 34567890-cdef-3456-ghij-789012abcdef?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/34567890-cdef-3456-ghij-789012abcdef/BankAccountPrenoteEntries?$count=true",
-    "body": {}
-  }
-}

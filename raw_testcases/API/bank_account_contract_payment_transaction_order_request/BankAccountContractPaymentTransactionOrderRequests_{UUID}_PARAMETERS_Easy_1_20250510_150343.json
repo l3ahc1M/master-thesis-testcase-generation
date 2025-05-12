@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Show me the details of the payment order with UUID 123e4567-e89b-12d3-a456-426614174000.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/123e4567-e89b-12d3-a456-426614174000",
-    "body": {}
-  }
-}

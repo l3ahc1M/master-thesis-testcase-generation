@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Get the first 20 standing payment instructions for the account UUID 98765432-1098-7654-3210-987654321098 and include the total number of instructions.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/98765432-1098-7654-3210-987654321098/StandingPaymentInstructions?$top=20&$count=true",
-    "body": {}
-  }
-}

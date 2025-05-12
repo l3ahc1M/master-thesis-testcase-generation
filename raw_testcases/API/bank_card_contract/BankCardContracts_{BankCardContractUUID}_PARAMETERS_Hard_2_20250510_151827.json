@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "I need the full details of the bank card contract with UUID 55667788-99aa-bbcc-ddee-ff1122334455, including change state ID.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContracts/55667788-99aa-bbcc-ddee-ff1122334455?$select=BankCardContractUUID,ID,CurrencyCode,PaymentCardTypeCode,PaymentCardTypeName,PaymentCardID,PaymentCardSequenceID,PaymentCardValidFrom,PaymentCardValidTo,PaymentCardCharacterCode,PaymentCardCharacterName,FirstPaymentCardUUID,AdditionalPaymentCardIndicator,PaymentCardLifeCycleStatusCode,PaymentCardLifeCycleStatusName,PaymentCardRenewalStatusCode,PaymentCardRenewalStatusName,CancellationDate,BankAccount,UsageNote,SystemAdministrativeData,CardHolderPartyIdentifyingElements,ProductControl,OperationalBankContractManagement,BusinessProcessChainAssignment,ChangeStateID"
-  }
-}

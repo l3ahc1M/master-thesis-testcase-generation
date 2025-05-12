@@ -1,8 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Retrieve the cardholder and lifecycle status of the bank card contract with UUID 98765432-1abc-def0-1234-56789abcdef0.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContracts/98765432-1abc-def0-1234-56789abcdef0?$select=CardHolderPartyIdentifyingElements,PaymentCardLifeCycleStatusName"
-  }
-}

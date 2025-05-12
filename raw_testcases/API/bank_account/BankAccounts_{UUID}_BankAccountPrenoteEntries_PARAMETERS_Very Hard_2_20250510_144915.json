@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "I need a comprehensive list of prenote entries for account UUID 99999999-aaaa-bbbb-cccc-dddddddddddd, with pagination displaying 15 items per page, starting from the 45th.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/99999999-aaaa-bbbb-cccc-dddddddddddd/BankAccountPrenoteEntries?$top=15&$skip=45",
-    "body": {}
-  }
-}

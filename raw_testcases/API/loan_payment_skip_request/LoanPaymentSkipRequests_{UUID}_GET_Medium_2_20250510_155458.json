@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Get information about the loan payment skip request with UUID 'fedcba98-7654-3210-fedc-ba9876543210', including the final installment amount and date.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanPaymentSkipRequests/fedcba98-7654-3210-fedc-ba9876543210?$select=FinalInstallmentAmount,FinalPaymentDate",
-    "body": {}
-  }
-}

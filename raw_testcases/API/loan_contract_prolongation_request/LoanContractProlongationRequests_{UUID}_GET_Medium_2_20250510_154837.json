@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Please retrieve the UUID 7b8c9d0e-1f2a-3b4c-5d6a-7e8f9a0b1c2d and show the charge waiver requested indicator.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests/7b8c9d0e-1f2a-3b4c-5d6a-7e8f9a0b1c2d?$select=ActivationChargeWaiverRequestedIndicator",
-    "body": null
-  }
-}

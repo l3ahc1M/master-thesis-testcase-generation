@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "I want to see the change state ID and the product control information for the contract with UUID 99887766-5544-3322-1100-aabbccddeeff.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContracts/99887766-5544-3322-1100-aabbccddeeff?$select=ChangeStateID,ProductControl"
-  }
-}

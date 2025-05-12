@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "What is the UUID for the bank account with the ID 0010000707?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts",
+    "body": {
+      "ID": "0010000707"
+    }
+  }
+}

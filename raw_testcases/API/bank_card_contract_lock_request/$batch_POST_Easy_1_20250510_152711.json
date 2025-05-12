@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "I want to group multiple requests to check lock request specifications and event codes.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContractLockRequestEventSpecifications HTTP/1.1\nAccept: application/json\n\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContractLockRequests HTTP/1.1\nAccept: application/json\n\n\n--request-separator--"
-  }
-}

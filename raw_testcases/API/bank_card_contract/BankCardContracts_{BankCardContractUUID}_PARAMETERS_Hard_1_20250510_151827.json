@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Fetch the operational management ID and the business process chain assignment for the bank card contract with UUID 44556677-8899-aabb-ccdd-eeff11223344.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContracts/44556677-8899-aabb-ccdd-eeff11223344?$select=OperationalBankContractManagement,BusinessProcessChainAssignment"
-  }
-}

@@ -1,0 +1,11 @@
+{
+    "difficulty": "Easy",
+    "input": "Can you tell me the UUID for the bank account that has the internal ID D4E088A52D5B1ED8BEE3FA163E6B7DE1?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccounts",
+        "body": {
+            "InternalID": "D4E088A52D5B1ED8BEE3FA163E6B7DE1"
+        }
+    }
+}

@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Create a batch query to find mandates valid in 2025 with a creditor ID 'DE444555666' and expand all related entities.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /DirectDebitMandates?$filter=year(ValidityPeriod/StartDate) eq 2025 and CreditorPartyID eq 'DE444555666'&$expand=* HTTP/1.1\nAccept: application/json\n\n\n--request-separator--"
-  }
-}

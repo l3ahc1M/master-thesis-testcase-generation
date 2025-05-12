@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Could you get the skip requests for the loan contract UUID '01234567-89ab-cdef-0123-456789abcdef'?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanPaymentSkipRequests?$filter=LoanContractUUID eq '01234567-89ab-cdef-0123-456789abcdef'",
-    "body": {}
-  }
-}

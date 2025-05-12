@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Please provide the lifecycle status and the date this request was received for UUID 1234abcd-5678-efgh-ijkl-9012mnopqrst.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractCancelRequests/1234abcd-5678-efgh-ijkl-9012mnopqrst?$select=LifeCycleStatusName,ReceiptDate",
-    "body": null
-  }
-}

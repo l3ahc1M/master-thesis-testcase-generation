@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "I need to know the skip request details for UUID '0987abcd-6543-efgh-ij12-klmnopqrstuv', including the payment mode and business process chain assignment.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanPaymentSkipRequests/0987abcd-6543-efgh-ij12-klmnopqrstuv?$select=LoanPaymentPlanSkippedInstallmentPaymentModeName,BusinessProcessChainAssignment",
-    "body": {}
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Retrieve cancellation requests and include only UUID, ID, and ReceiptDate in the results.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractCancelRequests?$select=UUID,ID,ReceiptDate",
-    "body": null
-  }
-}

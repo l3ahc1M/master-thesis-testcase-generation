@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Construct a batch request to fetch both completed and proposed account holder change requests.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankAccountContractAccountHolderChangeRequests?$filter=LifeCycleStatusCode eq '3' HTTP/1.1\nAccept: application/json\n\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /ProposedBankAccountContractAccountHolderChangeRequest HTTP/1.1\nAccept: application/json\n\n\n--request-separator--"
-  }
-}

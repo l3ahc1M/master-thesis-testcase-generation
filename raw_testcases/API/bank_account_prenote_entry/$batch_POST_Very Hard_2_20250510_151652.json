@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Batch request to create, update, and delete multiple prenote entries in one go, including handling dependencies.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /BankAccountPrenoteEntries HTTP/1.1\nContent-Type: application/json\n\n{\"BankAccountUUID\": \"33333333-abcd-ef01-2345-6789abcdef01\", \"TypeCode\": \"60\", \"Note\": \"New Entry\"}\n\nPATCH /BankAccountPrenoteEntries/44444444-abcd-ef01-2345-6789abcdef01/55555555-abcd-ef01-2345-6789abcdef01 HTTP/1.1\nContent-Type: application/json\n\n{\"AdditionalNote\": \"Updated Info\"}\n\nDELETE /BankAccountPrenoteEntries/66666666-abcd-ef01-2345-6789abcdef01/77777777-abcd-ef01-2345-6789abcdef01 HTTP/1.1\n\n--request-separator--"
-  }
-}

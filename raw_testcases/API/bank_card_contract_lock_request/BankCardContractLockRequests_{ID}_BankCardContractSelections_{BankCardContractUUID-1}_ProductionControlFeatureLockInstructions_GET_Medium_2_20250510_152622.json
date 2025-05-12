@@ -1,8 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "I need to see the production control features for lock request ID 404040 and contract UUID 34567890-bcde-f012-3456-7890bcdef012.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContractLockRequests/404040/BankCardContractSelections/34567890-bcde-f012-3456-7890bcdef012/ProductionControlFeatureLockInstructions"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Send a batch request to propose borrower changes for loan UUIDs 55555555-6666-7777-8888-999999999999 and 66666666-7777-8888-9999-000000000000, incorporating all checklist items and activities.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /ProposedLoanContractBorrowerPartyChangeRequest HTTP/1.1\nContent-Type: application/json\n\n{\"LoanContractUUID\": \"55555555-6666-7777-8888-999999999999\", \"Checklistitems\": [{\"Code\": \"19\", \"Description\": \"Ensure all documents are verified\"}], \"Activities\": [{\"Code\": \"13\"}]}\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /ProposedLoanContractBorrowerPartyChangeRequest HTTP/1.1\nContent-Type: application/json\n\n{\"LoanContractUUID\": \"66666666-7777-8888-9999-000000000000\", \"Checklistitems\": [{\"Code\": \"19\", \"Description\": \"Pending loan contract payoff request existence\"}], \"Activities\": [{\"Code\": \"13\"}]}\n\n--request-separator--"
-  }
-}

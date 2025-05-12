@@ -1,8 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Fetch the status name and validity dates of the prenote entry with UUID 87654321-abcd-ef01-2345-6789abcdef01 and BankAccountUUID 55667788-abcd-ef01-2345-6789abcdef01.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountPrenoteEntries/87654321-abcd-ef01-2345-6789abcdef01/55667788-abcd-ef01-2345-6789abcdef01?$select=LifeCycleStatusName,ValidityStartDate,ValidityEndDate"
-  }
-}

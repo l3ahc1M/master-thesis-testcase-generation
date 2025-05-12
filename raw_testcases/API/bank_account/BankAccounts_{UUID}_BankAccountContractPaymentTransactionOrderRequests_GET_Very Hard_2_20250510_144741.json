@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "I need a detailed list of transaction orders for account UUID 22223333-4444-5555-6666-777788889999, beginning from the 20th entry, with pagination showing 25 items per page.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/22223333-4444-5555-6666-777788889999/BankAccountContractPaymentTransactionOrderRequests?$top=25&$skip=20",
-    "body": {}
-  }
-}

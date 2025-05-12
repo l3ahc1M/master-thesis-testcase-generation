@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Fetch the incoming payment agreements including adjustment indicator for UUID 34567890-1bcd-ef23-4567-890abcdef12.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests/34567890-1bcd-ef23-4567-890abcdef12/IncomingPaymentAgreements?$select=LastPaymentDatePeriodEndAdjustmentIndicator",
-    "body": null
-  }
-}

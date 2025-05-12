@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Get all details including planned final payment and period for incoming payment agreements on UUID 9a0b1c2d-3e4f-5g6h-7i8j-9k0l1m2n3o4p.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests/9a0b1c2d-3e4f-5g6h-7i8j-9k0l1m2n3o4p/IncomingPaymentAgreements?$select=PlannedFinalPaymentAmount,Period",
-    "body": null
-  }
-}

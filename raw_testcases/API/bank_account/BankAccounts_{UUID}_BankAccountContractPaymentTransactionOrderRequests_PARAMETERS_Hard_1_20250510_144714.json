@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Get detailed transaction order requests for bank account UUID 33c56789-e01f-45g5-d678-426614174004, skipping the first 10 entries.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/33c56789-e01f-45g5-d678-426614174004/BankAccountContractPaymentTransactionOrderRequests?$skip=10",
-    "body": {}
-  }
-}

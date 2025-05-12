@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Provide a comprehensive list of prenote entries for the account with UUID 67890123-f012-6789-jklm-012345abcdef, starting from the 50th entry, showing 25 entries.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/67890123-f012-6789-jklm-012345abcdef/BankAccountPrenoteEntries?$top=25&$skip=50",
-    "body": {}
-  }
-}

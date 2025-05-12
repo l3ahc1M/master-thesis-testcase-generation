@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you retrieve the bank account details using the BankAccountContractID 123456?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts",
+    "body": {
+      "BankAccountContractID": "123456"
+    }
+  }
+}

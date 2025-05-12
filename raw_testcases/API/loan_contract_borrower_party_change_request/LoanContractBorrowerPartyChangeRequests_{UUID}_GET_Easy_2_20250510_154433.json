@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Fetch the full details of the borrower party change request with UUID 55555555-6666-7777-8888-999999999999.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractBorrowerPartyChangeRequests/55555555-6666-7777-8888-999999999999",
-    "body": null
-  }
-}

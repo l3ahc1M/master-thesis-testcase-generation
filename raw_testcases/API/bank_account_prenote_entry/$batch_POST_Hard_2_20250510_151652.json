@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Perform a batch operation to create a prenote entry, then immediately retrieve it by UUID.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /BankAccountPrenoteEntries HTTP/1.1\nContent-Type: application/json\n\n{\"BankAccountUUID\": \"77777777-abcd-ef01-2345-6789abcdef01\", \"TypeCode\": \"50\", \"Note\": \"Initial Entry\"}\n\nGET /BankAccountPrenoteEntries?$filter=BankAccountUUID eq '77777777-abcd-ef01-2345-6789abcdef01' HTTP/1.1\n\n--request-separator--"
-  }
-}

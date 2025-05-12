@@ -1,8 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Retrieve bank card contracts for the account holder with ID 310867, but I'm only interested in the contract UUID and the currency code.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContracts?$filter=CardHolderPartyIdentifyingElements/PartyID eq '310867'&$select=BankCardContractUUID,CurrencyCode"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "For the prenote entry with UUID 12345678-abcd-ef01-2345-6789abcdef01 and BankAccountUUID 87654321-abcd-ef01-2345-6789abcdef01, show the UUID, LifeCycleStatusCode, and TypeName.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountPrenoteEntries/12345678-abcd-ef01-2345-6789abcdef01/87654321-abcd-ef01-2345-6789abcdef01?$select=UUID,LifeCycleStatusCode,TypeName"
-  }
-}

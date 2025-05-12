@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "I need a list of all current account cancellation requests.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractCancelRequests",
-    "body": null
-  }
-}

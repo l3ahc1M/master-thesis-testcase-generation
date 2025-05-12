@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "I need to access the bank account information for the UUID 12345678-90ab-cdef-0123-456789abcdef, including its contract details.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/12345678-90ab-cdef-0123-456789abcdef"
+  }
+}

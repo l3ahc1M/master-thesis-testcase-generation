@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Provide a detailed list of prenote entries for account UUID ffffffff-1234-5678-90ab-cdefabcdefab, starting from the 30th, showing 25 entries, and total count.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/ffffffff-1234-5678-90ab-cdefabcdefab/BankAccountPrenoteEntries?$top=25&$skip=30&$count=true",
-    "body": {}
-  }
-}

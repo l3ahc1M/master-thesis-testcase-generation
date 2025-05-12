@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "I need to analyze the event types for lock requests. Please include all specifications associated with these events.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractLockRequestEventSpecifications",
-    "body": {}
-  }
-}

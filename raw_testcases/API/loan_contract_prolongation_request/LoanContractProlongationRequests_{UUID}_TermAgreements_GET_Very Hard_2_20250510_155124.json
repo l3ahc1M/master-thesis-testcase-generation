@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "For UUID 1k2j3h4g-5f6e-7d8c-9b0a-1i2j3k4l5m6n, show a detailed list of term agreements including all attributes.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests/1k2j3h4g-5f6e-7d8c-9b0a-1i2j3k4l5m6n/TermAgreements?$select=ID,CommittedCapitalAmount,BankContractFinancialConditionContextValueCode,BankContractFinancialConditionContextValueName,FixingPeriod",
-    "body": null
-  }
-}

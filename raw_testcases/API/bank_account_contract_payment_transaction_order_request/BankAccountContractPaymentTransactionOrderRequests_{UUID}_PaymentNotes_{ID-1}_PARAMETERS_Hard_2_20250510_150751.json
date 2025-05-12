@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Delete the payment note ID 8 from transaction order UUID 56cd78ef-90gh-12ij-34kl-56mn78op90qr, ensuring no data loss.",
-  "output": {
-    "method": "DELETE",
-    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/56cd78ef-90gh-12ij-34kl-56mn78op90qr/PaymentNotes/8",
-    "body": {}
-  }
-}

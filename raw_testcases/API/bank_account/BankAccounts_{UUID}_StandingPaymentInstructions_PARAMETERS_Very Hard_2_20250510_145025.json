@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "I need a detailed list of standing payment instructions for account UUID 5678abcd-1234-efgh-5678-90abcdef1234, with pagination showing 20 items per page, starting from the 30th.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/5678abcd-1234-efgh-5678-90abcdef1234/StandingPaymentInstructions?$top=20&$skip=30",
-    "body": {}
-  }
-}

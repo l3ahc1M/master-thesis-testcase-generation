@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Retrieve the standing payment instructions for the account UUID 7890abcd-1234-5678-90ef-abcd12345678 and include a count of items.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/7890abcd-1234-5678-90ef-abcd12345678/StandingPaymentInstructions?$count=true",
-    "body": {}
-  }
-}

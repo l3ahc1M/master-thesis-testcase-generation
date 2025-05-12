@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Send a batch of requests for users with IDs 789012 and 234567, focusing on operational management and business process details.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContracts?$filter=CardHolderPartyIdentifyingElements/PartyID eq '789012'&$select=OperationalBankContractManagement,BusinessProcessChainAssignment HTTP/1.1\nAccept: application/json\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContracts?$filter=CardHolderPartyIdentifyingElements/PartyID eq '234567'&$select=OperationalBankContractManagement,BusinessProcessChainAssignment HTTP/1.1\nAccept: application/json\n\n--request-separator--"
-  }
-}

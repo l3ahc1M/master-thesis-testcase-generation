@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Fetch the borrower party change request by UUID 98765432-10fe-dcba-3210-fedcba987654.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractBorrowerPartyChangeRequests/98765432-10fe-dcba-3210-fedcba987654",
-    "body": null
-  }
-}

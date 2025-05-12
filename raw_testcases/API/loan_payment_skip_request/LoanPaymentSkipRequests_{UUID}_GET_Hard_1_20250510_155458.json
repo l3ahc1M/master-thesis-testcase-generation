@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Provide details of the skip request for UUID '123abc45-6789-d0ef-ghij-klmn12345678', along with the activation charge waiver indicator and reasons.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanPaymentSkipRequests/123abc45-6789-d0ef-ghij-klmn12345678?$select=ActivationChargeWaiverRequestedIndicator,ReasonName,CancellationReasonName",
-    "body": {}
-  }
-}

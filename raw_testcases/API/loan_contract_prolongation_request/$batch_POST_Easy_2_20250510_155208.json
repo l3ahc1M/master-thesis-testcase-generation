@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Can you perform a batch operation to fetch the IDs of all prolongation requests?",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /LoanContractProlongationRequests?$select=ID HTTP/1.1\nAccept: application/json\n\n--request-separator--"
-  }
-}

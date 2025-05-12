@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Get a comprehensive view of the cancellation request with UUID 33445566-7788-99aa-bbcc-ddeeff112233, focusing on the settlement summaries and financial details.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractCancelRequests/33445566-7788-99aa-bbcc-ddeeff112233?$expand=BankAccountSettlementSummaries&$select=UUID,CancellationChargeAmount,ResidualBankAccountBalanceAmount",
-    "body": null
-  }
-}

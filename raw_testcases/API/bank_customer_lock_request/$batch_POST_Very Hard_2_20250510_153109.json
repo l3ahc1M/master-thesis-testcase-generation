@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Perform a batch operation to create, update, and retrieve complex lock requests with multiple conditions.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPOST /BankCustomerLockRequests HTTP/1.1\nContent-Type: application/json\n\n{\"PartyIdentifyingElements\":{\"PartyUUID\":\"23456789-01ab-cdef-0123-456789abcdef\"},\"EventCode\":\"108000\",\"UserStatusCode\":\"3\",\"ValidityStartDate\":\"2023-10-17\",\"ValidityEndDate\":\"2024-12-31\",\"BankAccountContracts\":[{\"UUID\":\"abcdef12-3456-7890-abcd-ef1234567890\",\"TypeCode\":\"874\",\"SubTypeCode\":\"1\"}],\"Note\":\"Complex lock involving multiple contracts.\"}\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPATCH /BankCustomerLockRequests/720 HTTP/1.1\nContent-Type: application/json\n\n{\"UserStatusCode\":\"5\",\"BusinessProcessChainAssignment\":{\"BusinessProcessChainUUID\":\"87654321-12ab-cdef-0123-456789abcdef\"}}\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCustomerLockRequests/910?$expand=BankAccountEntryLockInstructions HTTP/1.1\nAccept: application/json\n\n--request-separator--"
-  }
-}

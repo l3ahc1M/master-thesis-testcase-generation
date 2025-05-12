@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Retrieve comprehensive information including UUID, internal ID, currency code, and the bank account contract ID for the bank account with UUID 78901234-56f1-7890-1abc-def234567890.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/78901234-56f1-7890-1abc-def234567890?$select=UUID,InternalID,CurrencyCode,BankAccountContractID",
-    "body": {}
-  }
-}

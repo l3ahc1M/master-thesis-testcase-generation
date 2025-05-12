@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Can you show me all the bank account contract cancellation requests?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractCancelRequests",
-    "body": null
-  }
-}

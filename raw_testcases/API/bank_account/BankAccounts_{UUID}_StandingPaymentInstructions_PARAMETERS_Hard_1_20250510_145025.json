@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "List the standing payment instructions for the account with UUID abcd1234-5678-90ab-cdef-1234567890ef, skipping the first 10.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/abcd1234-5678-90ab-cdef-1234567890ef/StandingPaymentInstructions?$skip=10",
-    "body": {}
-  }
-}

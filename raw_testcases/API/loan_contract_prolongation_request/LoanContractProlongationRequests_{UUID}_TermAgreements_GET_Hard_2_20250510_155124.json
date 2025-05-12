@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Fetch all term agreement details including context value codes for the prolongation request with UUID 6m5n4o3p-2q1r-0s9t-8u7v-6w5x4y3z2a1b.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests/6m5n4o3p-2q1r-0s9t-8u7v-6w5x4y3z2a1b/TermAgreements?$select=BankContractFinancialConditionContextValueCode,BankContractFinancialConditionContextValueName",
-    "body": null
-  }
-}

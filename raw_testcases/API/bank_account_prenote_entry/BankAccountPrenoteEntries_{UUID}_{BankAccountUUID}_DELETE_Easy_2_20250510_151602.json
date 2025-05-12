@@ -1,8 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Remove the prenote entry identified by UUID 23456789-bbbb-cccc-dddd-234567890123 and BankAccountUUID 34567890-bbbb-cccc-dddd-234567890123.",
-  "output": {
-    "method": "DELETE",
-    "endpoint": "/BankAccountPrenoteEntries/23456789-bbbb-cccc-dddd-234567890123/34567890-bbbb-cccc-dddd-234567890123"
-  }
-}

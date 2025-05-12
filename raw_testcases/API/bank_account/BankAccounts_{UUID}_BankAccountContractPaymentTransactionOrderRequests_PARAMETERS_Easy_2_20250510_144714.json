@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "I need to see the transaction order requests linked to the bank account UUID 987e6543-e21b-34d5-c678-426614174001.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/987e6543-e21b-34d5-c678-426614174001/BankAccountContractPaymentTransactionOrderRequests",
-    "body": {}
-  }
-}

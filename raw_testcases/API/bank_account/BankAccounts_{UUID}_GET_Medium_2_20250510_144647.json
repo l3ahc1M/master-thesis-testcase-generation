@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Could you fetch the internal ID and bank routing ID for the bank account identified by UUID 45678901-23de-f345-6789-0abcdef12345?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/45678901-23de-f345-6789-0abcdef12345?$select=InternalID,BankRoutingID",
-    "body": {}
-  }
-}

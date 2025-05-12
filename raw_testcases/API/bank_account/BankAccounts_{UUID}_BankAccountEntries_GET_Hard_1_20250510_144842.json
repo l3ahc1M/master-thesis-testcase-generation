@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "List the first 15 entries for the account with UUID a1b2c3d4-e5f6-7890-abcd-ef0123456789 and include a total count.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/a1b2c3d4-e5f6-7890-abcd-ef0123456789/BankAccountEntries?$top=15&$count=true",
-    "body": {}
-  }
-}

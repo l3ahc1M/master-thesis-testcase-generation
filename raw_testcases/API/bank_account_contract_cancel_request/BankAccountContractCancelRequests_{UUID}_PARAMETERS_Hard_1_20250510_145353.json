@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "I need to know the cancellation date and the residual balance amount for the request with UUID 55556666-7777-8888-9999-000011112222.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractCancelRequests/55556666-7777-8888-9999-000011112222?$select=CancellationDate,ResidualBankAccountBalanceAmount",
-    "body": null
-  }
-}

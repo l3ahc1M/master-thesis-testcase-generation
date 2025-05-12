@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Remove the prenote entry with UUID 76543210-abcd-ef01-2345-6789abcdef01 for BankAccountUUID 09876543-abcd-ef01-2345-6789abcdef01 and ensure all related notes are also deleted.",
-  "output": {
-    "method": "DELETE",
-    "endpoint": "/BankAccountPrenoteEntries/76543210-abcd-ef01-2345-6789abcdef01/09876543-abcd-ef01-2345-6789abcdef01?$expand=PaymentNotes"
-  }
-}

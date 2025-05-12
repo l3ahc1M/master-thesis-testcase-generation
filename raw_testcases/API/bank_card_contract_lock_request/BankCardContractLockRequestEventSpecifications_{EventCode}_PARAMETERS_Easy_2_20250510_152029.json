@@ -1,8 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "I need to read the specifications for event code 302000.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContractLockRequestEventSpecifications/302000"
-  }
-}

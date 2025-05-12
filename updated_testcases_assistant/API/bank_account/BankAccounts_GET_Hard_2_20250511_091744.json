@@ -1,0 +1,12 @@
+{
+    "difficulty": "Hard",
+    "input": "Please give me the UUID for the bank account that has the internal ID D4E088A52D5B1ED8BEE3FA163E6B7DE1 and is in US dollars.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccounts",
+        "body": {
+            "InternalID": "D4E088A52D5B1ED8BEE3FA163E6B7DE1",
+            "CurrencyCode": "USD"
+        }
+    }
+}

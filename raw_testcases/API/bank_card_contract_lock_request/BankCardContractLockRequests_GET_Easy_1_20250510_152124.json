@@ -1,8 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Can you show me all the bank card contract lock requests?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContractLockRequests"
-  }
-}

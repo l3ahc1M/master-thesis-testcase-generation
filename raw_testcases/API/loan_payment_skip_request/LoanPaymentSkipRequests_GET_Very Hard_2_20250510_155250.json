@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Get the loan payment skip requests with 'Customer Request' as the reason, and select all properties for those with UUID '01234567-89ab-cdef-0123-456789abcdef'.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanPaymentSkipRequests?$filter=ReasonName eq 'Customer Request' and UUID eq '01234567-89ab-cdef-0123-456789abcdef'&$expand=*",
-    "body": {}
-  }
-}

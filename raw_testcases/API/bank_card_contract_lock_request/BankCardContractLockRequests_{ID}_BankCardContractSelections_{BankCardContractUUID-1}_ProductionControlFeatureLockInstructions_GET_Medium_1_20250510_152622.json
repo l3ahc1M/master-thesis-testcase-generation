@@ -1,8 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Retrieve the lock instructions for my bank card contract associated with lock request ID 303030 and contract UUID 23456789-abcd-ef01-2345-6789abcdef01.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContractLockRequests/303030/BankCardContractSelections/23456789-abcd-ef01-2345-6789abcdef01/ProductionControlFeatureLockInstructions"
-  }
-}

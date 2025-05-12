@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Initiate a batch request to retrieve all details for borrower change requests with UUIDs aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee and bbbbbbbb-cccc-dddd-eeee-ffffffffffff, ensuring to include all fields.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /LoanContractBorrowerPartyChangeRequests/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee?$select=UUID,ID,LoanContractUUID,ChangeStateID,LifeCycleStatusCode,LifeCycleStatusName,ReasonCode,ReasonName,BusinessProcessChainAssignment,NewBorrowerPartyIdentifyingElements,FormerBorrowerPartyIdentifyingElements,NewClearingBankAccountContractUUID,ChargeWaiverRequestedIndicator,CompletionDate,Activities HTTP/1.1\nAccept: application/json\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /LoanContractBorrowerPartyChangeRequests/bbbbbbbb-cccc-dddd-eeee-ffffffffffff?$select=UUID,ID,LoanContractUUID,ChangeStateID,LifeCycleStatusCode,LifeCycleStatusName,ReasonCode,ReasonName,BusinessProcessChainAssignment,NewBorrowerPartyIdentifyingElements,FormerBorrowerPartyIdentifyingElements,NewClearingBankAccountContractUUID,ChargeWaiverRequestedIndicator,CompletionDate,Activities HTTP/1.1\nAccept: application/json\n\n--request-separator--"
-  }
-}

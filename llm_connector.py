@@ -1,10 +1,26 @@
 import openai
 import time
 
-class OpenAIAssistantConnector:
+
+class OpenAIConnector:
     def __init__(self):
         self.api_key = "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"
         openai.api_key = self.api_key
+        self.temperature = 0.0
+
+    def query_without_file(self, system_prompt, user_prompt, model="gpt-4o-mini"):
+        try:
+            response = openai.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ],
+            temperature=self.temperature,
+            )
+            return response.choices[0].message.content
+        except Exception as e:
+            raise RuntimeError(f"Failed to query completion API: {e}")
 
     def query_with_file(self, system_prompt, user_prompt, file_path, model="gpt-40-mini"):
         try:
@@ -34,7 +50,7 @@ class OpenAIAssistantConnector:
             run = openai.beta.threads.runs.create(
                 thread_id=thread.id,
                 assistant_id=assistant.id,
-                temperature=0
+                temperature=self.temperature
             )
 
             # Wait for run to complete

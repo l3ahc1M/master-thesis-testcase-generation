@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Please provide the UUID, standard ID, and bank routing ID for the account with this UUID: 01234567-89ab-cdef-0123-456789abcdef.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/01234567-89ab-cdef-0123-456789abcdef?$select=UUID,StandardID,BankRoutingID",
-    "body": {}
-  }
-}

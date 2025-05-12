@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Retrieve transaction orders for the bank account with UUID 11b34567-c89d-23f3-b456-426614174002, showing only the first 5 entries.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/11b34567-c89d-23f3-b456-426614174002/BankAccountContractPaymentTransactionOrderRequests?$top=5",
-    "body": {}
-  }
-}

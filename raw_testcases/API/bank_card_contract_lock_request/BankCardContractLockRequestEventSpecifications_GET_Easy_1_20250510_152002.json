@@ -1,8 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Can you list all the available bank card lock request event specifications for me?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContractLockRequestEventSpecifications"
-  }
-}

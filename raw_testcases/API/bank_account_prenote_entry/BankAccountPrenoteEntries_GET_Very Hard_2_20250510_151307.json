@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Get prenote entries for bank account UUID 123e4567-e89b-12d3-a456-426614174000, select the ones with a debit indicator set to true, and expand their notes.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountPrenoteEntries?$filter=BankAccountUUID eq '123e4567-e89b-12d3-a456-426614174000' and BankAccountDebitIndicator eq true&$expand=PaymentNotes"
-  }
-}

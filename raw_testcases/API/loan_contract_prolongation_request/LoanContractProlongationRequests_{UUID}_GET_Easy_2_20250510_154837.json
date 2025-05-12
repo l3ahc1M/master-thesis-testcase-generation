@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "I'd like to see the activation charge amount for the request identified by UUID 9a5b7c8d-e9f0-4b1a-bc5d-3f7a8a9b0c7d.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests/9a5b7c8d-e9f0-4b1a-bc5d-3f7a8a9b0c7d?$select=ActivationChargeAmount",
-    "body": null
-  }
-}

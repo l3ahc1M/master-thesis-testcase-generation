@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "I need to see skip requests for loan payments. Can you help?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanPaymentSkipRequests",
-    "body": {}
-  }
-}

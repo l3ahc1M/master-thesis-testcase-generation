@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "List detailed information including UUID, internal ID, currency code, and bank country code for the account with UUID 01234567-89ab-cdef-0123-456789abcdef.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/01234567-89ab-cdef-0123-456789abcdef?$select=UUID,InternalID,CurrencyCode,BankCountryCode",
-    "body": {}
-  }
-}

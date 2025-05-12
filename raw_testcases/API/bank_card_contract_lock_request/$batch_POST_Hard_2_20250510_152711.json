@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Batch multiple requests to fetch lock event specifications and update user status and notes.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContractLockRequestEventSpecifications?$select=EventCode,EventName HTTP/1.1\nAccept: application/json\n\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPATCH /BankCardContractLockRequests/343434 HTTP/1.1\nContent-Type: application/json\n\n{\"UserStatusCode\": \"2\", \"Note\": \"Status and note updated.\"}\n\n\n--request-separator--"
-  }
-}

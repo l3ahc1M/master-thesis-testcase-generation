@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Delete the note with ID 2 from the payment transaction identified by UUID 9a8b7c6d-5e4f-3210-a1b2-3c4d5e6f7g8h.",
-  "output": {
-    "method": "DELETE",
-    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/9a8b7c6d-5e4f-3210-a1b2-3c4d5e6f7g8h/PaymentNotes/2",
-    "body": {}
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Batch request to update multiple fields on two different prenote entries and retrieve the updated details.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nPATCH /BankAccountPrenoteEntries/88888888-abcd-ef01-2345-6789abcdef01/99999999-abcd-ef01-2345-6789abcdef01 HTTP/1.1\nContent-Type: application/json\n\n{\"Note\": \"Revised Note\", \"AdditionalNote\": \"Quick Update\"}\n\nGET /BankAccountPrenoteEntries/88888888-abcd-ef01-2345-6789abcdef01/99999999-abcd-ef01-2345-6789abcdef01 HTTP/1.1\n\nPATCH /BankAccountPrenoteEntries/11111111-abcd-ef01-2345-6789abcdef01/22222222-abcd-ef01-2345-6789abcdef01 HTTP/1.1\nContent-Type: application/json\n\n{\"MaterialCheckNote\": \"Completed\", \"ValidityEndDate\": \"2026-01-01\"}\n\nGET /BankAccountPrenoteEntries/11111111-abcd-ef01-2345-6789abcdef01/22222222-abcd-ef01-2345-6789abcdef01 HTTP/1.1\n\n--request-separator--"
-  }
-}

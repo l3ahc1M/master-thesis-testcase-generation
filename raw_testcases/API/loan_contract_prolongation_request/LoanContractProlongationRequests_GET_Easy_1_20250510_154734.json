@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Show me all the loan contract prolongation requests.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests",
-    "body": null
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Provide a list of bank accounts filtered by account number '0010000707', including their UUID and all associated standing payment instructions.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts?$filter=ID eq '0010000707'&$select=UUID,StandingPaymentInstructions",
-    "body": {}
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Retrieve the first 5 entries for the bank account with UUID 66666666-gggg-hhhh-iiii-777777777777.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/66666666-gggg-hhhh-iiii-777777777777/BankAccountEntries?$top=5",
-    "body": {}
-  }
-}

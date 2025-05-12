@@ -1,8 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Show me all bank card contracts for the user with ID 310867.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContracts?$filter=CardHolderPartyIdentifyingElements/PartyID eq '310867'"
-  }
-}

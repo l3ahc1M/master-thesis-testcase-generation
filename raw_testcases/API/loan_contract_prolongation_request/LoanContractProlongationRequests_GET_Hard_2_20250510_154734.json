@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Get all prolongation requests and show me the planned and actual balance amounts.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/LoanContractProlongationRequests?$select=LoanContractPaymentPlanPlannedBalanceAmount,LoanContractPaymentPlanActualBalanceAmount",
-    "body": null
-  }
-}

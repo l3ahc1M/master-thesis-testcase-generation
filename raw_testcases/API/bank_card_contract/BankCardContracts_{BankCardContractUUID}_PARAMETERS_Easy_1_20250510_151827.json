@@ -1,8 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Show me the details of a bank card contract with UUID 01234567-89ab-cdef-0123-456789abcdef.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContracts/01234567-89ab-cdef-0123-456789abcdef"
-  }
-}

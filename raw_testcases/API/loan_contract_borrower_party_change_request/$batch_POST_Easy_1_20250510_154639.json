@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Can you execute a batch request to get all borrower party change requests with status code 3?",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /LoanContractBorrowerPartyChangeRequests?$filter=LifeCycleStatusCode eq '3' HTTP/1.1\nAccept: application/json\n\n--request-separator--"
-  }
-}

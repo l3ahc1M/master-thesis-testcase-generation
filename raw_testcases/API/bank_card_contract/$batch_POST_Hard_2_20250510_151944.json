@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Prepare a batch request for multiple contracts focusing on payment card sequence and character details for UUIDs 11223344-5566-7788-99aa-bbccddeeff00 and 55667788-99aa-bbcc-ddee-ff1122334455.",
-  "output": {
-    "method": "POST",
-    "endpoint": "/$batch",
-    "body": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContracts/11223344-5566-7788-99aa-bbccddeeff00?$select=PaymentCardSequenceID,PaymentCardCharacterName HTTP/1.1\nAccept: application/json\n\n--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET /BankCardContracts/55667788-99aa-bbcc-ddee-ff1122334455?$select=PaymentCardSequenceID,PaymentCardCharacterName HTTP/1.1\nAccept: application/json\n\n--request-separator--"
-  }
-}

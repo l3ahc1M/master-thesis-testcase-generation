@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Can you provide the details of the cancellation request for UUID 22223333-4444-5555-6666-777788889999?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractCancelRequests/22223333-4444-5555-6666-777788889999",
-    "body": null
-  }
-}

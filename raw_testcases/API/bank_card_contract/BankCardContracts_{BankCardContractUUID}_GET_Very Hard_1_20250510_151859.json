@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Provide an exhaustive list of details for the bank card contract UUID 44556677-8899-aabb-ccdd-eeff11223344, especially focusing on system administrative data and usage notes.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankCardContracts/44556677-8899-aabb-ccdd-eeff11223344?$select=BankCardContractUUID,ID,CurrencyCode,PaymentCardTypeCode,PaymentCardTypeName,PaymentCardID,PaymentCardSequenceID,PaymentCardValidFrom,PaymentCardValidTo,PaymentCardCharacterCode,PaymentCardCharacterName,FirstPaymentCardUUID,AdditionalPaymentCardIndicator,PaymentCardLifeCycleStatusCode,PaymentCardLifeCycleStatusName,PaymentCardRenewalStatusCode,PaymentCardRenewalStatusName,CancellationDate,BankAccount,UsageNote,SystemAdministrativeData,CardHolderPartyIdentifyingElements,ProductControl,OperationalBankContractManagement,BusinessProcessChainAssignment,ChangeStateID"
-  }
-}

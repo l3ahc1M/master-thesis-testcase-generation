@@ -1,0 +1,11 @@
+{
+    "difficulty": "Easy",
+    "input": "Can you show me the bank account details for the account with the number 0010000707?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccounts",
+        "body": {
+            "ID": "0010000707"
+        }
+    }
+}
