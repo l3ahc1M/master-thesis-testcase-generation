@@ -1,0 +1,11 @@
+{
+    "difficulty": "Easy",
+    "input": "Can you tell me the UUID for the bank account that has the Standard ID DE65904199170010000707?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccounts",
+        "body": {
+            "StandardID": "DE65904199170010000707"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Get all account holder change requests that have a charge waiver requested and were initiated in the last quarter.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+    "body": {
+      "ChargeWaiverRequestedIndicator": true,
+      "InitiationDate": "2023-07-01 to 2023-09-30"
+    }
+  }
+}

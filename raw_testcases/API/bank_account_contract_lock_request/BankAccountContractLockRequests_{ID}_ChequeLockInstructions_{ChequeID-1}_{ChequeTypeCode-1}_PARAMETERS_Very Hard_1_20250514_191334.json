@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Can you fetch the complete set of cheque lock instructions for the bank account contract lock request with ID 4841, including all relevant details and any associated notes?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequests/4841/ChequeLockInstructions/1"
+  }
+}

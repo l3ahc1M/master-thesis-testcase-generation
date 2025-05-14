@@ -1,8 +1,0 @@
-{
-    "difficulty": "Very Hard",
-    "input": "I would like to get the bank account details for the user with the ID 56789012-90ab-cdef-0123-456789abcdef, along with all associated entries.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccounts/56789012-90ab-cdef-0123-456789abcdef"
-    }
-}

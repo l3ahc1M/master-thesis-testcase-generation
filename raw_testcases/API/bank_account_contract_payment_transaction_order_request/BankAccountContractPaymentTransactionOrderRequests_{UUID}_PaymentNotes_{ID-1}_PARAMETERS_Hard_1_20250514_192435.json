@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "Please add a detailed note regarding the sender's verification process to the payment transaction order request with UUID 98765432-10ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/98765432-10ab-cdef-0123-456789abcdef/PaymentNotes/3",
+    "body": {
+      "PaymentNotes": [
+        "Sender verification completed successfully on 2023-01-05."
+      ]
+    }
+  }
+}

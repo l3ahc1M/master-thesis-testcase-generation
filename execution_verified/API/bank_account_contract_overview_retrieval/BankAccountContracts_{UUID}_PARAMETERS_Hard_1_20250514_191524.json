@@ -1,0 +1,8 @@
+{
+    "difficulty": "Hard",
+    "input": "Can you give me a summary of all the bank account contracts for the party with the ID 456e7890-e12b-34d5-a456-426614174014? I'm particularly interested in the savings and time deposit contracts.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContracts/456e7890-e12b-34d5-a456-426614174014"
+    }
+}

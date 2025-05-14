@@ -1,0 +1,8 @@
+{
+    "difficulty": "Medium",
+    "input": "Can you show me all the bank account contracts for the account holder with the ID 222e3333-e44b-55d6-a456-426614174005? I’d like to see both current and savings accounts, please.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/AccountHolderPartyIdfgElmnts/222e3333-e44b-55d6-a456-426614174005/BankAccountContracts"
+    }
+}

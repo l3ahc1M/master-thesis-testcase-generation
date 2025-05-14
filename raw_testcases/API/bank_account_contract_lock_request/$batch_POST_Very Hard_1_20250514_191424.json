@@ -1,0 +1,26 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Please create a batch request to lock multiple features and update existing lock requests with detailed notes.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": [
+      {
+        "BankAccountContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+        "EventCode": "4845",
+        "EventName": "Cheque Lock Request",
+        "UserStatusCode": "2",
+        "UserStatusName": "Active",
+        "ValidityStartDate": "2023-10-01",
+        "ValidityEndDate": "2024-01-01",
+        "Note": "Lock requested for cheque transactions."
+      },
+      {
+        "ID": "2019-07-13T13:34:46Z",
+        "EventName": "Updated Lock Request",
+        "Note": "Updated due to recent account changes.",
+        "ValidityEndDate": "2024-02-01"
+      }
+    ]
+  }
+}

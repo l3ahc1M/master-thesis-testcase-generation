@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I want to see all bank account contracts for the account holder with UUID 444e5555-e66b-77d8-a456-426614174023, including current, savings, and time deposit contracts.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContracts/444e5555-e66b-77d8-a456-426614174023"
+  }
+}

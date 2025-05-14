@@ -1,8 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Could you share the bank account details for the user with the ID 34567890-90ab-cdef-0123-456789abcdef?",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccounts/34567890-90ab-cdef-0123-456789abcdef"
-    }
-}

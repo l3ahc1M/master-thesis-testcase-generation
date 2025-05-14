@@ -1,0 +1,8 @@
+{
+    "difficulty": "Easy",
+    "input": "Can you show me the instructions for locking the currency amount for the lock request with the ID of 105?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractLockRequests/105/BankAccountCurrencyAmountLockInstructions/1"
+    }
+}

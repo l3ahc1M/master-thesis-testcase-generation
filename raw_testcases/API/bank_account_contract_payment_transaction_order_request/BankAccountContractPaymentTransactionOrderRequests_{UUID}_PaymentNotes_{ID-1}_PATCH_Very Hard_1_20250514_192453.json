@@ -1,0 +1,13 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Please modify the note for the payment transaction order request with UUID 11111111-2222-3333-4444-555555555555 to provide a detailed account of the transaction process and any issues encountered.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/11111111-2222-3333-4444-555555555555/PaymentNotes/4",
+    "body": {
+      "PaymentNotes": [
+        "Transaction processed on 2023-01-05. Encountered issues with recipient verification, currently under review."
+      ]
+    }
+  }
+}

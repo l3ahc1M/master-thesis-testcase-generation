@@ -1,0 +1,8 @@
+{
+    "difficulty": "Very Hard",
+    "input": "Can you get me all the payment transaction order requests for the bank account with the ID abcdef12-3456-7890-abcd-ef1234567890, making sure to include all the details?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccounts/abcdef12-3456-7890-abcd-ef1234567890/BankAccountContractPaymentTransactionOrderRequests"
+    }
+}

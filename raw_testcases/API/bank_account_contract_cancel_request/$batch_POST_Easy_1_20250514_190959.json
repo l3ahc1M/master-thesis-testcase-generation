@@ -1,0 +1,33 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you batch process my cancellation requests for my current and savings accounts?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/BankAccountContractCancelRequests",
+          "body": {
+            "ImmediateCompletionRequiredIndicator": true,
+            "ReasonCode": "101",
+            "ReasonName": "Customer Request",
+            "BankAccountContractUUID": "01234567-89ab-cdef-0123-456789abcdef"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/BankAccountContractCancelRequests",
+          "body": {
+            "ImmediateCompletionRequiredIndicator": false,
+            "PlannedCompletionDate": "2023-12-01",
+            "ReasonCode": "102",
+            "ReasonName": "Financial Reasons",
+            "BankAccountContractUUID": "abcdef01-2345-6789-abcd-ef0123456789"
+          }
+        }
+      ]
+    }
+  }
+}

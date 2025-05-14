@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "I need to retrieve the payment transaction order request with ID 0001-123456.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/0001-123456"
+  }
+}

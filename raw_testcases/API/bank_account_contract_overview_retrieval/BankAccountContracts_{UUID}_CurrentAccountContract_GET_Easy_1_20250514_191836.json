@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you show me the current account contract details for the bank account with UUID 555e6666-e77b-88d9-a456-426614174008?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContracts/555e6666-e77b-88d9-a456-426614174008/CurrentAccountContract"
+  }
+}

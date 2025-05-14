@@ -1,0 +1,9 @@
+{
+    "difficulty": "Easy",
+    "input": "Can you provide me with the details of my request to cancel my bank account?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractCancelRequests",
+        "body": {}
+    }
+}

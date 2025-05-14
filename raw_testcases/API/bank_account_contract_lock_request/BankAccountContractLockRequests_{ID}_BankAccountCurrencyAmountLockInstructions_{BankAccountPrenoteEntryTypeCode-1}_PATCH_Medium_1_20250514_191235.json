@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you help me modify the currency amount lock instructions for the bank account contract lock request with ID 2019-07-13T13:34:46Z?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/2019-07-13T13:34:46Z/BankAccountCurrencyAmountLockInstructions/1",
+    "body": {
+      "CurrencyAmount": 10000,
+      "Instruction": "Adjust lock amount due to account review."
+    }
+  }
+}

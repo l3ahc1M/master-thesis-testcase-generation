@@ -1,0 +1,15 @@
+{
+    "difficulty": "Medium",
+    "input": "Can you help me submit a cancellation request for my savings account, and I’d like it to be completed by December 1st, 2023?",
+    "output": {
+        "method": "POST",
+        "endpoint": "/BankAccountContractCancelRequests",
+        "body": {
+            "ImmediateCompletionRequiredIndicator": false,
+            "PlannedCompletionDate": "2023-12-01",
+            "ReasonCode": "102",
+            "ReasonName": "Financial Reasons",
+            "BankAccountContractUUID": "abcdef01-2345-6789-abcd-ef0123456789"
+        }
+    }
+}

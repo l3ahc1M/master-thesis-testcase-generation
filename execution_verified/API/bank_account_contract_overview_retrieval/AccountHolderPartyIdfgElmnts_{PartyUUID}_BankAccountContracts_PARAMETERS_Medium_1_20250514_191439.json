@@ -1,0 +1,8 @@
+{
+    "difficulty": "Medium",
+    "input": "I need to get all the current account contracts for the party with the ID 987e6543-e21b-43d2-a456-426614174001.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/AccountHolderPartyIdfgElmnts/987e6543-e21b-43d2-a456-426614174001/BankAccountContracts"
+    }
+}

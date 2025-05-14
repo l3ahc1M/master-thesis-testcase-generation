@@ -1,0 +1,8 @@
+{
+    "difficulty": "Very Hard",
+    "input": "I would like to view all the cancellation requests for the bank account contract with the ID 444e5555-e66b-77d8-a456-426614174007, along with detailed information about each request.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContracts/444e5555-e66b-77d8-a456-426614174007/BankAccountContractCancelRequests"
+    }
+}

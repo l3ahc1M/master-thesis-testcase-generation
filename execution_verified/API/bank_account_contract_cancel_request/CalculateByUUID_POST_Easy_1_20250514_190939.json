@@ -1,0 +1,11 @@
+{
+    "difficulty": "Easy",
+    "input": "Can you help me figure out the financial results for my bank account contract using its unique identifier?",
+    "output": {
+        "method": "POST",
+        "endpoint": "/CalculateByUUID",
+        "body": {
+            "BankAccountContractUUID": "abcdef01-2345-6789-abcd-ef0123456789"
+        }
+    }
+}

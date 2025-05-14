@@ -1,0 +1,8 @@
+{
+    "difficulty": "Very Hard",
+    "input": "Can you get me the details of the change request for the user with the ID 321e0987-e34b-12d3-a456-426614174003 and check if a charge waiver was applied?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractAccountHolderChangeRequests/321e0987-e34b-12d3-a456-426614174003"
+    }
+}

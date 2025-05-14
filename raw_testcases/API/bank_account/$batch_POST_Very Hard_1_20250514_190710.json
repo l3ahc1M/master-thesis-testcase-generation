@@ -1,0 +1,33 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Retrieve the UUIDs for bank accounts with multiple identifiers: ID 0010000707, Standard ID DE65904199170010000707, and Bank Account Contract ID ABC123 in a single batch request.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "GET",
+          "url": "/BankAccounts",
+          "body": {
+            "ID": "0010000707"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "/BankAccounts",
+          "body": {
+            "StandardID": "DE65904199170010000707"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "/BankAccounts",
+          "body": {
+            "BankAccountContractID": "ABC123"
+          }
+        }
+      ]
+    }
+  }
+}

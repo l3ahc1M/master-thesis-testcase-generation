@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Retrieve the change request details for the UUID fedcba98-7654-3210-fedc-ba9876543210 and check if a charge waiver was requested.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests/fedcba98-7654-3210-fedc-ba9876543210"
+  }
+}

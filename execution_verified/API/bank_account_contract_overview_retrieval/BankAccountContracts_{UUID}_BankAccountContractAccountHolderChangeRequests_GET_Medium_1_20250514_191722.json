@@ -1,0 +1,8 @@
+{
+    "difficulty": "Medium",
+    "input": "I want to get the requests for changes made by the account holder for the bank account contract with the ID 234e5678-f90c-23d4-b567-426614174021.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContracts/234e5678-f90c-23d4-b567-426614174021/BankAccountContractAccountHolderChangeRequests"
+    }
+}

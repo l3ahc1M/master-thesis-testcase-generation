@@ -1,0 +1,13 @@
+{
+    "difficulty": "Medium",
+    "input": "Can you help me submit a cheque lock instruction for the lock request that has the ID of 2019-07-13T13:34:46Z?",
+    "output": {
+        "method": "POST",
+        "endpoint": "/BankAccountContractLockRequests/2019-07-13T13:34:46Z/ChequeLockInstructions",
+        "body": {
+            "Instruction": "Prevent all cheque payments due to account review.",
+            "ValidityStartDate": "2023-10-01",
+            "ValidityEndDate": "2024-01-01"
+        }
+    }
+}

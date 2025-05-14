@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I want to see all bank account contracts for the party with UUID 321e0987-e45b-67d8-a456-426614174003, specifically focusing on savings and time deposit contracts.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/AccountHolderPartyIdfgElmnts/321e0987-e45b-67d8-a456-426614174003/BankAccountContracts"
+  }
+}

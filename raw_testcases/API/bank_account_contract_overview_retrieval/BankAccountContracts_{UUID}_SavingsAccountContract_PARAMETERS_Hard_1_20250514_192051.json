@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "Please provide the savings account contract details for the bank account with UUID 333e4444-e55b-66d7-a456-426614174006, including any relevant terms and conditions.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContracts/333e4444-e55b-66d7-a456-426614174006/SavingsAccountContract"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "Please provide the detailed cheque lock instructions for the lock request with UUID 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequests/01234567-89ab-cdef-0123-456789abcdef/ChequeLockInstructions"
+  }
+}

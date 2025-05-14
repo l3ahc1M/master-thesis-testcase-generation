@@ -1,0 +1,8 @@
+{
+    "difficulty": "Medium",
+    "input": "Can you get me the details of the lock request with the ID 105 and include any notes that go along with it?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractLockRequests/105"
+    }
+}

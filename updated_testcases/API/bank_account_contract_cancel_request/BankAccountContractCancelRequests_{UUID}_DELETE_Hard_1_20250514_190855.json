@@ -1,0 +1,9 @@
+{
+    "difficulty": "Hard",
+    "input": "I need to cancel my earlier cancellation request. Can you please delete it for the user with the id 12345678-90ab-cdef-1234-567890abcdef?",
+    "output": {
+        "method": "DELETE",
+        "endpoint": "/BankAccountContractCancelRequests/12345678-90ab-cdef-1234-567890abcdef",
+        "body": {}
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to retrieve the UUID for the bank account with the Bank Account Contract ID ABC123 and the currency set to USD.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts",
+    "body": {
+      "BankAccountContractID": "ABC123",
+      "CurrencyCode": "USD"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you show me the details of the account holder change requests?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests"
+  }
+}

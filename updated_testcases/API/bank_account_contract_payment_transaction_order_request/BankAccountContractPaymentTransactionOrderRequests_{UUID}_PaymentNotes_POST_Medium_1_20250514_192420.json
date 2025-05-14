@@ -1,0 +1,13 @@
+{
+    "difficulty": "Medium",
+    "input": "Could you add a note about the status of the transaction to the payment transaction order request with the ID abcdef01-2345-6789-abcd-ef0123456789?",
+    "output": {
+        "method": "POST",
+        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/abcdef01-2345-6789-abcd-ef0123456789/PaymentNotes",
+        "body": {
+            "PaymentNotes": [
+                "Transaction is under review."
+            ]
+        }
+    }
+}

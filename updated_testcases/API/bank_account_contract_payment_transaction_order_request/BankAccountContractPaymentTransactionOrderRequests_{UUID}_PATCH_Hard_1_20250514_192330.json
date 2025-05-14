@@ -1,0 +1,12 @@
+{
+    "difficulty": "Hard",
+    "input": "Please update the payment transaction order request with the ID abcdef01-2345-6789-abcd-ef0123456789 to turn off material checks and change the transaction amount to 750 dollars.",
+    "output": {
+        "method": "PATCH",
+        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/abcdef01-2345-6789-abcd-ef0123456789",
+        "body": {
+            "MaterialChecksDeactivationRequestedIndicator": true,
+            "TransactionCurrencyAmount": "750.00"
+        }
+    }
+}

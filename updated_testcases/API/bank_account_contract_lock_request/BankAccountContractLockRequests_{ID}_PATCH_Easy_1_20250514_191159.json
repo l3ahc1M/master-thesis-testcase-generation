@@ -1,0 +1,11 @@
+{
+    "difficulty": "Easy",
+    "input": "I want to change the note for my lock request that has the ID 105.",
+    "output": {
+        "method": "PATCH",
+        "endpoint": "/BankAccountContractLockRequests/105",
+        "body": {
+            "Note": "Updated note: Customer requested to change the lock reason."
+        }
+    }
+}

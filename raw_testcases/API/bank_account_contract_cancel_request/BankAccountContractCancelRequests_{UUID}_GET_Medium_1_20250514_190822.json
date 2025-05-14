@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "I would like to check the status of my cancellation request. Can you retrieve it using the UUID?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractCancelRequests/12345678-90ab-cdef-1234-567890abcdef",
+    "body": {}
+  }
+}

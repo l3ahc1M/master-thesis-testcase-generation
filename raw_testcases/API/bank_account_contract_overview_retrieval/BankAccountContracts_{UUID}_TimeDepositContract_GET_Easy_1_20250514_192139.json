@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you show me the time deposit contract details for the bank account with UUID 123e4567-e89b-12d3-a456-426614174000?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContracts/123e4567-e89b-12d3-a456-426614174000/TimeDepositContract"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "difficulty": "Medium",
+  "input": "I want to submit a batch request to retrieve multiple bank account entries at once.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "GET",
+          "url": "/BankAccountEntries"
+        },
+        {
+          "method": "GET",
+          "url": "/BankAccountEntries"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "I need to retrieve the event specifications related to locking features on bank account contracts. What are they?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequestEventSpecifications"
+  }
+}

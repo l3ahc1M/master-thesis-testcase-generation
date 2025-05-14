@@ -1,0 +1,20 @@
+{
+    "difficulty": "Medium",
+    "input": "I need to send a batch request to retrieve bank account contracts for two account holders identified by their unique IDs: 333e4444-e55b-66d7-a456-426614174006 and 444e5555-e66b-77d8-a456-426614174007.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "/AccountHolderPartyIdfgElmnts/333e4444-e55b-66d7-a456-426614174006/BankAccountContracts"
+                },
+                {
+                    "method": "GET",
+                    "url": "/AccountHolderPartyIdfgElmnts/444e5555-e66b-77d8-a456-426614174007/BankAccountContracts"
+                }
+            ]
+        }
+    }
+}

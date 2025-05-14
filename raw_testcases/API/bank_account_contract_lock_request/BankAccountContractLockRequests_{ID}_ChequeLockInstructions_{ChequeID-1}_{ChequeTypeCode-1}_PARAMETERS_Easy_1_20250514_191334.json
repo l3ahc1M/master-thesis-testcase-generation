@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you show me the cheque lock instructions for the lock request with ID 2019-07-13T13:34:46Z?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequests/2019-07-13T13:34:46Z/ChequeLockInstructions/1"
+  }
+}

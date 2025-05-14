@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to file a request to change the account holder for my current account because of a divorce.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+    "body": {
+      "BankAccountContractUUID": "12345678-90ab-cdef-1234-567890abcdef",
+      "NewAccountHolderPartyIdentifyingElements": "Emily Davis",
+      "FormerAccountHolderPartyIdentifyingElements": "Michael Davis",
+      "ReasonCode": "3",
+      "ChargeWaiverRequestedIndicator": false
+    }
+  }
+}

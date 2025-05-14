@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "I need to retrieve the bank account entries for the bank account identified by UUID 98765432-10ab-cdef-0987-654321abcdef.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/98765432-10ab-cdef-0987-654321abcdef/BankAccountEntries"
+  }
+}

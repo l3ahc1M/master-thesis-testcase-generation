@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to update the currency amount lock instructions for the lock request with ID 105.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/105/BankAccountCurrencyAmountLockInstructions/1",
+    "body": {
+      "CurrencyAmount": 5000,
+      "Instruction": "Lock amount for pending transactions."
+    }
+  }
+}

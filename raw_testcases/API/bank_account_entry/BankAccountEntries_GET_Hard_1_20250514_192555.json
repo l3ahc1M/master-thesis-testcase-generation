@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Please provide me with the detailed entries for my checking account for the last three months.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountEntries",
+    "body": {}
+  }
+}

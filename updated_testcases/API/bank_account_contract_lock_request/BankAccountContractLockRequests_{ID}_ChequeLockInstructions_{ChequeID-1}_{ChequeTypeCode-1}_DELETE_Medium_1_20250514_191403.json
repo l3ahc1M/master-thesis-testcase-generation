@@ -1,0 +1,8 @@
+{
+    "difficulty": "Medium",
+    "input": "Can you help me get rid of the cheque lock instruction with the ID of 2 for the lock request that has the ID of July 13, 2019, at 1:34 PM UTC?",
+    "output": {
+        "method": "DELETE",
+        "endpoint": "/BankAccountContractLockRequests/2019-07-13T13:34:46Z/ChequeLockInstructions/2"
+    }
+}

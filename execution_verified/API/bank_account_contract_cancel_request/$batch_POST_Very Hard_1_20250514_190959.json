@@ -1,0 +1,33 @@
+{
+    "difficulty": "Very Hard",
+    "input": "I need to cancel several bank account contracts all at once, and I also want to reverse some of those cancellations in the same request.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "/BankAccountContractCancelRequests",
+                    "body": {
+                        "ImmediateCompletionRequiredIndicator": true,
+                        "ReasonCode": "105",
+                        "ReasonName": "Customer Request",
+                        "BankAccountContractUUID": "abcdef01-2345-6789-abcd-ef0123456789"
+                    }
+                },
+                {
+                    "method": "POST",
+                    "url": "/BankAccountContractCancelRequests",
+                    "body": {
+                        "ImmediateCompletionRequiredIndicator": false,
+                        "CancellationReasonCode": "000004",
+                        "CancellationReasonName": "Change of Mind",
+                        "BankAccountContractUUID": "fedcba98-7654-3210-fedc-ba9876543210",
+                        "BankAccountSettlementCancellationRequiredIndicator": true
+                    }
+                }
+            ]
+        }
+    }
+}

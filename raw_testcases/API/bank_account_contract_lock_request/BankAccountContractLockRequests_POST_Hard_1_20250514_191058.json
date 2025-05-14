@@ -1,0 +1,18 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to create a lock request for my bank account to prevent any transactions until further notice.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractLockRequests",
+    "body": {
+      "BankAccountContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "EventCode": "4843",
+      "EventName": "Transaction Lock Request",
+      "UserStatusCode": "1",
+      "UserStatusName": "Pending",
+      "ValidityStartDate": "2023-10-01",
+      "ValidityEndDate": "2023-12-31",
+      "Note": "Lock requested to prevent all transactions."
+    }
+  }
+}

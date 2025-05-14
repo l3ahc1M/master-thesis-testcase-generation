@@ -1,0 +1,8 @@
+{
+    "difficulty": "Hard",
+    "input": "Can you share the detailed instructions for locking the currency amount related to the lock request with the ID 01234567-89ab-cdef-0123-456789abcdef?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractLockRequests/01234567-89ab-cdef-0123-456789abcdef/BankAccountCurrencyAmountLockInstructions/1"
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Please update the event name and add instructions for the lock request with ID 4841, including a note about the changes.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/4841",
+    "body": {
+      "EventName": "Updated Debit Card Lock",
+      "Note": "Lock updated due to customer request.",
+      "DirectDebitMandateLockInstructions": []
+    }
+  }
+}

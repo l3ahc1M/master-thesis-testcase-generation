@@ -1,0 +1,8 @@
+{
+    "difficulty": "Very Hard",
+    "input": "Get the payment transaction order request with the ID 98765432-10ab-cdef-0123-456789abcdef and make sure it’s scheduled to be executed on January 5, 2023.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/98765432-10ab-cdef-0123-456789abcdef"
+    }
+}

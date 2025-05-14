@@ -1,0 +1,16 @@
+{
+    "difficulty": "Easy",
+    "input": "Can you help me process multiple recent entries from my bank account all at once?",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "/BankAccountEntries"
+                }
+            ]
+        }
+    }
+}

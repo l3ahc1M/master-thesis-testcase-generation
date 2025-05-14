@@ -1,0 +1,13 @@
+{
+    "difficulty": "Very Hard",
+    "input": "Please provide a detailed note for the payment transaction order request associated with the ID 11111111-2222-3333-4444-555555555555. In this note, explain the transaction process and any issues you faced.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/11111111-2222-3333-4444-555555555555/PaymentNotes",
+        "body": {
+            "PaymentNotes": [
+                "Transaction processed on 2023-01-05. Encountered issues with recipient verification, currently resolving."
+            ]
+        }
+    }
+}

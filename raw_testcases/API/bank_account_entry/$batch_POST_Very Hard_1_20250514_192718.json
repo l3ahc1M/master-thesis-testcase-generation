@@ -1,0 +1,26 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I need to batch process requests to retrieve my bank account entries, cancel a specific entry, and return another entry. Can you assist?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "GET",
+          "url": "/BankAccountEntries"
+        },
+        {
+          "method": "POST",
+          "url": "/BankAccountEntries/{ID}/{BankAccountUUID}/SAP__self.CancelBankAccountEntry",
+          "body": {}
+        },
+        {
+          "method": "POST",
+          "url": "/BankAccountEntries/{ID}/{BankAccountUUID}/SAP__self.ReturnBankAccountEntry",
+          "body": {}
+        }
+      ]
+    }
+  }
+}

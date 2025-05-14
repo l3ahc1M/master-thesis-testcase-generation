@@ -1,0 +1,13 @@
+{
+    "difficulty": "Hard",
+    "input": "I need to find the UUID of the bank account with the ID 9876543210, the bank routing number 12345678, and located in France.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccounts",
+        "body": {
+            "ID": "9876543210",
+            "BankRoutingID": "12345678",
+            "BankCountryCode": "FR"
+        }
+    }
+}

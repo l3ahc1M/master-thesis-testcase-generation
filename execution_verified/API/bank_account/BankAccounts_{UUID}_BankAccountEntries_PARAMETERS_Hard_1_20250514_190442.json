@@ -1,0 +1,8 @@
+{
+    "difficulty": "Hard",
+    "input": "Can you show me all the bank account entries for the bank account with the ID 01234567-89ab-cdef-0123-456789abcdef, making sure to include all the details?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccounts/01234567-89ab-cdef-0123-456789abcdef/BankAccountEntries"
+    }
+}

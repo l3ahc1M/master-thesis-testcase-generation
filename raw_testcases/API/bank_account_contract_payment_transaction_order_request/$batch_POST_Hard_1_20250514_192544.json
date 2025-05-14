@@ -1,0 +1,45 @@
+{
+  "difficulty": "Hard",
+  "input": "Submit a batch request to create and update payment transaction order requests in one go.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests",
+          "body": {
+            "UUID": "33333333-4444-5555-6666-777777777777",
+            "ID": "0003-123456",
+            "BankAccountUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "RequesterBACPaymentTransactionOrderRequestID": "RequestID-003",
+            "PaymentTransactionReferenceID": "ReferenceID-003",
+            "ChangeStateID": "20210126091744.5563512",
+            "LifeCycleStatusCode": "1",
+            "LifeCycleStatusName": "Active",
+            "BankAccountPostingDate": "2023-01-01",
+            "PlannedExecutionDate": "2023-01-04",
+            "BankAccountValueDate": "2023-01-01",
+            "TransactionCurrencyAmount": "300.00",
+            "BankAccountCurrencyAmount": "300.00",
+            "SenderItem": "Sender Account 3",
+            "RecipientItem": "Recipient Account 3",
+            "MaterialChecksDeactivationRequestedIndicator": false,
+            "PostOrCancelRequestedIndicator": true,
+            "MoreRecipientsAvailableIndicator": false,
+            "BusinessProcessChainAssignment": "Chain3",
+            "PaymentNotes": []
+          }
+        },
+        {
+          "method": "PATCH",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests/33333333-4444-5555-6666-777777777777",
+          "body": {
+            "LifeCycleStatusName": "Completed"
+          }
+        }
+      ]
+    }
+  }
+}

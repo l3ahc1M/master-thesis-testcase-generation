@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "Update the payment transaction order request with UUID abcdef01-2345-6789-abcd-ef0123456789 to deactivate material checks and change the transaction amount to 750.00.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/abcdef01-2345-6789-abcd-ef0123456789",
+    "body": {
+      "MaterialChecksDeactivationRequestedIndicator": true,
+      "TransactionCurrencyAmount": "750.00"
+    }
+  }
+}

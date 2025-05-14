@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Please provide an overview of all bank account contracts for the account holder with UUID 444e5555-e66b-77d8-a456-426614174007, specifically including time deposit and loan contracts.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/AccountHolderPartyIdfgElmnts/444e5555-e66b-77d8-a456-426614174007/BankAccountContracts"
+  }
+}

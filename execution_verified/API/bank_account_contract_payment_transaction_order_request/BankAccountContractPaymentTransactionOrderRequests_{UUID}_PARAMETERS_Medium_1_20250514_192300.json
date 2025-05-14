@@ -1,0 +1,8 @@
+{
+    "difficulty": "Medium",
+    "input": "I would like to retrieve the details of the payment transaction order request using the UUID abcdef01-2345-6789-abcd-ef0123456789.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/abcdef01-2345-6789-abcd-ef0123456789"
+    }
+}

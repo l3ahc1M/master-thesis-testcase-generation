@@ -1,0 +1,8 @@
+{
+    "difficulty": "Very Hard",
+    "input": "Get the details of the change request for the user with the ID fedcba98-7654-3210 and see if they asked for a charge waiver.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractAccountHolderChangeRequests/fedcba98-7654-3210-fedc-ba9876543210"
+    }
+}

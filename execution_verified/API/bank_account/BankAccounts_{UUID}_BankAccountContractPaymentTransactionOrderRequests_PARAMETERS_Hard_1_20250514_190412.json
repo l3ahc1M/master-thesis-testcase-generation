@@ -1,0 +1,8 @@
+{
+    "difficulty": "Hard",
+    "input": "Please show me the payment transaction order requests for the bank account that has the ID 98765432-10ab-cdef-0987-654321abcdef.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccounts/98765432-10ab-cdef-0987-654321abcdef/BankAccountContractPaymentTransactionOrderRequests"
+    }
+}

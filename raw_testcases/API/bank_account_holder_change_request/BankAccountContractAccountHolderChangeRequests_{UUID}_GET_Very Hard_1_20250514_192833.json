@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Retrieve the change request details for the UUID 321e0987-e34b-12d3-a456-426614174003 and confirm if a charge waiver was applied.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests/321e0987-e34b-12d3-a456-426614174003"
+  }
+}

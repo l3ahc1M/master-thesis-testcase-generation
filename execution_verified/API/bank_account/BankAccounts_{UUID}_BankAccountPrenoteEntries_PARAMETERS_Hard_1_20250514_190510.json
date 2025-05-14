@@ -1,0 +1,8 @@
+{
+    "difficulty": "Hard",
+    "input": "Can you give me all the prenote entries for the bank account that has the ID 01234567-89ab-cdef-0123-456789abcdef? Please make sure to include all the details.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccounts/01234567-89ab-cdef-0123-456789abcdef/BankAccountPrenoteEntries"
+    }
+}

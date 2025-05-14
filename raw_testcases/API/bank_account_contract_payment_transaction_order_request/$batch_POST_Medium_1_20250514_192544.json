@@ -1,0 +1,26 @@
+{
+  "difficulty": "Medium",
+  "input": "I need to batch update several payment transaction order requests at once.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "PATCH",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests/11111111-2222-3333-4444-555555555555",
+          "body": {
+            "LifeCycleStatusName": "Inactive"
+          }
+        },
+        {
+          "method": "PATCH",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests/22222222-3333-4444-5555-666666666666",
+          "body": {
+            "TransactionCurrencyAmount": "250.00"
+          }
+        }
+      ]
+    }
+  }
+}

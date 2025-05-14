@@ -1,0 +1,13 @@
+{
+    "difficulty": "Easy",
+    "input": "Can you add a quick note to the payment transaction order request with the ID 12345678-90ab-cdef-0123-456789abcdef?",
+    "output": {
+        "method": "POST",
+        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/12345678-90ab-cdef-0123-456789abcdef/PaymentNotes/1",
+        "body": {
+            "PaymentNotes": [
+                "Quick note added."
+            ]
+        }
+    }
+}

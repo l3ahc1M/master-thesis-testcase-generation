@@ -1,0 +1,11 @@
+{
+    "difficulty": "Medium",
+    "input": "Could you please reschedule the planned execution date for the payment transaction order request with the ID 12345678-90ab-cdef-0123-456789abcdef to sometime next week?",
+    "output": {
+        "method": "PATCH",
+        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/12345678-90ab-cdef-0123-456789abcdef",
+        "body": {
+            "PlannedExecutionDate": "2023-01-09"
+        }
+    }
+}

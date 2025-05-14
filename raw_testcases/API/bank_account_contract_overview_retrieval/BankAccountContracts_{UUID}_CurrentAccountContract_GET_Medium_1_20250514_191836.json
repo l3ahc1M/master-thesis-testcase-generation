@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "I would like to retrieve the current account contract for the bank account identified by UUID 777e8888-e99b-00d1-a456-426614174010.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContracts/777e8888-e99b-00d1-a456-426614174010/CurrentAccountContract"
+  }
+}

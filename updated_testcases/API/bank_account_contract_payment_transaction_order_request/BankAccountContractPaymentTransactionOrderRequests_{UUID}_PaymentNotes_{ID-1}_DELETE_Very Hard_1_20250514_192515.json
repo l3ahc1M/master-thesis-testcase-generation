@@ -1,0 +1,8 @@
+{
+    "difficulty": "Very Hard",
+    "input": "Please delete the detailed note that has the ID 4 from the payment transaction order request identified by the UUID 11111111-2222-3333-4444-555555555555, which provides an explanation of the transaction process.",
+    "output": {
+        "method": "DELETE",
+        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/11111111-2222-3333-4444-555555555555/PaymentNotes/4"
+    }
+}

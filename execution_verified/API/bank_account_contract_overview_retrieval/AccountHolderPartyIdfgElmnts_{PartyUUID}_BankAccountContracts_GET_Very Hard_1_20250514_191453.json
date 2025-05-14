@@ -1,0 +1,8 @@
+{
+    "difficulty": "Very Hard",
+    "input": "Can you give me a summary of all the bank account contracts for the account holder with the ID 444e5555-e66b-77d8-a456-426614174007? I'm particularly interested in the time deposit and loan contracts.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/AccountHolderPartyIdfgElmnts/444e5555-e66b-77d8-a456-426614174007/BankAccountContracts"
+    }
+}

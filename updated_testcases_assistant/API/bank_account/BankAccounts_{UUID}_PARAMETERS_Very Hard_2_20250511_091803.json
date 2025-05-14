@@ -1,8 +1,0 @@
-{
-    "difficulty": "Very Hard",
-    "input": "Can you provide me with all the details for the bank account that has the ID 67890123-90ab-cdef-0123-456789abcdef, including its contract information?",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccounts/67890123-90ab-cdef-0123-456789abcdef"
-    }
-}

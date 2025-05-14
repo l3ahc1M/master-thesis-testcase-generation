@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Please fetch the complete bank account details for the UUID 23456789-90ab-cdef-0123-456789abcdef, along with any associated entries.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/23456789-90ab-cdef-0123-456789abcdef"
-  }
-}

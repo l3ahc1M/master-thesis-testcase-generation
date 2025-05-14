@@ -1,0 +1,8 @@
+{
+    "difficulty": "Easy",
+    "input": "Can you show me the standing payment instructions for the bank account with the ID 11111111-2222-3333-4444-555555555555?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccounts/11111111-2222-3333-4444-555555555555/StandingPaymentInstructions"
+    }
+}

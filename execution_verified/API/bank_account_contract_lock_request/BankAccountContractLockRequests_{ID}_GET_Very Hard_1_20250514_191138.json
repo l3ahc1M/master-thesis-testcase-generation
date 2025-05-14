@@ -1,0 +1,8 @@
+{
+    "difficulty": "Very Hard",
+    "input": "Could you please get the lock request that has the ID 01234567-89ab-cdef-0123-456789abcdef and make sure to include all the related notes, instructions, and validity dates?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractLockRequests/01234567-89ab-cdef-0123-456789abcdef"
+    }
+}

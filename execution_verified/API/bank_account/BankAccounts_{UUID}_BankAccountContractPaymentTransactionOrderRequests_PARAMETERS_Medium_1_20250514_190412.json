@@ -1,0 +1,8 @@
+{
+    "difficulty": "Medium",
+    "input": "I need to get the payment transaction order requests for the bank account with the ID 12345678-90ab-cdef-1234-567890abcdef.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccounts/12345678-90ab-cdef-1234-567890abcdef/BankAccountContractPaymentTransactionOrderRequests"
+    }
+}

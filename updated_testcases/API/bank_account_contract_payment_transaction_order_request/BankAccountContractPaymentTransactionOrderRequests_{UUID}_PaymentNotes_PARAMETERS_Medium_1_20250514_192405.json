@@ -1,0 +1,13 @@
+{
+    "difficulty": "Medium",
+    "input": "I would like to add a note to the payment transaction order request that has the ID 12345678-90ab-cdef-0123-456789abcdef.",
+    "output": {
+        "method": "PATCH",
+        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/12345678-90ab-cdef-0123-456789abcdef/PaymentNotes",
+        "body": {
+            "PaymentNotes": [
+                "Please review this transaction."
+            ]
+        }
+    }
+}

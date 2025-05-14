@@ -1,0 +1,9 @@
+{
+    "difficulty": "Medium",
+    "input": "I want to find out the current status of my request to cancel my bank account. Can you help me with that?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractCancelRequests",
+        "body": {}
+    }
+}

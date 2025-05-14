@@ -1,0 +1,9 @@
+{
+    "difficulty": "Hard",
+    "input": "Can you give me the details of my cancellation request, including any charges that might be involved, using my UUID?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractCancelRequests/98765432-10ab-cdef-1234-567890abcdef",
+        "body": {}
+    }
+}

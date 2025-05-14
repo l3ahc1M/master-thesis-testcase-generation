@@ -1,0 +1,9 @@
+{
+    "difficulty": "Very Hard",
+    "input": "I want to get the details of the cancellation request and see if I need to settle anything for the specific UUID I provided.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractCancelRequests/fedcba98-7654-3210-fedc-ba9876543210",
+        "body": {}
+    }
+}

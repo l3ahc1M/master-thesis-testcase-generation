@@ -1,0 +1,12 @@
+{
+    "difficulty": "Hard",
+    "input": "Can you help me with a financial calculation for my current account contract and make sure to include any fees that might apply? Please use my unique identifier.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/CalculateByBankAccountContractUUID",
+        "body": {
+            "BankAccountContractUUID": "12345678-90ab-cdef-1234-567890abcdef",
+            "IncludeFees": true
+        }
+    }
+}

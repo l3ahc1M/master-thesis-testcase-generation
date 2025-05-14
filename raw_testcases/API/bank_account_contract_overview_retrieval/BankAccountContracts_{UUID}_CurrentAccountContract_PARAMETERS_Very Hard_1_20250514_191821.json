@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I want to see the complete current account contract for the bank account with UUID 444e5555-e66b-77d8-a456-426614174007, including all associated terms and conditions.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContracts/444e5555-e66b-77d8-a456-426614174007/CurrentAccountContract"
+  }
+}

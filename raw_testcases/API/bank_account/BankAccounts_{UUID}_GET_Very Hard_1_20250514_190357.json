@@ -1,0 +1,12 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Retrieve the UUID for the bank account with the Bank Account Contract UUID 12345678-90ab-cdef-1234-567890abcdef and the currency set to JPY.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts",
+    "body": {
+      "BankAccountContractUUID": "12345678-90ab-cdef-1234-567890abcdef",
+      "CurrencyCode": "JPY"
+    }
+  }
+}

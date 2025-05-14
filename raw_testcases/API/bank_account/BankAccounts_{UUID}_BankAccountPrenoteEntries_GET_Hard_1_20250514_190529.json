@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "Please provide the prenote entries for the bank account with UUID 33333333-4444-5555-6666-777777777777, ensuring all details are included.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/33333333-4444-5555-6666-777777777777/BankAccountPrenoteEntries"
+  }
+}

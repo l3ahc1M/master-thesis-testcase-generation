@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I want to retrieve all bank account contracts for the account holder with UUID 888e9999-e00b-11d2-a456-426614174011, including current, savings, and time deposit contracts.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/AccountHolderPartyIdfgElmnts/888e9999-e00b-11d2-a456-426614174011/BankAccountContracts"
+  }
+}

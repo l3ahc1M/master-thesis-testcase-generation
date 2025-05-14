@@ -1,0 +1,15 @@
+{
+    "difficulty": "Hard",
+    "input": "I want to cancel my bank account contract and also ask for a settlement. Please take care of this request for me.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/BankAccountContractCancelRequests",
+        "body": {
+            "ImmediateCompletionRequiredIndicator": true,
+            "BankAccountSettlementRequiredIndicator": true,
+            "ReasonCode": "103",
+            "ReasonName": "Account Maintenance Fees",
+            "BankAccountContractUUID": "12345678-90ab-cdef-1234-567890abcdef"
+        }
+    }
+}

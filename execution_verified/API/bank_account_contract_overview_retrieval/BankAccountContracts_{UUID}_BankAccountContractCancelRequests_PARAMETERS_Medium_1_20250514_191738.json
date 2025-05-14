@@ -1,0 +1,8 @@
+{
+    "difficulty": "Medium",
+    "input": "I want to get the cancellation requests for the bank account contract with the ID 222e3333-e44b-55d6-a456-426614174005, along with any important details.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContracts/222e3333-e44b-55d6-a456-426614174005/BankAccountContractCancelRequests"
+    }
+}

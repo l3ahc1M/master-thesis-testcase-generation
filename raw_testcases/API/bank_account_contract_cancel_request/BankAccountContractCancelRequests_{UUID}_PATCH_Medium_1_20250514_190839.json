@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you change the planned completion date for my cancellation request to next week?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractCancelRequests/abcdef01-2345-6789-abcd-ef0123456789",
+    "body": {
+      "PlannedCompletionDate": "2023-11-15"
+    }
+  }
+}

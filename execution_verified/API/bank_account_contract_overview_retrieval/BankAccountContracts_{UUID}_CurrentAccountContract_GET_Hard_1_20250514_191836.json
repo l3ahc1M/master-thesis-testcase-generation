@@ -1,0 +1,8 @@
+{
+    "difficulty": "Hard",
+    "input": "Can you share the current account contract details for the bank account with the ID 888e9999-e00b-11d2-a456-426614174011? I'd like to know about any important terms and conditions too.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContracts/888e9999-e00b-11d2-a456-426614174011/CurrentAccountContract"
+    }
+}

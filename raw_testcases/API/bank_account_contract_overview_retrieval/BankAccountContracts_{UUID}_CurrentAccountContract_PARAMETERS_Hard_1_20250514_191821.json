@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "Please provide the current account contract details for the bank account with UUID 333e4444-e55b-66d7-a456-426614174006, including any relevant information.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContracts/333e4444-e55b-66d7-a456-426614174006/CurrentAccountContract"
+  }
+}

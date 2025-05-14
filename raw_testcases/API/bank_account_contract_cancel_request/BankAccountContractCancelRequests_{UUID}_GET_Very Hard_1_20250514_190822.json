@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I want to retrieve the cancellation request details for my account and check if a settlement is required, using the UUID I provided earlier.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractCancelRequests/fedcba98-7654-3210-fedc-ba9876543210",
+    "body": {}
+  }
+}

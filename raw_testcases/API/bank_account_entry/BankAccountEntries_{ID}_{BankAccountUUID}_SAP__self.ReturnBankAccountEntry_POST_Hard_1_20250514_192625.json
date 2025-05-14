@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to return a specific transaction entry from my bank account. Here are the ID and UUID.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountEntries/{ID}/{BankAccountUUID}/SAP__self.ReturnBankAccountEntry",
+    "body": {}
+  }
+}

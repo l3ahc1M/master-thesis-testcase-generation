@@ -1,0 +1,9 @@
+{
+    "difficulty": "Easy",
+    "input": "Can you help me find the details of my cancellation request using this unique identifier?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractCancelRequests/01234567-89ab-cdef-0123-456789abcdef",
+        "body": {}
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "difficulty": "Hard",
+    "input": "Can you get me the cancellation requests for my savings account and let me know the completion dates?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractCancelRequests",
+        "body": {}
+    }
+}

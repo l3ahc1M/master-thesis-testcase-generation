@@ -1,0 +1,14 @@
+{
+    "difficulty": "Easy",
+    "input": "I want to cancel my bank account contract right away.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/BankAccountContractCancelRequests",
+        "body": {
+            "ImmediateCompletionRequiredIndicator": true,
+            "ReasonCode": "101",
+            "ReasonName": "Customer Request",
+            "BankAccountContractUUID": "01234567-89ab-cdef-0123-456789abcdef"
+        }
+    }
+}

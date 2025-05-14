@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "I would like to retrieve the account holder change requests for the bank account contract identified by UUID 234e5678-f90c-23d4-b567-426614174021.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContracts/234e5678-f90c-23d4-b567-426614174021/BankAccountContractAccountHolderChangeRequests"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "I need to retrieve the transaction history for my savings account. Can you help?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountEntries",
+    "body": {}
+  }
+}

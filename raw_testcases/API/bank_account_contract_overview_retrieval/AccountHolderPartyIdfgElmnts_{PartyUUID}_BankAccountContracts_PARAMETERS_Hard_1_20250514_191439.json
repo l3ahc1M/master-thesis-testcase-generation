@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "Please provide the bank account contracts for the account holder identified by UUID 456e7890-e12b-34d5-a456-426614174002, including details on loan contracts.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/AccountHolderPartyIdfgElmnts/456e7890-e12b-34d5-a456-426614174002/BankAccountContracts"
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "difficulty": "Hard",
+    "input": "I need to add several notes to the payment transaction order request with the ID 98765432-10ab-cdef-0123-456789abcdef, including information about who is sending the payment and who is receiving it.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/98765432-10ab-cdef-0123-456789abcdef/PaymentNotes",
+        "body": {
+            "PaymentNotes": [
+                "Sender verified.",
+                "Awaiting recipient confirmation."
+            ]
+        }
+    }
+}

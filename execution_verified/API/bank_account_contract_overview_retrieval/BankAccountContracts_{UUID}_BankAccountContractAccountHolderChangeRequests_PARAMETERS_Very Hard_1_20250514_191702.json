@@ -1,0 +1,8 @@
+{
+    "difficulty": "Very Hard",
+    "input": "I want to check out all the requests for changes made by account holders for the bank account contract that has the ID 444e5555-e66b-77d8-a456-426614174007, especially looking at the history of those changes.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContracts/444e5555-e66b-77d8-a456-426614174007/BankAccountContractAccountHolderChangeRequests"
+    }
+}

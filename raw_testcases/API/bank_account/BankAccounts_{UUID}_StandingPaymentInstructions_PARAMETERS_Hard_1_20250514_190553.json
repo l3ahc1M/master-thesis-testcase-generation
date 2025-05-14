@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "Please provide the standing payment instructions for the bank account with UUID 01234567-89ab-cdef-0123-456789abcdef, ensuring all details are included.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccounts/01234567-89ab-cdef-0123-456789abcdef/StandingPaymentInstructions"
+  }
+}

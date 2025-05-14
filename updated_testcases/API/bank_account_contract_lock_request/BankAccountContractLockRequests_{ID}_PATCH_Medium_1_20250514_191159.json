@@ -1,0 +1,11 @@
+{
+    "difficulty": "Medium",
+    "input": "Can you help me change the end date for the lock request that has the ID 2019-07-13T13:34:46Z?",
+    "output": {
+        "method": "PATCH",
+        "endpoint": "/BankAccountContractLockRequests/2019-07-13T13:34:46Z",
+        "body": {
+            "ValidityEndDate": "2024-01-01"
+        }
+    }
+}

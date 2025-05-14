@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "Please provide the complete details for the bank account contract lock request identified by ID 4841, including any related instructions.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContractLockRequests/4841"
+  }
+}

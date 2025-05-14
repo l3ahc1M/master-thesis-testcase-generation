@@ -1,8 +1,0 @@
-{
-    "difficulty": "Medium",
-    "input": "I need to check the bank account details for the account with the ID 87654321-90ab-cdef-0123-456789abcdef.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccounts/87654321-90ab-cdef-0123-456789abcdef"
-    }
-}

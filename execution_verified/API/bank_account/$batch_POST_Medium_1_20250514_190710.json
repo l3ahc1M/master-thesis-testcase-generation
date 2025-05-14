@@ -1,0 +1,26 @@
+{
+    "difficulty": "Medium",
+    "input": "I need to get the UUIDs for my bank accounts with the Standard IDs DE65904199170010000707 and DE12345678901234567890 all at once.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "/BankAccounts",
+                    "body": {
+                        "StandardID": "DE65904199170010000707"
+                    }
+                },
+                {
+                    "method": "GET",
+                    "url": "/BankAccounts",
+                    "body": {
+                        "StandardID": "DE12345678901234567890"
+                    }
+                }
+            ]
+        }
+    }
+}

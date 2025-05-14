@@ -1,0 +1,8 @@
+{
+    "difficulty": "Hard",
+    "input": "Can you show me all the transactions for the bank account that has the ID 33333333-4444-5555-6666-777777777777? I’d like to see all the details, please.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccounts/33333333-4444-5555-6666-777777777777/BankAccountEntries"
+    }
+}

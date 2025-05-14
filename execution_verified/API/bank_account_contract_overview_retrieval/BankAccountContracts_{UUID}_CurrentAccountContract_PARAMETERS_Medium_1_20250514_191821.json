@@ -1,0 +1,8 @@
+{
+    "difficulty": "Medium",
+    "input": "I want to get the current account contract for the bank account with the ID 222e3333-e44b-55d6-a456-426614174005.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContracts/222e3333-e44b-55d6-a456-426614174005/CurrentAccountContract"
+    }
+}

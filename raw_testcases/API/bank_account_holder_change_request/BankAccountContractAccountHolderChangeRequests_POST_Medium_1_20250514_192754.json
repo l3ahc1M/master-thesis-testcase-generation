@@ -1,0 +1,15 @@
+{
+  "difficulty": "Medium",
+  "input": "Please create a change request for the account holder of my time deposit account due to a name change.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+    "body": {
+      "BankAccountContractUUID": "abcdef01-2345-6789-abcd-ef0123456789",
+      "NewAccountHolderPartyIdentifyingElements": "Alice Johnson",
+      "FormerAccountHolderPartyIdentifyingElements": "Alice Brown",
+      "ReasonCode": "2",
+      "ChargeWaiverRequestedIndicator": true
+    }
+  }
+}

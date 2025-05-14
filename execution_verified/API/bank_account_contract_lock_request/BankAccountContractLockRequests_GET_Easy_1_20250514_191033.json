@@ -1,0 +1,8 @@
+{
+    "difficulty": "Easy",
+    "input": "Can you tell me what lock requests are currently active for my bank account?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractLockRequests"
+    }
+}

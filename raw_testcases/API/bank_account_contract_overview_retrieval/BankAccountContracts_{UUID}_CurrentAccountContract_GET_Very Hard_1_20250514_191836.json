@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I want to see the complete current account contract for the bank account with UUID 999e0000-e11b-22d3-a456-426614174012, including all associated details and terms.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContracts/999e0000-e11b-22d3-a456-426614174012/CurrentAccountContract"
+  }
+}

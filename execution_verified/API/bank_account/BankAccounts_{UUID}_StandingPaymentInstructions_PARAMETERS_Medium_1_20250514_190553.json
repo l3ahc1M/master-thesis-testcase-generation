@@ -1,0 +1,8 @@
+{
+    "difficulty": "Medium",
+    "input": "I want to get the standing payment instructions for the bank account with the ID 98765432-10ab-cdef-0987-654321abcdef.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccounts/98765432-10ab-cdef-0987-654321abcdef/StandingPaymentInstructions"
+    }
+}

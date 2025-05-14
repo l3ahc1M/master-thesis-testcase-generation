@@ -1,0 +1,12 @@
+{
+    "difficulty": "Very Hard",
+    "input": "I want to figure out the financial results for my bank account contract, but I also need to take into account any penalties for canceling it early. Please use the UUID I gave you.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/CalculateByBankAccountContractUUID",
+        "body": {
+            "BankAccountContractUUID": "fedcba98-7654-3210-fedc-ba9876543210",
+            "ConsiderPenalties": true
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "difficulty": "Hard",
+    "input": "Can you show me the requests to change the account holder for the bank account contract with the ID 333e4444-e55b-66d7-a456-426614174006, along with any important details?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContracts/333e4444-e55b-66d7-a456-426614174006/BankAccountContractAccountHolderChangeRequests"
+    }
+}

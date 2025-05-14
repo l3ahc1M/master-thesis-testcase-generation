@@ -1,0 +1,14 @@
+{
+    "difficulty": "Hard",
+    "input": "I need to create a detailed instruction for locking cheque transactions for the lock request identified by the UUID 01234567-89ab-cdef-0123-456789abcdef.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/BankAccountContractLockRequests/01234567-89ab-cdef-0123-456789abcdef/ChequeLockInstructions",
+        "body": {
+            "Instruction": "Lock all cheque transactions due to reported fraud.",
+            "ValidityStartDate": "2023-10-01",
+            "ValidityEndDate": "2024-10-01",
+            "Note": "Customer reported potential fraud on cheque transactions."
+        }
+    }
+}

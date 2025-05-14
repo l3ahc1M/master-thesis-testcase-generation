@@ -1,0 +1,8 @@
+{
+    "difficulty": "Very Hard",
+    "input": "Can you give me a detailed report on all the requests to lock bank account contracts? I’d like to know the status of each user, the names of the events, and any notes that go along with each request.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractLockRequests"
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you show me the account holder change requests for the bank account contract with UUID 123e4567-e89b-12d3-a456-426614174020?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContracts/123e4567-e89b-12d3-a456-426614174020/BankAccountContractAccountHolderChangeRequests"
+  }
+}

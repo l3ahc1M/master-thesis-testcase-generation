@@ -1,0 +1,8 @@
+{
+    "difficulty": "Easy",
+    "input": "Can you share the details for the lock request with the ID from July 13, 2019, at 1:34 PM UTC?",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractLockRequests/2019-07-13T13:34:46Z"
+    }
+}

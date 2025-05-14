@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "I want to append a note about the transaction status to the payment transaction order request with UUID abcdef01-2345-6789-abcd-ef0123456789.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/abcdef01-2345-6789-abcd-ef0123456789/PaymentNotes/2",
+    "body": {
+      "PaymentNotes": [
+        "Transaction status updated: Awaiting confirmation."
+      ]
+    }
+  }
+}

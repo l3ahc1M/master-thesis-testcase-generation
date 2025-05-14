@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "Please provide the loan contract borrower party change requests for the bank account contract with UUID 345e6789-g01d-34e5-c678-426614174003, including any relevant details.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContracts/345e6789-g01d-34e5-c678-426614174003/LoanContractBorrowerPartyChangeRequests"
+  }
+}

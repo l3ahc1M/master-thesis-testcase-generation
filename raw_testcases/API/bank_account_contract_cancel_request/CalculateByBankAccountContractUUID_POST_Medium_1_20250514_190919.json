@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "I need to calculate the financial outcomes for my savings account contract. Please use the UUID I provided.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CalculateByBankAccountContractUUID",
+    "body": {
+      "BankAccountContractUUID": "abcdef01-2345-6789-abcd-ef0123456789"
+    }
+  }
+}

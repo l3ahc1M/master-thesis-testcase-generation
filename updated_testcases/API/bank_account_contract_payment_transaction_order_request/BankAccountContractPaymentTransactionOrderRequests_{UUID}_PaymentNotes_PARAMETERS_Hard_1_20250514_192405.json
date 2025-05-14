@@ -1,0 +1,14 @@
+{
+    "difficulty": "Hard",
+    "input": "Update the payment transaction order request with the ID abcdef01-2345-6789-abcd-ef0123456789 to add several notes.",
+    "output": {
+        "method": "PATCH",
+        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/abcdef01-2345-6789-abcd-ef0123456789/PaymentNotes",
+        "body": {
+            "PaymentNotes": [
+                "Initial review completed.",
+                "Awaiting final approval."
+            ]
+        }
+    }
+}

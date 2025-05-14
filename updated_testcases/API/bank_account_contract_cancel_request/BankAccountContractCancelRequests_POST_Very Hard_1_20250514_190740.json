@@ -1,0 +1,15 @@
+{
+    "difficulty": "Very Hard",
+    "input": "I want to cancel my current bank account contract, but I also need to know if it's possible to reverse that cancellation. Can you help me with that?",
+    "output": {
+        "method": "POST",
+        "endpoint": "/BankAccountContractCancelRequests",
+        "body": {
+            "ImmediateCompletionRequiredIndicator": false,
+            "CancellationReasonCode": "000004",
+            "CancellationReasonName": "Change of Mind",
+            "BankAccountContractUUID": "fedcba98-7654-3210-fedc-ba9876543210",
+            "BankAccountSettlementCancellationRequiredIndicator": true
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "I would like to retrieve the time deposit contract for the bank account identified by UUID 222e3333-e44b-55d6-a456-426614174005.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContracts/222e3333-e44b-55d6-a456-426614174005/TimeDepositContract"
+  }
+}

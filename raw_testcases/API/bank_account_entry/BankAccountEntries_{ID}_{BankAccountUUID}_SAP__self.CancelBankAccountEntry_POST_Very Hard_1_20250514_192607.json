@@ -1,0 +1,9 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I want to cancel a bank account entry that I flagged for review last month. Here are the ID and UUID.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountEntries/{ID}/{BankAccountUUID}/SAP__self.CancelBankAccountEntry",
+    "body": {}
+  }
+}

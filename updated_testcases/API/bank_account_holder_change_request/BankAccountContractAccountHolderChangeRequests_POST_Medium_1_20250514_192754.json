@@ -1,0 +1,15 @@
+{
+    "difficulty": "Medium",
+    "input": "Please help me submit a request to change the account holder's name on my time deposit account. The current account holder's name is Alice Brown, and I want to update it to Alice Johnson.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+        "body": {
+            "BankAccountContractUUID": "abcdef01-2345-6789-abcd-ef0123456789",
+            "NewAccountHolderPartyIdentifyingElements": "Alice Johnson",
+            "FormerAccountHolderPartyIdentifyingElements": "Alice Brown",
+            "ReasonCode": "2",
+            "ChargeWaiverRequestedIndicator": true
+        }
+    }
+}

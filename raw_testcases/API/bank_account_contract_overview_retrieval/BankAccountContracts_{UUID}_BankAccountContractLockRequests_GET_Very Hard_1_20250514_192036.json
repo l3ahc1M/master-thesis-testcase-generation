@@ -1,0 +1,8 @@
+{
+  "difficulty": "Very Hard",
+  "input": "I want to see all lock requests for the bank account contract with UUID 444e5555-e66b-77d8-a456-426614174007, including detailed information on each request.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/BankAccountContracts/444e5555-e66b-77d8-a456-426614174007/BankAccountContractLockRequests"
+  }
+}

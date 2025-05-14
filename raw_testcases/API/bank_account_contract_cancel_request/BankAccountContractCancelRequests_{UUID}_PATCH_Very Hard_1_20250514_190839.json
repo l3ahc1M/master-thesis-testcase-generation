@@ -1,0 +1,13 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Please update my cancellation request to reflect that I no longer need immediate completion and change the reason to 'Financial Hardship'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractCancelRequests/fedcba98-7654-3210-fedc-ba9876543210",
+    "body": {
+      "ImmediateCompletionRequiredIndicator": false,
+      "CancellationReasonCode": "000007",
+      "CancellationReasonName": "Financial Hardship"
+    }
+  }
+}

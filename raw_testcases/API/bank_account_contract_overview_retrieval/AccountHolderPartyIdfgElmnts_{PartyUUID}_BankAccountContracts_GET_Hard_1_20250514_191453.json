@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "I would like to retrieve the bank account contracts for the party with UUID 333e4444-e55b-66d7-a456-426614174006, focusing on loan contracts and their details.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/AccountHolderPartyIdfgElmnts/333e4444-e55b-66d7-a456-426614174006/BankAccountContracts"
+  }
+}

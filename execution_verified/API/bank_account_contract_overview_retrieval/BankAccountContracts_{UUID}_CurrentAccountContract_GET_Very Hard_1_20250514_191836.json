@@ -1,0 +1,8 @@
+{
+    "difficulty": "Very Hard",
+    "input": "I would like to view the full current account contract for the bank account with the ID 999e0000-e11b-22d3-a456-426614174012, along with all the related details and terms.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContracts/999e0000-e11b-22d3-a456-426614174012/CurrentAccountContract"
+    }
+}

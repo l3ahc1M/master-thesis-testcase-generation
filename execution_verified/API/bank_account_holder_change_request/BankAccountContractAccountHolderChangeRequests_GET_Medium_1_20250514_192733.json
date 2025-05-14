@@ -1,0 +1,11 @@
+{
+    "difficulty": "Medium",
+    "input": "I'm looking for all the change requests that got wrapped up last month.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+        "body": {
+            "CompletionDate": "2023-09-01 to 2023-09-30"
+        }
+    }
+}

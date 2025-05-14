@@ -1,0 +1,9 @@
+{
+    "difficulty": "Hard",
+    "input": "Could you please go ahead and remove my cancellation request using the UUID I shared with you earlier?",
+    "output": {
+        "method": "DELETE",
+        "endpoint": "/BankAccountContractCancelRequests/12345678-90ab-cdef-1234-567890abcdef",
+        "body": {}
+    }
+}

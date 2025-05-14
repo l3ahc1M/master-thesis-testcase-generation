@@ -1,0 +1,8 @@
+{
+    "difficulty": "Hard",
+    "input": "Could you please share the bank account contracts for the account holder with the ID 456e7890-e12b-34d5-a456-426614174002? I would also like to see the details regarding any loan contracts.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/AccountHolderPartyIdfgElmnts/456e7890-e12b-34d5-a456-426614174002/BankAccountContracts"
+    }
+}

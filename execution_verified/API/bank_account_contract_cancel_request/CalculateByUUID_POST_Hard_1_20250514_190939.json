@@ -1,0 +1,12 @@
+{
+    "difficulty": "Hard",
+    "input": "Can you help me figure out the financial outcomes for my current account contract and include any fees that might apply? Please use the UUID I have.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/CalculateByUUID",
+        "body": {
+            "BankAccountContractUUID": "fedcba98-7654-3210-fedc-ba9876543210",
+            "IncludeFees": true
+        }
+    }
+}

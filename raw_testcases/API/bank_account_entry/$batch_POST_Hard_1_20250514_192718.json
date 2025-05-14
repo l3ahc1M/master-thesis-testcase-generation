@@ -1,0 +1,21 @@
+{
+  "difficulty": "Hard",
+  "input": "Please create a batch request to fetch my bank account entries and also cancel a specific entry.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "GET",
+          "url": "/BankAccountEntries"
+        },
+        {
+          "method": "POST",
+          "url": "/BankAccountEntries/{ID}/{BankAccountUUID}/SAP__self.CancelBankAccountEntry",
+          "body": {}
+        }
+      ]
+    }
+  }
+}

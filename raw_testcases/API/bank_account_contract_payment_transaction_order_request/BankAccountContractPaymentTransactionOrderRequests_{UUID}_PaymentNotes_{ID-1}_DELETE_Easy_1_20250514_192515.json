@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to delete the first note from the payment transaction order request with UUID 12345678-90ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/12345678-90ab-cdef-0123-456789abcdef/PaymentNotes/1"
+  }
+}

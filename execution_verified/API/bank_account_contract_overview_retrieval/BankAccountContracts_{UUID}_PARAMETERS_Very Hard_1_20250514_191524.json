@@ -1,0 +1,8 @@
+{
+    "difficulty": "Very Hard",
+    "input": "I want to check out all the bank account contracts for the account holder with the ID 321e0987-e45b-67d8-a456-426614174015, and I’d like to see the details on all the different types of contracts.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/BankAccountContracts/321e0987-e45b-67d8-a456-426614174015"
+    }
+}

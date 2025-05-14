@@ -1,0 +1,11 @@
+{
+    "difficulty": "Easy",
+    "input": "I want to change the life cycle status of the payment transaction order request with the ID 01234567-89ab-cdef-0123-456789abcdef to 'Inactive'.",
+    "output": {
+        "method": "PATCH",
+        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/01234567-89ab-cdef-0123-456789abcdef",
+        "body": {
+            "LifeCycleStatusName": "Inactive"
+        }
+    }
+}

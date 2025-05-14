@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you list the bank account contracts for the account holder with UUID 555e6666-e77b-88d9-a456-426614174008?",
+  "output": {
+    "method": "GET",
+    "endpoint": "/AccountHolderPartyIdfgElmnts/555e6666-e77b-88d9-a456-426614174008/BankAccountContracts"
+  }
+}

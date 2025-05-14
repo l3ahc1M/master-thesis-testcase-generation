@@ -1,0 +1,8 @@
+{
+    "difficulty": "Very Hard",
+    "input": "I want to get all the bank account contracts for the account holder with the ID 888e9999-e00b-11d2-a456-426614174011, which includes current accounts, savings accounts, and time deposit accounts.",
+    "output": {
+        "method": "GET",
+        "endpoint": "/AccountHolderPartyIdfgElmnts/888e9999-e00b-11d2-a456-426614174011/BankAccountContracts"
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "difficulty": "Very Hard",
+  "input": "Modify the payment transaction order request with UUID 98765432-10ab-cdef-0123-456789abcdef to add a detailed note about the transaction process.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/98765432-10ab-cdef-0123-456789abcdef/PaymentNotes",
+    "body": {
+      "PaymentNotes": [
+        "Transaction processed on 2023-01-05. All checks passed, awaiting confirmation from the recipient."
+      ]
+    }
+  }
+}

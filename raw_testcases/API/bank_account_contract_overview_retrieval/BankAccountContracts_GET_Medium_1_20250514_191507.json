@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "I would like to see all bank account contracts for the account holder identified by UUID 666e7777-e88b-99d0-a456-426614174009, including both current and savings accounts.",
+  "output": {
+    "method": "GET",
+    "endpoint": "/AccountHolderPartyIdfgElmnts/666e7777-e88b-99d0-a456-426614174009/BankAccountContracts"
+  }
+}
