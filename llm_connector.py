@@ -1,10 +1,14 @@
 import openai
 import time
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+api_key = os.getenv("openai_api_key")
 
 class OpenAIConnector:
     def __init__(self):
-        self.api_key = "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"
+        self.api_key = api_key
         openai.api_key = self.api_key
         self.temperature = 0.0
 

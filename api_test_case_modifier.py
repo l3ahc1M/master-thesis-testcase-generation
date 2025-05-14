@@ -4,9 +4,9 @@ import json
 from llm_connector import OpenAIConnector
 
 # Original path to the folder containing test cases
-base_path = "raw_testcases/API"
+base_path = "raw_testcases\API"
 # Destination base path for updated test cases
-updated_base_path = "updated_testcases_assistant/API"
+updated_base_path = "updated_testcases\API"
 
 def humanize_testcases():
     connector = OpenAIConnector()

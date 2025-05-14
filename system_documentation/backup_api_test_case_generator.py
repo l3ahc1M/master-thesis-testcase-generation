@@ -2,11 +2,7 @@ import os
 import json
 import re
 import time
-import logging
 from llm_connector import OpenAIConnector
-
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 test_cases_per_difficulty = 1
 
@@ -72,6 +68,7 @@ def generate_test_cases():
     root_output_dir = os.path.join("raw_testcases", "API")
     difficulties = ["Easy", "Medium", "Hard", "Very Hard"]
 
+#    for subdir in os.listdir(root_input_dir):
     for subdir in os.listdir(root_input_dir):
         base_dir = os.path.join(root_input_dir, subdir)
         if not os.path.isdir(base_dir):
@@ -138,12 +135,12 @@ Generate {total_test_cases} test cases distributed evenly across the following d
                                 output_path = os.path.join(output_dir, filename)
                                 with open(output_path, "w") as outfile:
                                     json.dump(parsed, outfile, indent=2)
-                                logging.info(f"Generated: {output_path}")
+                                print(f"Generated: {output_path}")
 
                         except Exception as e:
-                            logging.error(f"Error processing {subdir} - {path} ({method}): {e}")
+                            print(f"Error processing {subdir} - {path} ({method}): {e}")
             except Exception as e:
-                logging.error(f"Failed to process {subdir}: {e}")
+                print(f"Failed to process {subdir}: {e}")
 
 # Run
 generate_test_cases()
