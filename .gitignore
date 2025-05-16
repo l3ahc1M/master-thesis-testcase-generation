@@ -1,4 +1,8 @@
 .env
+test.py
 raw_testcases/
 updated_testcases/
-execution_veified_testcases/
+execution_verified_testcases/
+.pyc
+__pycache__/
+system_documentation copy/

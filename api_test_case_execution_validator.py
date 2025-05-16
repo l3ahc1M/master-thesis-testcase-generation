@@ -86,7 +86,7 @@ def execute_test_cases():
                     print(f"Response: {response.status_code}")
                     
                     # If the response is successful (HTTP 200), move the file to the verified folder
-                    if response.status_code == 200:
+                    if response.status_code in (200, 201, 204):
                         verified_subfolder = os.path.join(VERIFIED_FOLDER, subfolder)
                         os.makedirs(verified_subfolder, exist_ok=True)
                         shutil.move(file_path, os.path.join(verified_subfolder, file_name))
@@ -97,5 +97,17 @@ def execute_test_cases():
                     print(f"Error executing API call for file: {file_path}")
                     print(f"Error: {e}")
 
+def count_remaining_files():
+    """
+    Counts and prints the number of remaining JSON files per subfolder in TESTCASE_FOLDER.
+    """
+    for subfolder in os.listdir(TESTCASE_FOLDER):
+        subfolder_path = os.path.join(TESTCASE_FOLDER, subfolder)
+        if not os.path.isdir(subfolder_path):
+            continue
+        json_files = [f for f in os.listdir(subfolder_path) if f.endswith(".json")]
+        print(f"{subfolder}: {len(json_files)} remaining files")
+
 if __name__ == "__main__":
     execute_test_cases()
+    count_remaining_files()

@@ -27,6 +27,9 @@ class OpenAIConnector:
             raise RuntimeError(f"Failed to query completion API: {e}")
 
     def query_with_file(self, system_prompt, user_prompt, file_path, model="gpt-40-mini"):
+        thread = None
+        assistant = None
+        uploaded_file = None
         try:
             # Upload the file for file_search tool
             with open(file_path, "rb") as f:
@@ -71,3 +74,20 @@ class OpenAIConnector:
 
         except Exception as e:
             raise RuntimeError(f"Failed to query assistant API: {e}")
+        finally:
+            # Clean up: delete thread, assistant, and uploaded file if they were created
+            try:
+                if thread is not None:
+                    openai.beta.threads.delete(thread.id)
+            except Exception:
+                pass
+            try:
+                if assistant is not None:
+                    openai.beta.assistants.delete(assistant.id)
+            except Exception:
+                pass
+            try:
+                if uploaded_file is not None:
+                    openai.files.delete(uploaded_file.id)
+            except Exception:
+                pass

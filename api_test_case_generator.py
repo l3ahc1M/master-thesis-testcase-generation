@@ -31,6 +31,8 @@ Each test case must include:
 2. The corresponding API call (method, endpoint, body if applicable).
 3. The difficulty level: Easy, Medium, Hard, Very Hard.
 
+It is of the utmost importance that someone else can generate the same output using ONLY the provided documents. This means that all information is either provided by the input or available in the documents. Do not use any external knowledge or information.
+
 Ensure high variance between the test cases and any previously generated ones. Avoid repetition and vary structure, intent, and data.
 
 Return a JSON array of objects, where each object follows this format:
@@ -141,61 +143,64 @@ def generate_test_cases():
                                 semantic_description = txtf.read()
 
                         try:
-                                # Load API documentation and iterate over endpoints and methods
+                                # Load API documentation and iterate over
                                 api_json = json.load(open(os.path.join(base_dir, api_file)))
                                 paths = api_json.get("paths", {})
                                 for path, methods in paths.items():
                                         for method in methods:
-                                                # Prepare a safe filename component for the endpoint
-                                                endpoint_path = path.replace("/", "_").strip("_")
+                                                if method.lower() in ["parameters", "get"]:
+                                                        continue
+                                                else:
+                                                        # Prepare a safe filename component for the endpoint
+                                                        endpoint_path = path.replace("/", "_").strip("_")
 
-                                                # Gather all previously generated test cases for this output directory
-                                                previous_cases = get_previous_test_cases(output_dir)
-                                                previous_cases_json = json.dumps(previous_cases, indent=2)
-                                                total_test_cases = test_cases_per_difficulty * len(difficulties)
+                                                        # Gather all previously generated test cases for this output directory
+                                                        previous_cases = get_previous_test_cases(output_dir)
+                                                        previous_cases_json = json.dumps(previous_cases, indent=2)
+                                                        total_test_cases = test_cases_per_difficulty * len(difficulties)
 
-                                                # Compose the user prompt for the LLM
-                                                user_prompt = f"""
-Database Structure:
-{db_content}
+                                                        # Compose the user prompt for the LLM
+                                                        user_prompt = f"""
+                                                        Database Structure:
+                                                        {db_content}
 
-Semantic Description:
-{semantic_description}
+                                                        Semantic Description:
+                                                        {semantic_description}
 
-Previously Generated Test Cases:
-{previous_cases_json}
+                                                        Previously Generated Test Cases:
+                                                        {previous_cases_json}
 
-Focus Endpoint: {path} using {method.upper()}
+                                                        Focus Endpoint: {path} using {method.upper()}
 
-Generate {total_test_cases} test cases distributed evenly across the following difficulty levels: {difficulties}.
-"""
+                                                        Generate {total_test_cases} test cases distributed evenly across the following difficulty levels: {difficulties}.
+                                                        """
 
-                                                try:
-                                                        # Query the LLM to generate test cases
-                                                        response = connector.query_with_file(
-                                                                system_prompt=system_prompt,
-                                                                user_prompt=user_prompt,
-                                                                file_path=os.path.join(base_dir, api_file),
-                                                                model="gpt-4o-mini"
-                                                        )
-                                                        parsed_list = extract_json_array(response)
+                                                        try:
+                                                                # Query the LLM to generate test cases
+                                                                response = connector.query_with_file(
+                                                                        system_prompt=system_prompt,
+                                                                        user_prompt=user_prompt,
+                                                                        file_path=os.path.join(base_dir, api_file),
+                                                                        model="gpt-4o-mini"
+                                                                )
+                                                                parsed_list = extract_json_array(response)
 
-                                                        # Save each generated test case as a separate JSON file
-                                                        count = {level: 0 for level in difficulties}
-                                                        for parsed in parsed_list:
-                                                                diff = parsed.get("difficulty", "Unknown")
-                                                                idx = count.get(diff, 0) + 1
-                                                                count[diff] = idx
+                                                                # Save each generated test case as a separate JSON file
+                                                                count = {level: 0 for level in difficulties}
+                                                                for parsed in parsed_list:
+                                                                        diff = parsed.get("difficulty", "Unknown")
+                                                                        idx = count.get(diff, 0) + 1
+                                                                        count[diff] = idx
 
-                                                                timestamp = time.strftime("%Y%m%d_%H%M%S")
-                                                                filename = f"{endpoint_path}_{method.upper()}_{diff}_{idx}_{timestamp}.json"
-                                                                output_path = os.path.join(output_dir, filename)
-                                                                with open(output_path, "w") as outfile:
-                                                                        json.dump(parsed, outfile, indent=2)
-                                                                logging.info(f"Generated: {output_path}")
+                                                                        timestamp = time.strftime("%Y%m%d_%H%M%S")
+                                                                        filename = f"{endpoint_path}_{method.upper()}_{diff}_{idx}_{timestamp}.json"
+                                                                        output_path = os.path.join(output_dir, filename)
+                                                                        with open(output_path, "w") as outfile:
+                                                                                json.dump(parsed, outfile, indent=2)
+                                                                        logging.info(f"Generated: {output_path}")
 
-                                                except Exception as e:
-                                                        logging.error(f"Error processing {subdir} - {path} ({method}): {e}")
+                                                        except Exception as e:
+                                                                logging.error(f"Error processing {subdir} - {path} ({method}): {e}")
                         except Exception as e:
                                 logging.error(f"Failed to process {subdir}: {e}")
 
