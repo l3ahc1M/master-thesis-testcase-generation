@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Retrieve the payment transaction order request with UUID 98765432-10ab-cdef-0123-456789abcdef and ensure it has a planned execution date of 2023-01-05.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/98765432-10ab-cdef-0123-456789abcdef"
-  }
-}

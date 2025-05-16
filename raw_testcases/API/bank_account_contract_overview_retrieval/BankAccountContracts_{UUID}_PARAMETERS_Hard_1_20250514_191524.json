@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Please provide an overview of all bank account contracts for the party with UUID 456e7890-e12b-34d5-a456-426614174014, specifically including savings and time deposit contracts.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContracts/456e7890-e12b-34d5-a456-426614174014"
-  }
-}

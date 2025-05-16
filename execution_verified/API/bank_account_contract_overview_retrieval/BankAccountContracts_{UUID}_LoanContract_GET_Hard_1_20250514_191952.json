@@ -1,8 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Can you share the loan contract details for the bank account that has the ID 345e6789-g01d-34e5-c678-426614174003? I'd like to know about any important terms and conditions related to it.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContracts/345e6789-g01d-34e5-c678-426614174003/LoanContract"
-    }
-}

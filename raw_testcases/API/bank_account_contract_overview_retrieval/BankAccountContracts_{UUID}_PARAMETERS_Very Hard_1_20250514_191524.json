@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "I want to see all bank account contracts for the account holder with UUID 321e0987-e45b-67d8-a456-426614174015, including details on all types of contracts.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContracts/321e0987-e45b-67d8-a456-426614174015"
-  }
-}

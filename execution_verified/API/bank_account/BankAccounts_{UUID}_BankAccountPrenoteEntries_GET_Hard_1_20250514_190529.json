@@ -1,8 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Can you give me all the prenote entries for the bank account that has the ID 33333333-4444-5555-6666-777777777777? I need all the details, please.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccounts/33333333-4444-5555-6666-777777777777/BankAccountPrenoteEntries"
-    }
-}

@@ -1,8 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "I need to retrieve the cheque lock instructions for the lock request identified by ID 105. What are the details?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractLockRequests/105/ChequeLockInstructions/1"
-  }
-}

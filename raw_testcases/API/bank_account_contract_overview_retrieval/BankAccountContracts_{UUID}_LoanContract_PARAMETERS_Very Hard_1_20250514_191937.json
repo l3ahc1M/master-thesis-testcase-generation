@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "I want to see the complete loan contract for the bank account with UUID 444e5555-e66b-77d8-a456-426614174007, including all associated details and terms.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContracts/444e5555-e66b-77d8-a456-426614174007/LoanContract"
-  }
-}

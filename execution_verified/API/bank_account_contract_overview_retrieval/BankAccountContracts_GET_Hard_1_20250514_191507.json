@@ -1,8 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Can you give me a summary of the bank account contracts for the party with the ID 777e8888-e99b-00d1-a456-426614174010? I'm particularly interested in the loan contracts and their details.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/AccountHolderPartyIdfgElmnts/777e8888-e99b-00d1-a456-426614174010/BankAccountContracts"
-    }
-}

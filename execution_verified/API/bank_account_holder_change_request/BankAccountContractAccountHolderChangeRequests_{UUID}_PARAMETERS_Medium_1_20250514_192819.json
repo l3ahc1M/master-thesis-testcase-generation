@@ -1,8 +1,0 @@
-{
-    "difficulty": "Medium",
-    "input": "Can you give me the details of the change request for the account holder with the ID 12345678-90ab-cdef-1234-567890abcdef?",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContractAccountHolderChangeRequests/12345678-90ab-cdef-1234-567890abcdef"
-    }
-}

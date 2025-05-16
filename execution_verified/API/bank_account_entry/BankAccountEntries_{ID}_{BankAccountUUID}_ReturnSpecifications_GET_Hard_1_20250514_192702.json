@@ -1,9 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Can you share the return specifications for the bank account entry I pointed out last week? I have the ID and UUID ready for you.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountEntries/{ID}/{BankAccountUUID}/ReturnSpecifications",
-        "body": {}
-    }
-}

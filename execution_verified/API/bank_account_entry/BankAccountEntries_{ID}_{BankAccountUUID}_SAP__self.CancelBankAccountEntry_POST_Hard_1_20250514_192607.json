@@ -1,9 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "I need to cancel a specific entry from my bank account. Please use the ID and UUID I shared with you earlier.",
-    "output": {
-        "method": "POST",
-        "endpoint": "/BankAccountEntries/{ID}/{BankAccountUUID}/SAP__self.CancelBankAccountEntry",
-        "body": {}
-    }
-}

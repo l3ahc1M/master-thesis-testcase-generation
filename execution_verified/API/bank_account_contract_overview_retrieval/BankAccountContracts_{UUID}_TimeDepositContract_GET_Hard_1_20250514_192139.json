@@ -1,8 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Could you share the details of the time deposit contract for the bank account with the ID 345e6789-g01d-34e5-c678-426614174002? I'm particularly interested in the interest rates and the terms.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContracts/345e6789-g01d-34e5-c678-426614174002/TimeDepositContract"
-    }
-}

@@ -1,1 +1,4 @@
 .env
+raw_testcases/
+updated_testcases/
+execution_veified_testcases/

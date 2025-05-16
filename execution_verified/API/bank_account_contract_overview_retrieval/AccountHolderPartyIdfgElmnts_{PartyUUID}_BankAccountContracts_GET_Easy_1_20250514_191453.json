@@ -1,8 +1,0 @@
-{
-    "difficulty": "Easy",
-    "input": "Show me the bank account contracts for the account holder with the ID 111e2222-e33b-44d5-a456-426614174004.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/AccountHolderPartyIdfgElmnts/111e2222-e33b-44d5-a456-426614174004/BankAccountContracts"
-    }
-}

@@ -1,9 +1,0 @@
-{
-    "difficulty": "Medium",
-    "input": "I would like to get the transaction history for my savings account. Can you assist me with that?",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountEntries",
-        "body": {}
-    }
-}

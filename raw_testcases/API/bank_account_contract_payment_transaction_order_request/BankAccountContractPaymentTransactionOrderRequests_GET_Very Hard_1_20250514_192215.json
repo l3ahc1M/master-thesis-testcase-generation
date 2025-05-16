@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Get the payment transaction order requests for bank account UUID 01234567-89ab-cdef-0123-456789abcdef that have more than one recipient and are pending execution.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests?bankAccountUUID=01234567-89ab-cdef-0123-456789abcdef&moreRecipients=true&status=pending"
-  }
-}

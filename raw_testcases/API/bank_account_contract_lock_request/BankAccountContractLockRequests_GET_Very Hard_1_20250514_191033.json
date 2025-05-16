@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Please provide a comprehensive report of all bank account contract lock requests, detailing the user status, event names, and any notes related to each request.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractLockRequests"
-  }
-}

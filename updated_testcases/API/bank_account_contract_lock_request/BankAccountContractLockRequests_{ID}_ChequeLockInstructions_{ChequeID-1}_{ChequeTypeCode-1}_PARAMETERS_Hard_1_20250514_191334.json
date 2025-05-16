@@ -1,8 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Could you share the detailed instructions for the cheque lock related to the lock request with the ID 01234567-89ab-cdef-0123-456789abcdef, along with any additional notes?",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContractLockRequests/01234567-89ab-cdef-0123-456789abcdef/ChequeLockInstructions/1"
-    }
-}

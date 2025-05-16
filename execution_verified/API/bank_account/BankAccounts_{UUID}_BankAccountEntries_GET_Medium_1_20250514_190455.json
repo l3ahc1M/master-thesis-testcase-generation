@@ -1,8 +1,0 @@
-{
-    "difficulty": "Medium",
-    "input": "I want to get the bank account entries for the account with the ID 22222222-3333-4444-5555-666666666666.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccounts/22222222-3333-4444-5555-666666666666/BankAccountEntries"
-    }
-}

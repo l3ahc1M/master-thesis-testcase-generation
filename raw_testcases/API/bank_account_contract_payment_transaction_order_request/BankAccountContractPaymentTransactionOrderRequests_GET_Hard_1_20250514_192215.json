@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Fetch all payment transaction order requests that were posted on 2023-01-15 and have a life cycle status of Active.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests?postingDate=2023-01-15&status=Active"
-  }
-}

@@ -1,8 +1,0 @@
-{
-    "difficulty": "Medium",
-    "input": "I need to get the details of the payment transaction order request with the ID 22222222-3333-4444-5555-666666666666.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/22222222-3333-4444-5555-666666666666"
-    }
-}

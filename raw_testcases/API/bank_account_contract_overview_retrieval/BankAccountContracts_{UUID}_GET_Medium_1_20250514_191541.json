@@ -1,8 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "I would like to see the bank account contracts for the account holder identified by UUID 222e3333-e44b-55d6-a456-426614174021, focusing on current and savings accounts.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContracts/222e3333-e44b-55d6-a456-426614174021"
-  }
-}

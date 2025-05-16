@@ -1,8 +1,0 @@
-{
-    "difficulty": "Very Hard",
-    "input": "I would like to view the full time deposit contract for the bank account belonging to the user with the ID 456e7890-h12e-45f6-d789-426614174003, including all the details and terms, particularly the penalties for withdrawing early.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContracts/456e7890-h12e-45f6-d789-426614174003/TimeDepositContract"
-    }
-}

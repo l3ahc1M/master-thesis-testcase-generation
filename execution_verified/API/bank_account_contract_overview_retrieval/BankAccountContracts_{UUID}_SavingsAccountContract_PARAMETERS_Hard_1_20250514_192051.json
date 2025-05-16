@@ -1,8 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Can you share the details of the savings account contract for the bank account with the ID 333e4444-e55b-66d7-a456-426614174006? I’d like to know about any important terms and conditions as well.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContracts/333e4444-e55b-66d7-a456-426614174006/SavingsAccountContract"
-    }
-}

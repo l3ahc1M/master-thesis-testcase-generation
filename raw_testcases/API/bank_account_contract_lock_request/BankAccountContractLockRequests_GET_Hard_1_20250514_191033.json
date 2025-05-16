@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "I want to see the details of all lock requests for my bank account, including their validity dates and event codes.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractLockRequests"
-  }
-}

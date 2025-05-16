@@ -1,8 +1,0 @@
-{
-    "difficulty": "Medium",
-    "input": "I want to get the requests for changing the borrower party in the loan contract for the bank account identified by the ID 222e3333-e44b-55d6-a456-426614174005.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContracts/222e3333-e44b-55d6-a456-426614174005/LoanContractBorrowerPartyChangeRequests"
-    }
-}

@@ -1,8 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "I need to retrieve the lock request information for the ID 2019-07-13T13:34:46Z. What can you find?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractLockRequests/2019-07-13T13:34:46Z"
-  }
-}

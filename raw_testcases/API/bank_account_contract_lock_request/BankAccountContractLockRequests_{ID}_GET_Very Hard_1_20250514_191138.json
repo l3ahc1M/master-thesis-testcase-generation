@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Can you fetch the lock request with ID 01234567-89ab-cdef-0123-456789abcdef and include all associated notes, instructions, and validity dates?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractLockRequests/01234567-89ab-cdef-0123-456789abcdef"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "I would like to permanently delete my cancellation request. Please ensure it is removed using the UUID I provided.",
-  "output": {
-    "method": "DELETE",
-    "endpoint": "/BankAccountContractCancelRequests/fedcba98-7654-3210-fedc-ba9876543210",
-    "body": {}
-  }
-}

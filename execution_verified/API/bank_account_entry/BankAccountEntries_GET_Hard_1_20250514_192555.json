@@ -1,9 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Can you give me the detailed transactions for my checking account from the past three months?",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountEntries",
-        "body": {}
-    }
-}

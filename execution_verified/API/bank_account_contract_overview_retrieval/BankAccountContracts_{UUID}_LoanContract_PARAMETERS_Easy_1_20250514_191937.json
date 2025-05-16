@@ -1,8 +1,0 @@
-{
-    "difficulty": "Easy",
-    "input": "Can you show me the loan contract details for the bank account with the ID 111e2222-e33b-44d5-a456-426614174004?",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContracts/111e2222-e33b-44d5-a456-426614174004/LoanContract"
-    }
-}

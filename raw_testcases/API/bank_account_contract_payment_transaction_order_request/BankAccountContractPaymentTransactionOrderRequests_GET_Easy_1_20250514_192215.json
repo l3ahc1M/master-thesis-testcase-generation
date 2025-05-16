@@ -1,8 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Can you show me the payment transaction order requests?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests"
-  }
-}

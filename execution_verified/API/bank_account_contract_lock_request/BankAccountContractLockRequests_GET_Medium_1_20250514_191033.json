@@ -1,8 +1,0 @@
-{
-    "difficulty": "Medium",
-    "input": "Can you show me all the active lock requests linked to my bank account contract?",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContractLockRequests"
-    }
-}

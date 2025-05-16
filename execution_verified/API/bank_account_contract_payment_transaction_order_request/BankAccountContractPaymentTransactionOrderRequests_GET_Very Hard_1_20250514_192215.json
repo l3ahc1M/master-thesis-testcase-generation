@@ -1,8 +1,0 @@
-{
-    "difficulty": "Very Hard",
-    "input": "Retrieve the payment transaction order requests for the bank account with the ID 01234567-89ab-cdef-0123-456789abcdef that have multiple recipients and are still pending execution.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests?bankAccountUUID=01234567-89ab-cdef-0123-456789abcdef&moreRecipients=true&status=pending"
-    }
-}

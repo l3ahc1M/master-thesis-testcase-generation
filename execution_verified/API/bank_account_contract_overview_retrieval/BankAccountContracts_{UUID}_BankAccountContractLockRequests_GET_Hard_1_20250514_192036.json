@@ -1,8 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Can you show me the lock requests for the bank account contract with the ID 333e4444-e55b-66d7-a456-426614174006? I'm particularly interested in the history of those lock requests.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContracts/333e4444-e55b-66d7-a456-426614174006/BankAccountContractLockRequests"
-    }
-}

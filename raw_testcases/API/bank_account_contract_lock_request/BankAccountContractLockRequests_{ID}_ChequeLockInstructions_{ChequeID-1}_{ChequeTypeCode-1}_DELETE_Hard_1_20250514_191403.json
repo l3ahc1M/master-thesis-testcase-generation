@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "I need to delete the cheque lock instruction with ID 3 for the bank account contract lock request identified by UUID 01234567-89ab-cdef-0123-456789abcdef.",
-  "output": {
-    "method": "DELETE",
-    "endpoint": "/BankAccountContractLockRequests/01234567-89ab-cdef-0123-456789abcdef/ChequeLockInstructions/3"
-  }
-}

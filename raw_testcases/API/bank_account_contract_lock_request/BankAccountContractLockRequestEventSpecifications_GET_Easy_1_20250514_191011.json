@@ -1,8 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Can you show me the event specifications for bank account contract lock requests?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractLockRequestEventSpecifications"
-  }
-}

@@ -1,9 +1,0 @@
-{
-    "difficulty": "Easy",
-    "input": "Can you show me the cancellation request details for my account with the ID abcdef01-2345-6789-abcd-ef0123456789?",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContractCancelRequests/abcdef01-2345-6789-abcd-ef0123456789",
-        "body": {}
-    }
-}

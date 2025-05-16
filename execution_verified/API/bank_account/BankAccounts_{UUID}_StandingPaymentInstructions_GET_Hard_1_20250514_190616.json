@@ -1,8 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Can you share the standing payment instructions for the bank account that has the ID 33333333-4444-5555-6666-777777777777? Please make sure to include all the details.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccounts/33333333-4444-5555-6666-777777777777/StandingPaymentInstructions"
-    }
-}

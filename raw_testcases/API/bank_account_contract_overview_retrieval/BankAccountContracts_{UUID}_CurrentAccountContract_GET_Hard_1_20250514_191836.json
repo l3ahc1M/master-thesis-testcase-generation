@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Please provide the current account contract details for the bank account with UUID 888e9999-e00b-11d2-a456-426614174011, including any relevant terms and conditions.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContracts/888e9999-e00b-11d2-a456-426614174011/CurrentAccountContract"
-  }
-}

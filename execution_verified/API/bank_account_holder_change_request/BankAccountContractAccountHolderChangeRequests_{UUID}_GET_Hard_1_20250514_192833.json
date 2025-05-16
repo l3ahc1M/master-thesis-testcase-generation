@@ -1,8 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "I want to check the change request with the ID 456e7890-e12b-12d3-a456-426614174002 and see if it has been completed.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContractAccountHolderChangeRequests/456e7890-e12b-12d3-a456-426614174002"
-    }
-}

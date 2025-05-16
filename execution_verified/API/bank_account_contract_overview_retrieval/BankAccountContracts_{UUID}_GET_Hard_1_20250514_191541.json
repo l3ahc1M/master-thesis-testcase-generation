@@ -1,8 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Can you get the bank account contracts for the party with the ID 333e4444-e55b-66d7-a456-426614174022? I'm particularly interested in the loan contracts and all the details related to them.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContracts/333e4444-e55b-66d7-a456-426614174022"
-    }
-}

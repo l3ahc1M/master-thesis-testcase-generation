@@ -1,8 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Can you show me the bank account entries for the account with UUID 11111111-2222-3333-4444-555555555555?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/11111111-2222-3333-4444-555555555555/BankAccountEntries"
-  }
-}

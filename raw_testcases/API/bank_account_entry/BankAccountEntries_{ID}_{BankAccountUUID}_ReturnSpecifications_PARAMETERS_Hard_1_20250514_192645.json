@@ -1,9 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Please provide the return specifications for the bank account entry I flagged last month. I have the ID and UUID ready.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountEntries/{ID}/{BankAccountUUID}/ReturnSpecifications",
-    "body": {}
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Can you fetch the complete set of currency amount lock instructions for the bank account contract lock request with ID 4841, including all relevant details?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractLockRequests/4841/BankAccountCurrencyAmountLockInstructions/1"
-  }
-}

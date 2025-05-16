@@ -1,8 +1,0 @@
-{
-    "difficulty": "Easy",
-    "input": "Can you show me the requests to change the account holder for the bank account contract with the ID 123e4567-e89b-12d3-a456-426614174020?",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContracts/123e4567-e89b-12d3-a456-426614174020/BankAccountContractAccountHolderChangeRequests"
-    }
-}

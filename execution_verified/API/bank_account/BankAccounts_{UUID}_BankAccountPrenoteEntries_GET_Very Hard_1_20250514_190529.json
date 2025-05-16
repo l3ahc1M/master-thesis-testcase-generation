@@ -1,8 +1,0 @@
-{
-    "difficulty": "Very Hard",
-    "input": "Can you help me find the prenote entries for the bank account with the ID 22222222-3333-4444-5555-666666666666, and include all the important transaction details?",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccounts/22222222-3333-4444-5555-666666666666/BankAccountPrenoteEntries"
-    }
-}

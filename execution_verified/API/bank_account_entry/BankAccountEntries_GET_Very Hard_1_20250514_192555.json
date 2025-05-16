@@ -1,9 +1,0 @@
-{
-    "difficulty": "Very Hard",
-    "input": "I would like to view all the bank account entries for my account, including any that were marked for review over the past year.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountEntries",
-        "body": {}
-    }
-}

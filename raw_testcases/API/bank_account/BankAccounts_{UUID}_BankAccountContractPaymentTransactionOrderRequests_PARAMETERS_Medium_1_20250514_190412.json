@@ -1,8 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "I need to retrieve the payment transaction order requests for the bank account identified by UUID 12345678-90ab-cdef-1234-567890abcdef.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/12345678-90ab-cdef-1234-567890abcdef/BankAccountContractPaymentTransactionOrderRequests"
-  }
-}

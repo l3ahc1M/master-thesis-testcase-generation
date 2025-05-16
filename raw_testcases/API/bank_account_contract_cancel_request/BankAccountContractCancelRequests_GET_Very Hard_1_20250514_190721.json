@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "I want to see all my bank account cancellation requests along with their reasons and any associated charges.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractCancelRequests",
-    "body": {}
-  }
-}

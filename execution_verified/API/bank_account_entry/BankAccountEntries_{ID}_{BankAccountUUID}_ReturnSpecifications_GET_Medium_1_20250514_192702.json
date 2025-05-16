@@ -1,9 +1,0 @@
-{
-    "difficulty": "Medium",
-    "input": "I want to check the return specifications for a particular entry in my bank account. I've got the ID and UUID handy.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountEntries/{ID}/{BankAccountUUID}/ReturnSpecifications",
-        "body": {}
-    }
-}

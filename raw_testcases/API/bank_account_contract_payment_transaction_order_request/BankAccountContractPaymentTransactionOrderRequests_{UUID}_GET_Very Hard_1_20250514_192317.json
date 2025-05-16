@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Retrieve the payment transaction order request with UUID 44444444-5555-6666-7777-888888888888 and ensure it has a life cycle status of 'Pending'.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/44444444-5555-6666-7777-888888888888"
-  }
-}

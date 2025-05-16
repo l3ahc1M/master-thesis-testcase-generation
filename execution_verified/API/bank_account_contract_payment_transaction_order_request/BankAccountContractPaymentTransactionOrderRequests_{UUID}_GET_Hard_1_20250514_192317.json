@@ -1,8 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Get the payment transaction order request for the user with the ID 33333333-4444-5555-6666-777777777777 and see what the status is.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/33333333-4444-5555-6666-777777777777"
-    }
-}

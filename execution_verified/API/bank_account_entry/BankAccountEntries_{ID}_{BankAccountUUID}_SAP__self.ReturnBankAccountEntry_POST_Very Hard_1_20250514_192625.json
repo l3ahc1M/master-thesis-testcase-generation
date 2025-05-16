@@ -1,9 +1,0 @@
-{
-    "difficulty": "Very Hard",
-    "input": "I want to return a bank account entry that was flagged for review last month. Please use the ID and UUID I provided.",
-    "output": {
-        "method": "POST",
-        "endpoint": "/BankAccountEntries/{ID}/{BankAccountUUID}/SAP__self.ReturnBankAccountEntry",
-        "body": {}
-    }
-}

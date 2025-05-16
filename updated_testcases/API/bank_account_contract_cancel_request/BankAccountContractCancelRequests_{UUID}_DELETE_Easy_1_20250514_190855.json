@@ -1,9 +1,0 @@
-{
-    "difficulty": "Easy",
-    "input": "I would like to cancel my request to delete my bank account cancellation. Can you help me with that?",
-    "output": {
-        "method": "DELETE",
-        "endpoint": "/BankAccountContractCancelRequests/01234567-89ab-cdef-0123-456789abcdef",
-        "body": {}
-    }
-}

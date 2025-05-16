@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Can you retrieve the payment transaction order requests for the bank account with UUID abcdef12-3456-7890-abcd-ef1234567890, ensuring all details are included?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccounts/abcdef12-3456-7890-abcd-ef1234567890/BankAccountContractPaymentTransactionOrderRequests"
-  }
-}

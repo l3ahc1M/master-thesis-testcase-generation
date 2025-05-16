@@ -1,8 +1,0 @@
-{
-    "difficulty": "Medium",
-    "input": "I want to get the bank account contracts for the account holder with the ID 123e4567-e89b-12d3-a456-426614174013, specifically looking for current and loan contracts.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContracts/123e4567-e89b-12d3-a456-426614174013"
-    }
-}

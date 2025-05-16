@@ -1,8 +1,0 @@
-{
-    "difficulty": "Very Hard",
-    "input": "I would like to view the full current account contract for the bank account that has the ID 444e5555-e66b-77d8-a456-426614174007, along with all the related terms and conditions.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContracts/444e5555-e66b-77d8-a456-426614174007/CurrentAccountContract"
-    }
-}

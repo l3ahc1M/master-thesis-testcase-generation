@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Please provide the account holder change requests for the bank account contract with UUID 345e6789-g01d-34e5-c678-426614174022, including any relevant details.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContracts/345e6789-g01d-34e5-c678-426614174022/BankAccountContractAccountHolderChangeRequests"
-  }
-}

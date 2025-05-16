@@ -1,8 +1,0 @@
-{
-    "difficulty": "Medium",
-    "input": "Could you please take out the note that has the ID 2 from the payment transaction order request identified by the UUID abcdef01-2345-6789-abcd-ef0123456789?",
-    "output": {
-        "method": "DELETE",
-        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/abcdef01-2345-6789-abcd-ef0123456789/PaymentNotes/2"
-    }
-}

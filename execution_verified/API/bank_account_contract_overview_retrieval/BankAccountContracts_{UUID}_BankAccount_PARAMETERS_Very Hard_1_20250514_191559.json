@@ -1,8 +1,0 @@
-{
-    "difficulty": "Very Hard",
-    "input": "I would like to view all the bank account details for the contract with the ID 444e5555-e66b-77d8-a456-426614174007, along with any important financial information.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContracts/444e5555-e66b-77d8-a456-426614174007/BankAccount"
-    }
-}

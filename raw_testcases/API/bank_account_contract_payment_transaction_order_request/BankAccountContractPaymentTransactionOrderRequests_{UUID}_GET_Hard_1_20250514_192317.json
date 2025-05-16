@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Fetch the payment transaction order request for UUID 33333333-4444-5555-6666-777777777777 and check its status.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/33333333-4444-5555-6666-777777777777"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Please provide the detailed event specifications for managing locks on transactions and features of bank account contracts.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractLockRequestEventSpecifications"
-  }
-}

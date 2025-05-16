@@ -1,8 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "What is the current status of the account holder change request with UUID 123e4567-e89b-12d3-a456-426614174000?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractAccountHolderChangeRequests/123e4567-e89b-12d3-a456-426614174000"
-  }
-}

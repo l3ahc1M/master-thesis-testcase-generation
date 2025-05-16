@@ -1,8 +1,0 @@
-{
-  "difficulty": "Medium",
-  "input": "Can you list all bank account contracts for the account holder identified by UUID 222e3333-e44b-55d6-a456-426614174005, including current and savings accounts?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/AccountHolderPartyIdfgElmnts/222e3333-e44b-55d6-a456-426614174005/BankAccountContracts"
-  }
-}

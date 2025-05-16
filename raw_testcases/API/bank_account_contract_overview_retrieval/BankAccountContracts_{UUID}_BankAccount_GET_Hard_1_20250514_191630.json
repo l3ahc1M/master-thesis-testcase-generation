@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Please provide the bank account details for the contract with UUID 888e9999-e00b-11d2-a456-426614174011, focusing on any associated financial data.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContracts/888e9999-e00b-11d2-a456-426614174011/BankAccount"
-  }
-}

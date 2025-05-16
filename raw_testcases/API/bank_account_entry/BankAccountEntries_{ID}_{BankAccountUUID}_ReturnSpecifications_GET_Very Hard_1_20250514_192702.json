@@ -1,9 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "I want to retrieve the detailed return specifications for a bank account entry that was processed last quarter. Here are the ID and UUID.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountEntries/{ID}/{BankAccountUUID}/ReturnSpecifications",
-    "body": {}
-  }
-}

@@ -1,8 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Get me all the payment transaction order requests that were posted on January 15, 2023, and are currently active.",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContractPaymentTransactionOrderRequests?postingDate=2023-01-15&status=Active"
-    }
-}

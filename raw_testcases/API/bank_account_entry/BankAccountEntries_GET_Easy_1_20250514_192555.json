@@ -1,9 +1,0 @@
-{
-  "difficulty": "Easy",
-  "input": "Can you show me the entries for my bank account?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountEntries",
-    "body": {}
-  }
-}

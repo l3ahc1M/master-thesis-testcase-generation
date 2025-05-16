@@ -1,9 +1,0 @@
-{
-    "difficulty": "Easy",
-    "input": "Can you show me the return specifications for my most recent bank account entry?",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountEntries/{ID}/{BankAccountUUID}/ReturnSpecifications",
-        "body": {}
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Could you share the bank account details for the contract with the ID 888e9999-e00b-11d2-a456-426614174011, especially any related financial information?",
-    "output": {
-        "method": "GET",
-        "endpoint": "/BankAccountContracts/888e9999-e00b-11d2-a456-426614174011/BankAccount"
-    }
-}

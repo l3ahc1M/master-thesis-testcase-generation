@@ -9,6 +9,17 @@ base_path = "raw_testcases\API"
 updated_base_path = "updated_testcases\API"
 
 def humanize_testcases():
+    """
+    Iterates through all JSON test case files in the base_path directory structure,
+    rewrites the 'input' field of each test case to be more human-readable using an LLM,
+    and saves the updated test cases in a parallel directory structure under updated_base_path.
+
+    The rewriting process:
+    - Uses OpenAIConnector to query an LLM with specific instructions for humanizing the input.
+    - Ensures that IDs/UUIDs and values required for consistency with the output are not changed.
+    - Only the 'input' field is rewritten; other fields remain unchanged.
+    - Handles JSON decoding errors and other exceptions gracefully, printing error messages.
+    """
     connector = OpenAIConnector()
     for subfolder in os.listdir(base_path):
         subfolder_path = os.path.join(base_path, subfolder)
@@ -53,8 +64,20 @@ def humanize_testcases():
                         except Exception as e:
                             print(f"Error processing file {file_path}: {e}")
 
-# Function to compare two JSON files, ignoring the "input" field
 def compare_json_files(file1, file2):
+    """
+    Compares two JSON files, ignoring the 'input' field in both files.
+
+    Args:
+        file1 (str): Path to the first JSON file.
+        file2 (str): Path to the second JSON file.
+
+    Returns:
+        bool: True if the JSON objects are equal except for the 'input' field, False otherwise.
+
+    Raises:
+        Any exceptions raised by file I/O or JSON parsing will propagate.
+    """
     # Open and load the JSON files
     with open(file1, 'r', encoding='utf-8') as f1, open(file2, 'r', encoding='utf-8') as f2:
         data1 = json.load(f1)
@@ -67,8 +90,19 @@ def compare_json_files(file1, file2):
     # Return whether the two JSON objects (excluding "input") are equal
     return data1_without_input == data2_without_input
 
-# Function to evaluate and compare JSON files in two folder structures
 def evaluate_folders(folder1, folder2):
+    """
+    Recursively compares JSON files in two folder structures, reporting any files that differ
+    beyond the 'input' field or are missing in the second folder.
+
+    Args:
+        folder1 (str): Path to the first folder (reference).
+        folder2 (str): Path to the second folder (to compare against).
+
+    Prints:
+        - Files missing in the second folder.
+        - Files that differ in fields other than 'input'.
+    """
     # Walk through all subdirectories and files in the first folder
     for subdir, _, files in os.walk(folder1):
         # Get the relative path of the current subdirectory
@@ -94,8 +128,8 @@ def evaluate_folders(folder1, folder2):
                     print(f"Files differ beyond 'input': {file1} and {file2}")
 
 if __name__ == "__main__":
-    # Create updated test cases
+    # Create updated test cases by humanizing the 'input' field
     humanize_testcases()
 
-    # Evaluate update test cases
+    # Evaluate updated test cases by comparing them to the originals (ignoring 'input')
     evaluate_folders(base_path, updated_base_path)

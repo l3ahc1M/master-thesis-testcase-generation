@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Please provide an overview of the bank account contracts for the party with UUID 777e8888-e99b-00d1-a456-426614174010, specifically focusing on loan contracts and their details.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/AccountHolderPartyIdfgElmnts/777e8888-e99b-00d1-a456-426614174010/BankAccountContracts"
-  }
-}

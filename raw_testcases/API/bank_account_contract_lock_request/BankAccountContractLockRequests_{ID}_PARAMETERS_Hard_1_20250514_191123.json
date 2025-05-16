@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Please provide the complete details for the bank account contract lock request identified by UUID 01234567-89ab-cdef-0123-456789abcdef.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractLockRequests/01234567-89ab-cdef-0123-456789abcdef"
-  }
-}

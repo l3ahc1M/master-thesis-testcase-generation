@@ -1,8 +1,0 @@
-{
-  "difficulty": "Hard",
-  "input": "Fetch the payment transaction order request for UUID 12345678-90ab-cdef-0123-456789abcdef and check its life cycle status.",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/12345678-90ab-cdef-0123-456789abcdef"
-  }
-}

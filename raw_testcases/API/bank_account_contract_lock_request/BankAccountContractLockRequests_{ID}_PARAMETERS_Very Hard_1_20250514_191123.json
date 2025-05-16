@@ -1,8 +1,0 @@
-{
-  "difficulty": "Very Hard",
-  "input": "Can you fetch the lock request with ID 4841 and include all associated notes and instructions?",
-  "output": {
-    "method": "GET",
-    "endpoint": "/BankAccountContractLockRequests/4841"
-  }
-}
