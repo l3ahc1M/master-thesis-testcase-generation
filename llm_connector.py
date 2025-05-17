@@ -30,6 +30,9 @@ class OpenAIConnector:
         thread = None
         assistant = None
         uploaded_file = None
+        print(f"system_prompt: {system_prompt}")
+        print(f"user_prompt: {user_prompt}")
+        print(f"file_path: {file_path}")
         try:
             # Upload the file for file_search tool
             with open(file_path, "rb") as f:

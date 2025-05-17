@@ -1,38 +1,40 @@
+# api_test_case_modifier.py
 import os
 import json
-
 from llm_connector import OpenAIConnector
 
-# Original path to the folder containing test cases
-base_path = "raw_testcases\API"
-# Destination base path for updated test cases
-updated_base_path = "updated_testcases\API"
+# Define the base path where the raw test cases are stored
+base_path = "raw_testcases/API"
+# Define the path where the updated (humanized) test cases will be saved
+updated_base_path = "updated_testcases/API"
 
 def humanize_testcases():
     """
-    Iterates through all JSON test case files in the base_path directory structure,
-    rewrites the 'input' field of each test case to be more human-readable using an LLM,
-    and saves the updated test cases in a parallel directory structure under updated_base_path.
+    Iterates through all JSON test case files in the base_path directory structure.
+    For each file, it rewrites the 'input' field of the test case to a more
+    natural, human-friendly expression using an LLM. The modified test cases
+    are saved in a corresponding mirrored structure under updated_base_path.
 
-    The rewriting process:
-    - Uses OpenAIConnector to query an LLM with specific instructions for humanizing the input.
-    - Ensures that IDs/UUIDs and values required for consistency with the output are not changed.
-    - Only the 'input' field is rewritten; other fields remain unchanged.
-    - Handles JSON decoding errors and other exceptions gracefully, printing error messages.
+    The transformation preserves critical data integrity (like IDs or UUIDs)
+    and aims for better readability and natural phrasing of test case prompts.
     """
-    connector = OpenAIConnector()
+    connector = OpenAIConnector()  # Initialize LLM connector
     for subfolder in os.listdir(base_path):
         subfolder_path = os.path.join(base_path, subfolder)
         if os.path.isdir(subfolder_path):
             for file_name in os.listdir(subfolder_path):
                 if file_name.endswith(".json"):
                     file_path = os.path.join(subfolder_path, file_name)
-                    with open(file_path, "r", encoding="utf-8") as file:
-                        try:
+                    try:
+                        # Load the raw test case JSON data
+                        with open(file_path, "r", encoding="utf-8") as file:
                             data = json.load(file)
-                            input_text = json.dumps(data, ensure_ascii=False)
 
-                            instruction = """
+                        # Format the input for the LLM
+                        user_prompt = json.dumps(data, ensure_ascii=False)
+
+                        # Instruction for the LLM to humanize the input text
+                        system_prompt = """
                             You will receive json objects containting test cases. 
                             Each test case contains
                             1. difficulty: describing the difficulty of the test case
@@ -45,91 +47,70 @@ def humanize_testcases():
                             However, it is crucial to keep it consistent with the output. This includes that you must never change any ID/UUID. 
                             Only return the value of the "input" of the json object. Respond only with the plain sentence, without quotation marks, formatting, or any extra characters at the beginning or end.
                             """
-                            rewritten_input = connector.query_without_file(instruction, input_text)
-                            print(f"Rewritten input: {rewritten_input}")
-                            # Update the input in the JSON
-                            data["input"] = rewritten_input
 
-                            # Prepare the output directory and file path
-                            updated_subfolder_path = os.path.join(updated_base_path, subfolder)
-                            os.makedirs(updated_subfolder_path, exist_ok=True)
-                            updated_file_path = os.path.join(updated_subfolder_path, file_name)
+                        # Send the prompt to the LLM and receive the rewritten input
+                        rewritten_input = connector.query_without_file(system_prompt, user_prompt)
 
-                            # Save the updated JSON
-                            with open(updated_file_path, "w", encoding="utf-8") as updated_file:
-                                json.dump(data, updated_file, indent=4, ensure_ascii=False)
+                        # Replace the original 'input' field with the humanized one
+                        data["input"] = rewritten_input
 
-                        except json.JSONDecodeError:
-                            print(f"Error decoding JSON in file: {file_path}")
-                        except Exception as e:
-                            print(f"Error processing file {file_path}: {e}")
+                        # Prepare the destination folder and file path
+                        updated_subfolder_path = os.path.join(updated_base_path, subfolder)
+                        os.makedirs(updated_subfolder_path, exist_ok=True)
+                        updated_file_path = os.path.join(updated_subfolder_path, file_name)
+
+                        # Write the updated test case JSON
+                        with open(updated_file_path, "w", encoding="utf-8") as updated_file:
+                            json.dump(data, updated_file, indent=4, ensure_ascii=False)
+
+                    except Exception as e:
+                        # Handle unexpected exceptions and log the error
+                        print(f"Error processing file {file_path}: {e}")
 
 def compare_json_files(file1, file2):
     """
-    Compares two JSON files, ignoring the 'input' field in both files.
+    Compares two JSON files by loading their content and ignoring the 'input' field.
 
     Args:
         file1 (str): Path to the first JSON file.
         file2 (str): Path to the second JSON file.
 
     Returns:
-        bool: True if the JSON objects are equal except for the 'input' field, False otherwise.
-
-    Raises:
-        Any exceptions raised by file I/O or JSON parsing will propagate.
+        bool: True if the files match in all fields except 'input', False otherwise.
     """
-    # Open and load the JSON files
     with open(file1, 'r', encoding='utf-8') as f1, open(file2, 'r', encoding='utf-8') as f2:
         data1 = json.load(f1)
         data2 = json.load(f2)
 
-    # Remove the "input" field from both JSON objects for comparison
-    data1_without_input = {key: value for key, value in data1.items() if key != "input"}
-    data2_without_input = {key: value for key, value in data2.items() if key != "input"}
+    # Remove the 'input' field from both dictionaries
+    data1.pop("input", None)
+    data2.pop("input", None)
 
-    # Return whether the two JSON objects (excluding "input") are equal
-    return data1_without_input == data2_without_input
+    # Compare remaining fields
+    return data1 == data2
 
-def evaluate_folders(folder1, folder2):
+def evaluate_folders(folder1=base_path, folder2=updated_base_path):
     """
-    Recursively compares JSON files in two folder structures, reporting any files that differ
-    beyond the 'input' field or are missing in the second folder.
+    Compares all JSON files in folder1 and folder2 to verify whether only the 'input'
+    field has changed. Reports missing files or structural differences.
 
     Args:
-        folder1 (str): Path to the first folder (reference).
-        folder2 (str): Path to the second folder (to compare against).
-
-    Prints:
-        - Files missing in the second folder.
-        - Files that differ in fields other than 'input'.
+        folder1 (str): Path to the original test cases directory.
+        folder2 (str): Path to the updated (humanized) test cases directory.
     """
-    # Walk through all subdirectories and files in the first folder
     for subdir, _, files in os.walk(folder1):
-        # Get the relative path of the current subdirectory
-        relative_path = os.path.relpath(subdir, folder1)
-        # Determine the corresponding subdirectory in the second folder
-        corresponding_subdir = os.path.join(folder2, relative_path)
+        # Compute relative and corresponding path in second folder
+        rel_path = os.path.relpath(subdir, folder1)
+        corresponding_subdir = os.path.join(folder2, rel_path)
 
-        # Iterate over all files in the current subdirectory
         for file in files:
-            # Process only JSON files
             if file.endswith('.json'):
-                # Construct full paths for the files in both folders
                 file1 = os.path.join(subdir, file)
                 file2 = os.path.join(corresponding_subdir, file)
 
-                # Check if the corresponding file exists in the second folder
+                # Report missing updated test case
                 if not os.path.exists(file2):
                     print(f"File missing in second folder: {file2}")
-                    continue
-
-                # Compare the JSON files and report differences
-                if not compare_json_files(file1, file2):
-                    print(f"Files differ beyond 'input': {file1} and {file2}")
-
-if __name__ == "__main__":
-    # Create updated test cases by humanizing the 'input' field
-    humanize_testcases()
-
-    # Evaluate updated test cases by comparing them to the originals (ignoring 'input')
-    evaluate_folders(base_path, updated_base_path)
+                # Report structural differences beyond the 'input' field
+                elif not compare_json_files(file1, file2):
+                    print(f"Files differ beyond 'input': {file1} vs {file2}")
