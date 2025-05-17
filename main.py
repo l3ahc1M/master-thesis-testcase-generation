@@ -1,39 +1,64 @@
 import time
 
 # Import functions from the individual modules of the test case pipeline
-from api_test_case_generator import generate_test_cases
-from api_test_case_modifier import humanize_testcases, evaluate_folders
-from api_test_case_execution_validator import execute_test_cases, count_remaining_files
+from api_test_case_generator import generate_test_cases as generate_api_test_cases
+from api_test_case_modifier import humanize_testcases as humanize_api_testcases, evaluate_folders as evaluate_api_folders
+from api_test_case_validator import execute_test_cases as validate_api_test_cases, count_remaining_files as count_remaining_api_files
+
+from sql_test_case_generator import generate_test_cases as generate_sql_test_cases
+from sql_test_case_modifier import humanize_testcases as humanize_sql_testcase, evaluate_folders as evaluate_sql_folders        
+from sql_test_case_validator import validate_test_cases as validate_sql_test_cases, count_remaining_files as count_sql_remaining_files
+
 
 def main():
-    # Step 1: Generate initial API test cases from system and API documentation
-    print("Step 1: Generating Test Cases")
+
+    # Define flags to control the execution of each step in the pipeline
+    to_generate_api_test_cases = False
+    to_modify_api_test_cases = False
+    to_validate_api_test_cases = False
+
+    to_generate_sql_test_cases = True
+    to_modify_sql_test_cases = True
+    to_validate_sql_test_cases = True
+
     start = time.time()
-    generate_test_cases()
-    step1_time = time.time() - start
-    print(f"Step 1 took {step1_time:.2f} seconds.")
+
+    # Step 1: Generate initial API test cases from system and API documentation
+    if to_generate_api_test_cases:
+        print(f"API Step 1: Generating Test Cases // {time.time()}")
+        generate_api_test_cases()
 
     # Step 2: Humanize the test cases to improve readability for QA and stakeholders
-    print("\nStep 2: Humanizing Test Cases")
-    start = time.time()
-    humanize_testcases()
-    evaluate_folders()
-    step2_time = time.time() - start
-    print(f"Step 2 took {step2_time:.2f} seconds.")
+    if to_modify_api_test_cases:
+        print(f"API Step 2: Humanizing Test Cases // {time.time()}")
+        humanize_api_testcases()
+        evaluate_api_folders()
 
     # Step 3: Execute the test cases against live API endpoints and validate responses
-    print("\nStep 3: Executing and Validating Test Cases")
-    start = time.time()
-    execute_test_cases()
-    count_remaining_files()
-    step3_time = time.time() - start
-    print(f"Step 3 took {step3_time:.2f} seconds.")
+    if to_validate_api_test_cases:
+        print(f"API Step 3: Executing and Validating Test Cases // {time.time()}")
+        validate_api_test_cases()
+        count_remaining_api_files()
 
-    total_time = step1_time + step2_time + step3_time
-    print(f"Step 1 took {step1_time:.2f} seconds.")
-    print(f"Step 2 took {step2_time:.2f} seconds.")
-    print(f"Step 3 took {step3_time:.2f} seconds.")
-    print(f"\nTotal execution time: {total_time:.2f} seconds.")
+    api_total_time = time.time() - start
+    print(f"\nTotal execution time for API test cases: {api_total_time:.2f} seconds.")
+
+    if to_generate_sql_test_cases:
+        print(f"SQL Step 1: Generating Test Cases // {time.time()}")
+        generate_sql_test_cases()
+    
+    if to_modify_sql_test_cases:
+        print(f"SQL Step 2: Humanizing Test Cases // {time.time()}")
+        humanize_sql_testcase()
+        evaluate_sql_folders()
+
+    if to_validate_sql_test_cases:
+        print(f"SQL Step 3: Executing and Validating Test Cases // {time.time()}")
+        validate_sql_test_cases()
+        count_sql_remaining_files()
+
+    sql_total_time = time.time() - start
+    print(f"\nTotal execution time for SQL test cases: {sql_total_time:.2f} seconds.")
 
 # Entry point for the script when run directly
 if __name__ == "__main__":

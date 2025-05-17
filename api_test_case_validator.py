@@ -1,4 +1,3 @@
-# api_test_case_execution_validator.py
 
 import os
 import json
@@ -7,9 +6,9 @@ import shutil
 from system_documentation.name_to_url import name_to_url
 
 # Folder containing the test case JSON files, organized by subfolder (API name)
-TESTCASE_FOLDER = "updated_testcases/API"
+TESTCASE_FOLDER = "modified_input_testcases/API"
 # Folder where successfully executed and verified test cases will be moved
-VERIFIED_FOLDER = "execution_verified_testcases/API"
+VALIDATED_FOLDER = "validated_testcases/API"
 
 def execute_test_cases():
     """
@@ -66,7 +65,7 @@ def execute_test_cases():
 
                     # If the response is successful, move the test case to VERIFIED_FOLDER
                     if response.status_code in (200, 201, 204):
-                        verified_subfolder = os.path.join(VERIFIED_FOLDER, subfolder)
+                        verified_subfolder = os.path.join(VALIDATED_FOLDER, subfolder)
                         os.makedirs(verified_subfolder, exist_ok=True)
                         shutil.move(file_path, os.path.join(verified_subfolder, file_name))
 

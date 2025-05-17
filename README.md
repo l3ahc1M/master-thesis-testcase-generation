@@ -22,12 +22,12 @@ This repository provides an automated framework for generating, humanizing, and 
 .
 ├── api_test_case_generator.py             # Main script for generating test cases
 ├── api_test_case_modifier.py              # Script for humanizing test case inputs
-├── api_test_case_execution_validator.py   # Script for validating test case execution
+├── api_test_case_validator.py   # Script for validating test case execution
 ├── llm_connector.py                       # LLM connector abstraction
 ├── main.py                                # Entry point (if applicable)
 ├── raw_testcases/                         # Generated raw test cases (gitignored)
-├── updated_testcases/                     # Humanized test cases (gitignored)
-├── execution_verified_testcases/          # Verified test cases (gitignored)
+├── modified_input_testcases/                     # Humanized test cases (gitignored)
+├── validated_testcases/          # Verified test cases (gitignored)
 ├── system_documentation/                  # API/database docs and semantic descriptions
 │   ├── <api_name>/
 │   │   ├── DB_<api_name>.json             # Database structure for the API
@@ -83,14 +83,14 @@ Convert technical test case inputs to human-friendly language:
 python api_test_case_modifier.py
 ```
 
-Humanized test cases are saved in `updated_testcases/`.
+Humanized test cases are saved in `modified_input_testcases/`.
 
 #### 3. Validate Test Cases
 
 Validate the execution of test cases (if implemented):
 
 ```sh
-python api_test_case_execution_validator.py
+python api_test_case_validator.py
 ```
 
 #### 4. Extend Documentation

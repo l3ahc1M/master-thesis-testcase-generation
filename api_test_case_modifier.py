@@ -6,7 +6,7 @@ from llm_connector import OpenAIConnector
 # Define the base path where the raw test cases are stored
 base_path = "raw_testcases/API"
 # Define the path where the updated (humanized) test cases will be saved
-updated_base_path = "updated_testcases/API"
+updated_base_path = "modified_input_testcases/API"
 
 def humanize_testcases():
     """
