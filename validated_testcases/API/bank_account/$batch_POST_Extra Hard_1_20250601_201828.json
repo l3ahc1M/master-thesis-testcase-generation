@@ -1,0 +1,20 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "I would like to find the UUID for the bank account with the ID 01234567-89ab-cdef-0123-456789abcdef, and the bank is located in Germany.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "GET",
+                    "endpoint": "/GetBankAccount",
+                    "params": {
+                        "UUID": "01234567-89ab-cdef-0123-456789abcdef",
+                        "BankCountryCode": "DE"
+                    }
+                }
+            ]
+        }
+    }
+}

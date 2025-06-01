@@ -1,0 +1,15 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "Can you set up a restriction based on statistics for my time deposit contract with the ID 45678901-23ab-cdef-0123-456789abcdef? I want to exclude any accounts that have made fewer than 5 transactions and calculate the average amount of those transactions.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions",
+        "body": {
+            "exclude": {
+                "transactionCount": 5
+            },
+            "aggregation": "average",
+            "field": "transactionAmount"
+        }
+    }
+}

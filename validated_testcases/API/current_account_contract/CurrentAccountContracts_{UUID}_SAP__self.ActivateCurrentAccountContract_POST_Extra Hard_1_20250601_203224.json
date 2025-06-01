@@ -1,0 +1,9 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "I need to activate the current account contract with the ID 45678901-23ab-cdef-0123-456789abcdef and make sure that all previous restrictions are removed.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/SAP__self.ActivateCurrentAccountContract",
+        "body": {}
+    }
+}

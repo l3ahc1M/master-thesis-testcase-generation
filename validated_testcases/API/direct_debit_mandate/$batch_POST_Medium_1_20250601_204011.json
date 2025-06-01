@@ -1,0 +1,21 @@
+{
+    "difficulty": "Medium",
+    "input": "Can you help me set up a direct debit for my gym membership using the creditor ID DE123456789012345 and my account ID TEST5678?",
+    "output": {
+        "method": "POST",
+        "endpoint": "/DirectDebitMandates",
+        "body": {
+            "ID": "TEST5678",
+            "CreditorPartyID": "DE123456789012345",
+            "DebtorParty": "Alice Johnson",
+            "CreditorParty": "Gym",
+            "DebtorBankAccount": "DE89370400440532013001",
+            "SignatureDate": "2023-10-05",
+            "ValidityPeriod": "2025-10-05",
+            "DirectDebitSchemeCode": "1",
+            "DirectDebitSchemeName": "SEPA Core",
+            "DirectDebitCollectionSEPASequenceTypeCode": "RCUR",
+            "DirectDebitCollectionSEPASequenceTypeName": "Recurring"
+        }
+    }
+}

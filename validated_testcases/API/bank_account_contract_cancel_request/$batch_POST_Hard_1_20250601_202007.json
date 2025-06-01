@@ -1,0 +1,17 @@
+{
+    "difficulty": "Hard",
+    "input": "I need to undo my cancellation request for my bank account contract with the ID 87654321-90ab-cdef-0123-456789abcdef. Please take care of this as soon as you can.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/BankAccountContractCancelRequests",
+        "body": {
+            "BankAccountContractUUID": "87654321-90ab-cdef-0123-456789abcdef",
+            "CancellationReasonCode": "000003",
+            "CancellationReasonName": "Customer Request",
+            "CancellationDate": "2024-05-01",
+            "ImmediateCompletionRequiredIndicator": true,
+            "BankAccountSettlementCancellationRequiredIndicator": false,
+            "ReceiptDate": "2024-05-01"
+        }
+    }
+}

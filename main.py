@@ -1,4 +1,6 @@
 import time
+import os
+import glob
 
 # Import functions from the individual modules of the test case pipeline
 from api_test_case_generator import generate_test_cases as generate_api_test_cases
@@ -13,10 +15,12 @@ from sql_test_case_validator import validate_test_cases as validate_sql_test_cas
 def main():
 
     # Define flags to control the execution of each step in the pipeline
+    number_of_api_test_cases_per_difficulty = 1
     to_generate_api_test_cases = False
     to_modify_api_test_cases = False
     to_validate_api_test_cases = False
 
+    number_of_sql_test_cases_per_difficulty = 4
     to_generate_sql_test_cases = True
     to_modify_sql_test_cases = True
     to_validate_sql_test_cases = True
@@ -26,7 +30,7 @@ def main():
     # Step 1: Generate initial API test cases from system and API documentation
     if to_generate_api_test_cases:
         print(f"API Step 1: Generating Test Cases // {time.time()}")
-        generate_api_test_cases()
+        generate_api_test_cases(number_of_api_test_cases_per_difficulty)
 
     # Step 2: Humanize the test cases to improve readability for QA and stakeholders
     if to_modify_api_test_cases:
@@ -45,7 +49,7 @@ def main():
 
     if to_generate_sql_test_cases:
         print(f"SQL Step 1: Generating Test Cases // {time.time()}")
-        generate_sql_test_cases()
+        generate_sql_test_cases(number_of_sql_test_cases_per_difficulty)
     
     if to_modify_sql_test_cases:
         print(f"SQL Step 2: Humanizing Test Cases // {time.time()}")
@@ -60,6 +64,20 @@ def main():
     sql_total_time = time.time() - start
     print(f"\nTotal execution time for SQL test cases: {sql_total_time:.2f} seconds.")
 
+def count_json_files_in_subfolders(parent_folder):
+    total = 0
+    for root, dirs, files in os.walk(parent_folder):
+        json_files = glob.glob(os.path.join(root, "*.json"))
+        total += len(json_files)
+    return total
+
+
+
 # Entry point for the script when run directly
 if __name__ == "__main__":
     main()
+    api_json_count = count_json_files_in_subfolders("validated_testcases/API")
+    sql_json_count = count_json_files_in_subfolders("validated_testcases/SQL")
+
+    print(f"Number of JSON files in validated_testcases/API: {api_json_count}")
+    print(f"Number of JSON files in validated_testcases/SQL: {sql_json_count}")

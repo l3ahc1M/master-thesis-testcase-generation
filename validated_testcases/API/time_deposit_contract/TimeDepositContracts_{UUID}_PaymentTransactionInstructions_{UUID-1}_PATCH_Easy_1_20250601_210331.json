@@ -1,0 +1,11 @@
+{
+    "difficulty": "Easy",
+    "input": "I want to change the payment transaction instructions for my time deposit contract with the ID 12345678-90ab-cdef-0123-456789abcdef so that it allows a maximum transaction limit of 1000 euros.",
+    "output": {
+        "method": "PATCH",
+        "endpoint": "/TimeDepositContracts/12345678-90ab-cdef-0123-456789abcdef/PaymentTransactionInstructions/1",
+        "body": {
+            "maximumTransactionLimit": 1000
+        }
+    }
+}

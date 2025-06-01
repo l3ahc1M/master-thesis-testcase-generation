@@ -7,8 +7,6 @@ from llm_connector import OpenAIConnector
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-test_cases_per_difficulty = 1
-
 system_prompt = """
 You are a test case generator. You will be provided with:
 - A JSON file representing database structure.
@@ -21,11 +19,11 @@ Based on these, generate multiple test cases simulating a bank clerk handling cu
 Each test case must include:
 1. A natural language user input based on a customer request - needs to contain all information required for the SQL query.
 2. The corresponding SQL SELECT query to retrieve the requested data.
-3. The difficulty level: 
--- Easy: simple SQL query
--- Medium: Query must have at least one WHERE clause and/or ORDER BY clause.
--- Hard: Query must have at least one JOIN clause (e.g., between two tables).
--- Very Hard: Query must have at least one GROUP BY clause and/or HAVING clause (e.g., between two tables) and/or subqueries.
+3. The difficulty level: Easy, Medium, Hard, Extra Hard
+3.1 example for Easy query: SELECT Count(*) FROM cars_data WHERE cylinders > 4;
+3.2 example for Medium query: SELECT T2.name, COUNT(*) FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id = T2.stadium_id GROUP BY T1.stadium_id;
+3.3 example for Hard query: SELECT T1.country_name FROM countries AS T1 JOIN continents AS T2 ON T1.continent = T2.cont_id JOIN car_makers AS T3 ON T1.country_id = T3.country WHERE T2.continent = 'Europe' GROUP BY T1.country_name HAVING COUNT(*) > 3;
+3.4 example for Extra Hard query: SELECT AVG(life_expectancy) FROM country WHERE name NOT IN (SELECT T1.name FROM country AS T1 JOIN country_language AS T2 ON T1.code = T2.country_code WHERE T2.language = "English" AND T2.is_official = "T") 
 
 It is of the utmost importance that someone else can generate the same output using ONLY the provided documents and the input.
 
@@ -33,7 +31,7 @@ Ensure high variance between the test cases and any previously generated ones. A
 
 Return a JSON array of objects, where each object follows this format:
 {
-    "difficulty": "Easy|Medium|Hard|Very Hard",
+    "difficulty": "Easy|Medium|Hard|Extra Hard",
     "input": "<natural language prompt>",
     "output": {
         "sql": "<SQL SELECT query>"
@@ -71,7 +69,7 @@ def get_previous_test_cases(output_dir):
                     continue
     return test_cases
 
-def generate_test_cases():
+def generate_test_cases(test_cases_per_difficulty=1):
     """
     Generates SQL test cases for each business domain based on database structure and semantic descriptions.
 
@@ -105,7 +103,7 @@ def generate_test_cases():
     connector = OpenAIConnector()
     root_input_dir = "system_documentation"
     root_output_dir = os.path.join("raw_testcases", "SQL")
-    difficulties = ["Easy", "Medium", "Hard", "Very Hard"]
+    difficulties = ["Easy", "Medium", "Hard", "Extra Hard"]
 
     # Load combined DB documentation once
     combined_db_path = os.path.join(root_input_dir, "combined_db.json")
@@ -149,7 +147,7 @@ def generate_test_cases():
                 {previous_cases_json}
 
                 Generate {total_test_cases} test cases distributed evenly across the following difficulty levels: {difficulties}.
-                The test cases should focus on the business domain '{subdir}', but may also involve related business objects from the combined database.
+                The test cases should focus on the business domain '{subdir}', but need to involve related business objects from the combined database.
                 """
 
                 try:
@@ -179,5 +177,3 @@ def generate_test_cases():
             except Exception as e:
                 logging.error(f"Failed to process {subdir}: {e}")
 
-if __name__ == "__main__":
-    generate_test_cases()

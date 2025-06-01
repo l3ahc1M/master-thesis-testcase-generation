@@ -1,0 +1,11 @@
+{
+    "difficulty": "Hard",
+    "input": "I want to set up a bank account statement arrangement for my current account contract, which has the ID 34567890-12ab-cdef-0123-456789abcdef, and I’d like it to be sent to me by email.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountStatementArrangements",
+        "body": {
+            "deliveryMethod": "email"
+        }
+    }
+}

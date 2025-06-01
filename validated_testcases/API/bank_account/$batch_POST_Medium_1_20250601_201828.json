@@ -1,0 +1,20 @@
+{
+    "difficulty": "Medium",
+    "input": "I need the UUID for the bank account that has the IBAN DE65904199170010000707 and is in euros.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "GET",
+                    "endpoint": "/GetBankAccount",
+                    "params": {
+                        "StandardID": "DE65904199170010000707",
+                        "CurrencyCode": "EUR"
+                    }
+                }
+            ]
+        }
+    }
+}

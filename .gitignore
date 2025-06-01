@@ -1,7 +1,6 @@
 .env
 raw_testcases/
 modified_input_testcases/
-validated_testcases/
 test/
 __pycache__/
 system_documentation copy/

@@ -1,0 +1,33 @@
+{
+    "difficulty": "Hard",
+    "input": "I want to process multiple requests to change the borrowers for my loan contracts. The first request is for the loan contract with the ID 47938, and I need to update it with a new borrower who has the UUID 01234567-89ab-cdef-0123-456789abcdef. The reason for this change is code 1. The second request is for the loan contract with the ID 47939, and I want to use the same new borrower's UUID, but this time the reason code is 2.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "/LoanContractBorrowerPartyChangeRequests",
+                    "body": {
+                        "ID": "47938",
+                        "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+                        "ReasonCode": "1",
+                        "ReasonName": "Change of legal form",
+                        "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+                    }
+                },
+                {
+                    "method": "POST",
+                    "url": "/LoanContractBorrowerPartyChangeRequests",
+                    "body": {
+                        "ID": "47939",
+                        "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+                        "ReasonCode": "2",
+                        "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+                    }
+                }
+            ]
+        }
+    }
+}

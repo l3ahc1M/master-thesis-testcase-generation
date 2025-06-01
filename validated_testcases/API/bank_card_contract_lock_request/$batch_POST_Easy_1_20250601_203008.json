@@ -1,0 +1,29 @@
+{
+    "difficulty": "Easy",
+    "input": "I want to lock my bank card contract right away. The user with the id 105 is currently active.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "/BankCardContractLockRequests",
+                    "body": {
+                        "ID": "105",
+                        "PartyIdentifyingElements": "Customer ID 12345",
+                        "ChangeStateID": "2024-05-01T10:00:00Z",
+                        "EventCode": "103000",
+                        "EventName": "Card Dispatch Lock",
+                        "UserStatusCode": "2",
+                        "UserStatusName": "Active",
+                        "ValidityStartDate": "2024-05-01",
+                        "ValidityEndDate": "2024-05-01",
+                        "BusinessProcessChainAssignment": "Locking Process",
+                        "Note": "Customer requested immediate lock."
+                    }
+                }
+            ]
+        }
+    }
+}

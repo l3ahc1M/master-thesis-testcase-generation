@@ -1,0 +1,29 @@
+{
+    "difficulty": "Medium",
+    "input": "Please lock my bank card contract starting from next month. The user with the id 105 wants the lock to begin on June 1, 2024.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "/BankCardContractLockRequests",
+                    "body": {
+                        "ID": "105",
+                        "PartyIdentifyingElements": "Customer ID 12345",
+                        "ChangeStateID": "2024-05-01T10:00:00Z",
+                        "EventCode": "103000",
+                        "EventName": "Card Dispatch Lock",
+                        "UserStatusCode": "2",
+                        "UserStatusName": "Active",
+                        "ValidityStartDate": "2024-06-01",
+                        "ValidityEndDate": "2024-06-01",
+                        "BusinessProcessChainAssignment": "Locking Process",
+                        "Note": "Customer requested lock to start on future date."
+                    }
+                }
+            ]
+        }
+    }
+}

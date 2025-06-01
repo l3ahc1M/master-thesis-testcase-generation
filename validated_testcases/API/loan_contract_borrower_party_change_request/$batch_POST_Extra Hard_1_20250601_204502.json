@@ -1,0 +1,34 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "I need to process a bunch of requests for changes to borrowers. The first request is for the loan contract with the ID 47938, and it involves a new borrower whose unique identifier is 01234567-89ab-cdef-0123-456789abcdef. This request has a change state ID of 20200309121401.6154150 and is set to be completed by May 1, 2024. The second request is for another loan contract with the ID 47939, which also involves the same new borrower, has the same change state ID, and is also due for completion by May 1, 2024.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "/LoanContractBorrowerPartyChangeRequests",
+                    "body": {
+                        "ID": "47938",
+                        "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+                        "ChangeStateID": "20200309121401.6154150",
+                        "CompletionDate": "2024-05-01",
+                        "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+                    }
+                },
+                {
+                    "method": "POST",
+                    "url": "/LoanContractBorrowerPartyChangeRequests",
+                    "body": {
+                        "ID": "47939",
+                        "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+                        "ChangeStateID": "20200309121401.6154150",
+                        "CompletionDate": "2024-05-01",
+                        "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+                    }
+                }
+            ]
+        }
+    }
+}

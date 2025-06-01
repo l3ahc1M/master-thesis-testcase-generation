@@ -1,0 +1,28 @@
+{
+    "difficulty": "Medium",
+    "input": "Can you help me set up a loan contract for the borrower with the ID 67890? I need to specify the agreement terms and the payment plan for a loan in US dollars.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/LoanContracts",
+        "body": {
+            "ID": "67890",
+            "CurrencyCode": "USD",
+            "BorrowerPartyIdentifyingElements": "Customer ID 67890",
+            "TermAgreements": [
+                {
+                    "TermSpecification": "12 months",
+                    "InterestRate": "5%"
+                }
+            ],
+            "IncomingPaymentAgreements": [
+                {
+                    "PaymentMethod": "Direct Debit",
+                    "Frequency": "Monthly"
+                }
+            ],
+            "LifeCycleStatusCode": "1",
+            "LifeCycleStatusName": "Active",
+            "Product": "Home Loan"
+        }
+    }
+}

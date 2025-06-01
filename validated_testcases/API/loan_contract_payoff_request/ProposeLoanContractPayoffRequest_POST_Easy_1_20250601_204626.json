@@ -1,0 +1,12 @@
+{
+    "difficulty": "Easy",
+    "input": "Can you send me a proposal for paying off my loan? The loan ID I have is 71.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/ProposeLoanContractPayoffRequest",
+        "body": {
+            "ID": "71",
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef"
+        }
+    }
+}

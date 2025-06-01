@@ -1,0 +1,9 @@
+{
+    "difficulty": "Hard",
+    "input": "Could you please activate the current account contract with the ID 34567890-12ab-cdef-0123-456789abcdef and change its status to Active?",
+    "output": {
+        "method": "POST",
+        "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/SAP__self.ActivateCurrentAccountContract",
+        "body": {}
+    }
+}

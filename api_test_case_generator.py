@@ -10,8 +10,6 @@ from llm_connector import OpenAIConnector
 # Configure logging to display timestamps, log level, and messages
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Number of test cases to generate per difficulty level
-test_cases_per_difficulty = 1
 
 # System prompt for the LLM, describing the requirements for test case generation
 system_prompt = """
@@ -25,7 +23,13 @@ Based on these, generate multiple test cases simulating a bank clerk handling cu
 Each test case must include:
 1. A natural language user input based on a customer request - needs to contain all information required for the API call.
 2. The corresponding API call (method, endpoint, body if applicable).
-3. The difficulty level: Easy, Medium, Hard, Very Hard.
+3. The difficulty level: Easy, Medium, Hard, Extra Hard. 
+3.1. Example of an Easy API call: "method": "GET", "endpoint": "/GetTransactionCount", "params": {"userId": "12345"}
+3.2. Example of a Medium API call: "method": "POST","endpoint": "/GetSpendingByCategory", "body": {"accountId": "98765", "month": "2024-05"}
+3.3. Example of a Hard API call: "method": "POST", "endpoint": "/GetHighValueCustomers", "body": {"transactionThreshold": 5, "currency": "EUR"}
+3.4. Example of an Extra Hard API call: "method": "POST", "endpoint": "/CalculateAvgPurchase", "body": {"exclude": {"usedCoupon": true,"inLoyaltyProgram": true},"aggregation": "average","field": "purchaseAmount"}
+
+Note that the examples above are illustrative and should not be used as actual test cases. You must stick to the provided API documentation and the semantic description to create realistic test cases.
 
 It is of the utmost importance that someone else can generate the same output using ONLY the provided documents and the input.
 
@@ -98,7 +102,7 @@ def get_previous_test_cases(output_dir):
                     continue
     return test_cases
 
-def generate_test_cases():
+def generate_test_cases(test_cases_per_difficulty=1):
     """
     Main function to generate test cases for all API endpoints found in the documentation.
     For each endpoint and HTTP method, it:
@@ -110,7 +114,7 @@ def generate_test_cases():
     connector = OpenAIConnector()
     root_input_dir = "system_documentation"  # Directory containing input files for each API
     root_output_dir = os.path.join("raw_testcases", "API")  # Output directory for generated test cases
-    difficulties = ["Easy", "Medium", "Hard", "Very Hard"]
+    difficulties = ["Easy", "Medium", "Hard", "Extra Hard"]
 
     # Iterate over each subdirectory (representing an API or business entity)
     for subdir in os.listdir(root_input_dir):

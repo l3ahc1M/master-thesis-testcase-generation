@@ -1,0 +1,14 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "I need a detailed proposal for my loan contract payoff request with the ID of 71. Please make sure to include the calculation of the total amount due, instructions for the payment transaction, and any waivers for activation charges that I've requested.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/ProposeLoanContractPayoffRequest",
+        "body": {
+            "ID": "71",
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "GrossAmountCalculationResult": "true",
+            "ActivationChargeWaiverRequestedIndicator": true
+        }
+    }
+}
