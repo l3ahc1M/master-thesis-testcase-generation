@@ -1,0 +1,14 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "I need to figure out the total payoff amount for my loan, which has the ID 71. Can you give me the calculation for the gross amount and any instructions for making the payment, including how much the activation charge is?",
+    "output": {
+        "method": "POST",
+        "endpoint": "/CalculateFullLoanContractPayoffRequest",
+        "body": {
+            "ID": "71",
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "ActivationChargeAmount": "100",
+            "GrossAmountCalculationResult": "true"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "difficulty": "Medium",
+    "input": "Could you please lift the balance restriction on my time deposit contract with the ID 23456789-01ab-cdef-0123-456789abcdef? I don't need it anymore.",
+    "output": {
+        "method": "DELETE",
+        "endpoint": "/TimeDepositContracts/23456789-01ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions/1"
+    }
+}

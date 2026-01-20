@@ -1,0 +1,12 @@
+{
+    "difficulty": "Hard",
+    "input": "I need to set up payment transaction instructions for my time deposit contract with the ID 34567890-12ab-cdef-0123-456789abcdef, and I want the maximum transaction limit to be 5000 euros.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/PaymentTransactionInstructions",
+        "body": {
+            "maximumTransactionLimit": 5000,
+            "active": true
+        }
+    }
+}

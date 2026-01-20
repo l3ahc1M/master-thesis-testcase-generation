@@ -1,0 +1,31 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "Could you please update the loan contract with the ID 87654321-09ab-cdef-0123-456789abcdef? I need it to include instructions for multiple payment transactions and to remove certain conditions from the agreement terms.",
+    "output": {
+        "method": "PATCH",
+        "endpoint": "/LoanContracts/87654321-09ab-cdef-0123-456789abcdef",
+        "body": {
+            "TermAgreements": [
+                {
+                    "TermSpecification": "36 months",
+                    "Exclusions": {
+                        "usedCoupon": true,
+                        "inLoyaltyProgram": true
+                    }
+                }
+            ],
+            "PaymentTransactionInstructions": [
+                {
+                    "InstructionType": "Automatic Payment",
+                    "Amount": "600",
+                    "Frequency": "Monthly"
+                },
+                {
+                    "InstructionType": "Manual Payment",
+                    "Amount": "1200",
+                    "Frequency": "Quarterly"
+                }
+            ]
+        }
+    }
+}

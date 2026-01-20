@@ -1,0 +1,17 @@
+{
+    "difficulty": "Hard",
+    "input": "I need to set up a loan contract for the customer with the ID of 33333, and I want to include a dunning process that sends out reminders if the payment is overdue by 20 days.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/LoanContracts",
+        "body": {
+            "ID": "33333",
+            "CurrencyCode": "GBP",
+            "BorrowerPartyIdentifyingElements": "Customer ID 33333",
+            "Dunning": "Send reminders after 20 days of overdue payment",
+            "LifeCycleStatusCode": "1",
+            "LifeCycleStatusName": "Active",
+            "Product": "Business Loan"
+        }
+    }
+}

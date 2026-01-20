@@ -1,0 +1,13 @@
+{
+    "difficulty": "Hard",
+    "input": "I want to set a seasonal limit of 10,000 British pounds on my current account contract, which has the ID 34567890-12ab-cdef-0123-456789abcdef, and I’d like this limit to be active during the holiday season.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/SeasonalLimits",
+        "body": {
+            "limitAmount": 10000,
+            "currency": "GBP",
+            "validityPeriod": "holiday"
+        }
+    }
+}

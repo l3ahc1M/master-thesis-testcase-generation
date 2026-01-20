@@ -1,0 +1,23 @@
+{
+    "difficulty": "Hard",
+    "input": "I want to lock the accounts of the customer with the ID 350 because they have gone over their overdraft limit multiple times.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": [
+            {
+                "ID": "350",
+                "PartyIdentifyingElements": "Customer ID 350",
+                "ChangeStateID": "2024-04-02T11:00:00Z",
+                "EventCode": "105000",
+                "EventName": "Multiple Overdrafts",
+                "UserStatusCode": "2",
+                "UserStatusName": "Active",
+                "ValidityStartDate": "2024-04-02",
+                "ValidityEndDate": "2024-10-02",
+                "BusinessProcessChainAssignment": "Lock Account Process",
+                "Note": "Lock due to multiple overdrafts."
+            }
+        ]
+    }
+}

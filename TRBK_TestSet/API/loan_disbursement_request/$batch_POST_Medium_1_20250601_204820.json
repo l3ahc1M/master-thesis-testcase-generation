@@ -1,0 +1,31 @@
+{
+    "difficulty": "Medium",
+    "input": "I need to send a batch request for loan disbursement. The first request should hold back $1,500 from a total amount of $8,000, with the value date set for December 20, 2024. The second request should have a total amount of $10,000, with the planned payment date on December 25, 2024.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "/LoanDisbursementRequests",
+                    "body": {
+                        "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+                        "GrossAmount": "8000",
+                        "ItemsWithheldAmount": "1500",
+                        "ValueDate": "2024-12-20"
+                    }
+                },
+                {
+                    "method": "POST",
+                    "url": "/LoanDisbursementRequests",
+                    "body": {
+                        "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+                        "GrossAmount": "10000",
+                        "PlannedPaymentDate": "2024-12-25"
+                    }
+                }
+            ]
+        }
+    }
+}

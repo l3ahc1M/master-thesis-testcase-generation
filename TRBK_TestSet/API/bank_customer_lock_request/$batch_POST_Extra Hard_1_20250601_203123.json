@@ -1,0 +1,23 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "Let's lock the accounts of the customer with the ID 450 because we found some suspicious activity on April 2, 2024.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": [
+            {
+                "ID": "450",
+                "PartyIdentifyingElements": "Customer ID 450",
+                "ChangeStateID": "2024-04-02T12:00:00Z",
+                "EventCode": "106000",
+                "EventName": "Suspected Fraudulent Activity",
+                "UserStatusCode": "2",
+                "UserStatusName": "Active",
+                "ValidityStartDate": "2024-04-02",
+                "ValidityEndDate": "2024-12-31",
+                "BusinessProcessChainAssignment": "Lock Account Process",
+                "Note": "Lock due to suspected fraudulent activity."
+            }
+        ]
+    }
+}

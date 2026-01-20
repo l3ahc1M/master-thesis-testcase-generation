@@ -1,0 +1,13 @@
+{
+    "difficulty": "Medium",
+    "input": "Could you please set a seasonal limit of 5000 euros for my current account contract, which has the ID 23456789-01ab-cdef-0123-456789abcdef, and make it valid for the summer months?",
+    "output": {
+        "method": "POST",
+        "endpoint": "/CurrentAccountContracts/23456789-01ab-cdef-0123-456789abcdef/SeasonalLimits",
+        "body": {
+            "limitAmount": 5000,
+            "currency": "EUR",
+            "validityPeriod": "summer"
+        }
+    }
+}

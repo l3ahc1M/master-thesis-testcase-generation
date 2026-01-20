@@ -1,0 +1,16 @@
+{
+    "difficulty": "Easy",
+    "input": "I want to set up a new loan contract for the customer with the ID 12345 using euros as the currency.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/LoanContracts",
+        "body": {
+            "ID": "12345",
+            "CurrencyCode": "EUR",
+            "BorrowerPartyIdentifyingElements": "Customer ID 12345",
+            "LifeCycleStatusCode": "1",
+            "LifeCycleStatusName": "Active",
+            "Product": "Personal Loan"
+        }
+    }
+}

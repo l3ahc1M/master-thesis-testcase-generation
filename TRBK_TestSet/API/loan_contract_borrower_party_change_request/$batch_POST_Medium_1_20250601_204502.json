@@ -1,0 +1,30 @@
+{
+    "difficulty": "Medium",
+    "input": "I need to process a bunch of requests to change the borrowers for some loans. The first loan contract has the ID 47938 and the new borrower's unique identifier is 01234567-89ab-cdef-0123-456789abcdef. The second loan contract has the ID 47939, and it uses the same new borrower's unique identifier.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "/LoanContractBorrowerPartyChangeRequests",
+                    "body": {
+                        "ID": "47938",
+                        "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+                        "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+                    }
+                },
+                {
+                    "method": "POST",
+                    "url": "/LoanContractBorrowerPartyChangeRequests",
+                    "body": {
+                        "ID": "47939",
+                        "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+                        "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+                    }
+                }
+            ]
+        }
+    }
+}

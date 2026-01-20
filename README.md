@@ -27,7 +27,7 @@ This repository provides an automated framework for generating, humanizing, and 
 ├── main.py                                # Entry point (if applicable)
 ├── raw_testcases/                         # Generated raw test cases (gitignored)
 ├── modified_input_testcases/                     # Humanized test cases (gitignored)
-├── validated_testcases/          # Verified test cases (gitignored)
+├── TRBK_TestSet/          s
 ├── system_documentation/                  # API/database docs and semantic descriptions
 │   ├── <api_name>/
 │   │   ├── DB_<api_name>.json             # Database structure for the API
