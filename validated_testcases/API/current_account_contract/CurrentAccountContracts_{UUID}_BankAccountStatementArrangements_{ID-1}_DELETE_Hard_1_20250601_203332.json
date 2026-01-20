@@ -1,9 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "Please remove the bank account statement arrangement with the ID of 3 from my current account contract that has the UUID of 34567890-12ab-cdef-0123-456789abcdef, since I don't need it anymore.",
-    "output": {
-        "method": "DELETE",
-        "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountStatementArrangements/3",
-        "body": {}
-    }
-}
