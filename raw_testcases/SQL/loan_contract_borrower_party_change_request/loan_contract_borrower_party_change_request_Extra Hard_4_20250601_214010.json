@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Find the IDs of loan contract borrower party change requests that have a completion date in the last month and a reason code of 3, and also include the new borrower's identifying elements.",
+  "output": {
+    "sql": "SELECT ID, NewBorrowerPartyIdentifyingElements FROM LoanContractBorrowerPartyChangeRequest WHERE CompletionDate >= DATEADD(MONTH, -1, GETDATE()) AND ReasonCode = '3';"
+  }
+}

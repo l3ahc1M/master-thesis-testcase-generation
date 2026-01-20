@@ -1,0 +1,38 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "Please create a loan contract for the borrower with the ID 54321 that includes a detailed agreement with specific exclusions and various payment instructions.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/LoanContracts",
+        "body": {
+            "ID": "54321",
+            "CurrencyCode": "GBP",
+            "BorrowerPartyIdentifyingElements": "Customer ID 54321",
+            "TermAgreements": [
+                {
+                    "TermSpecification": "36 months",
+                    "InterestRate": "4.2%",
+                    "Exclusions": {
+                        "usedCoupon": true,
+                        "inLoyaltyProgram": true
+                    }
+                }
+            ],
+            "PaymentTransactionInstructions": [
+                {
+                    "InstructionType": "Automatic Payment",
+                    "Amount": "500",
+                    "Frequency": "Monthly"
+                },
+                {
+                    "InstructionType": "Manual Payment",
+                    "Amount": "1000",
+                    "Frequency": "Quarterly"
+                }
+            ],
+            "LifeCycleStatusCode": "1",
+            "LifeCycleStatusName": "Active",
+            "Product": "Education Loan"
+        }
+    }
+}

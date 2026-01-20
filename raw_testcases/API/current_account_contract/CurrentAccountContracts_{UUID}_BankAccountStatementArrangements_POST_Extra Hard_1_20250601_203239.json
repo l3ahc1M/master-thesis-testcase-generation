@@ -1,0 +1,12 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please add a bank account statement arrangement to my current account contract with UUID 45678901-23ab-cdef-0123-456789abcdef, ensuring that it includes both monthly statements and a request for paper copies.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountStatementArrangements",
+    "body": {
+      "frequency": "monthly",
+      "deliveryMethod": "paper"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "List the IDs of all current account contracts.",
+  "output": {
+    "sql": "SELECT ID FROM BankAccountContract WHERE TypeName = 'Current Account Contract';"
+  }
+}

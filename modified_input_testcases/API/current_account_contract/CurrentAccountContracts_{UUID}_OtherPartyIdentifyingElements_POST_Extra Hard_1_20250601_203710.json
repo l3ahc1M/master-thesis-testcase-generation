@@ -1,0 +1,17 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Could you please add another party's identifying information with the UUID '12345678-90ab-cdef-0123-456789abcdef' to my current account contract, which has the UUID '45678901-23ab-cdef-0123-456789abcdef'? Make sure to include a detailed description of the relationship and any relevant documents.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/OtherPartyIdentifyingElements",
+    "body": {
+      "UUID": "12345678-90ab-cdef-0123-456789abcdef",
+      "description": "This party is a co-signer on the account.",
+      "documentation": "Co-signer agreement attached."
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

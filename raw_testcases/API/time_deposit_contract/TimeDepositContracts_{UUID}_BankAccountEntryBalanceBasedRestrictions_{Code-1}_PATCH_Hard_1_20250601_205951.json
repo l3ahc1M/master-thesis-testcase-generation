@@ -1,0 +1,14 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to change the balance restriction for my time deposit contract with UUID 34567890-12ab-cdef-0123-456789abcdef to a transaction threshold of 1200 EUR and exclude accounts with a balance below this threshold.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions/1",
+    "body": {
+      "transactionThreshold": 1200,
+      "exclude": {
+        "balanceThreshold": 1200
+      }
+    }
+  }
+}

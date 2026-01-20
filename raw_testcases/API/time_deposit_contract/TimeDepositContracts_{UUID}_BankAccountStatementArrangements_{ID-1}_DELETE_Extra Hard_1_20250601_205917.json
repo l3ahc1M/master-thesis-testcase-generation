@@ -1,0 +1,8 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please delete the bank account statement arrangements for my time deposit contract with UUID 45678901-23ab-cdef-0123-456789abcdef, as I want to change my notification preferences.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountStatementArrangements/1"
+  }
+}

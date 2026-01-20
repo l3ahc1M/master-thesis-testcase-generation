@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "List the bank card contracts that have a payment card renewal status of 'Renewed' and are linked to a specific bank account.",
+  "output": {
+    "sql": "SELECT * FROM BankCardContract WHERE PaymentCardRenewalStatusName = 'Renewed' AND BankAccount = 'YourBankAccountID';"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to change the way my bank account statements are arranged for my current account contract with the ID 12345678-90ab-cdef-0123-456789abcdef so that I receive statements every month.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/12345678-90ab-cdef-0123-456789abcdef/BankAccountStatementArrangements/1",
+    "body": {
+      "frequency": "monthly"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "List the loan disbursement requests along with their reasons and the planned payment dates for those that have a net amount less than 500.",
+  "output": {
+    "sql": "SELECT ID, ReasonName, PlannedPaymentDate FROM LoanDisbursementRequest WHERE NetAmount < '500';"
+  }
+}

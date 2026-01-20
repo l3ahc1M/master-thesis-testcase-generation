@@ -1,0 +1,17 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please fix my time deposit contract with UUID 45678901-23ab-cdef-0123-456789abcdef, excluding accounts with a balance below 1000 EUR and calculating the average interest rate.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/SAP__self.FixTimeDepositContract",
+    "body": {
+      "IndividualInterestConditions": {
+        "exclude": {
+          "balanceThreshold": 1000
+        },
+        "aggregation": "average",
+        "field": "interestRate"
+      }
+    }
+  }
+}

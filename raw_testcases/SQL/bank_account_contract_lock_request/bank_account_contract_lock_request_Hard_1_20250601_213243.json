@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Show me the count of bank account contract lock requests grouped by event name where the validity start date is in the past.",
+  "output": {
+    "sql": "SELECT EventName, COUNT(*) FROM BankAccountContractLockRequest WHERE ValidityStartDate < CURRENT_DATE GROUP BY EventName;"
+  }
+}

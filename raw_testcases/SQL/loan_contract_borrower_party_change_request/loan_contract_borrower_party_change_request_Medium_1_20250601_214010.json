@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "I need to find all loan contract borrower party change requests that were completed after 2022-01-01.",
+  "output": {
+    "sql": "SELECT * FROM LoanContractBorrowerPartyChangeRequest WHERE CompletionDate > '2022-01-01';"
+  }
+}

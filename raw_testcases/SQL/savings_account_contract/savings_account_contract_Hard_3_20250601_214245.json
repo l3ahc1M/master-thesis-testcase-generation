@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the IDs of savings account contracts that have been created with a draft status and have a specific withdrawal allowance rule.",
+  "output": {
+    "sql": "SELECT ID FROM SavingsAccountContract WHERE CreateDraftRequestedIndicator = TRUE AND WithdrawalAllowanceRule = 'Specific Rule';"
+  }
+}

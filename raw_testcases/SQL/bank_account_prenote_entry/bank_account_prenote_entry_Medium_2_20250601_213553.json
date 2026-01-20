@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you provide the details of prenote entries that are valid and have a debit indicator for the bank account with UUID 01234567-89ab-cdef-0123-456789abcdef?",
+  "output": {
+    "sql": "SELECT * FROM BankAccountPrenoteEntry WHERE BankAccountUUID = '01234567-89ab-cdef-0123-456789abcdef' AND ValidIndicator = TRUE AND BankAccountDebitIndicator = TRUE;"
+  }
+}

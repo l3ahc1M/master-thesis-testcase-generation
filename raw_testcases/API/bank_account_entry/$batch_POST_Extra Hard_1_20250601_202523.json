@@ -1,0 +1,16 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I would like to retrieve all bank account entries for the bank account UUID 98765, ensuring that the response includes entries sorted by date in descending order.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "GET",
+          "url": "/BankAccountEntries?accountId=98765&sortBy=date&order=desc"
+        }
+      ]
+    }
+  }
+}

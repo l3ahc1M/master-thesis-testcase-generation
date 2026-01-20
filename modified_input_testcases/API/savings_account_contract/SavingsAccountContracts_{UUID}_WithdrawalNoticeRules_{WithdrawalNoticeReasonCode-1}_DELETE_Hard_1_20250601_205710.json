@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to get rid of the withdrawal notice rule for my savings account contract that has the ID 456e7890-e12b-12d3-a456-426614174002. Please make sure it's fully deleted.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/SavingsAccountContracts/456e7890-e12b-12d3-a456-426614174002/WithdrawalNoticeRules/1"
+  },
+  "error_log": {
+    "status_code": 404,
+    "response_text": "{\n  \"error\": {\n    \"name\": \"mockRequestNotFoundError\",\n    \"message\": \"Double check your method and the request path and try again. Learn more here: https://learning.postman.com/docs/design-apis/mock-apis/matching-algorithm/\",\n    \"header\": \"No matching requests\"\n  }\n}"
+  }
+}

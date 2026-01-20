@@ -1,0 +1,15 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please establish bank account statement arrangements for my time deposit contract with UUID 45678901-23ab-cdef-0123-456789abcdef, ensuring that I receive both email and SMS notifications, and I want the statements to be sent bi-weekly.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountStatementArrangements",
+    "body": {
+      "notificationMethods": [
+        "email",
+        "SMS"
+      ],
+      "frequency": "bi-weekly"
+    }
+  }
+}

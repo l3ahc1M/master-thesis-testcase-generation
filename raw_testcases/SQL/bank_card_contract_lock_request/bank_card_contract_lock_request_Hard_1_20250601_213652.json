@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the validity start and end dates for all bank card contract lock requests that have a note mentioning 'moved'.",
+  "output": {
+    "sql": "SELECT ValidityStartDate, ValidityEndDate FROM BankCardContractLockRequest WHERE Note LIKE '%moved%';"
+  }
+}

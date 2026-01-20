@@ -1,0 +1,16 @@
+{
+  "difficulty": "Medium",
+  "input": "Could you set up a balance restriction for my time deposit contract with the ID 23456789-01ab-cdef-0123-456789abcdef? I want the transaction limit to be 1000 euros and make sure it's active.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/23456789-01ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions",
+    "body": {
+      "transactionThreshold": 1000,
+      "LifeCycleStatusCode": "2"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

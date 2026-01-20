@@ -1,0 +1,18 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to change the rules for my time deposit contract, which has the ID 34567890-12ab-cdef-0123-456789abcdef. Specifically, I need to make it so that accounts with fewer than 10 transactions are excluded, and I want to set the calculation method to average.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions/1",
+    "body": {
+      "exclude": {
+        "transactionCount": 10
+      },
+      "aggregation": "average"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

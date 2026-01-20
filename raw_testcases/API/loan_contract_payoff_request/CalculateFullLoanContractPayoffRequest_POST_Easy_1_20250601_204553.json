@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you calculate the full loan contract payoff request for my loan with ID 71? I need the gross amount and payment details.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CalculateFullLoanContractPayoffRequest",
+    "body": {
+      "ID": "71",
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Find the event names of bank account contract lock requests that have a user status of 'Active' and were created in the last month.",
+  "output": {
+    "sql": "SELECT EventName FROM BankAccountContractLockRequest WHERE UserStatusCode = '2' AND ValidityStartDate >= DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH);"
+  }
+}

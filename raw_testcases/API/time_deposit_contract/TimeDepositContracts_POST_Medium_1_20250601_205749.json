@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you create a time deposit contract for me? My account holder ID is 67890, and I want it to be active with a term of 12 months.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts",
+    "body": {
+      "AccountHolderPartyIdentifyingElements": "67890",
+      "LifeCycleStatusCode": "2",
+      "TermSpecification": "12 months"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Please update the balance-based restrictions for my savings account contract with UUID 321e0987-e34b-12d3-a456-426614174003 to allow withdrawals only if the balance is above 1500 GBP.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/BankAccountEntryBalanceBasedRestrictions/1",
+    "body": {
+      "TransactionCondition": "BalanceGreaterThan",
+      "ThresholdAmount": 1500,
+      "CurrencyCode": "GBP"
+    }
+  }
+}

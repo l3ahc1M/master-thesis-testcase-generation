@@ -1,0 +1,19 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I want to start a request to change the borrower for my loan contract with the ID 47938. The new borrower's unique identifier is 01234567-89ab-cdef-0123-456789abcdef. Please make sure to update the status of the change and let me know the completion date once it's done.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests",
+    "body": {
+      "ID": "47938",
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "ChangeStateID": "20200309121401.6154150",
+      "NewBorrowerPartyIdentifyingElements": "New Borrower Details",
+      "CompletionDate": "2024-05-01"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

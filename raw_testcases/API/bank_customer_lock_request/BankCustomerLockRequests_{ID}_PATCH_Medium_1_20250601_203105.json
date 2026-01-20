@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Please change the note for the lock request of customer ID 202 to indicate that the account is under review.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankCustomerLockRequests/202",
+    "body": {
+      "Note": "Account is under review."
+    }
+  }
+}

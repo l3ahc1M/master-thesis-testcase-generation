@@ -1,0 +1,17 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to change the statistic-based restrictions for my current account contract, which has the ID 34567890-12ab-cdef-0123-456789abcdef, so that I can make 10 transactions and keep the total amount to 5000 euros each month.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions/3",
+    "body": {
+      "transactionLimit": 10,
+      "totalAmountLimit": 5000,
+      "currency": "EUR"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

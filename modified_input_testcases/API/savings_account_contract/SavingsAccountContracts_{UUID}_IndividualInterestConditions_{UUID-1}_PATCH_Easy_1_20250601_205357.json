@@ -1,0 +1,15 @@
+{
+  "difficulty": "Easy",
+  "input": "I\u00e2\u20ac\u2122d like to add a straightforward individual interest condition to my savings account contract, which has the ID 123e4567-e89b-12d3-a456-426614174000, and I want to set a fixed interest rate of 1.0%.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/123e4567-e89b-12d3-a456-426614174000/IndividualInterestConditions/1",
+    "body": {
+      "InterestRate": 1.0
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

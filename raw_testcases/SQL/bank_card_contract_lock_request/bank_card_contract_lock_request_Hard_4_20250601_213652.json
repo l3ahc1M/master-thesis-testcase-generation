@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Retrieve the IDs of bank card contract lock requests that have a change state ID of '2019-07-13T13:34:46Z' and are associated with the event 'Debit Card Lock'.",
+  "output": {
+    "sql": "SELECT ID FROM BankCardContractLockRequest WHERE ChangeStateID = '2019-07-13T13:34:46Z' AND EventName = 'Debit Card Lock';"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to add a seasonal limit of 10000 GBP to my current account contract with UUID 34567890-12ab-cdef-0123-456789abcdef, and it should be effective during the holiday season.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/SeasonalLimits",
+    "body": {
+      "limitAmount": 10000,
+      "currency": "GBP",
+      "validityPeriod": "holiday"
+    }
+  }
+}

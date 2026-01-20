@@ -1,0 +1,14 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please add a statistic-based restriction to my current account contract with UUID 45678901-23ab-cdef-0123-456789abcdef, ensuring that it limits both the number of transactions to 5 and the total amount to 2000 EUR per month.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions",
+    "body": {
+      "transactionLimit": 5,
+      "totalAmountLimit": 2000,
+      "currency": "EUR",
+      "period": "monthly"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to modify the lock request with ID 105 to include an event name of 'Cheque Lock' and set the validity start date to 2023-01-01.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/105",
+    "body": {
+      "EventName": "Cheque Lock",
+      "ValidityStartDate": "2023-01-01"
+    }
+  }
+}

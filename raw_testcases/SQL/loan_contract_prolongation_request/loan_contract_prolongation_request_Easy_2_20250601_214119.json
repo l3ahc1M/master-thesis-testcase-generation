@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "What is the UUID of the loan contract prolongation request with ID 71?",
+  "output": {
+    "sql": "SELECT UUID FROM LoanContractProlongationRequest WHERE ID = '71';"
+  }
+}

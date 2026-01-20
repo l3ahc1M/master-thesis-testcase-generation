@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "List the IDs of savings account contracts that have a life cycle status of 'Active' and are associated with a specific account holder.",
+  "output": {
+    "sql": "SELECT ID FROM SavingsAccountContract WHERE LifeCycleStatusCode = '2' AND AccountHolderPartyIdentifyingElements = 'Specific Account Holder';"
+  }
+}

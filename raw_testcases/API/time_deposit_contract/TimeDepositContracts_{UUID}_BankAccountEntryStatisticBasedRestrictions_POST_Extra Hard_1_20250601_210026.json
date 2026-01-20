@@ -1,0 +1,15 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please create a statistic-based restriction for my time deposit contract with UUID 45678901-23ab-cdef-0123-456789abcdef, excluding accounts with a transaction count below 5 and calculating the average transaction amount.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions",
+    "body": {
+      "exclude": {
+        "transactionCount": 5
+      },
+      "aggregation": "average",
+      "field": "transactionAmount"
+    }
+  }
+}

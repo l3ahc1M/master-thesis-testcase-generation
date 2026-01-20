@@ -1,0 +1,13 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to remove the other party's identifying element with the ID 12345678-90ab-cdef-0123-456789abcdef from my current account contract that has the ID 98765432-10ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/CurrentAccountContracts/98765432-10ab-cdef-0123-456789abcdef/OtherPartyIdentifyingElements/12345678-90ab-cdef-0123-456789abcdef",
+    "body": {}
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

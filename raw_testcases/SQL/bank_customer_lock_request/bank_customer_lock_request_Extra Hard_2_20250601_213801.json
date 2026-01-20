@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "List all bank customer lock requests along with their associated bank account contracts where the event name is 'Negative Credit Rating'.",
+  "output": {
+    "sql": "SELECT BankCustomerLockRequest.*, BankAccountContract.* FROM BankCustomerLockRequest JOIN BankAccountContract ON BankCustomerLockRequest.BankAccountContracts = BankAccountContract.UUID WHERE EventName = 'Negative Credit Rating';"
+  }
+}

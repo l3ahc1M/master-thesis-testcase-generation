@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to establish payment transaction instructions for my time deposit contract with UUID 34567890-12ab-cdef-0123-456789abcdef, including a maximum transaction limit of 5000 EUR.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/PaymentTransactionInstructions",
+    "body": {
+      "maximumTransactionLimit": 5000,
+      "active": true
+    }
+  }
+}

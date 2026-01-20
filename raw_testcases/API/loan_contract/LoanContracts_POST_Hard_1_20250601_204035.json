@@ -1,0 +1,23 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to create a loan contract for a high-value customer with a transaction threshold of 10000 in EUR. Please include the term specifications and dunning process.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts",
+    "body": {
+      "ID": "99999",
+      "CurrencyCode": "EUR",
+      "BorrowerPartyIdentifyingElements": "High-Value Customer ID 99999",
+      "TermAgreements": [
+        {
+          "TermSpecification": "24 months",
+          "InterestRate": "3.5%"
+        }
+      ],
+      "Dunning": "Send reminders after 15 days of overdue payment",
+      "LifeCycleStatusCode": "1",
+      "LifeCycleStatusName": "Active",
+      "Product": "Business Loan"
+    }
+  }
+}

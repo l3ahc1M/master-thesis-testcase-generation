@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Show me the loan contract payoff requests that have a final payment date in the past.",
+  "output": {
+    "sql": "SELECT * FROM LoanContractPayoffRequest WHERE FinalPaymentDate < CURDATE();"
+  }
+}

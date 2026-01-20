@@ -1,0 +1,12 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please modify the payment transaction instruction with ID 4 for the loan contract with UUID 45678901-23ab-cdef-0123-456789abcdef, increasing the amount to 6000 and adding a processing date of the 15th of each month.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/LoanContracts/45678901-23ab-cdef-0123-456789abcdef/PaymentTransactionInstructions/4",
+    "body": {
+      "Amount": 6000,
+      "ProcessingDate": "15th of each month"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to establish individual interest conditions for my time deposit contract with UUID 34567890-12ab-cdef-0123-456789abcdef, setting a maximum interest rate of 5% and ensuring it is active.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/IndividualInterestConditions",
+    "body": {
+      "maximumInterestRate": 5,
+      "LifeCycleStatusCode": "2"
+    }
+  }
+}

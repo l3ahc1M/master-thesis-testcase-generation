@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "Please fetch the bank account entry with ID 55555 for the bank account UUID 66666. I need this information urgently.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountEntries/55555/66666/SAP__self.ReturnBankAccountEntry",
+    "body": {}
+  }
+}

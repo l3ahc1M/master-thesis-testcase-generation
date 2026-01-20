@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to update the bank account statement arrangements for my time deposit contract with UUID 34567890-12ab-cdef-0123-456789abcdef to receive both email and SMS notifications every month.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountStatementArrangements/1",
+    "body": {
+      "notificationMethods": [
+        "email",
+        "SMS"
+      ],
+      "frequency": "monthly"
+    }
+  }
+}

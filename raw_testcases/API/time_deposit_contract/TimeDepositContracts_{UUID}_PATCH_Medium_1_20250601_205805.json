@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Please update the time deposit contract for my account with UUID 12345678-90ab-cdef-0123-456789abcdef to have a life cycle status of inactive.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/12345678-90ab-cdef-0123-456789abcdef",
+    "body": {
+      "LifeCycleStatusCode": "0",
+      "LifeCycleStatusName": "Inactive"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please lock the accounts of the customer with the ID 404 because we detected some suspicious fraudulent activity on April 1, 2024.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCustomerLockRequests",
+    "body": {
+      "ID": "404",
+      "PartyIdentifyingElements": "Customer ID 404",
+      "ChangeStateID": "2024-04-01T12:00:00Z",
+      "EventCode": "106000",
+      "EventName": "Suspected Fraudulent Activity",
+      "UserStatusCode": "2",
+      "UserStatusName": "Active",
+      "ValidityStartDate": "2024-04-01",
+      "ValidityEndDate": "2024-12-31",
+      "BusinessProcessChainAssignment": "Lock Account Process",
+      "Note": "Lock due to suspected fraudulent activity."
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

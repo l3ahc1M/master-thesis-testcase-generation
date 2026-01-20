@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to skip my loan payment for the contract with UUID 01234567-89ab-cdef-0123-456789abcdef due to financial difficulties. Please set the new installment amount to 300 and the final payment date to 2024-12-31.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanPaymentSkipRequests",
+    "body": {
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "NewInstallmentAmount": "300",
+      "FinalPaymentDate": "2024-12-31"
+    }
+  }
+}

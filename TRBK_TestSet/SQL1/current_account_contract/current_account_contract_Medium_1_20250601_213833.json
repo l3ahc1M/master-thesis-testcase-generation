@@ -1,7 +1,0 @@
-{
-    "difficulty": "Medium",
-    "input": "Can you show me all the current account contracts along with the names of the account holders?",
-    "output": {
-        "sql": "SELECT ID, AccountHolderPartyIdentifyingElements FROM CurrentAccountContract;"
-    }
-}

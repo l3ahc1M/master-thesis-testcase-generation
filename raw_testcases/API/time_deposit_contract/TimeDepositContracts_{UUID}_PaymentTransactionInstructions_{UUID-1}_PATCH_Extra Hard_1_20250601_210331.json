@@ -1,0 +1,17 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please update the payment transaction instructions for my time deposit contract with UUID 45678901-23ab-cdef-0123-456789abcdef to exclude accounts with a balance below 1000 EUR and include a notification setup for weekly alerts.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/PaymentTransactionInstructions/1",
+    "body": {
+      "exclude": {
+        "balanceThreshold": 1000
+      },
+      "notification": {
+        "method": "email",
+        "frequency": "weekly"
+      }
+    }
+  }
+}

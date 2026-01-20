@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Please modify the payment transaction instruction with ID 2 for the loan contract with UUID 23456789-01ab-cdef-0123-456789abcdef to change the frequency to Monthly and the amount to 1200.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/LoanContracts/23456789-01ab-cdef-0123-456789abcdef/PaymentTransactionInstructions/2",
+    "body": {
+      "Frequency": "Monthly",
+      "Amount": 1200
+    }
+  }
+}

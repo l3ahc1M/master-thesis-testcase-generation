@@ -1,0 +1,14 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please set up a detailed statistic-based restriction for my savings account contract with UUID 789e0123-e45b-12d3-a456-426614174004, allowing transactions only if the average monthly spending is below 1500 EUR, and include a notification for any spending that exceeds this limit.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/BankAccountEntryStatisticBasedRestrictions",
+    "body": {
+      "AverageMonthlySpendingCondition": "LessThan",
+      "ThresholdAmount": 1500,
+      "NotificationEnabled": true,
+      "CurrencyCode": "EUR"
+    }
+  }
+}

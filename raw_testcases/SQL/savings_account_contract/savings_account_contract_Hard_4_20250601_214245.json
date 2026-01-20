@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Retrieve the UUIDs of savings account contracts that have a life cycle status of 'Active' and a specific usage note.",
+  "output": {
+    "sql": "SELECT UUID FROM SavingsAccountContract WHERE LifeCycleStatusCode = '2' AND UsageNote = 'Specific Note';"
+  }
+}

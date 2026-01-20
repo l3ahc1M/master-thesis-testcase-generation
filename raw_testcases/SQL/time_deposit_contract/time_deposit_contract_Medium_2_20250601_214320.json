@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "How many time deposit contracts are associated with the bank account having ID 0010000707?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM TimeDepositContract WHERE BankAccountIdentifyingElements = '0010000707';"
+  }
+}

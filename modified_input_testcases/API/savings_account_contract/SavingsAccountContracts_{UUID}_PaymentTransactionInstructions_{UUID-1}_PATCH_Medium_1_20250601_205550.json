@@ -1,0 +1,15 @@
+{
+  "difficulty": "Medium",
+  "input": "Could you please update the payment transaction instructions for my savings account contract with the ID 321e0987-e34b-12d3-a456-426614174003 to set a maximum payment limit of 750 euros?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/PaymentTransactionInstructions/1",
+    "body": {
+      "MaximumPaymentLimit": 750
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

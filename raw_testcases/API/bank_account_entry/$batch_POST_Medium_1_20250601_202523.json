@@ -1,0 +1,16 @@
+{
+  "difficulty": "Medium",
+  "input": "I need to fetch the bank account entries for the bank account UUID 67890 for the last month. Please include all relevant details.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "GET",
+          "url": "/BankAccountEntries?accountId=67890&dateRange=lastMonth"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Please provide the total balance of bank account entries for the account with UUID 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "sql": "SELECT SUM(Amount) FROM BankAccountEntries WHERE BankAccountUUID = '01234567-89ab-cdef-0123-456789abcdef';"
+  }
+}

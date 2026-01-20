@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the event names of bank card contract lock requests that have a validity end date in the future and are associated with a specific party.",
+  "output": {
+    "sql": "SELECT EventName FROM BankCardContractLockRequest WHERE ValidityEndDate > CURRENT_DATE AND PartyIdentifyingElements IS NOT NULL;"
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "Can you set up the bank account statement arrangements for my time deposit contract with the ID 45678901-23ab-cdef-0123-456789abcdef? I’d like to receive notifications via both email and SMS, and I want the statements to come to me every two weeks.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountStatementArrangements",
+        "body": {
+            "notificationMethods": [
+                "email",
+                "SMS"
+            ],
+            "frequency": "bi-weekly"
+        }
+    }
+}

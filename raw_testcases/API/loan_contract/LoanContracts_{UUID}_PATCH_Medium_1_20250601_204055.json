@@ -1,0 +1,16 @@
+{
+  "difficulty": "Medium",
+  "input": "Please update the loan contract with UUID 98765432-10ab-cdef-0123-456789abcdef to include a new term agreement with an interest rate of 3.8%.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/LoanContracts/98765432-10ab-cdef-0123-456789abcdef",
+    "body": {
+      "TermAgreements": [
+        {
+          "TermSpecification": "24 months",
+          "InterestRate": "3.8%"
+        }
+      ]
+    }
+  }
+}

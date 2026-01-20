@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to create a lock request for a bank account contract with UUID 01234567-89ab-cdef-0123-456789abcdef, set the validity start date to 2023-01-01, and the end date to 2023-12-31. The user status code should be 2 and the event name should be 'Debit Card Lock (for Account)'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractLockRequests",
+    "body": {
+      "BankAccountContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "ValidityStartDate": "2023-01-01",
+      "ValidityEndDate": "2023-12-31",
+      "UserStatusCode": "2",
+      "EventName": "Debit Card Lock (for Account)"
+    }
+  }
+}

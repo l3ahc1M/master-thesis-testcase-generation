@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the completion date of the account holder change request with UUID 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "sql": "SELECT CompletionDate FROM BankAccountContractAccountHolderChangeRequest WHERE UUID = '01234567-89ab-cdef-0123-456789abcdef';"
+  }
+}

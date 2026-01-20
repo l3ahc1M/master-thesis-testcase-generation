@@ -1,0 +1,38 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "Please create a loan contract for the borrower with the ID 44444 that includes a detailed agreement with various payment instructions and leaves out certain conditions.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/LoanContracts",
+        "body": {
+            "ID": "44444",
+            "CurrencyCode": "AUD",
+            "BorrowerPartyIdentifyingElements": "Customer ID 44444",
+            "TermAgreements": [
+                {
+                    "TermSpecification": "60 months",
+                    "InterestRate": "5.0%",
+                    "Exclusions": {
+                        "usedCoupon": true,
+                        "inLoyaltyProgram": true
+                    }
+                }
+            ],
+            "PaymentTransactionInstructions": [
+                {
+                    "InstructionType": "Automatic Payment",
+                    "Amount": "1000",
+                    "Frequency": "Monthly"
+                },
+                {
+                    "InstructionType": "Manual Payment",
+                    "Amount": "2000",
+                    "Frequency": "Quarterly"
+                }
+            ],
+            "LifeCycleStatusCode": "1",
+            "LifeCycleStatusName": "Active",
+            "Product": "Education Loan"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please delete the individual interest condition with ID 4 from my current account contract with UUID 45678901-23ab-cdef-0123-456789abcdef, ensuring that all related settings are also removed.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/IndividualInterestConditions/4",
+    "body": {}
+  }
+}

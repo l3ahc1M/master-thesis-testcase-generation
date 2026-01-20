@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to update the statistic-based restriction for my savings account contract with UUID 123e4567-e89b-12d3-a456-426614174000 to allow a maximum transaction limit of 2000 EUR.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/123e4567-e89b-12d3-a456-426614174000/BankAccountEntryStatisticBasedRestrictions/1",
+    "body": {
+      "MaximumTransactionLimit": 2000,
+      "CurrencyCode": "EUR"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Get the average validity period of bank customer lock requests that have a user status of 'Active' and an event code of '103000'.",
+  "output": {
+    "sql": "SELECT AVG(DATEDIFF(ValidityEndDate, ValidityStartDate)) FROM BankCustomerLockRequest WHERE UserStatusCode = '2' AND EventCode = '103000';"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the UUIDs of current account contracts that have been modified in the last month.",
+  "output": {
+    "sql": "SELECT UUID FROM CurrentAccountContract WHERE SystemAdministrativeData > DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH);"
+  }
+}

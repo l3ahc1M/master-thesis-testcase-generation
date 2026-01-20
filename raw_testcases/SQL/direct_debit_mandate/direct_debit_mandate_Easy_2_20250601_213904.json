@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "What is the signature date for the direct debit mandate with ID TEST1234?",
+  "output": {
+    "sql": "SELECT SignatureDate FROM DirectDebitMandate WHERE ID = 'TEST1234';"
+  }
+}

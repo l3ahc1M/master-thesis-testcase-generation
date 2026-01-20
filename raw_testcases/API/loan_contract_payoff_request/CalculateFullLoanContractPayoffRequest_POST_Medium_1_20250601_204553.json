@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "I would like to calculate the full payoff amount for my loan with ID 71. Please include the expected payment date and any transaction instructions.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CalculateFullLoanContractPayoffRequest",
+    "body": {
+      "ID": "71",
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "ExpectedPaymentDate": "2024-05-01"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the total net amount of loan disbursement requests grouped by their lifecycle status.",
+  "output": {
+    "sql": "SELECT LifeCycleStatusName, SUM(NetAmount) FROM LoanDisbursementRequest GROUP BY LifeCycleStatusName;"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to add another party's identifying element with the ID 'abcdef12-34ab-cdef-5678-90abcdef1234' to my current account contract that has the ID 34567890-12ab-cdef-0123-456789abcdef, and I want to include a note about our relationship.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/OtherPartyIdentifyingElements",
+    "body": {
+      "UUID": "abcdef12-34ab-cdef-5678-90abcdef1234",
+      "note": "This is a business partner."
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

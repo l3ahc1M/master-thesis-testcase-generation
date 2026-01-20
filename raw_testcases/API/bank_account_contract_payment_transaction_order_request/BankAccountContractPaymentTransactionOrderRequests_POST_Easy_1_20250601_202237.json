@@ -1,0 +1,15 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to create a payment transaction order request for my bank account. My account UUID is 01234567-89ab-cdef-0123-456789abcdef and the transaction amount is 100.00 USD.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests",
+    "body": {
+      "UUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "BankAccountUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "TransactionCurrencyAmount": "100.00",
+      "LifeCycleStatusCode": "1",
+      "LifeCycleStatusName": "Active"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to establish payment transaction instructions for my savings account contract with UUID 456e7890-e12b-12d3-a456-426614174002, allowing payments only if the balance exceeds 1000 USD and setting a notification for any payment attempt below that threshold.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts/456e7890-e12b-12d3-a456-426614174002/PaymentTransactionInstructions",
+    "body": {
+      "BalanceCondition": "GreaterThan",
+      "ThresholdAmount": 1000,
+      "NotificationEnabled": true
+    }
+  }
+}

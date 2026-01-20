@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Please fix the time deposit contract for my account with UUID 23456789-01ab-cdef-0123-456789abcdef and ensure it has a term of 18 months.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/23456789-01ab-cdef-0123-456789abcdef/SAP__self.FixTimeDepositContract",
+    "body": {
+      "TermSpecification": "18 months"
+    }
+  }
+}

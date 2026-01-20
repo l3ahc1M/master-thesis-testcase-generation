@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to impose a balance restriction of 5000 USD on my current account contract with UUID 34567890-12ab-cdef-0123-456789abcdef, and I want to specify that it should not allow overdrafts.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions",
+    "body": {
+      "restrictionAmount": 5000,
+      "currency": "USD",
+      "allowOverdraft": false
+    }
+  }
+}

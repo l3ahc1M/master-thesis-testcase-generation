@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the number of bank card contract lock requests that have a note indicating a customer has moved and are still active.",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankCardContractLockRequest WHERE Note LIKE '%moved%' AND UserStatusCode = '2';"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List the UUIDs of all time deposit contracts that are currently active and have a currency code of EUR.",
+  "output": {
+    "sql": "SELECT UUID FROM TimeDepositContract WHERE LifeCycleStatusCode = '2' AND CurrencyCode = 'EUR';"
+  }
+}

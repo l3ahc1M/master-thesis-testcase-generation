@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "What is the planned execution date for the payment transaction order request with ID '0001-123456'?",
+  "output": {
+    "sql": "SELECT PlannedExecutionDate FROM BankAccountContractPaymentTransactionOrderRequest WHERE ID = '0001-123456';"
+  }
+}

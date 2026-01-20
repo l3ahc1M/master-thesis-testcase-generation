@@ -1,0 +1,16 @@
+{
+  "difficulty": "Hard",
+  "input": "I would like to change the terms of my savings account contract, which has the ID 98765432-10ab-cdef-0123-456789abcdef, so that I can make withdrawals without giving any prior notice. Also, I want to set the duration for when I can access my withdrawal earnings to two months.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/98765432-10ab-cdef-0123-456789abcdef",
+    "body": {
+      "WithdrawalAllowanceRule": "Allow withdrawals without prior notice",
+      "WithdrawalEarningsAvailabilityDuration": "P2M"
+    }
+  },
+  "error_log": {
+    "status_code": 404,
+    "response_text": "{\n  \"error\": {\n    \"name\": \"mockRequestNotFoundError\",\n    \"message\": \"Double check your method and the request path and try again. Learn more here: https://learning.postman.com/docs/design-apis/mock-apis/matching-algorithm/\",\n    \"header\": \"No matching requests\"\n  }\n}"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I want to set up a savings account contract that allows me to withdraw earnings after one month, and I\u00e2\u20ac\u2122d like to include some tailored interest conditions. The account should be in euros and have a unique change state ID of 20191122135035.7818490.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts",
+    "body": {
+      "CurrencyCode": "EUR",
+      "WithdrawalEarningsAvailabilityDuration": "P1M",
+      "ChangeStateID": "20191122135035.7818490",
+      "AdaptedInterestConditions": []
+    }
+  },
+  "error_log": {
+    "status_code": 404,
+    "response_text": "{\n  \"error\": {\n    \"name\": \"mockRequestNotFoundError\",\n    \"message\": \"Double check your method and the request path and try again. Learn more here: https://learning.postman.com/docs/design-apis/mock-apis/matching-algorithm/\",\n    \"header\": \"No matching requests\"\n  }\n}"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "List all prenote entries that have been created in the last month and are valid for the bank account with UUID 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "sql": "SELECT * FROM BankAccountPrenoteEntry WHERE BankAccountUUID = '01234567-89ab-cdef-0123-456789abcdef' AND ValidIndicator = TRUE AND ValidityStartDate >= CURRENT_DATE - INTERVAL '1 month';"
+  }
+}

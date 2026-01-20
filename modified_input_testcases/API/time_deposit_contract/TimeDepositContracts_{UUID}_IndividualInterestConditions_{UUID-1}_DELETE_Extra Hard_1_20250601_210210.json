@@ -1,0 +1,12 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Could you please remove the individual interest conditions for my time deposit contract with the ID 45678901-23ab-cdef-0123-456789abcdef? I don't need them anymore and would like to update my account preferences.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/IndividualInterestConditions/1"
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

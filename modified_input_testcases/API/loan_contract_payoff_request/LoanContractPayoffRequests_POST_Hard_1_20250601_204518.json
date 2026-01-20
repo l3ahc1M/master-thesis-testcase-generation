@@ -1,0 +1,17 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to cancel my loan contract payoff request that has the ID 71 because my financial situation has changed.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContractPayoffRequests",
+    "body": {
+      "ID": "71",
+      "CancellationReasonCode": "1",
+      "CancellationReasonName": "Change in Financial Situation"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

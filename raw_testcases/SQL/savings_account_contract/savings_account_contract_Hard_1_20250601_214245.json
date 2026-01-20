@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the UUIDs of savings account contracts that have a withdrawal earnings availability duration of more than 1 month.",
+  "output": {
+    "sql": "SELECT UUID FROM SavingsAccountContract WHERE WithdrawalEarningsAvailabilityDuration > 'P1M';"
+  }
+}

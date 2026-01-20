@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to update the statistic-based restriction for my current account contract with UUID 34567890-12ab-cdef-0123-456789abcdef to allow 10 transactions and limit the total amount to 5000 EUR per month.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions/3",
+    "body": {
+      "transactionLimit": 10,
+      "totalAmountLimit": 5000,
+      "currency": "EUR"
+    }
+  }
+}

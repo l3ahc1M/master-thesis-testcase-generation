@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the total residual balance amount for all cancelled bank account contracts.",
+  "output": {
+    "sql": "SELECT SUM(ResidualBankAccountBalanceAmount) FROM BankAccountContractCancelRequest WHERE CancellationDate IS NOT NULL;"
+  }
+}

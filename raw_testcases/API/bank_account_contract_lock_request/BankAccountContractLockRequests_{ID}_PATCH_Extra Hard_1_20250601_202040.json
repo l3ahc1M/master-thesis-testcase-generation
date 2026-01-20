@@ -1,0 +1,13 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please update the lock request with ID 105 to change the event code to 4842, set the user status name to 'Inactive', and include direct debit creditor lock instructions.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/105",
+    "body": {
+      "EventCode": "4842",
+      "UserStatusName": "Inactive",
+      "DirectDebitCreditorLockInstructions": []
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to delete the prenote entry with ID PRENOTE-REFERENCE-1234 for my bank account 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/BankAccountPrenoteEntries/PRENOTE-REFERENCE-1234/01234567-89ab-cdef-0123-456789abcdef"
+  }
+}

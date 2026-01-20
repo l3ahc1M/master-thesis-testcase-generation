@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Count the number of bank customer lock requests that have a validity period longer than 30 days.",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankCustomerLockRequest WHERE DATEDIFF(ValidityEndDate, ValidityStartDate) > 30;"
+  }
+}

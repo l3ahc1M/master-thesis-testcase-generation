@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Get the count of savings account contracts that are in a dormant state and have a specific product associated with them.",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM SavingsAccountContract WHERE DormancyStatusCode = '01' AND Product = 'Specific Product';"
+  }
+}

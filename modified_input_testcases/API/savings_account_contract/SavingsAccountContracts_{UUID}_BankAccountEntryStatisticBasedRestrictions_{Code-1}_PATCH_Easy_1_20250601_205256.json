@@ -1,0 +1,16 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to change the statistic-based restriction for my savings account contract with the ID 123e4567-e89b-12d3-a456-426614174000 so that I can have a maximum transaction limit of 2000 euros.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/123e4567-e89b-12d3-a456-426614174000/BankAccountEntryStatisticBasedRestrictions/1",
+    "body": {
+      "MaximumTransactionLimit": 2000,
+      "CurrencyCode": "EUR"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Get the UUIDs of payment transaction order requests that were posted on '2017-04-13' and have a specific sender item.",
+  "output": {
+    "sql": "SELECT UUID FROM BankAccountContractPaymentTransactionOrderRequest WHERE BankAccountPostingDate = '2017-04-13' AND SenderItem = 'SpecificSender';"
+  }
+}

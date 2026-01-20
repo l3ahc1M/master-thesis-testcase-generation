@@ -1,0 +1,22 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to batch process multiple payment transaction order requests for my account. The first request is for UUID 01234567-89ab-cdef-0123-456789abcdef with an amount of 50.00 USD.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests",
+          "body": {
+            "BankAccountUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "TransactionCurrencyAmount": "50.00",
+            "LifeCycleStatusCode": "1",
+            "LifeCycleStatusName": "Active"
+          }
+        }
+      ]
+    }
+  }
+}

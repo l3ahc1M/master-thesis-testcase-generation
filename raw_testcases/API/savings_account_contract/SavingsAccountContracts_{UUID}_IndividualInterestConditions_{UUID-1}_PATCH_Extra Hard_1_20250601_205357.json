@@ -1,0 +1,18 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please configure complex individual interest conditions for my savings account contract with UUID 789e0123-e45b-12d3-a456-426614174004, including a promotional rate of 2.5% for the first six months and a loyalty bonus of 0.75% for the next year.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/IndividualInterestConditions/1",
+    "body": {
+      "PromotionalRate": {
+        "Rate": 2.5,
+        "Duration": "P6M"
+      },
+      "LoyaltyBonus": {
+        "Rate": 0.75,
+        "Duration": "P1Y"
+      }
+    }
+  }
+}

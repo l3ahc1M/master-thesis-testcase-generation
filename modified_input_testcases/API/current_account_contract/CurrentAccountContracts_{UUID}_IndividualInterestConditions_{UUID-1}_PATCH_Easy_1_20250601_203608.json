@@ -1,0 +1,15 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to change the individual interest condition for my current account contract, which has the ID 12345678-90ab-cdef-0123-456789abcdef, to a rate of 1.0%.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/12345678-90ab-cdef-0123-456789abcdef/IndividualInterestConditions/1",
+    "body": {
+      "rate": "1.0%"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

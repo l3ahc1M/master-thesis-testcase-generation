@@ -1,0 +1,16 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to change the committed capital adjustment for the loan contract with the ID 34567890-12ab-cdef-0123-456789abcdef, setting the amount to 5000 and providing a detailed reason for this adjustment.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/LoanContracts/34567890-12ab-cdef-0123-456789abcdef/CommittedCapitalAdjustments/3",
+    "body": {
+      "AdjustmentAmount": 5000,
+      "Reason": "Adjustment due to increased funding needs for expansion"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

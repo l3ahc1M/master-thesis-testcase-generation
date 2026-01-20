@@ -1,0 +1,9 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I would like to cancel the bank account entry with ID 13579 for the bank account UUID 24680. Make sure to confirm the cancellation once it's done.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountEntries/13579/24680/SAP__self.CancelBankAccountEntry",
+    "body": {}
+  }
+}

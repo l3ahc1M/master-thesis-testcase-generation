@@ -1,0 +1,9 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I need to retrieve the bank account entry with ID 77777 for the bank account UUID 88888. Ensure that all relevant details are included in the response.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountEntries/77777/88888/SAP__self.ReturnBankAccountEntry",
+    "body": {}
+  }
+}

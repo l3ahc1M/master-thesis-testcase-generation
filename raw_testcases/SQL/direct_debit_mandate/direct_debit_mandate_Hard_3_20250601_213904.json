@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the list of all creditor parties for direct debit mandates that have been signed in the city of Berlin and are currently active.",
+  "output": {
+    "sql": "SELECT DISTINCT CreditorParty FROM DirectDebitMandate WHERE SignatureCityName = 'Berlin' AND UserStatusCode = '2';"
+  }
+}

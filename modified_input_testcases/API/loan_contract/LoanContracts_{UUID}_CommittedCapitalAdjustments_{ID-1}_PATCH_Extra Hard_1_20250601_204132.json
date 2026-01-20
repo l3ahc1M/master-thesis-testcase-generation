@@ -1,0 +1,16 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Could you please update the committed capital adjustment for the loan contract with the ID 45678901-23ab-cdef-0123-456789abcdef? I need to raise the amount to 10,000 and include a detailed explanation for this change.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/LoanContracts/45678901-23ab-cdef-0123-456789abcdef/CommittedCapitalAdjustments/4",
+    "body": {
+      "AdjustmentAmount": 10000,
+      "Reason": "Significant project scope increase requiring additional capital"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

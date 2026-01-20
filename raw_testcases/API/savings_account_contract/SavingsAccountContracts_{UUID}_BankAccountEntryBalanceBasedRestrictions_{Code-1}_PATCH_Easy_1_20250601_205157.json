@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to set a minimum balance restriction of 500 EUR for my savings account contract with UUID 123e4567-e89b-12d3-a456-426614174000.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/123e4567-e89b-12d3-a456-426614174000/BankAccountEntryBalanceBasedRestrictions/1",
+    "body": {
+      "MinimumBalance": 500,
+      "CurrencyCode": "EUR"
+    }
+  }
+}

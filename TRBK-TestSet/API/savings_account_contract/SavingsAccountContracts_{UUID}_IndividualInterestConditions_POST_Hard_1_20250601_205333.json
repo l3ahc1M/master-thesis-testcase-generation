@@ -1,0 +1,24 @@
+{
+    "difficulty": "Hard",
+    "input": "I need to set up specific interest conditions for my savings account contract with the ID 456e7890-e12b-12d3-a456-426614174002, which includes a tiered interest rate system based on the account balance.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/SavingsAccountContracts/456e7890-e12b-12d3-a456-426614174002/IndividualInterestConditions",
+        "body": {
+            "TieredInterestRates": [
+                {
+                    "BalanceThreshold": 1000,
+                    "InterestRate": 1.0
+                },
+                {
+                    "BalanceThreshold": 5000,
+                    "InterestRate": 1.5
+                },
+                {
+                    "BalanceThreshold": 10000,
+                    "InterestRate": 2.0
+                }
+            ]
+        }
+    }
+}

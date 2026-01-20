@@ -1,0 +1,19 @@
+{
+  "difficulty": "Hard",
+  "input": "Could you please help me with a request to change the borrower on my loan contract? The contract ID is 47938, and the new borrower's unique identifier is 01234567-89ab-cdef-0123-456789abcdef. I'm making this change because of a shift in legal form, and I would really appreciate an update on the status of this request.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests",
+    "body": {
+      "ID": "47938",
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "ReasonCode": "1",
+      "ReasonName": "Change of legal form",
+      "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

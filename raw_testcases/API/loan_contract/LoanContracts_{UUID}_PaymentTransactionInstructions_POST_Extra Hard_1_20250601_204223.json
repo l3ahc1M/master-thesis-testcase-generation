@@ -1,0 +1,14 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please create a payment transaction instruction for the loan contract with UUID 45678901-23ab-cdef-0123-456789abcdef, including an automatic payment of 5000 monthly, and specify that it should be processed on the first of each month.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts/45678901-23ab-cdef-0123-456789abcdef/PaymentTransactionInstructions",
+    "body": {
+      "InstructionType": "Automatic Payment",
+      "Amount": 5000,
+      "Frequency": "Monthly",
+      "ProcessingDate": "1st of each month"
+    }
+  }
+}

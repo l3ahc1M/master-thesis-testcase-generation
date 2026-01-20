@@ -1,0 +1,28 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please add detailed identifying elements for multiple parties to my savings account contract with UUID 789e0123-e45b-12d3-a456-426614174004, including their roles and contact information.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/OtherPartyIdentifyingElements",
+    "body": {
+      "Parties": [
+        {
+          "ID": "11111",
+          "Role": "Co-signer",
+          "ContactInfo": {
+            "Email": "cosigner@example.com",
+            "Phone": "123-456-7890"
+          }
+        },
+        {
+          "ID": "22222",
+          "Role": "Beneficiary",
+          "ContactInfo": {
+            "Email": "beneficiary@example.com",
+            "Phone": "098-765-4321"
+          }
+        }
+      ]
+    }
+  }
+}

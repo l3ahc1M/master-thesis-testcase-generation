@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to update the bank account statement arrangements for my savings account contract with UUID 456e7890-e12b-12d3-a456-426614174002 to receive bi-annual statements and include a summary of transactions.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/456e7890-e12b-12d3-a456-426614174002/BankAccountStatementArrangements/1",
+    "body": {
+      "Frequency": "Bi-Annual",
+      "IncludeTransactionSummary": true
+    }
+  }
+}

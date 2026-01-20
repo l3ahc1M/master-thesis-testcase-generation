@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Please provide the UUIDs and IDs of all loan contracts that are currently active.",
+  "output": {
+    "sql": "SELECT UUID, ID FROM BankAccountContract WHERE TypeName = 'Loan Contract' AND LifeCycleStatusName = 'Active';"
+  }
+}

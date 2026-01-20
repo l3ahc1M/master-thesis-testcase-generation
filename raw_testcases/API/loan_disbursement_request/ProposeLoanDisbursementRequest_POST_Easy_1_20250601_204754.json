@@ -1,0 +1,14 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to propose a loan disbursement request for my loan contract. The gross amount is 5000, and I want to withhold 1000 for fees. The value date is 2024-09-01.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/ProposeLoanDisbursementRequest",
+    "body": {
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "GrossAmount": "5000",
+      "ItemsWithheldAmount": "1000",
+      "ValueDate": "2024-09-01"
+    }
+  }
+}

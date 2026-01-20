@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Find the total number of active bank card contracts for each currency code and their average validity period.",
+  "output": {
+    "sql": "SELECT CurrencyCode, COUNT(*) AS TotalContracts, AVG(DATEDIFF(PaymentCardValidTo, PaymentCardValidFrom)) AS AvgValidity FROM BankCardContract WHERE PaymentCardLifeCycleStatusCode = '1' GROUP BY CurrencyCode;"
+  }
+}

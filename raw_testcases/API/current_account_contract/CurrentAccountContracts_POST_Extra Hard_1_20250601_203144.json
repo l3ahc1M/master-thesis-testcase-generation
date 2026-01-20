@@ -1,0 +1,16 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Can you set up a current account contract with the following details: UUID 98765432-10ab-cdef-0123-456789abcdef, currency EUR, lifecycle status Active, and I want to exclude any previous account restrictions.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts",
+    "body": {
+      "UUID": "98765432-10ab-cdef-0123-456789abcdef",
+      "CurrencyCode": "EUR",
+      "LifeCycleStatusCode": "2",
+      "LifeCycleStatusName": "Active",
+      "BankAccountEntryBalanceBasedRestrictions": [],
+      "BankAccountEntryStatisticBasedRestrictions": []
+    }
+  }
+}

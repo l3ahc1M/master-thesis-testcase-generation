@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to establish balance-based restrictions for my savings account contract with UUID 456e7890-e12b-12d3-a456-426614174002, allowing only transactions if the balance exceeds 2000 USD.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts/456e7890-e12b-12d3-a456-426614174002/BankAccountEntryBalanceBasedRestrictions",
+    "body": {
+      "TransactionCondition": "BalanceGreaterThan",
+      "ThresholdAmount": 2000,
+      "CurrencyCode": "USD"
+    }
+  }
+}

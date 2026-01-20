@@ -1,0 +1,16 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Can you please update the prenote entry with the ID PRENOTE-REFERENCE-4711 to change the planned validity end date to January 1, 2025, and also deactivate all material checks?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountPrenoteEntries/PRENOTE-REFERENCE-4711/01234567-89ab-cdef-0123-456789abcdef",
+    "body": {
+      "PlannedValidityEndDate": "2025-01-01",
+      "AdditionalMaterialChecksDeactivationRequestedIndicator": true
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to update the lock request with the ID of 105 to add an event name of 'Cheque Lock' and change the validity start date to January 1, 2023.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/105",
+    "body": {
+      "EventName": "Cheque Lock",
+      "ValidityStartDate": "2023-01-01"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

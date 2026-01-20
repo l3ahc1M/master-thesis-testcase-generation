@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you change the bank account statement arrangements for my savings account contract with UUID 321e0987-e34b-12d3-a456-426614174003 to receive quarterly statements with email notifications?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/BankAccountStatementArrangements/1",
+    "body": {
+      "Frequency": "Quarterly",
+      "NotificationMethod": "Email"
+    }
+  }
+}

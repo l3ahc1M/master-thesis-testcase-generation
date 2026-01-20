@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to change the balance restriction on my current account contract with UUID 34567890-12ab-cdef-0123-456789abcdef to 5000 GBP and add a note stating 'No withdrawals allowed'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions/3",
+    "body": {
+      "restrictionAmount": 5000,
+      "currency": "GBP",
+      "note": "No withdrawals allowed"
+    }
+  }
+}

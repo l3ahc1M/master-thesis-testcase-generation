@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to delete the statistic-based restriction with ID 1 from my current account contract with UUID 12345678-90ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/CurrentAccountContracts/12345678-90ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions/1",
+    "body": {}
+  }
+}

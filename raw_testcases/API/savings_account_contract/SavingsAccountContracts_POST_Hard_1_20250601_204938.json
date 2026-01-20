@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to set up a savings account contract with a withdrawal allowance rule that permits withdrawals without prior notice. The account should be in GBP and have a UUID of 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts",
+    "body": {
+      "UUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "CurrencyCode": "GBP",
+      "WithdrawalAllowanceRule": "Allow withdrawals without prior notice"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please create a comprehensive lock request for the bank account contract with UUID 01234567-89ab-cdef-0123-456789abcdef. The request should include an event code of 4841, a user status code of 2, a note about the customer being deceased, and specify that the lock instructions should include cheque lock instructions and direct debit mandate lock instructions.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractLockRequests",
+    "body": {
+      "BankAccountContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "EventCode": "4841",
+      "UserStatusCode": "2",
+      "Note": "Customer deceased April 01, 2019",
+      "ChequeLockInstructions": [],
+      "DirectDebitMandateLockInstructions": []
+    }
+  }
+}

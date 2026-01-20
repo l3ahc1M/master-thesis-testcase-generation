@@ -1,0 +1,30 @@
+{
+  "difficulty": "Medium",
+  "input": "I need to batch process multiple borrower change requests. The first loan contract ID is 47938 with a new borrower's UUID of 01234567-89ab-cdef-0123-456789abcdef, and the second loan contract ID is 47939 with the same new borrower's UUID.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/LoanContractBorrowerPartyChangeRequests",
+          "body": {
+            "ID": "47938",
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/LoanContractBorrowerPartyChangeRequests",
+          "body": {
+            "ID": "47939",
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+          }
+        }
+      ]
+    }
+  }
+}

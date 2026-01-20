@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to add an other party identifying element with UUID 'abcdef12-34ab-cdef-5678-90abcdef1234' to my current account contract with UUID 34567890-12ab-cdef-0123-456789abcdef, and include a note about the relationship.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/OtherPartyIdentifyingElements",
+    "body": {
+      "UUID": "abcdef12-34ab-cdef-5678-90abcdef1234",
+      "note": "This is a business partner."
+    }
+  }
+}

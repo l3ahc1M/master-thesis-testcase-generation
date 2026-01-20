@@ -1,0 +1,11 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to update the bank account currency amount lock instructions for the lock request with ID 105, setting the prenote entry type code to 3 and including a validity start date of 2023-01-01.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/105/BankAccountCurrencyAmountLockInstructions/3",
+    "body": {
+      "ValidityStartDate": "2023-01-01"
+    }
+  }
+}

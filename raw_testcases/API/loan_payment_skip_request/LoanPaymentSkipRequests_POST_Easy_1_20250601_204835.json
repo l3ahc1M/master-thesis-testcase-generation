@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to request to skip my loan payment for the loan contract with UUID 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanPaymentSkipRequests",
+    "body": {
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef"
+    }
+  }
+}

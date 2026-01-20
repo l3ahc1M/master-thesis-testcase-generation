@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "List all loan contract payoff requests that have a daily interest on arrears amount greater than 0 and require immediate completion.",
+  "output": {
+    "sql": "SELECT * FROM LoanContractPayoffRequest WHERE DailyInterestOnArrearsAmount > '0' AND ImmediateCompletionRequiredIndicator = TRUE;"
+  }
+}

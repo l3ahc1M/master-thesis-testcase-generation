@@ -1,0 +1,14 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please update the balance restriction for my time deposit contract with UUID 45678901-23ab-cdef-0123-456789abcdef to set a transaction threshold of 2500 EUR, and I want to exclude accounts with used coupons.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions/1",
+    "body": {
+      "transactionThreshold": 2500,
+      "exclude": {
+        "usedCoupon": true
+      }
+    }
+  }
+}

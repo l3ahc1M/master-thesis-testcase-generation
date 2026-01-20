@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you set an individual interest condition for my current account contract with UUID 23456789-01ab-cdef-0123-456789abcdef, specifying a rate of 1.2%?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/23456789-01ab-cdef-0123-456789abcdef/IndividualInterestConditions",
+    "body": {
+      "rate": "1.2%"
+    }
+  }
+}

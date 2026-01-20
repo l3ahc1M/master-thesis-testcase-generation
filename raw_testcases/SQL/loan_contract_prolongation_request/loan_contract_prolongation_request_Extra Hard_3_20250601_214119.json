@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the total reimbursement amount for loan contract prolongation requests grouped by their life cycle status.",
+  "output": {
+    "sql": "SELECT LifeCycleStatusName, SUM(ReimbursementAmount) FROM LoanContractProlongationRequest GROUP BY LifeCycleStatusName;"
+  }
+}

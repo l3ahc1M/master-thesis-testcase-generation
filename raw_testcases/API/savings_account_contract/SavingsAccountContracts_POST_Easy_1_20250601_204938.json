@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to open a savings account with the currency set to EUR and my account holder ID is 12345.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts",
+    "body": {
+      "CurrencyCode": "EUR",
+      "AccountHolderPartyIdentifyingElements": "12345"
+    }
+  }
+}

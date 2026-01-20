@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List the payment transaction order requests that have a transaction currency amount less than 500.",
+  "output": {
+    "sql": "SELECT * FROM BankAccountContractPaymentTransactionOrderRequest WHERE TransactionCurrencyAmount < '500';"
+  }
+}

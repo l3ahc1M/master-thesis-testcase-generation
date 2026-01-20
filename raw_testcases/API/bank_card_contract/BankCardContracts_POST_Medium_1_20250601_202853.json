@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you issue a bank card contract for my account with ID 12345, valid from 2024-01-01 to 2026-01-01?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContracts",
+    "body": {
+      "ID": "12345",
+      "PaymentCardValidFrom": "2024-01-01",
+      "PaymentCardValidTo": "2026-01-01"
+    }
+  }
+}

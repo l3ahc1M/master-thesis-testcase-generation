@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "How many bank account contract lock requests have a note that includes 'lost card'?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankAccountContractLockRequest WHERE Note LIKE '%lost card%';"
+  }
+}

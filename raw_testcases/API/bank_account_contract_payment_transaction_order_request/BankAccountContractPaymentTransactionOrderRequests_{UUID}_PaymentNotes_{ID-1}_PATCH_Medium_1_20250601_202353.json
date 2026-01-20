@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Please update the note with ID 2 for my payment transaction order request with UUID 01234567-89ab-cdef-0123-456789abcdef. The new note should say 'Payment for invoice #67890, please process urgently'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/01234567-89ab-cdef-0123-456789abcdef/PaymentNotes/2",
+    "body": {
+      "PaymentNotes": [
+        "Payment for invoice #67890, please process urgently"
+      ]
+    }
+  }
+}

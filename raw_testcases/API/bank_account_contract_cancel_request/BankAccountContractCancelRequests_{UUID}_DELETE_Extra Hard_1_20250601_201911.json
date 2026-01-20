@@ -1,0 +1,8 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I want to delete my bank account contract cancellation request with UUID abcdef12-3456-7890-abcd-ef1234567890. Please ensure it is removed from the system.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/BankAccountContractCancelRequests/abcdef12-3456-7890-abcd-ef1234567890"
+  }
+}

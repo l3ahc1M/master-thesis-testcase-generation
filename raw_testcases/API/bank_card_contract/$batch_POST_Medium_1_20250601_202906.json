@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Please set up a bank card contract for my savings account with a valid period from 2023-10-01 to 2025-10-01.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContracts",
+    "body": {
+      "BankAccount": "Savings Account",
+      "PaymentCardValidFrom": "2023-10-01",
+      "PaymentCardValidTo": "2025-10-01"
+    }
+  }
+}

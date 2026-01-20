@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Retrieve the loan disbursement requests with a gross amount greater than the average gross amount of all requests.",
+  "output": {
+    "sql": "SELECT * FROM LoanDisbursementRequest WHERE GrossAmount > (SELECT AVG(GrossAmount) FROM LoanDisbursementRequest);"
+  }
+}

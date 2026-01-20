@@ -1,0 +1,17 @@
+{
+    "difficulty": "Hard",
+    "input": "I need to cancel my current account contract, but I also want to take back the cancellation request I made last week. My account ID is 01234567-89ab-cdef-0123-456789abcdef.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/BankAccountContractCancelRequests",
+        "body": {
+            "BankAccountContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "CancellationReasonCode": "000003",
+            "CancellationReasonName": "Customer Request",
+            "CancellationDate": "2024-05-01",
+            "ImmediateCompletionRequiredIndicator": true,
+            "BankAccountSettlementCancellationRequiredIndicator": false,
+            "ReceiptDate": "2024-05-01"
+        }
+    }
+}

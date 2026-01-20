@@ -1,0 +1,16 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you please update the payment transaction instruction with the ID of 2 for the loan contract that has the UUID 23456789-01ab-cdef-0123-456789abcdef? I need to change the payment frequency to monthly and set the amount to $1200.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/LoanContracts/23456789-01ab-cdef-0123-456789abcdef/PaymentTransactionInstructions/2",
+    "body": {
+      "Frequency": "Monthly",
+      "Amount": 1200
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

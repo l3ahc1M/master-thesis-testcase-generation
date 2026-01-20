@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "What is the gross amount for the loan contract payoff request with ID 71?",
+  "output": {
+    "sql": "SELECT GrossAmount FROM LoanContractPayoffRequest WHERE ID = '71';"
+  }
+}

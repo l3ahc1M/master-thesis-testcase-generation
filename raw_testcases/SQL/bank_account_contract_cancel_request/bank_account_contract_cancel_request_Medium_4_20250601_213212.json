@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Count the number of bank account contract cancel requests that have a cancellation reason code of 000003.",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankAccountContractCancelRequest WHERE CancellationReasonCode = '000003';"
+  }
+}

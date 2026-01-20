@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to add a payment transaction instruction to my current account contract with UUID 34567890-12ab-cdef-0123-456789abcdef, and I want to specify a limit of 5000 EUR per transaction.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/PaymentTransactionInstructions",
+    "body": {
+      "transactionLimit": 5000,
+      "currency": "EUR"
+    }
+  }
+}

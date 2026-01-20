@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you tell me the validity start date for the bank customer lock request with ID 105?",
+  "output": {
+    "sql": "SELECT ValidityStartDate FROM BankCustomerLockRequest WHERE ID = '105';"
+  }
+}

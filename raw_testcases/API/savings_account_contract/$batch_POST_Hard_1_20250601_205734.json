@@ -1,0 +1,20 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to batch delete the withdrawal notice rules for my savings account contracts with UUIDs 456e7890-e12b-12d3-a456-426614174002 and 321e0987-e34b-12d3-a456-426614174003.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "DELETE",
+          "url": "/SavingsAccountContracts/456e7890-e12b-12d3-a456-426614174002/WithdrawalNoticeRules/1"
+        },
+        {
+          "method": "DELETE",
+          "url": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/WithdrawalNoticeRules/1"
+        }
+      ]
+    }
+  }
+}

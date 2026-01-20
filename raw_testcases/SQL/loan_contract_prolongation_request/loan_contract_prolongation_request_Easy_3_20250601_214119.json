@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "What is the life cycle status name of the loan contract prolongation request with ID 71?",
+  "output": {
+    "sql": "SELECT LifeCycleStatusName FROM LoanContractProlongationRequest WHERE ID = '71';"
+  }
+}

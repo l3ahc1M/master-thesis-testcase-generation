@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the total number of loan contracts that have been disbursed and are associated with a specific bank account.",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM LoanContract AS T1 JOIN LoanDisbursementRequest AS T2 ON T1.UUID = T2.LoanContractUUID WHERE T2.LifeCycleStatusCode = '1';"
+  }
+}

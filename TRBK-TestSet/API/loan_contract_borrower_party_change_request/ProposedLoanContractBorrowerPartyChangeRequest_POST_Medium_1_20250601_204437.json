@@ -1,0 +1,15 @@
+{
+    "difficulty": "Medium",
+    "input": "I'm looking to suggest a change of borrower for my loan contract that has the ID 47938. The new borrower's unique identifier is 01234567-89ab-cdef-0123-456789abcdef, and I want to provide a reason code of 1 for this change.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/ProposedLoanContractBorrowerPartyChangeRequest",
+        "body": {
+            "ID": "47938",
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "NewBorrowerPartyIdentifyingElements": "New Borrower Details",
+            "ReasonCode": "1",
+            "ReasonName": "Change of legal form"
+        }
+    }
+}

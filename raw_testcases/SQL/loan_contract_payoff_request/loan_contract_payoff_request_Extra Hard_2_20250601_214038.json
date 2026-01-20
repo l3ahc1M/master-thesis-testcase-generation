@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "List all loan contract payoff requests that require immediate completion and have a gross amount greater than the average gross amount of all requests.",
+  "output": {
+    "sql": "SELECT * FROM LoanContractPayoffRequest WHERE ImmediateCompletionRequiredIndicator = TRUE AND GrossAmount > (SELECT AVG(GrossAmount) FROM LoanContractPayoffRequest);"
+  }
+}

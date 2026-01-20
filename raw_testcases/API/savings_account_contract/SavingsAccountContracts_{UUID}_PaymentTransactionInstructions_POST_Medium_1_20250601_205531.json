@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Please create payment transaction instructions for my savings account contract with UUID 321e0987-e34b-12d3-a456-426614174003, specifying a payment frequency of monthly and a maximum amount of 500 EUR.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/PaymentTransactionInstructions",
+    "body": {
+      "PaymentFrequency": "Monthly",
+      "MaximumAmount": 500
+    }
+  }
+}

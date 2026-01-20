@@ -1,0 +1,15 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please create individual interest conditions for my time deposit contract with UUID 45678901-23ab-cdef-0123-456789abcdef, excluding accounts with a balance below 500 EUR and calculating the average interest rate.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/IndividualInterestConditions",
+    "body": {
+      "exclude": {
+        "balanceThreshold": 500
+      },
+      "aggregation": "average",
+      "field": "interestRate"
+    }
+  }
+}

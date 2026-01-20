@@ -1,0 +1,18 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to add a payment transaction instruction for the loan contract with the ID 34567890-12ab-cdef-0123-456789abcdef, specifying that I want to make bi-weekly payments of 2000 and including a note for the payment.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts/34567890-12ab-cdef-0123-456789abcdef/PaymentTransactionInstructions",
+    "body": {
+      "InstructionType": "Bi-Weekly Payment",
+      "Amount": 2000,
+      "Frequency": "Bi-Weekly",
+      "Note": "Payment for loan installment"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

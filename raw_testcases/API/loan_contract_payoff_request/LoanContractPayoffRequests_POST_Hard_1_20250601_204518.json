@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to cancel my loan contract payoff request with ID 71. The reason for cancellation is due to a change in my financial situation.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContractPayoffRequests",
+    "body": {
+      "ID": "71",
+      "CancellationReasonCode": "1",
+      "CancellationReasonName": "Change in Financial Situation"
+    }
+  }
+}

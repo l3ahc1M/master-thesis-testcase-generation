@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "Please process a change of account holder for my time deposit account. The new account holder is Bruce Banner, and the former account holder was Betty Ross. The reason for this change is due to a divorce.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/ProposedBankAccountContractAccountHolderChangeRequest",
+    "body": {
+      "BankAccountContractUUID": "fedcba98-7654-3210-fedc-ba9876543210",
+      "NewAccountHolderPartyIdentifyingElements": "Bruce Banner",
+      "FormerAccountHolderPartyIdentifyingElements": "Betty Ross",
+      "ReasonCode": "3",
+      "ChargeWaiverRequestedIndicator": false
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please add an individual interest condition to my current account contract with UUID 45678901-23ab-cdef-0123-456789abcdef, ensuring it includes a rate of 2.0% and a note stating 'Special promotional rate for new customers'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/IndividualInterestConditions",
+    "body": {
+      "rate": "2.0%",
+      "note": "Special promotional rate for new customers"
+    }
+  }
+}

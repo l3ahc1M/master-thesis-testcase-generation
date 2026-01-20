@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Find all bank customer lock requests that have a note indicating a customer has moved to another country.",
+  "output": {
+    "sql": "SELECT * FROM BankCustomerLockRequest WHERE Note LIKE '%moved to another country%';"
+  }
+}

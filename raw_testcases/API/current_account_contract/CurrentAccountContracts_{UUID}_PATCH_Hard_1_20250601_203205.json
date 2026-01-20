@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to update my current account contract with UUID 23456789-01ab-cdef-0123-456789abcdef to have a dormancy status of 'Dormant' and include a comment about its usage.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/23456789-01ab-cdef-0123-456789abcdef",
+    "body": {
+      "DormancyStatusCode": "02",
+      "DormancyStatusName": "Dormant",
+      "UsageNote": "Account is currently not in use."
+    }
+  }
+}

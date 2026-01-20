@@ -1,0 +1,22 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you set up a loan contract for borrower with ID 22222, specifying the term agreement for a loan in EUR?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts",
+    "body": {
+      "ID": "22222",
+      "CurrencyCode": "EUR",
+      "BorrowerPartyIdentifyingElements": "Customer ID 22222",
+      "TermAgreements": [
+        {
+          "TermSpecification": "18 months",
+          "InterestRate": "4.0%"
+        }
+      ],
+      "LifeCycleStatusCode": "1",
+      "LifeCycleStatusName": "Active",
+      "Product": "Home Loan"
+    }
+  }
+}

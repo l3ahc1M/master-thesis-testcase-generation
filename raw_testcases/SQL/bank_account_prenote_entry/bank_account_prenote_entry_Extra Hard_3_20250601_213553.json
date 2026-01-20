@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the UUIDs of all prenote entries that have a planned validity end date in the next 30 days for the bank account with UUID 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "sql": "SELECT UUID FROM BankAccountPrenoteEntry WHERE BankAccountUUID = '01234567-89ab-cdef-0123-456789abcdef' AND PlannedValidityEndDate BETWEEN CURRENT_DATE AND CURRENT_DATE + INTERVAL '30 days';"
+  }
+}

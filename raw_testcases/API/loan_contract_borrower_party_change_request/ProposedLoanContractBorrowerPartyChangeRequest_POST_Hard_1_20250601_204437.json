@@ -1,0 +1,14 @@
+{
+  "difficulty": "Hard",
+  "input": "Please process a borrower change request for my loan contract with ID 47938. The new borrower's UUID is 01234567-89ab-cdef-0123-456789abcdef. I would like to request a waiver for the activation charge.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/ProposedLoanContractBorrowerPartyChangeRequest",
+    "body": {
+      "ID": "47938",
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "NewBorrowerPartyIdentifyingElements": "New Borrower Details",
+      "ChargeWaiverRequestedIndicator": true
+    }
+  }
+}

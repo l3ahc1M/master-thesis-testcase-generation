@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to skip my loan payment for the contract with ID 47938 for one month.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanPaymentSkipRequests",
+    "body": {
+      "ID": "47938",
+      "SkipDatePeriod": "1 month"
+    }
+  }
+}

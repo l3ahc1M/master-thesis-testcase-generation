@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to set up a bank card contract for a credit card with a payment card ID of 4111555533336666 and a renewal status of renewed.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContracts",
+    "body": {
+      "PaymentCardID": "4111555533336666",
+      "PaymentCardRenewalStatusName": "Renewed"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "Please provide an overview of all loan contracts I have, including their current status.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractOverview",
+    "body": {
+      "accountType": "loan",
+      "includeStatus": true
+    }
+  }
+}

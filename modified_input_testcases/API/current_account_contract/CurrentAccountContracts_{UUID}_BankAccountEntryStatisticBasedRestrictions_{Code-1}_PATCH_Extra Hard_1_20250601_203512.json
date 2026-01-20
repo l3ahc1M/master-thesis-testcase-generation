@@ -1,0 +1,18 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Can you please update the transaction restrictions for my current account contract with the ID 45678901-23ab-cdef-0123-456789abcdef? I want to allow 15 transactions and set a monthly total limit of 10,000 British Pounds, and please include a note about seasonal limits.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions/4",
+    "body": {
+      "transactionLimit": 15,
+      "totalAmountLimit": 10000,
+      "currency": "GBP",
+      "note": "Includes seasonal limits"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

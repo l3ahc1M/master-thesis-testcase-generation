@@ -1,0 +1,23 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please add multiple parties to my time deposit contract with UUID 45678901-23ab-cdef-0123-456789abcdef, including their identification details and roles, while ensuring that the information is validated.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/OtherPartyIdentifyingElements",
+    "body": {
+      "parties": [
+        {
+          "name": "Alice Johnson",
+          "role": "Beneficiary",
+          "ID": "123456789"
+        },
+        {
+          "name": "Bob Brown",
+          "role": "Trustee",
+          "ID": "987654321"
+        }
+      ],
+      "validate": true
+    }
+  }
+}

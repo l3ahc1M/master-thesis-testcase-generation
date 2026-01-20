@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the total number of bank account contract cancel requests grouped by their lifecycle status.",
+  "output": {
+    "sql": "SELECT LifeCycleStatusName, COUNT(*) FROM BankAccountContractCancelRequest GROUP BY LifeCycleStatusName;"
+  }
+}

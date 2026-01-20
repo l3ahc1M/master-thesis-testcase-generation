@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the number of bank customer lock requests that have a note mentioning 'deceased'.",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankCustomerLockRequest WHERE Note LIKE '%deceased%';"
+  }
+}

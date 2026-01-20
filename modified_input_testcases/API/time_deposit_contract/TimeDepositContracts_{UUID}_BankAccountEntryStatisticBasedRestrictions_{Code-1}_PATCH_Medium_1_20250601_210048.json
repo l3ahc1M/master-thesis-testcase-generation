@@ -1,0 +1,15 @@
+{
+  "difficulty": "Medium",
+  "input": "Could you please update the statistic-based restriction for my time deposit contract with the ID 23456789-01ab-cdef-0123-456789abcdef to allow a maximum transaction amount of 3000 euros?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/23456789-01ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions/1",
+    "body": {
+      "maximumTransactionAmount": 3000
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

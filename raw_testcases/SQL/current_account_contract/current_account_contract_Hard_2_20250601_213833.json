@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the account holder names and their corresponding usage notes for all current account contracts that are active.",
+  "output": {
+    "sql": "SELECT AccountHolderPartyIdentifyingElements, UsageNote FROM CurrentAccountContract WHERE LifeCycleStatusCode = '2';"
+  }
+}

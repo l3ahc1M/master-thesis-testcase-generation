@@ -1,0 +1,25 @@
+{
+  "difficulty": "Medium",
+  "input": "I would like to request a lock on my bank card contract for a future date. My ID is 105, and I want the lock to begin on June 1, 2024.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContractLockRequests",
+    "body": {
+      "ID": "105",
+      "PartyIdentifyingElements": "Customer ID 12345",
+      "ChangeStateID": "2024-05-01T10:00:00Z",
+      "EventCode": "103000",
+      "EventName": "Card Dispatch Lock",
+      "UserStatusCode": "2",
+      "UserStatusName": "Active",
+      "ValidityStartDate": "2024-06-01",
+      "ValidityEndDate": "2024-06-01",
+      "BusinessProcessChainAssignment": "Locking Process",
+      "Note": "Customer requested lock to start on future date."
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

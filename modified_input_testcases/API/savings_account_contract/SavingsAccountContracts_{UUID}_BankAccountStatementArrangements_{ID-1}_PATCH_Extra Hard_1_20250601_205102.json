@@ -1,0 +1,17 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Could you please change the arrangements for my savings account statement linked to the contract with the ID 987e6543-e21b-12d3-a456-426614174001? I want to receive detailed statements every month and also get SMS notifications.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/987e6543-e21b-12d3-a456-426614174001/BankAccountStatementArrangements/1",
+    "body": {
+      "Frequency": "Monthly",
+      "NotificationMethod": "SMS",
+      "IncludeTransactionDetails": true
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the total number of time deposit contracts that have been created in the last year and are associated with accounts that have a balance greater than 1000.",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM TimeDepositContract WHERE CreationDate >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) AND BankAccountIdentifyingElements IN (SELECT ID FROM BankAccount WHERE Balance > 1000);"
+  }
+}

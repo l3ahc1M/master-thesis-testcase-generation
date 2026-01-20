@@ -1,0 +1,34 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Can you set up some complex payment transaction instructions for my savings account contracts? I've got two contracts with the IDs 123e4567-e89b-12d3-a456-426614174000 and 789e0123-e45b-12d3-a456-426614174004. I want to make sure that payments can only go through if the average monthly balance is over 3000 euros, and I\u00e2\u20ac\u2122d like to receive a notification if there\u00e2\u20ac\u2122s ever a payment attempt that falls below that amount.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "PATCH",
+          "url": "/SavingsAccountContracts/123e4567-e89b-12d3-a456-426614174000/PaymentTransactionInstructions/1",
+          "body": {
+            "AverageBalanceCondition": "GreaterThan",
+            "ThresholdAmount": 3000,
+            "NotificationEnabled": true
+          }
+        },
+        {
+          "method": "PATCH",
+          "url": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/PaymentTransactionInstructions/1",
+          "body": {
+            "AverageBalanceCondition": "GreaterThan",
+            "ThresholdAmount": 3000,
+            "NotificationEnabled": true
+          }
+        }
+      ]
+    }
+  },
+  "error_log": {
+    "status_code": 404,
+    "response_text": "{\n  \"error\": {\n    \"name\": \"mockRequestNotFoundError\",\n    \"message\": \"Double check your method and the request path and try again. Learn more here: https://learning.postman.com/docs/design-apis/mock-apis/matching-algorithm/\",\n    \"header\": \"No matching requests\"\n  }\n}"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you retrieve the bank account entries for the bank account UUID 12345?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "GET",
+          "url": "/BankAccountEntries?accountId=12345"
+        }
+      ]
+    }
+  }
+}

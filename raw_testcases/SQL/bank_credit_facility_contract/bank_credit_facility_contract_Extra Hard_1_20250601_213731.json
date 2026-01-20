@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the total number of subordinated bank contracts for all bank credit facility contracts that have a life cycle status of 'Active' and a product type of 'Current Account'.",
+  "output": {
+    "sql": "SELECT SUM(SubordinatedBankContractNumberValue) FROM BankCreditFacilityContract WHERE LifeCycleStatusName = 'Active' AND Product = 'Current Account';"
+  }
+}

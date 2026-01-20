@@ -1,0 +1,20 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I would like to cancel my loan contract payoff request with UUID 01234567-89ab-cdef-0123-456789abcdef. The reason for cancellation is that I need to reassess my financial situation and explore other options.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/LoanContractPayoffRequests/01234567-89ab-cdef-0123-456789abcdef/SAP__self.CancelLoanContractPayoffRequest",
+          "body": {
+            "CancellationReasonCode": "5",
+            "CancellationReasonName": "Reassessing Financial Situation"
+          }
+        }
+      ]
+    }
+  }
+}

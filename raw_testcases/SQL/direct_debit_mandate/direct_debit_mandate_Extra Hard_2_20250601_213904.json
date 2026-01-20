@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "List all direct debit mandates along with their debtor bank accounts and the status of the mandate.",
+  "output": {
+    "sql": "SELECT DebtorBankAccount, UserStatusName FROM DirectDebitMandate;"
+  }
+}

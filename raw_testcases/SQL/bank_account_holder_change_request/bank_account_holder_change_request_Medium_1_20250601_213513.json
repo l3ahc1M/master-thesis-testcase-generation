@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "How many account holder change requests have been completed?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankAccountContractAccountHolderChangeRequest WHERE LifeCycleStatusName = 'Completed';"
+  }
+}

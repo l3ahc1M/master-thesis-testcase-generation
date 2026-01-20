@@ -1,0 +1,28 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to set up a tiered interest rate system for my savings account contract, which has the ID 456e7890-e12b-12d3-a456-426614174002. The idea is that the interest rate goes up as the balance increases.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/456e7890-e12b-12d3-a456-426614174002/IndividualInterestConditions/1",
+    "body": {
+      "TieredInterestRates": [
+        {
+          "BalanceThreshold": 1000,
+          "InterestRate": 1.0
+        },
+        {
+          "BalanceThreshold": 5000,
+          "InterestRate": 1.5
+        },
+        {
+          "BalanceThreshold": 10000,
+          "InterestRate": 2.0
+        }
+      ]
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

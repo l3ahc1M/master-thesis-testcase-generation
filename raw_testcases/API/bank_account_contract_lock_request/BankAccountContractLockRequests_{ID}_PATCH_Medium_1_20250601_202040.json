@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Please update the lock request with ID 105 to set the validity end date to 2024-12-31 and add a note about the account holder's status.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/105",
+    "body": {
+      "ValidityEndDate": "2024-12-31",
+      "Note": "Account holder's status updated."
+    }
+  }
+}

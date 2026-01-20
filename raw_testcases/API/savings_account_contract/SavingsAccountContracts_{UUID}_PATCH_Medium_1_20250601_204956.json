@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you change the lifecycle status of my savings account contract with ID 67890 to Inactive?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/67890",
+    "body": {
+      "LifeCycleStatusCode": "0",
+      "LifeCycleStatusName": "Inactive"
+    }
+  }
+}

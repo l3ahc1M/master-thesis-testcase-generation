@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the average daily interest amount for all loan contract payoff requests that are still active.",
+  "output": {
+    "sql": "SELECT AVG(DailyInterestAmount) FROM LoanContractPayoffRequest WHERE LifeCycleStatusName = 'Active';"
+  }
+}

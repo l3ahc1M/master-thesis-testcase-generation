@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the UUIDs of all bank credit facility contracts that have a life cycle status of 'Active' and are associated with a specific holder party.",
+  "output": {
+    "sql": "SELECT UUID FROM BankCreditFacilityContract WHERE LifeCycleStatusName = 'Active' AND HolderPartyIdentifyingElements IS NOT NULL;"
+  }
+}

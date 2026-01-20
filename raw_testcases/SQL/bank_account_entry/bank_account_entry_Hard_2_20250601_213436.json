@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Can you tell me the total number of bank account entries for accounts in the currency EUR that are linked to active contracts?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankAccountEntries AS T1 JOIN BankAccountContract AS T2 ON T1.BankAccountUUID = T2.UUID WHERE T2.CurrencyCode = 'EUR' AND T2.LifeCycleStatusCode = '2';"
+  }
+}

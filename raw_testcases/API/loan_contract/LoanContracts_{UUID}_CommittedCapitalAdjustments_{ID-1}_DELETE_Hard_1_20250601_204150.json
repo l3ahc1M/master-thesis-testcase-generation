@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to delete the committed capital adjustment with ID 3 for the loan contract with UUID 34567890-12ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/LoanContracts/34567890-12ab-cdef-0123-456789abcdef/CommittedCapitalAdjustments/3"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to update the statistic-based restriction for my time deposit contract with UUID 34567890-12ab-cdef-0123-456789abcdef to exclude accounts with a transaction count below 10 and set the aggregation to average.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions/1",
+    "body": {
+      "exclude": {
+        "transactionCount": 10
+      },
+      "aggregation": "average"
+    }
+  }
+}

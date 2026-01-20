@@ -1,0 +1,18 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you set up a savings account contract for me? The contract should have the ID 67890, and I want it to be in US dollars. Also, please make sure the account status is set to Active.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts",
+    "body": {
+      "ID": "67890",
+      "CurrencyCode": "USD",
+      "LifeCycleStatusCode": "1",
+      "LifeCycleStatusName": "Active"
+    }
+  },
+  "error_log": {
+    "status_code": 404,
+    "response_text": "{\n  \"error\": {\n    \"name\": \"mockRequestNotFoundError\",\n    \"message\": \"Double check your method and the request path and try again. Learn more here: https://learning.postman.com/docs/design-apis/mock-apis/matching-algorithm/\",\n    \"header\": \"No matching requests\"\n  }\n}"
+  }
+}

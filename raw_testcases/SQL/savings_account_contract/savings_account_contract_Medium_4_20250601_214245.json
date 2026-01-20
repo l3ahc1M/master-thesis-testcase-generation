@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Count the number of savings account contracts that have a withdrawal earnings availability duration of less than 1 month.",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM SavingsAccountContract WHERE WithdrawalEarningsAvailabilityDuration < 'P1M';"
+  }
+}

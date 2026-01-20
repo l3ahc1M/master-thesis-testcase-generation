@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Could you please take away my request to cancel the bank account contract? The unique identifier for this request is 12345678-90ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/BankAccountContractCancelRequests/12345678-90ab-cdef-0123-456789abcdef"
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

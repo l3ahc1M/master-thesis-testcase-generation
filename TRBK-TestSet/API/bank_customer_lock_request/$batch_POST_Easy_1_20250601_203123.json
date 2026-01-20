@@ -1,0 +1,23 @@
+{
+    "difficulty": "Easy",
+    "input": "I need to lock the account of the customer with the ID of 150 because they have a negative credit rating.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": [
+            {
+                "ID": "150",
+                "PartyIdentifyingElements": "Customer ID 150",
+                "ChangeStateID": "2024-04-02T09:00:00Z",
+                "EventCode": "103000",
+                "EventName": "Negative Credit Rating",
+                "UserStatusCode": "2",
+                "UserStatusName": "Active",
+                "ValidityStartDate": "2024-04-02",
+                "ValidityEndDate": "2024-12-31",
+                "BusinessProcessChainAssignment": "Lock Account Process",
+                "Note": "Lock due to negative credit rating."
+            }
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List all prenote entries along with their status for the bank account with UUID 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "sql": "SELECT UUID, LifeCycleStatusName FROM BankAccountPrenoteEntry WHERE BankAccountUUID = '01234567-89ab-cdef-0123-456789abcdef';"
+  }
+}

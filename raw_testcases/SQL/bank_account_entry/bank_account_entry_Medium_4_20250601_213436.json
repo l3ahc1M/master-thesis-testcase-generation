@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Please provide the total balance of bank account entries for the account with BankAccountContractID 761.",
+  "output": {
+    "sql": "SELECT SUM(Amount) FROM BankAccountEntries AS T1 JOIN BankAccountContract AS T2 ON T1.BankAccountUUID = T2.UUID WHERE T2.BankAccountContractID = '761';"
+  }
+}

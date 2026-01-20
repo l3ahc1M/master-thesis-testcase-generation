@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "List the IDs of current account contracts that have a planned cancellation date and are associated with a specific product type.",
+  "output": {
+    "sql": "SELECT ID FROM CurrentAccountContract WHERE PlannedCancellationDate IS NOT NULL AND Product = 'Specific Product Type';"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please calculate the average transaction amount for my direct debit mandates excluding those with used coupons and in loyalty programs.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CalculateAvgPurchase",
+    "body": {
+      "exclude": {
+        "usedCoupon": true,
+        "inLoyaltyProgram": true
+      },
+      "aggregation": "average",
+      "field": "purchaseAmount"
+    }
+  }
+}

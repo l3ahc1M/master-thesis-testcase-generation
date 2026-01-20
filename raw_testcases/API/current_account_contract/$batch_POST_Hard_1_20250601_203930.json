@@ -1,0 +1,28 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to create a batch request to impose balance restrictions on current accounts with UUIDs 34567890-12ab-cdef-0123-456789abcdef and 45678901-23ab-cdef-0123-456789abcdef, specifying different amounts and currencies.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions",
+          "body": {
+            "restrictionAmount": 5000,
+            "currency": "USD"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions",
+          "body": {
+            "restrictionAmount": 3000,
+            "currency": "EUR"
+          }
+        }
+      ]
+    }
+  }
+}

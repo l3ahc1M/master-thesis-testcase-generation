@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "List the loan disbursement requests that have a net amount greater than the average net amount and were created in the last year.",
+  "output": {
+    "sql": "SELECT * FROM LoanDisbursementRequest WHERE NetAmount > (SELECT AVG(NetAmount) FROM LoanDisbursementRequest) AND ValueDate >= CURRENT_DATE - INTERVAL '1 year';"
+  }
+}

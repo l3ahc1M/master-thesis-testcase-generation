@@ -1,0 +1,12 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please update the bank account statement arrangement for my current account contract with UUID 45678901-23ab-cdef-0123-456789abcdef to send statements bi-weekly and ensure it includes a request for electronic delivery.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountStatementArrangements/4",
+    "body": {
+      "frequency": "bi-weekly",
+      "deliveryMethod": "electronic"
+    }
+  }
+}

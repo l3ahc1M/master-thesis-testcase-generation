@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to update my savings account contract with UUID 98765432-10ab-cdef-0123-456789abcdef to allow withdrawals without prior notice and set the withdrawal earnings availability duration to P2M.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/98765432-10ab-cdef-0123-456789abcdef",
+    "body": {
+      "WithdrawalAllowanceRule": "Allow withdrawals without prior notice",
+      "WithdrawalEarningsAvailabilityDuration": "P2M"
+    }
+  }
+}

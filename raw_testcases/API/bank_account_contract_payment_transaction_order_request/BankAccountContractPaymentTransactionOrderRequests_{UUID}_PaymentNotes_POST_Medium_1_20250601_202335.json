@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Please add a note to my payment transaction order request with UUID 01234567-89ab-cdef-0123-456789abcdef. The note should state 'Urgent payment required by end of the month'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/01234567-89ab-cdef-0123-456789abcdef/PaymentNotes",
+    "body": {
+      "PaymentNotes": [
+        "Urgent payment required by end of the month"
+      ]
+    }
+  }
+}

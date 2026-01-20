@@ -1,0 +1,18 @@
+{
+  "difficulty": "Medium",
+  "input": "Please help me set up a loan disbursement request for my loan contract with the ID 47938. I\u00e2\u20ac\u2122d like the net amount to be 8000, and I want to skip the activation charge. I\u00e2\u20ac\u2122m planning to make the payment on July 15, 2024.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanDisbursementRequests",
+    "body": {
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "NetAmount": "8000",
+      "ActivationChargeWaiverRequestedIndicator": true,
+      "PlannedPaymentDate": "2024-07-15"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

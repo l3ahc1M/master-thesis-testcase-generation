@@ -1,0 +1,12 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Lock request for customer ID 404 needs to be updated to reflect a new event code due to a change in circumstances.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankCustomerLockRequests/404",
+    "body": {
+      "EventCode": "107000",
+      "EventName": "Change in Circumstances"
+    }
+  }
+}

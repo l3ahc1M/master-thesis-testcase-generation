@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to cancel my previous request to cancel my bank account contract. The UUID for that request is 87654321-90ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/BankAccountContractCancelRequests/87654321-90ab-cdef-0123-456789abcdef"
+  }
+}

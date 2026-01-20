@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Please create a committed capital adjustment for the loan contract with UUID 23456789-01ab-cdef-0123-456789abcdef, adjusting the amount to 5000 due to a change in financial circumstances.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts/23456789-01ab-cdef-0123-456789abcdef/CommittedCapitalAdjustments",
+    "body": {
+      "AdjustmentAmount": 5000,
+      "AdjustmentDate": "2024-02-01",
+      "Reason": "Change in financial circumstances"
+    }
+  }
+}

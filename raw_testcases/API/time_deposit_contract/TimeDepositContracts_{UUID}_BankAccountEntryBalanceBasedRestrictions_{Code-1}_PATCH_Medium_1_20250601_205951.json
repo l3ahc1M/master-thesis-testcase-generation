@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Please update the balance restriction for my time deposit contract with UUID 23456789-01ab-cdef-0123-456789abcdef to set the transaction threshold to 800 EUR and ensure it is active.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/23456789-01ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions/1",
+    "body": {
+      "transactionThreshold": 800,
+      "LifeCycleStatusCode": "2"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to update the bank account currency amount lock instructions for the lock request with ID 105 to include a prenote entry type code of 1.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/105/BankAccountCurrencyAmountLockInstructions/1",
+    "body": {}
+  }
+}

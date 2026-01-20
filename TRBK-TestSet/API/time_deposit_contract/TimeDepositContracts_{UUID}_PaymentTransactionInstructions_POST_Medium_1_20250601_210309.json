@@ -1,0 +1,14 @@
+{
+    "difficulty": "Medium",
+    "input": "Can you help me set up payment transaction instructions for my time deposit contract with the ID 23456789-01ab-cdef-0123-456789abcdef? I’d like to include a recurring payment option, please.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/TimeDepositContracts/23456789-01ab-cdef-0123-456789abcdef/PaymentTransactionInstructions",
+        "body": {
+            "recurringPayment": {
+                "frequency": "monthly",
+                "amount": 100
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Show me the details of bank account contract cancel requests that have a planned completion date in the future.",
+  "output": {
+    "sql": "SELECT * FROM BankAccountContractCancelRequest WHERE PlannedCompletionDate > CURRENT_DATE;"
+  }
+}

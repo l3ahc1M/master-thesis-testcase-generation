@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you take out the other party identifying element with the ID abcdef12-34ab-cdef-5678-90abcdef1234 and the role of 'co-signer' from my current account contract that has the ID 23456789-01ab-cdef-0123-456789abcdef?",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/CurrentAccountContracts/23456789-01ab-cdef-0123-456789abcdef/OtherPartyIdentifyingElements/abcdef12-34ab-cdef-5678-90abcdef1234/co-signer",
+    "body": {}
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

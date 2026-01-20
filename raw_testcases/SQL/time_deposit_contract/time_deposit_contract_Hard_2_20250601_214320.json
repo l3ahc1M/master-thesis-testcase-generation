@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the UUIDs of time deposit contracts that have a life cycle status of 'Active' and are linked to a specific account holder identified by UUID '01234567-89ab-cdef-0123-456789abcdef'.",
+  "output": {
+    "sql": "SELECT UUID FROM TimeDepositContract WHERE LifeCycleStatusCode = '2' AND AccountHolderPartyIdentifyingElements = '01234567-89ab-cdef-0123-456789abcdef';"
+  }
+}

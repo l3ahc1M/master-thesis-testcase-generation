@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "List the bank account IDs and their corresponding currency codes for accounts that are linked to a specific bank account contract UUID 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "sql": "SELECT ID, CurrencyCode FROM BankAccount WHERE BankAccountContractUUID = '01234567-89ab-cdef-0123-456789abcdef';"
+  }
+}

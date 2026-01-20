@@ -1,0 +1,18 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please set up the payment transaction rules for my savings account contract with the ID 789e0123-e45b-12d3-a456-426614174004 so that payments can only go through if my average monthly balance is over 3000 euros. Also, make sure to send me a notification if there's ever a payment attempt that falls below that amount, and cap the maximum payment at 2000 euros.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/PaymentTransactionInstructions/1",
+    "body": {
+      "AverageBalanceCondition": "GreaterThan",
+      "ThresholdAmount": 3000,
+      "NotificationEnabled": true,
+      "MaximumPaymentLimit": 2000
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I want to change the account holder for my current account. The new account holder is Bruce Wayne, and the former account holder was Alfred Pennyworth. This request is urgent, and I would like to waive the activation charge. The change state ID is 20230309121401.6154150.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": [
+      {
+        "BankAccountContractUUID": "abcdef01-2345-6789-abcd-ef0123456789",
+        "NewAccountHolderPartyIdentifyingElements": "Bruce Wayne",
+        "FormerAccountHolderPartyIdentifyingElements": "Alfred Pennyworth",
+        "ChargeWaiverRequestedIndicator": true,
+        "ChangeStateID": "20230309121401.6154150"
+      }
+    ]
+  }
+}

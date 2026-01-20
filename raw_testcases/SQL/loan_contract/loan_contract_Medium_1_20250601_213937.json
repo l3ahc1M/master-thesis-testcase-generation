@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List the IDs and lifecycle status names of all loan contracts for borrowers with a specific identifying element.",
+  "output": {
+    "sql": "SELECT ID, LifeCycleStatusName FROM LoanContract WHERE BorrowerPartyIdentifyingElements IS NOT NULL;"
+  }
+}

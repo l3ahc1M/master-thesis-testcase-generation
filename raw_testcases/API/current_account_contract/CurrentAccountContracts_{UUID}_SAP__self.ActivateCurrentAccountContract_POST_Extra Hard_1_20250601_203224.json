@@ -1,0 +1,9 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I need to activate the current account contract with UUID 45678901-23ab-cdef-0123-456789abcdef and ensure that all previous restrictions are lifted.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/SAP__self.ActivateCurrentAccountContract",
+    "body": {}
+  }
+}

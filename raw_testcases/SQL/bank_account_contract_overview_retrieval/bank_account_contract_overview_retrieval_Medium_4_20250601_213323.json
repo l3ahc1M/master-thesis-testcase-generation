@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Provide the UUIDs of loan contracts that have a specific borrower party.",
+  "output": {
+    "sql": "SELECT UUID FROM BankAccountContract WHERE TypeName = 'Loan Contract' AND BorrowerPartyIdentifyingElements = 'specific_borrower_id';"
+  }
+}

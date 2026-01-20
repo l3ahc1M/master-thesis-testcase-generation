@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "I need to know how many savings account contracts are active.",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankAccountContract WHERE TypeName = 'Savings Account Contract' AND LifeCycleStatusName = 'Active';"
+  }
+}

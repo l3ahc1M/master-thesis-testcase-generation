@@ -1,0 +1,14 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please configure the payment transaction instructions for my savings account contract with UUID 789e0123-e45b-12d3-a456-426614174004 to allow payments only if the average monthly balance is above 3000 EUR, and include a notification for any payment attempt below that threshold, along with a maximum payment limit of 2000 EUR.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/PaymentTransactionInstructions/1",
+    "body": {
+      "AverageBalanceCondition": "GreaterThan",
+      "ThresholdAmount": 3000,
+      "NotificationEnabled": true,
+      "MaximumPaymentLimit": 2000
+    }
+  }
+}

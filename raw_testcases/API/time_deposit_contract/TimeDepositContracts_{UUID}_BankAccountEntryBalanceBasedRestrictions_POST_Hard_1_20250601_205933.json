@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to set up a balance restriction for my time deposit contract with UUID 34567890-12ab-cdef-0123-456789abcdef, with a transaction threshold of 1500 EUR and I want it to be active.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions",
+    "body": {
+      "transactionThreshold": 1500,
+      "LifeCycleStatusCode": "2"
+    }
+  }
+}

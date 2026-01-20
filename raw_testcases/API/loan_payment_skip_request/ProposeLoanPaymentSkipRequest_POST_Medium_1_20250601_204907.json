@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Please propose a loan payment skip request for my contract with ID 47938. I want to skip payments for the next month due to unexpected expenses.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/ProposeLoanPaymentSkipRequest",
+    "body": {
+      "ID": "47938",
+      "SkipDatePeriod": "1 month",
+      "ReasonName": "Unexpected Expenses"
+    }
+  }
+}

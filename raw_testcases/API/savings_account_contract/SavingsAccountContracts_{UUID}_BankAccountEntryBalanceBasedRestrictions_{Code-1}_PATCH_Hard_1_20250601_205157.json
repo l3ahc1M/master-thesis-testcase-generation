@@ -1,0 +1,14 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to set up a balance-based restriction for my savings account contract with UUID 456e7890-e12b-12d3-a456-426614174002, allowing only transactions if the balance exceeds 2500 USD and setting a notification for any balance below that threshold.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/456e7890-e12b-12d3-a456-426614174002/BankAccountEntryBalanceBasedRestrictions/1",
+    "body": {
+      "TransactionCondition": "BalanceGreaterThan",
+      "ThresholdAmount": 2500,
+      "NotificationEnabled": true,
+      "CurrencyCode": "USD"
+    }
+  }
+}

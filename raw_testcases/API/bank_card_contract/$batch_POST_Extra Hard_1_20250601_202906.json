@@ -1,0 +1,12 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Can you create a bank card contract for my account with a character code of 2, and ensure it is not an additional payment card?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContracts",
+    "body": {
+      "PaymentCardCharacterCode": "2",
+      "AdditionalPaymentCardIndicator": false
+    }
+  }
+}

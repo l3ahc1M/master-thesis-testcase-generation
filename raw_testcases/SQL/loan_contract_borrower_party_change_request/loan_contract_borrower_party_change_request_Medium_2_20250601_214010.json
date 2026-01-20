@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you give me the reason names for all loan contract borrower party change requests that have a charge waiver requested?",
+  "output": {
+    "sql": "SELECT ReasonName FROM LoanContractBorrowerPartyChangeRequest WHERE ChargeWaiverRequestedIndicator = true;"
+  }
+}

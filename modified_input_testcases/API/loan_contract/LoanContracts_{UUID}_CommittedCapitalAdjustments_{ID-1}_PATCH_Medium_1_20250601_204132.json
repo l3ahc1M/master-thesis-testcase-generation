@@ -1,0 +1,16 @@
+{
+  "difficulty": "Medium",
+  "input": "Please update the committed capital adjustment for the loan contract with the ID 23456789-01ab-cdef-0123-456789abcdef. Change the adjustment amount to 3000 and update the reason to \"Adjustment for project completion.\"",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/LoanContracts/23456789-01ab-cdef-0123-456789abcdef/CommittedCapitalAdjustments/2",
+    "body": {
+      "AdjustmentAmount": 3000,
+      "Reason": "Adjustment for project completion"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

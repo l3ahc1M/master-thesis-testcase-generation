@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to update the term agreement for my time deposit contract with UUID 34567890-12ab-cdef-0123-456789abcdef, setting a duration of 24 months and including a clause for early withdrawal penalties.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/TermAgreements/1",
+    "body": {
+      "duration": "24 months",
+      "earlyWithdrawalPenalty": true
+    }
+  }
+}

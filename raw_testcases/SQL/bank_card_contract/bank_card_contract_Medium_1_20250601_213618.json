@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List all bank card contracts along with their cardholder names and statuses.",
+  "output": {
+    "sql": "SELECT T1.PaymentCardID, T1.PaymentCardLifeCycleStatusName, T1.CardHolderPartyIdentifyingElements FROM BankCardContract AS T1;"
+  }
+}

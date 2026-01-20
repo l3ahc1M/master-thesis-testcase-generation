@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List the IDs of all time deposit contracts that are currently inactive.",
+  "output": {
+    "sql": "SELECT ID FROM TimeDepositContract WHERE LifeCycleStatusCode != '2';"
+  }
+}

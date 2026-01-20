@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to set a limit of 1000 EUR on my current account contract with UUID 12345678-90ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/12345678-90ab-cdef-0123-456789abcdef/Limits/1",
+    "body": {
+      "limitAmount": 1000,
+      "currency": "EUR"
+    }
+  }
+}

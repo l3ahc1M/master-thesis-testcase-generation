@@ -1,0 +1,17 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Could you please change the limit for my current account contract, which has the ID 45678901-23ab-cdef-0123-456789abcdef, to 15,000 euros? Also, make sure to add a note mentioning that it includes seasonal limits.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/Limits/4",
+    "body": {
+      "limitAmount": 15000,
+      "currency": "EUR",
+      "note": "Includes seasonal limits"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

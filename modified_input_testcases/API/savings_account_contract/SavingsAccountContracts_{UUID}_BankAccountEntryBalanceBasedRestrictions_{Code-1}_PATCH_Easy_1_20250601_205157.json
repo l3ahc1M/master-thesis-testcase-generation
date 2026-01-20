@@ -1,0 +1,16 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to set a minimum balance requirement of 500 euros for my savings account contract with the ID 123e4567-e89b-12d3-a456-426614174000.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/123e4567-e89b-12d3-a456-426614174000/BankAccountEntryBalanceBasedRestrictions/1",
+    "body": {
+      "MinimumBalance": 500,
+      "CurrencyCode": "EUR"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

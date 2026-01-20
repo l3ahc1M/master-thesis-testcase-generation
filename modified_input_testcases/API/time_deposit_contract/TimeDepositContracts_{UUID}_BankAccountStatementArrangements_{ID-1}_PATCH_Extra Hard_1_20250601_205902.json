@@ -1,0 +1,18 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Could you please change my bank account statement settings for the time deposit contract with the ID 45678901-23ab-cdef-0123-456789abcdef? I want to make sure that accounts with a balance of less than 1000 euros are excluded, and I\u00e2\u20ac\u2122d like the statement frequency to be set to quarterly.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountStatementArrangements/1",
+    "body": {
+      "exclude": {
+        "balanceThreshold": 1000
+      },
+      "frequency": "quarterly"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I want to create a partial loan contract payoff request for my loan with ID 71. The loan contract UUID is 01234567-89ab-cdef-0123-456789abcdef. I need to pay off a net amount of 3000 and I require immediate completion.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CalculatePartialLoanContractPayoffRequest",
+    "body": {
+      "ID": "71",
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "NetAmount": "3000",
+      "ImmediateCompletionRequiredIndicator": true,
+      "FullPayoffRequiredIndicator": false
+    }
+  }
+}

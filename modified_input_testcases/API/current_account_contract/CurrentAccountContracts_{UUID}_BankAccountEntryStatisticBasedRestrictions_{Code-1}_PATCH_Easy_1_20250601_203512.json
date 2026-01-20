@@ -1,0 +1,15 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to change the transaction limit for my current account contract, which has the ID 12345678-90ab-cdef-0123-456789abcdef, to allow 5 transactions each month.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/12345678-90ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions/1",
+    "body": {
+      "transactionLimit": 5
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

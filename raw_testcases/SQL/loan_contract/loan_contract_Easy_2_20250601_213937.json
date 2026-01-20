@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "What is the currency code for loan contract ID 1234?",
+  "output": {
+    "sql": "SELECT CurrencyCode FROM LoanContract WHERE ID = '1234';"
+  }
+}

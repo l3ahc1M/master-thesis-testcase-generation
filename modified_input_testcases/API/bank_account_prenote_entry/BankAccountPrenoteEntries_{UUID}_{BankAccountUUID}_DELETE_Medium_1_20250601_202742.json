@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Could you please take out the prenote entry with the ID PRENOTE-REFERENCE-5678 from my account that has the ID 01234567-89ab-cdef-0123-456789abcdef?",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/BankAccountPrenoteEntries/PRENOTE-REFERENCE-5678/01234567-89ab-cdef-0123-456789abcdef"
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

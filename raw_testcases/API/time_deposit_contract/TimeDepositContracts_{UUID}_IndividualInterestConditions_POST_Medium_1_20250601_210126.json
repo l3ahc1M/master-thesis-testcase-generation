@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Please create individual interest conditions for my time deposit contract with UUID 23456789-01ab-cdef-0123-456789abcdef, excluding accounts with a balance below 1000 EUR.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/23456789-01ab-cdef-0123-456789abcdef/IndividualInterestConditions",
+    "body": {
+      "exclude": {
+        "balanceThreshold": 1000
+      }
+    }
+  }
+}

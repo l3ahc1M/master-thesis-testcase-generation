@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Please change the withdrawal notice rule for my savings account contract with UUID 321e0987-e34b-12d3-a456-426614174003 to require a notice period of 4 days and specify that withdrawals over 2000 EUR need prior approval.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/WithdrawalNoticeRules/1",
+    "body": {
+      "NoticePeriod": "P4D",
+      "ApprovalRequired": true,
+      "ThresholdAmount": 2000,
+      "CurrencyCode": "EUR"
+    }
+  }
+}

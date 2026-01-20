@@ -1,0 +1,14 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please update my bank account statement arrangements for the time deposit contract with UUID 45678901-23ab-cdef-0123-456789abcdef to exclude accounts with a balance below 1000 EUR and set the frequency to quarterly.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountStatementArrangements/1",
+    "body": {
+      "exclude": {
+        "balanceThreshold": 1000
+      },
+      "frequency": "quarterly"
+    }
+  }
+}

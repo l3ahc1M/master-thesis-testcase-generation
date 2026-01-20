@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "How many bank credit facility contracts are there in total?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankCreditFacilityContract;"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to update the bank account statement arrangement for my current account contract with UUID 34567890-12ab-cdef-0123-456789abcdef to include both monthly statements and paper copies.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountStatementArrangements/3",
+    "body": {
+      "frequency": "monthly",
+      "deliveryMethod": "paper"
+    }
+  }
+}

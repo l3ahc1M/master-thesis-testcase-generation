@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "What is the average limit of all bank credit facility contracts that are associated with a specific business process chain and have a life cycle status of 'Active'?",
+  "output": {
+    "sql": "SELECT AVG(Limits) FROM BankCreditFacilityContract WHERE BusinessProcessChainAssignment IS NOT NULL AND LifeCycleStatusName = 'Active';"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Please update the individual interest conditions for my savings account contract with UUID 321e0987-e34b-12d3-a456-426614174003 to include a loyalty bonus of 0.5% for one year.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/IndividualInterestConditions/1",
+    "body": {
+      "LoyaltyBonus": {
+        "Rate": 0.5,
+        "Duration": "P1Y"
+      }
+    }
+  }
+}

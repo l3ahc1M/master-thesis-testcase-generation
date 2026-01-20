@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Please remove the cheque lock instruction with ID 2 from the lock request with ID 105.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/BankAccountContractLockRequests/105/ChequeLockInstructions/2",
+    "body": {}
+  }
+}

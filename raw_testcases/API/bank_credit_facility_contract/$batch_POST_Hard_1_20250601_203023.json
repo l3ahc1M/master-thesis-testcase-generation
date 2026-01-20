@@ -1,0 +1,14 @@
+{
+  "difficulty": "Hard",
+  "input": "Please update the bank credit facility contract with ID 1234 to set its lifecycle status to 'Active' and add a limit of 50000 EUR.",
+  "output": {
+    "method": "PUT",
+    "endpoint": "/BankCreditFacilityContract/1234",
+    "body": {
+      "LifeCycleStatusCode": "1",
+      "Limits": [
+        50000
+      ]
+    }
+  }
+}

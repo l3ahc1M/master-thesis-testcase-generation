@@ -1,0 +1,13 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please update the savings account contract with UUID 12345678-90ab-cdef-0123-456789abcdef to include specific adapted interest conditions and set the dormancy status to Active.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/12345678-90ab-cdef-0123-456789abcdef",
+    "body": {
+      "AdaptedInterestConditions": [],
+      "DormancyStatusCode": "01",
+      "DormancyStatusName": "Active"
+    }
+  }
+}

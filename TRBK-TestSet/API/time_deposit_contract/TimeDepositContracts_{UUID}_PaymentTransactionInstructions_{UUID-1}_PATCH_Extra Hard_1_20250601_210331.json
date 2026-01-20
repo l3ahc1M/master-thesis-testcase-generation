@@ -1,0 +1,17 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "Could you please update the payment transaction instructions for my time deposit contract with the ID 45678901-23ab-cdef-0123-456789abcdef? I want to make sure that accounts with a balance of less than 1000 euros are excluded, and I’d like to set up notifications to be sent to my email every week.",
+    "output": {
+        "method": "PATCH",
+        "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/PaymentTransactionInstructions/1",
+        "body": {
+            "exclude": {
+                "balanceThreshold": 1000
+            },
+            "notification": {
+                "method": "email",
+                "frequency": "weekly"
+            }
+        }
+    }
+}

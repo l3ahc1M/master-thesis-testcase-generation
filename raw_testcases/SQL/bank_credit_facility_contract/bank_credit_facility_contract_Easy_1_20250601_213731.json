@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you tell me how many bank credit facility contracts are currently active?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankCreditFacilityContract WHERE LifeCycleStatusName = 'Active';"
+  }
+}

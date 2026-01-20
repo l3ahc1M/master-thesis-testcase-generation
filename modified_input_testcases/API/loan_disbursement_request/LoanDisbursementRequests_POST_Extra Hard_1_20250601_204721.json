@@ -1,0 +1,20 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I'm looking to set up a loan disbursement request for my loan contract. The total amount I want is $20,000, but I need to hold back $5,000 for fees and $1,000 for installments. I don't want to waive the activation charge, and I want the value date to be August 1, 2024. The process I'm assigning this to is called 'Loan Processing'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanDisbursementRequests",
+    "body": {
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "GrossAmount": "20000",
+      "ItemsWithheldAmount": "6000",
+      "ActivationChargeWaiverRequestedIndicator": false,
+      "ValueDate": "2024-08-01",
+      "BusinessProcessChainAssignment": "Loan Processing"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

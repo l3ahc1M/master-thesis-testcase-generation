@@ -1,0 +1,18 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please set up a payment transaction instruction for the loan contract with the ID 45678901-23ab-cdef-0123-456789abcdef. I want it to include an automatic payment of 5000 every month, and it should be processed on the first day of each month.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts/45678901-23ab-cdef-0123-456789abcdef/PaymentTransactionInstructions",
+    "body": {
+      "InstructionType": "Automatic Payment",
+      "Amount": 5000,
+      "Frequency": "Monthly",
+      "ProcessingDate": "1st of each month"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

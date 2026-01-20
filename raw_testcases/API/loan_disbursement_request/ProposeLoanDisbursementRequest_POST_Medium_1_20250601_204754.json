@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Please propose a loan disbursement request for my loan contract with ID 47938. The net amount should be 7000, and I want to waive the activation charge. The planned payment date is 2024-10-15.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/ProposeLoanDisbursementRequest",
+    "body": {
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "NetAmount": "7000",
+      "ActivationChargeWaiverRequestedIndicator": true,
+      "PlannedPaymentDate": "2024-10-15"
+    }
+  }
+}

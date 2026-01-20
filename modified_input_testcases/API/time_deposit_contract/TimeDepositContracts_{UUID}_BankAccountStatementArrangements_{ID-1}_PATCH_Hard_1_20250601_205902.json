@@ -1,0 +1,19 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to change the arrangements for my bank account statements related to my time deposit contract with the ID 34567890-12ab-cdef-0123-456789abcdef so that I can get both email and SMS notifications every month.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountStatementArrangements/1",
+    "body": {
+      "notificationMethods": [
+        "email",
+        "SMS"
+      ],
+      "frequency": "monthly"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to update the individual interest condition for my current account contract with UUID 12345678-90ab-cdef-0123-456789abcdef to a rate of 1.0%.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/12345678-90ab-cdef-0123-456789abcdef/IndividualInterestConditions/1",
+    "body": {
+      "rate": "1.0%"
+    }
+  }
+}

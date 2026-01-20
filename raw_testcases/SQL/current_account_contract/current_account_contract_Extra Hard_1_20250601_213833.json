@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the total number of current account contracts grouped by their currency codes and only include those with a life cycle status of active.",
+  "output": {
+    "sql": "SELECT CurrencyCode, COUNT(*) FROM CurrentAccountContract WHERE LifeCycleStatusCode = '2' GROUP BY CurrencyCode;"
+  }
+}

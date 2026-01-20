@@ -1,0 +1,30 @@
+{
+  "difficulty": "Medium",
+  "input": "Please create a batch request to set up time deposit contracts for account IDs 33333 and 44444, ensuring they are both active and have a term of 12 months.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/TimeDepositContracts",
+          "body": {
+            "ID": "33333",
+            "LifeCycleStatusCode": "2",
+            "TermSpecification": "12 months"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/TimeDepositContracts",
+          "body": {
+            "ID": "44444",
+            "LifeCycleStatusCode": "2",
+            "TermSpecification": "12 months"
+          }
+        }
+      ]
+    }
+  }
+}

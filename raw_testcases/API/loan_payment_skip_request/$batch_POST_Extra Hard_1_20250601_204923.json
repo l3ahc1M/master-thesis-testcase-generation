@@ -1,0 +1,15 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I would like to submit a loan payment skip request for my loan contract with UUID 01234567-89ab-cdef-0123-456789abcdef. I want to skip payments for 6 months, set the new installment amount to 350, and the final payment date to 2025-06-30 due to a significant financial burden.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanPaymentSkipRequests",
+    "body": {
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "SkipDatePeriod": "6 months",
+      "NewInstallmentAmount": "350",
+      "FinalPaymentDate": "2025-06-30",
+      "ReasonName": "Significant Financial Burden"
+    }
+  }
+}

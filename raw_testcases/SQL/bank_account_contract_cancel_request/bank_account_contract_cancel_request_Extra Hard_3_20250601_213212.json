@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the cancellation reasons for bank account contract cancel requests that were completed and have a residual balance greater than 1000.",
+  "output": {
+    "sql": "SELECT CancellationReasonName FROM BankAccountContractCancelRequest WHERE CompletionDate IS NOT NULL AND ResidualBankAccountBalanceAmount > '1000';"
+  }
+}

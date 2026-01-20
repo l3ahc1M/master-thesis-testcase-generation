@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Show me the UUIDs of all loan contract borrower party change requests where the new borrower party is different from the former borrower party.",
+  "output": {
+    "sql": "SELECT UUID FROM LoanContractBorrowerPartyChangeRequest WHERE NewBorrowerPartyIdentifyingElements != FormerBorrowerPartyIdentifyingElements;"
+  }
+}

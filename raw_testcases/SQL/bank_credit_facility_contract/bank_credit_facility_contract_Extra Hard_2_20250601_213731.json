@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "What is the maximum credit line defined by the bank credit facility contracts that are associated with a specific business process chain?",
+  "output": {
+    "sql": "SELECT MAX(Limits) FROM BankCreditFacilityContract WHERE BusinessProcessChainAssignment IS NOT NULL;"
+  }
+}

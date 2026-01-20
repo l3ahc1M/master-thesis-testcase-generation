@@ -1,0 +1,25 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I want to lock my bank card contract and make sure it stays locked until I come back. My ID is 105, and I want to make it clear that the lock shouldn't be lifted until I ask for it.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContractLockRequests",
+    "body": {
+      "ID": "105",
+      "PartyIdentifyingElements": "Customer ID 12345",
+      "ChangeStateID": "2024-05-01T10:00:00Z",
+      "EventCode": "103000",
+      "EventName": "Card Dispatch Lock",
+      "UserStatusCode": "2",
+      "UserStatusName": "Active",
+      "ValidityStartDate": "2024-05-01",
+      "ValidityEndDate": "2025-05-01",
+      "BusinessProcessChainAssignment": "Locking Process",
+      "Note": "Customer requests indefinite lock until further notice."
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

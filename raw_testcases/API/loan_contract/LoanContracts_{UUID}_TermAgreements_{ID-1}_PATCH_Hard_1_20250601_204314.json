@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to update the term agreement with ID 3 for the loan contract with UUID 34567890-12ab-cdef-0123-456789abcdef, specifying a new term specification of 36 months and including exclusions for certain conditions.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/LoanContracts/34567890-12ab-cdef-0123-456789abcdef/TermAgreements/3",
+    "body": {
+      "TermSpecification": "36 months",
+      "Exclusions": {
+        "usedCoupon": true,
+        "inLoyaltyProgram": true
+      }
+    }
+  }
+}

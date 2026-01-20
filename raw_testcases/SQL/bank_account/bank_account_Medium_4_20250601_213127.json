@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List all bank accounts with a specific bank country code 'DE' and their corresponding currency codes.",
+  "output": {
+    "sql": "SELECT ID, CurrencyCode FROM BankAccount WHERE BankCountryCode = 'DE';"
+  }
+}

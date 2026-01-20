@@ -1,0 +1,11 @@
+{
+    "difficulty": "Easy",
+    "input": "I want to request a change of borrower for my loan contract. The request has the ID 01234567-89ab-cdef-0123-456789abcdef, and the new borrower also has the ID 01234567-89ab-cdef-0123-456789abcdef.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/LoanContractBorrowerPartyChangeRequests/01234567-89ab-cdef-0123-456789abcdef/SAP__self.ProposedByLCUUID",
+        "body": {
+            "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+        }
+    }
+}

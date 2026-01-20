@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the IDs of all bank credit facility contracts that have a currency code of 'USD' and are currently active.",
+  "output": {
+    "sql": "SELECT ID FROM BankCreditFacilityContract WHERE CurrencyCode = 'USD' AND LifeCycleStatusName = 'Active';"
+  }
+}

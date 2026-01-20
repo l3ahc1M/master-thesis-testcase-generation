@@ -1,0 +1,15 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to update the prenote entry with the ID PRENOTE-REFERENCE-1234 for my bank account with the ID 01234567-89ab-cdef-0123-456789abcdef to mark it as valid.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountPrenoteEntries/PRENOTE-REFERENCE-1234/01234567-89ab-cdef-0123-456789abcdef",
+    "body": {
+      "ValidIndicator": true
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

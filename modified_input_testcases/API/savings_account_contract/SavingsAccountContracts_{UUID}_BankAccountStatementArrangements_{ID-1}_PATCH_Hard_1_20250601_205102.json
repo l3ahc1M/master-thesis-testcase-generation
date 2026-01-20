@@ -1,0 +1,16 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to change the arrangements for my savings account statement linked to the contract with the ID 456e7890-e12b-12d3-a456-426614174002 so that I receive statements twice a year and they include a summary of my transactions.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/456e7890-e12b-12d3-a456-426614174002/BankAccountStatementArrangements/1",
+    "body": {
+      "Frequency": "Bi-Annual",
+      "IncludeTransactionSummary": true
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

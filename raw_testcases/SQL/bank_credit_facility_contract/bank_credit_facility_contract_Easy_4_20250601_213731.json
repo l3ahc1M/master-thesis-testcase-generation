@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "What is the life cycle status of the bank credit facility contract with ID 5678?",
+  "output": {
+    "sql": "SELECT LifeCycleStatusName FROM BankCreditFacilityContract WHERE ID = '5678';"
+  }
+}

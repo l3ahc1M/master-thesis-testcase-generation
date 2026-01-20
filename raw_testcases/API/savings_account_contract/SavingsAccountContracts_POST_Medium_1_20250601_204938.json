@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Please create a savings account contract for me with ID 67890, and I want it to be in USD. Also, set the lifecycle status to Active.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts",
+    "body": {
+      "ID": "67890",
+      "CurrencyCode": "USD",
+      "LifeCycleStatusCode": "1",
+      "LifeCycleStatusName": "Active"
+    }
+  }
+}

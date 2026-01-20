@@ -1,0 +1,8 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please delete the individual interest conditions for my time deposit contract with UUID 45678901-23ab-cdef-0123-456789abcdef, as I no longer require them and want to update my account preferences.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/IndividualInterestConditions/1"
+  }
+}

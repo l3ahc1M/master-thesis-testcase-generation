@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Please change the status of the prenote entry with ID PRENOTE-REFERENCE-5678 to Active and set the validity end date to 2024-12-31.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountPrenoteEntries/PRENOTE-REFERENCE-5678/01234567-89ab-cdef-0123-456789abcdef",
+    "body": {
+      "LifeCycleStatusName": "Active",
+      "ValidityEndDate": "2024-12-31"
+    }
+  }
+}

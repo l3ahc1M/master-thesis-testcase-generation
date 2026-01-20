@@ -1,0 +1,14 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please add a seasonal limit of 15000 USD to my current account contract with UUID 45678901-23ab-cdef-0123-456789abcdef, ensuring it is valid for the entire winter season and includes a note about special conditions.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/SeasonalLimits",
+    "body": {
+      "limitAmount": 15000,
+      "currency": "USD",
+      "validityPeriod": "winter",
+      "note": "Includes special conditions for winter transactions."
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "difficulty": "Medium",
+  "input": "I need to change the borrower on my loan contract. The loan contract ID is 01234567-89ab-cdef-0123-456789abcdef. The new borrower's ID is 01234567-89ab-cdef-0123-456789abcdef, and I would like to request a waiver for the activation charge.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests",
+    "body": {
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "NewBorrowerPartyIdentifyingElements": "New Borrower Details",
+      "ChargeWaiverRequestedIndicator": true
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

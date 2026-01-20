@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "What are the IDs of bank account contract lock requests that have a note mentioning 'Customer deceased'?",
+  "output": {
+    "sql": "SELECT ID FROM BankAccountContractLockRequest WHERE Note LIKE '%Customer deceased%';"
+  }
+}

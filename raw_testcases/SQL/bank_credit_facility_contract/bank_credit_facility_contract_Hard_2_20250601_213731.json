@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the product names of all bank credit facility contracts that have a currency code of 'EUR' and are currently active.",
+  "output": {
+    "sql": "SELECT Product FROM BankCreditFacilityContract WHERE CurrencyCode = 'EUR' AND LifeCycleStatusName = 'Active';"
+  }
+}

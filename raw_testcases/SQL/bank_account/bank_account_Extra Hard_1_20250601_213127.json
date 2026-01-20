@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Find the UUIDs of bank accounts that have a balance greater than 1000 and are linked to contracts with a specific currency code 'USD'.",
+  "output": {
+    "sql": "SELECT UUID FROM BankAccount WHERE ID IN (SELECT BankAccountContractID FROM BankAccountContract WHERE CurrencyCode = 'USD') AND BankAccountEntries > 1000;"
+  }
+}

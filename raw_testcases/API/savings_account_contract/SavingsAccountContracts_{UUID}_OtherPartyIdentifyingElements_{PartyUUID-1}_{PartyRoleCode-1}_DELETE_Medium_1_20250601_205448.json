@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "Please remove the beneficiary identifying element with ID 22222 from my savings account contract with UUID 321e0987-e34b-12d3-a456-426614174003.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/OtherPartyIdentifyingElements/22222/Beneficiary"
+  }
+}

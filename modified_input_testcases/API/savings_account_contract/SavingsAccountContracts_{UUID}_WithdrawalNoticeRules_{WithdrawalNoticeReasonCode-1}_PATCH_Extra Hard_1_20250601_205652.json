@@ -1,0 +1,18 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please set up a detailed withdrawal notice rule for my savings account contract with the ID 789e0123-e45b-12d3-a456-426614174004. I want to have a notice period of 10 days for any withdrawals that exceed 10,000 euros, and I\u00e2\u20ac\u2122d like to be notified via email for all withdrawal requests.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/WithdrawalNoticeRules/1",
+    "body": {
+      "NoticePeriod": "P10D",
+      "ThresholdAmount": 10000,
+      "CurrencyCode": "EUR",
+      "NotificationMethod": "Email"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you please update my bank account statement settings for the time deposit contract with the ID 23456789-01ab-cdef-0123-456789abcdef? I\u00e2\u20ac\u2122d like to receive email notifications and have them sent out every two weeks.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/23456789-01ab-cdef-0123-456789abcdef/BankAccountStatementArrangements/1",
+    "body": {
+      "notificationMethod": "email",
+      "frequency": "bi-weekly"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

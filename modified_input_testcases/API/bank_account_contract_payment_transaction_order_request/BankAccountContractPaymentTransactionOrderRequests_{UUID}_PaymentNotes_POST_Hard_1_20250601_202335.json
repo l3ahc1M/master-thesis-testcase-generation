@@ -1,0 +1,18 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to add a couple of notes to my payment transaction order request with the ID 01234567-89ab-cdef-0123-456789abcdef. The notes I want to include are \"Payment for services rendered\" and \"Please confirm receipt.\"",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/01234567-89ab-cdef-0123-456789abcdef/PaymentNotes",
+    "body": {
+      "PaymentNotes": [
+        "Payment for services rendered",
+        "Please confirm receipt"
+      ]
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

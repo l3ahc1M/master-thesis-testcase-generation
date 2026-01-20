@@ -1,0 +1,21 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to lock the accounts of customer ID 303 because they have multiple overdrafts exceeding the limit.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCustomerLockRequests",
+    "body": {
+      "ID": "303",
+      "PartyIdentifyingElements": "Customer ID 303",
+      "ChangeStateID": "2024-04-01T11:00:00Z",
+      "EventCode": "105000",
+      "EventName": "Multiple Overdrafts",
+      "UserStatusCode": "2",
+      "UserStatusName": "Active",
+      "ValidityStartDate": "2024-04-01",
+      "ValidityEndDate": "2024-10-01",
+      "BusinessProcessChainAssignment": "Lock Account Process",
+      "Note": "Lock due to multiple overdrafts."
+    }
+  }
+}

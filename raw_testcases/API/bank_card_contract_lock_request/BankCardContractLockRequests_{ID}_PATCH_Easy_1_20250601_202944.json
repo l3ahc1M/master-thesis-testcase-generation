@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "I need to update my bank card contract lock request. My ID is 105, and I want to change the note to say that I will be traveling for a month.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankCardContractLockRequests/105",
+    "body": {
+      "Note": "Customer will be traveling for a month."
+    }
+  }
+}

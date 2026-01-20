@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the average activation charge amount for loan contract prolongation requests grouped by cancellation reason name.",
+  "output": {
+    "sql": "SELECT CancellationReasonName, AVG(ActivationChargeAmount) FROM LoanContractProlongationRequest GROUP BY CancellationReasonName;"
+  }
+}

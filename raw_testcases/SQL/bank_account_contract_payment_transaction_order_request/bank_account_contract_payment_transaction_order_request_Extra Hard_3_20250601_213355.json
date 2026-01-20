@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Get the total number of payment transaction order requests grouped by their posting date for the last six months.",
+  "output": {
+    "sql": "SELECT BankAccountPostingDate, COUNT(*) FROM BankAccountContractPaymentTransactionOrderRequest WHERE BankAccountPostingDate >= DATE_SUB(CURDATE(), INTERVAL 6 MONTH) GROUP BY BankAccountPostingDate;"
+  }
+}

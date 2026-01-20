@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Please submit a lock request for the bank account contract with UUID 01234567-89ab-cdef-0123-456789abcdef, and set the event code to 4841 with a note stating 'Customer deceased April 01, 2019'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractLockRequests",
+    "body": {
+      "BankAccountContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "EventCode": "4841",
+      "Note": "Customer deceased April 01, 2019"
+    }
+  }
+}

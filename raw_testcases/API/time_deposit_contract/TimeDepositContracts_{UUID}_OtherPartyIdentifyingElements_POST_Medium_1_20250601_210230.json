@@ -1,0 +1,15 @@
+{
+  "difficulty": "Medium",
+  "input": "Please add a co-holder to my time deposit contract with UUID 23456789-01ab-cdef-0123-456789abcdef, and I want to include their identification details.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/23456789-01ab-cdef-0123-456789abcdef/OtherPartyIdentifyingElements",
+    "body": {
+      "identificationDetails": {
+        "name": "John Doe",
+        "relationship": "Co-holder",
+        "ID": "987654321"
+      }
+    }
+  }
+}

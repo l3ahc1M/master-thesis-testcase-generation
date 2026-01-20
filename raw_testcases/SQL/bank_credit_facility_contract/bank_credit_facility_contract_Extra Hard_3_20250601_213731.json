@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the total number of active bank credit facility contracts that have a product type of 'Loan' and a specific change state ID.",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankCreditFacilityContract WHERE LifeCycleStatusName = 'Active' AND Product = 'Loan' AND ChangeStateID IS NOT NULL;"
+  }
+}

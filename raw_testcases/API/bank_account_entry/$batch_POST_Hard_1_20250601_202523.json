@@ -1,0 +1,16 @@
+{
+  "difficulty": "Hard",
+  "input": "Please retrieve the bank account entries for the bank account UUID 54321 and include entries with a minimum balance of 1000.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "GET",
+          "url": "/BankAccountEntries?accountId=54321&minBalance=1000"
+        }
+      ]
+    }
+  }
+}

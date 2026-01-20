@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Find the average number of days until the expiration of bank card contracts that are currently active.",
+  "output": {
+    "sql": "SELECT AVG(DATEDIFF(PaymentCardValidTo, CURDATE())) FROM BankCardContract WHERE PaymentCardLifeCycleStatusCode = '1';"
+  }
+}

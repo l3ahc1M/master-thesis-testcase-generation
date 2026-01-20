@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the debtor parties for all direct debit mandates that are currently active and have a validity period longer than one year.",
+  "output": {
+    "sql": "SELECT DebtorParty FROM DirectDebitMandate WHERE UserStatusCode = '2' AND ValidityPeriod > 'P1Y';"
+  }
+}

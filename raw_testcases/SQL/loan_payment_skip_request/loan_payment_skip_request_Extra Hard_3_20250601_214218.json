@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the loan contract UUIDs for all loan payment skip requests that have a previous installment amount greater than 1000 and were requested in 2023.",
+  "output": {
+    "sql": "SELECT LoanContractUUID FROM LoanPaymentSkipRequest WHERE PreviousInstallmentAmount > '1000' AND ChangeStateID LIKE '2023%';"
+  }
+}

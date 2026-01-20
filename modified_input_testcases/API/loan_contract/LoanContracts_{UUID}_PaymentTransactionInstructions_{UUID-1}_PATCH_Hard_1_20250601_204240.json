@@ -1,0 +1,16 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to update the payment transaction instruction with the ID of 3 for the loan contract that has the UUID 34567890-12ab-cdef-0123-456789abcdef. I want to change the amount to 2500 and add a new note for the payment.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/LoanContracts/34567890-12ab-cdef-0123-456789abcdef/PaymentTransactionInstructions/3",
+    "body": {
+      "Amount": 2500,
+      "Note": "Updated payment for loan installment"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

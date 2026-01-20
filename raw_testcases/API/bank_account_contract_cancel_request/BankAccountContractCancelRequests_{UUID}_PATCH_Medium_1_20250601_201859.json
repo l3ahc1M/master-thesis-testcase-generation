@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Please update my cancellation request with UUID 01234567-89ab-cdef-0123-456789abcdef to require immediate completion and set the cancellation charge to 30.00.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractCancelRequests/01234567-89ab-cdef-0123-456789abcdef",
+    "body": {
+      "ImmediateCompletionRequiredIndicator": true,
+      "CancellationChargeAmount": "30.00"
+    }
+  }
+}

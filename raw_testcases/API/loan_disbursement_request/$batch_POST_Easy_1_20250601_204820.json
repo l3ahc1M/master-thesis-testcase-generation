@@ -1,0 +1,30 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to create a batch request to process multiple loan disbursement requests. The first request has a gross amount of 5000 and a value date of 2024-12-01. The second request has a gross amount of 7000 and a value date of 2024-12-15.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/LoanDisbursementRequests",
+          "body": {
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "GrossAmount": "5000",
+            "ValueDate": "2024-12-01"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/LoanDisbursementRequests",
+          "body": {
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "GrossAmount": "7000",
+            "ValueDate": "2024-12-15"
+          }
+        }
+      ]
+    }
+  }
+}

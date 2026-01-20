@@ -1,0 +1,17 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Could you please make a committed capital adjustment for the loan contract with the ID 45678901-23ab-cdef-0123-456789abcdef? I need you to change the amount to 12,000 and provide a detailed reason for this adjustment along with the date of the adjustment.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts/45678901-23ab-cdef-0123-456789abcdef/CommittedCapitalAdjustments",
+    "body": {
+      "AdjustmentAmount": 12000,
+      "AdjustmentDate": "2024-04-20",
+      "Reason": "Significant increase in project scope requiring additional funding"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

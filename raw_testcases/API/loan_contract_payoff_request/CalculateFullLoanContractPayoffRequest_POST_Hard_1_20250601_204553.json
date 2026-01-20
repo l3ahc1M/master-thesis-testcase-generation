@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "Please calculate the full loan contract payoff request for my loan with ID 71. I want to know the gross amount and any unpaid billing entries.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CalculateFullLoanContractPayoffRequest",
+    "body": {
+      "ID": "71",
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "IncludeUnpaidBillingEntries": true
+    }
+  }
+}

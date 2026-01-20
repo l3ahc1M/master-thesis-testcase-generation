@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "I need to cancel my loan disbursement request with UUID 01234567-89ab-cdef-0123-456789abcdef because I no longer need the funds.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanDisbursementRequests/01234567-89ab-cdef-0123-456789abcdef/SAP__self.CancelLoanDisbursementRequest",
+    "body": {}
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Find the bank account contract lock requests that have a user status of 'Active' and were created between two specific dates.",
+  "output": {
+    "sql": "SELECT * FROM BankAccountContractLockRequest WHERE UserStatusCode = '2' AND ValidityStartDate BETWEEN '2023-01-01' AND '2023-12-31';"
+  }
+}

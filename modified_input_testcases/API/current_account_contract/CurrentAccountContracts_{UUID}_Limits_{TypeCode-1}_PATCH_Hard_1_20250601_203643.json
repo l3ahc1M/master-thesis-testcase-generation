@@ -1,0 +1,17 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to update the limit for my current account contract, which has the ID 34567890-12ab-cdef-0123-456789abcdef, to 10,000 British Pounds and make sure that overdrafts are not permitted.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/Limits/3",
+    "body": {
+      "limitAmount": 10000,
+      "currency": "GBP",
+      "allowOverdraft": false
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

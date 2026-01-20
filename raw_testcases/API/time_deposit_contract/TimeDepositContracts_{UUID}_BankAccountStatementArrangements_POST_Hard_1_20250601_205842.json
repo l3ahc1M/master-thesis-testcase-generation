@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to set up bank account statement arrangements for my time deposit contract with UUID 34567890-12ab-cdef-0123-456789abcdef, and I want to include email notifications.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountStatementArrangements",
+    "body": {
+      "notificationMethod": "email",
+      "frequency": "quarterly"
+    }
+  }
+}

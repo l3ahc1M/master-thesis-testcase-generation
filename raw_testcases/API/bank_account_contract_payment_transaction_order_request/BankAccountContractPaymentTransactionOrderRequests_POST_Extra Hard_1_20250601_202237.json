@@ -1,0 +1,15 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please process a payment transaction order request for my account with UUID 01234567-89ab-cdef-0123-456789abcdef. The amount is 500.00 USD, and I want to ensure that it can only be posted if all entries are valid.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests",
+    "body": {
+      "BankAccountUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "TransactionCurrencyAmount": "500.00",
+      "PostOrCancelRequestedIndicator": true,
+      "LifeCycleStatusCode": "1",
+      "LifeCycleStatusName": "Active"
+    }
+  }
+}

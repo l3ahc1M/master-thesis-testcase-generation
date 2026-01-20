@@ -1,0 +1,15 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I want to initiate a borrower change request for my loan contract with ID 47938. The new borrower's UUID is 01234567-89ab-cdef-0123-456789abcdef. Please ensure that the change state is updated and provide the completion date once processed.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests",
+    "body": {
+      "ID": "47938",
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "ChangeStateID": "20200309121401.6154150",
+      "NewBorrowerPartyIdentifyingElements": "New Borrower Details",
+      "CompletionDate": "2024-05-01"
+    }
+  }
+}

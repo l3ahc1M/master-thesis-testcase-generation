@@ -1,0 +1,18 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you please update the individual interest conditions for my savings account contract, which has the ID 321e0987-e34b-12d3-a456-426614174003, to add a loyalty bonus of 0.5% for a year?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/IndividualInterestConditions/1",
+    "body": {
+      "LoyaltyBonus": {
+        "Rate": 0.5,
+        "Duration": "P1Y"
+      }
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

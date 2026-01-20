@@ -1,0 +1,33 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I need to submit a batch request for loan disbursement. The first request has a gross amount of 25000, withhold 5000 for fees, and the activation charge should be waived. The value date is 2025-01-01. The second request has a gross amount of 30000, withhold 8000 for installments, and the business process chain assignment is 'Loan Processing'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/LoanDisbursementRequests",
+          "body": {
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "GrossAmount": "25000",
+            "ItemsWithheldAmount": "5000",
+            "ActivationChargeWaiverRequestedIndicator": true,
+            "ValueDate": "2025-01-01"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/LoanDisbursementRequests",
+          "body": {
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "GrossAmount": "30000",
+            "ItemsWithheldAmount": "8000",
+            "BusinessProcessChainAssignment": "Loan Processing"
+          }
+        }
+      ]
+    }
+  }
+}

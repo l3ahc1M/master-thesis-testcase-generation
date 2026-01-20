@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the completion dates of loan contract borrower party change requests that have a charge waiver requested and were completed in 2022.",
+  "output": {
+    "sql": "SELECT CompletionDate FROM LoanContractBorrowerPartyChangeRequest WHERE ChargeWaiverRequestedIndicator = true AND YEAR(CompletionDate) = 2022;"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please configure a complex withdrawal notice rule for my savings account contract with UUID 789e0123-e45b-12d3-a456-426614174004, requiring a notice period of 10 days for withdrawals over 10000 EUR, and include a notification method via email for any withdrawal requests.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/WithdrawalNoticeRules/1",
+    "body": {
+      "NoticePeriod": "P10D",
+      "ThresholdAmount": 10000,
+      "CurrencyCode": "EUR",
+      "NotificationMethod": "Email"
+    }
+  }
+}

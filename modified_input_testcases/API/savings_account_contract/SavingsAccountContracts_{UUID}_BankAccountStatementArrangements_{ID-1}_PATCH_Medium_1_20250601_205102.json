@@ -1,0 +1,16 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you update the arrangements for my savings account statement linked to the user with the id 321e0987-e34b-12d3-a456-426614174003 so that I receive statements every three months along with email notifications?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/BankAccountStatementArrangements/1",
+    "body": {
+      "Frequency": "Quarterly",
+      "NotificationMethod": "Email"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

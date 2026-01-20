@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to update the payment transaction instructions for my savings account contract with UUID 123e4567-e89b-12d3-a456-426614174000 to allow automatic payments.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/123e4567-e89b-12d3-a456-426614174000/PaymentTransactionInstructions/1",
+    "body": {
+      "AutomaticPayments": true
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List the UUIDs of all savings account contracts that have a withdrawal allowance rule of 'No Notice'.",
+  "output": {
+    "sql": "SELECT UUID FROM SavingsAccountContract WHERE WithdrawalAllowanceRule = 'No Notice';"
+  }
+}

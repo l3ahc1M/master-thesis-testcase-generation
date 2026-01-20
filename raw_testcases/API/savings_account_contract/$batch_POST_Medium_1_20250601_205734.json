@@ -1,0 +1,28 @@
+{
+  "difficulty": "Medium",
+  "input": "Please batch update the lifecycle status of my savings account contracts with UUIDs 123e4567-e89b-12d3-a456-426614174000 and 789e0123-e45b-12d3-a456-426614174004 to Inactive.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "PATCH",
+          "url": "/SavingsAccountContracts/123e4567-e89b-12d3-a456-426614174000",
+          "body": {
+            "LifeCycleStatusCode": "0",
+            "LifeCycleStatusName": "Inactive"
+          }
+        },
+        {
+          "method": "PATCH",
+          "url": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004",
+          "body": {
+            "LifeCycleStatusCode": "0",
+            "LifeCycleStatusName": "Inactive"
+          }
+        }
+      ]
+    }
+  }
+}

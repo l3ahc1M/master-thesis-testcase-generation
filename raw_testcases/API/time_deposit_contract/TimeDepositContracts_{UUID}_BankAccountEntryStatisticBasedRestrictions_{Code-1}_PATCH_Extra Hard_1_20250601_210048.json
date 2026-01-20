@@ -1,0 +1,16 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please update the statistic-based restriction for my time deposit contract with UUID 45678901-23ab-cdef-0123-456789abcdef to set a minimum transaction count of 15 and calculate the average transaction amount while excluding accounts with a balance below 1000 EUR.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions/1",
+    "body": {
+      "minimumTransactionCount": 15,
+      "exclude": {
+        "balanceThreshold": 1000
+      },
+      "aggregation": "average",
+      "field": "transactionAmount"
+    }
+  }
+}

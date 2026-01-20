@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to create a payment transaction order request with a change state ID of 20210126091744.5563510. The transaction amount is 250.00 EUR and I want to deactivate material checks.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests",
+    "body": {
+      "ChangeStateID": "20210126091744.5563510",
+      "TransactionCurrencyAmount": "250.00",
+      "MaterialChecksDeactivationRequestedIndicator": true,
+      "LifeCycleStatusCode": "1",
+      "LifeCycleStatusName": "Active"
+    }
+  }
+}

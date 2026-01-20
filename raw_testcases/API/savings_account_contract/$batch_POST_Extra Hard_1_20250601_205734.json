@@ -1,0 +1,30 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please batch configure complex payment transaction instructions for my savings account contracts with UUIDs 123e4567-e89b-12d3-a456-426614174000 and 789e0123-e45b-12d3-a456-426614174004, allowing payments only if the average monthly balance is above 3000 EUR, and include a notification for any payment attempt below that threshold.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "PATCH",
+          "url": "/SavingsAccountContracts/123e4567-e89b-12d3-a456-426614174000/PaymentTransactionInstructions/1",
+          "body": {
+            "AverageBalanceCondition": "GreaterThan",
+            "ThresholdAmount": 3000,
+            "NotificationEnabled": true
+          }
+        },
+        {
+          "method": "PATCH",
+          "url": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/PaymentTransactionInstructions/1",
+          "body": {
+            "AverageBalanceCondition": "GreaterThan",
+            "ThresholdAmount": 3000,
+            "NotificationEnabled": true
+          }
+        }
+      ]
+    }
+  }
+}

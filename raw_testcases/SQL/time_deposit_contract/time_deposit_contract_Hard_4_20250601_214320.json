@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the total number of time deposit contracts that have been created by account holders with a specific identifying element 'John Doe'.",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM TimeDepositContract WHERE AccountHolderPartyIdentifyingElements = 'John Doe';"
+  }
+}

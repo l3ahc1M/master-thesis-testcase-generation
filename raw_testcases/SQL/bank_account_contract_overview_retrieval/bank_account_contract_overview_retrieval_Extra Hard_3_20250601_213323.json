@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the total number of bank account contracts grouped by their lifecycle status.",
+  "output": {
+    "sql": "SELECT LifeCycleStatusName, COUNT(*) FROM BankAccountContract GROUP BY LifeCycleStatusName;"
+  }
+}

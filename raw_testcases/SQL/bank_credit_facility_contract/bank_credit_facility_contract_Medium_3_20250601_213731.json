@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List all bank credit facility contracts that have a life cycle status of 'Inactive'.",
+  "output": {
+    "sql": "SELECT * FROM BankCreditFacilityContract WHERE LifeCycleStatusName = 'Inactive';"
+  }
+}

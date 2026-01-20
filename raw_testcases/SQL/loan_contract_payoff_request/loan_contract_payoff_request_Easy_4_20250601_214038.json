@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "How many loan contract payoff requests are there with a net amount less than 500?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM LoanContractPayoffRequest WHERE NetAmount < '500';"
+  }
+}

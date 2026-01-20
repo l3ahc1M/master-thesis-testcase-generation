@@ -1,0 +1,9 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please delete the other party identifying element with UUID 12345678-90ab-cdef-0123-456789abcdef and role code 'guarantor' from my current account contract with UUID 45678901-23ab-cdef-0123-456789abcdef, ensuring that all related settings are also removed.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/OtherPartyIdentifyingElements/12345678-90ab-cdef-0123-456789abcdef/guarantor",
+    "body": {}
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to change the arrangement for my current account statement linked to the user with the id 34567890-12ab-cdef-0123-456789abcdef so that I receive both monthly statements and paper copies.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountStatementArrangements/3",
+    "body": {
+      "frequency": "monthly",
+      "deliveryMethod": "paper"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

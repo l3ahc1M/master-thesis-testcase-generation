@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to delete the other party identifying element with UUID 12345678-90ab-cdef-0123-456789abcdef from my current account contract with UUID 98765432-10ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/CurrentAccountContracts/98765432-10ab-cdef-0123-456789abcdef/OtherPartyIdentifyingElements/12345678-90ab-cdef-0123-456789abcdef",
+    "body": {}
+  }
+}

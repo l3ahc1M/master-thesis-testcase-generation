@@ -1,0 +1,21 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Could you please set up a prenote entry for my bank account, which has the ID 01234567-89ab-cdef-0123-456789abcdef? I want it to be a debit entry that\u00e2\u20ac\u2122s valid from January 1, 2024, to December 31, 2024, and I\u00e2\u20ac\u2122d like to request the deactivation of additional checks as well.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountPrenoteEntries",
+    "body": {
+      "BankAccountUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "RequesterBankAccountPrenoteEntryID": "PRENOTE-REFERENCE-9999",
+      "BankAccountDebitIndicator": true,
+      "ValidityStartDate": "2024-01-01",
+      "PlannedValidityEndDate": "2024-12-31",
+      "LimitCheckDeactivationRequestedIndicator": true,
+      "AdditionalMaterialChecksDeactivationRequestedIndicator": true
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

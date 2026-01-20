@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Show me the loan disbursement requests that have a planned payment date in the next 30 days.",
+  "output": {
+    "sql": "SELECT ID FROM LoanDisbursementRequest WHERE PlannedPaymentDate BETWEEN CURRENT_DATE AND CURRENT_DATE + INTERVAL '30 days';"
+  }
+}

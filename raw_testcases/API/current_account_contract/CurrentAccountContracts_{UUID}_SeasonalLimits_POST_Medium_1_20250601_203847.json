@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Please set a seasonal limit of 5000 EUR for my current account contract with UUID 23456789-01ab-cdef-0123-456789abcdef, valid for the summer months.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/23456789-01ab-cdef-0123-456789abcdef/SeasonalLimits",
+    "body": {
+      "limitAmount": 5000,
+      "currency": "EUR",
+      "validityPeriod": "summer"
+    }
+  }
+}

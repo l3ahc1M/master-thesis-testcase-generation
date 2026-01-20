@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "Please process a change of account holder for my time deposit account. The new account holder is Michael Brown, and the former account holder was Sarah Brown. The reason for this change is due to marriage.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+    "body": {
+      "BankAccountContractUUID": "12345678-90ab-cdef-0123-456789abcdef",
+      "NewAccountHolderPartyIdentifyingElements": "Michael Brown",
+      "FormerAccountHolderPartyIdentifyingElements": "Sarah Brown",
+      "ReasonCode": "5",
+      "ChargeWaiverRequestedIndicator": false
+    }
+  }
+}

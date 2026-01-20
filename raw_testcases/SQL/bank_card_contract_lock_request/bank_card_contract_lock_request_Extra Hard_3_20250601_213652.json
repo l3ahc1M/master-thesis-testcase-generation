@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Get the count of bank card contract lock requests grouped by their validity end dates.",
+  "output": {
+    "sql": "SELECT ValidityEndDate, COUNT(*) FROM BankCardContractLockRequest GROUP BY ValidityEndDate;"
+  }
+}

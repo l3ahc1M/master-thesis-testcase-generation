@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "I need to update the lock request for customer ID 105 to extend the validity end date to December 31, 2025.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankCustomerLockRequests/105",
+    "body": {
+      "ValidityEndDate": "2025-12-31"
+    }
+  }
+}

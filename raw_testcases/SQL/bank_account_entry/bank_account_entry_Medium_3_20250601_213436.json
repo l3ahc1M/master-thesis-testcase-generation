@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "How many bank account entries are there for the account with BankAccountContractUUID 01234567-89ab-cdef-0123-456789abcdef?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankAccountEntries WHERE BankAccountUUID = '01234567-89ab-cdef-0123-456789abcdef';"
+  }
+}

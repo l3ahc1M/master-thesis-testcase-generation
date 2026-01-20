@@ -1,0 +1,13 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "Can you set up a bank card contract for my main account, using a character code of 1, and make sure it's labeled as an extra payment card?",
+    "output": {
+        "method": "POST",
+        "endpoint": "/BankCardContracts",
+        "body": {
+            "BankAccount": "Main Account",
+            "PaymentCardCharacterCode": "1",
+            "AdditionalPaymentCardIndicator": true
+        }
+    }
+}

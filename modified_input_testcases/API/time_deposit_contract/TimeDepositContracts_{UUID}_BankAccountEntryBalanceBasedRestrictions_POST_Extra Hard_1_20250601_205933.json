@@ -1,0 +1,18 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please set up a balance restriction for my time deposit contract with the ID 45678901-23ab-cdef-0123-456789abcdef. I want to establish a transaction limit of 2000 euros and make sure to exclude any accounts that have a balance lower than this amount.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions",
+    "body": {
+      "transactionThreshold": 2000,
+      "exclude": {
+        "balanceThreshold": 2000
+      }
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

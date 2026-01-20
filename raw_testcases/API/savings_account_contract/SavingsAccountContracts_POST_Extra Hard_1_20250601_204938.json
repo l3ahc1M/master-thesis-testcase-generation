@@ -1,0 +1,14 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I want to create a savings account contract with a specific withdrawal earnings availability duration of P1M, and I also want to include adapted interest conditions. The account should be in EUR and have a unique change state ID of 20191122135035.7818490.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts",
+    "body": {
+      "CurrencyCode": "EUR",
+      "WithdrawalEarningsAvailabilityDuration": "P1M",
+      "ChangeStateID": "20191122135035.7818490",
+      "AdaptedInterestConditions": []
+    }
+  }
+}

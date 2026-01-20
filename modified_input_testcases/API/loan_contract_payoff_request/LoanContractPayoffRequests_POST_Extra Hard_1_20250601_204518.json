@@ -1,0 +1,19 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please help me create a request to partially pay off my loan, which has the ID 71. The unique identifier for my loan contract is 01234567-89ab-cdef-0123-456789abcdef. I would like to pay a total of 5000 right away, and I need this payment to be processed immediately.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContractPayoffRequests",
+    "body": {
+      "ID": "71",
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "NetAmount": "5000",
+      "ImmediateCompletionRequiredIndicator": true,
+      "FullPayoffRequiredIndicator": false
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

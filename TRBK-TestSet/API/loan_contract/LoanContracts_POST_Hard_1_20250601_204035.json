@@ -1,0 +1,23 @@
+{
+    "difficulty": "Hard",
+    "input": "I need to draft a loan contract for a high-value customer who has a transaction limit of 10,000 euros. Please make sure to include the details about the terms and the process for sending reminders for late payments.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/LoanContracts",
+        "body": {
+            "ID": "99999",
+            "CurrencyCode": "EUR",
+            "BorrowerPartyIdentifyingElements": "High-Value Customer ID 99999",
+            "TermAgreements": [
+                {
+                    "TermSpecification": "24 months",
+                    "InterestRate": "3.5%"
+                }
+            ],
+            "Dunning": "Send reminders after 15 days of overdue payment",
+            "LifeCycleStatusCode": "1",
+            "LifeCycleStatusName": "Active",
+            "Product": "Business Loan"
+        }
+    }
+}

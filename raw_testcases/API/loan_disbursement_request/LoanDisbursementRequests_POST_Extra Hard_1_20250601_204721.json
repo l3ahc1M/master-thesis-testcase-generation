@@ -1,0 +1,16 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I want to create a loan disbursement request for my loan contract with a gross amount of 20000. I need to withhold 5000 for fees and 1000 for installments. The activation charge should not be waived, and the value date is 2024-08-01. The business process chain assignment is 'Loan Processing'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanDisbursementRequests",
+    "body": {
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "GrossAmount": "20000",
+      "ItemsWithheldAmount": "6000",
+      "ActivationChargeWaiverRequestedIndicator": false,
+      "ValueDate": "2024-08-01",
+      "BusinessProcessChainAssignment": "Loan Processing"
+    }
+  }
+}

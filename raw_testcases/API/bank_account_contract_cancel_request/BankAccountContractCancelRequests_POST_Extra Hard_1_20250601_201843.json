@@ -1,0 +1,18 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I want to cancel my bank account contract and I need to ensure that the residual balance is settled by cash. My account ID is 01234567-89ab-cdef-0123-456789abcdef. Please process this request immediately.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractCancelRequests",
+    "body": {
+      "BankAccountContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "ImmediateCompletionRequiredIndicator": true,
+      "BalancingByCashIndicator": true,
+      "ResidualBankAccountBalanceAmount": "1000.00",
+      "CancellationChargeAmount": "50.00",
+      "ReasonCode": "107",
+      "ReasonName": "Other",
+      "ReceiptDate": "2024-05-01"
+    }
+  }
+}

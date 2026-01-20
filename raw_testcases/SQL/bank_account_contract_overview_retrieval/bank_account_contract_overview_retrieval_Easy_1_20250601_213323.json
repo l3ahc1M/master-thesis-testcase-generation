@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you show me the total number of current account contracts?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankAccountContract WHERE TypeName = 'Current Account Contract';"
+  }
+}

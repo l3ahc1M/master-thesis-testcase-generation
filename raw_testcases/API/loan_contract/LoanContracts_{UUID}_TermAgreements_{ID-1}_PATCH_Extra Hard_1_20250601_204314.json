@@ -1,0 +1,13 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please modify the term agreement with ID 4 for the loan contract with UUID 45678901-23ab-cdef-0123-456789abcdef, changing the term specification to 48 months, setting the interest rate to 5.5%, and including a detailed reason for the change.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/LoanContracts/45678901-23ab-cdef-0123-456789abcdef/TermAgreements/4",
+    "body": {
+      "TermSpecification": "48 months",
+      "InterestRate": "5.5%",
+      "Reason": "Adjustment due to market conditions"
+    }
+  }
+}

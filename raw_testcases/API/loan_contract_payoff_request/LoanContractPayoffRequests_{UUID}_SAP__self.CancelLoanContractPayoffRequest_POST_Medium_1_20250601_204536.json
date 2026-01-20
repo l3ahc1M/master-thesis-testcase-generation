@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Please cancel my loan contract payoff request with UUID 01234567-89ab-cdef-0123-456789abcdef. The reason is that I found a better loan option.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContractPayoffRequests/01234567-89ab-cdef-0123-456789abcdef/SAP__self.CancelLoanContractPayoffRequest",
+    "body": {
+      "CancellationReasonCode": "3",
+      "CancellationReasonName": "Found Better Loan Option"
+    }
+  }
+}

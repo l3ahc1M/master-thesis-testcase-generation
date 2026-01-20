@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you update the prenote entry with ID PRENOTE-REFERENCE-4711 to change its status to Discarded and set the end date to today?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountPrenoteEntries",
+    "body": {
+      "RequesterBankAccountPrenoteEntryID": "PRENOTE-REFERENCE-4711",
+      "LifeCycleStatusName": "Discarded",
+      "ValidityEndDate": "2024-01-01"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "List the bank card contracts that have been issued to customers who have a specific bank account and are currently active.",
+  "output": {
+    "sql": "SELECT * FROM BankCardContract WHERE BankAccount = 'YourBankAccountID' AND PaymentCardLifeCycleStatusCode = '1';"
+  }
+}

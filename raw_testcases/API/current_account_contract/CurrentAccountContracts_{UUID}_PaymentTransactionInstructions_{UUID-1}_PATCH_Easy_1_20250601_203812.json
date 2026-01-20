@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to update the payment transaction instruction for my current account contract with UUID 12345678-90ab-cdef-0123-456789abcdef to allow transactions up to 2000 EUR.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/12345678-90ab-cdef-0123-456789abcdef/PaymentTransactionInstructions/1",
+    "body": {
+      "transactionLimit": 2000,
+      "currency": "EUR"
+    }
+  }
+}

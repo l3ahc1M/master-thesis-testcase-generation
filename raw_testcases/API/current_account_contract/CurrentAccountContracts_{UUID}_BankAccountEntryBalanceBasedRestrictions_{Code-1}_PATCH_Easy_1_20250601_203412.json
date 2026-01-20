@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to set a balance restriction of 1500 EUR on my current account contract with UUID 12345678-90ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/12345678-90ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions/1",
+    "body": {
+      "restrictionAmount": 1500,
+      "currency": "EUR"
+    }
+  }
+}

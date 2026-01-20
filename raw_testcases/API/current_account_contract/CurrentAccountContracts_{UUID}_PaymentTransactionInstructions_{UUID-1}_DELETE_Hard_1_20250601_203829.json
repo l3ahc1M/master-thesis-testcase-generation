@@ -1,0 +1,9 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to delete the payment transaction instruction with ID 3 from my current account contract with UUID 34567890-12ab-cdef-0123-456789abcdef, as it is no longer needed.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/PaymentTransactionInstructions/3",
+    "body": {}
+  }
+}

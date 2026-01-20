@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "What is the maximum duration of validity for bank account contract lock requests that have a specific event code '4841'?",
+  "output": {
+    "sql": "SELECT MAX(DATEDIFF(ValidityEndDate, ValidityStartDate)) FROM BankAccountContractLockRequest WHERE EventCode = '4841';"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you please add another party identifying element with the ID '98765' to my current account contract that has the UUID 23456789-01ab-cdef-0123-456789abcdef?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/23456789-01ab-cdef-0123-456789abcdef/OtherPartyIdentifyingElements",
+    "body": {
+      "ID": "98765"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

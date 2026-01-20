@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "List all bank account contract lock requests with a validity end date of 2023-12-31.",
+  "output": {
+    "sql": "SELECT * FROM BankAccountContractLockRequest WHERE ValidityEndDate = '2023-12-31';"
+  }
+}

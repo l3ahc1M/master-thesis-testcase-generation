@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Please change the statistic-based restriction for my time deposit contract with UUID 23456789-01ab-cdef-0123-456789abcdef to set a maximum transaction amount of 3000 EUR.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/23456789-01ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions/1",
+    "body": {
+      "maximumTransactionAmount": 3000
+    }
+  }
+}

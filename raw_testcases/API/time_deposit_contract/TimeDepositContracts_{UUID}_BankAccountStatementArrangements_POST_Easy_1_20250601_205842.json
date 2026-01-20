@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to set up bank account statement arrangements for my time deposit contract with UUID 12345678-90ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/12345678-90ab-cdef-0123-456789abcdef/BankAccountStatementArrangements",
+    "body": {}
+  }
+}

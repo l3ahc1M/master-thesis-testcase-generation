@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Show me the IDs and currency codes of all current account contracts that have a specific account holder.",
+  "output": {
+    "sql": "SELECT ID, CurrencyCode FROM CurrentAccountContract WHERE AccountHolderPartyIdentifyingElements = 'Specific Account Holder';"
+  }
+}

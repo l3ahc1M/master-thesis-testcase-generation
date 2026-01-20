@@ -1,0 +1,13 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I need to update my cancellation request with UUID 01234567-89ab-cdef-0123-456789abcdef to include that I want the residual balance settled by cash and the cancellation reason to be 'Financial Hardship'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractCancelRequests/01234567-89ab-cdef-0123-456789abcdef",
+    "body": {
+      "BalancingByCashIndicator": true,
+      "ReasonCode": "110",
+      "ReasonName": "Financial Hardship"
+    }
+  }
+}

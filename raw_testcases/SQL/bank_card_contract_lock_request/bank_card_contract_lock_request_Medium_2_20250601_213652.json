@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "How many bank card contract lock requests were made for the event code 103000?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankCardContractLockRequest WHERE EventCode = '103000';"
+  }
+}

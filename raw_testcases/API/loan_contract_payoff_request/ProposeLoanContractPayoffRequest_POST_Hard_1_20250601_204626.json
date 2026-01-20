@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "Please provide a detailed proposal for my loan contract payoff request with ID 71. I need to know the gross amount and any unpaid billing entries.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/ProposeLoanContractPayoffRequest",
+    "body": {
+      "ID": "71",
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "IncludeUnpaidBillingEntries": true
+    }
+  }
+}

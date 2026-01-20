@@ -1,0 +1,24 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to delete multiple withdrawal notice rules for my savings account contracts with the IDs 456e7890-e12b-12d3-a456-426614174002 and 321e0987-e34b-12d3-a456-426614174003 all at once.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "DELETE",
+          "url": "/SavingsAccountContracts/456e7890-e12b-12d3-a456-426614174002/WithdrawalNoticeRules/1"
+        },
+        {
+          "method": "DELETE",
+          "url": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/WithdrawalNoticeRules/1"
+        }
+      ]
+    }
+  },
+  "error_log": {
+    "status_code": 404,
+    "response_text": "{\n  \"error\": {\n    \"name\": \"mockRequestNotFoundError\",\n    \"message\": \"Double check your method and the request path and try again. Learn more here: https://learning.postman.com/docs/design-apis/mock-apis/matching-algorithm/\",\n    \"header\": \"No matching requests\"\n  }\n}"
+  }
+}

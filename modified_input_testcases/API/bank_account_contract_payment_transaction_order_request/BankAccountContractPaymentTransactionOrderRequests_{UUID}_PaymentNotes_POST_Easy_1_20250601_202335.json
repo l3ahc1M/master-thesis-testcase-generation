@@ -1,0 +1,17 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to add a payment note to my transaction order request with the ID 01234567-89ab-cdef-0123-456789abcdef. The note should say, \"Payment for invoice #12345.\"",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/01234567-89ab-cdef-0123-456789abcdef/PaymentNotes",
+    "body": {
+      "PaymentNotes": [
+        "Payment for invoice #12345"
+      ]
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

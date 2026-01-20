@@ -1,0 +1,14 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please add a payment transaction instruction to my current account contract with UUID 45678901-23ab-cdef-0123-456789abcdef, ensuring it includes a note about requiring dual authorization for transactions over 10000 USD.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/PaymentTransactionInstructions",
+    "body": {
+      "dualAuthorizationRequired": true,
+      "transactionLimit": 10000,
+      "currency": "USD",
+      "note": "Requires dual authorization for transactions over 10000 USD."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to set up a request to disburse my loan. The total amount is 10,000, but I\u00e2\u20ac\u2122d like to hold back 2,000 for fees. The date I want this to take effect is June 1, 2024.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanDisbursementRequests",
+    "body": {
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "GrossAmount": "10000",
+      "ItemsWithheldAmount": "2000",
+      "ValueDate": "2024-06-01"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

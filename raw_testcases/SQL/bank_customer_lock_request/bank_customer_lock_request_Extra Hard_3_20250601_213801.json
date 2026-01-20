@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the IDs of bank customer lock requests that have an event code of '103000' and are associated with bank accounts that have a specific currency code.",
+  "output": {
+    "sql": "SELECT BankCustomerLockRequest.ID FROM BankCustomerLockRequest JOIN BankAccountContract ON BankCustomerLockRequest.BankAccountContracts = BankAccountContract.UUID WHERE BankAccountContract.CurrencyCode = 'EUR' AND BankCustomerLockRequest.EventCode = '103000';"
+  }
+}

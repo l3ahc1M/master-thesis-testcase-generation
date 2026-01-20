@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the UUIDs of bank account contracts that have been cancelled and their cancellation reasons.",
+  "output": {
+    "sql": "SELECT BankAccountContractUUID, CancellationReasonName FROM BankAccountContractCancelRequest WHERE CancellationDate IS NOT NULL;"
+  }
+}

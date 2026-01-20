@@ -1,0 +1,33 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to create a batch request for loan disbursement. The first request has a gross amount of 12000, withhold 3000 for fees, and a value date of 2024-12-30. The second request has a gross amount of 15000, withhold 4000 for installments, and the reason for the request is customer request.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/LoanDisbursementRequests",
+          "body": {
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "GrossAmount": "12000",
+            "ItemsWithheldAmount": "3000",
+            "ValueDate": "2024-12-30"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/LoanDisbursementRequests",
+          "body": {
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "GrossAmount": "15000",
+            "ItemsWithheldAmount": "4000",
+            "ReasonCode": "1",
+            "ReasonName": "Customer Request"
+          }
+        }
+      ]
+    }
+  }
+}

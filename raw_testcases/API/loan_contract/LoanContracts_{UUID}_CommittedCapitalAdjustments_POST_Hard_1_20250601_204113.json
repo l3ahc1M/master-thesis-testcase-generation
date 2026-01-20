@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to add a committed capital adjustment for the loan contract with UUID 34567890-12ab-cdef-0123-456789abcdef, specifying an adjustment amount of 7500 and including a detailed reason for the adjustment.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts/34567890-12ab-cdef-0123-456789abcdef/CommittedCapitalAdjustments",
+    "body": {
+      "AdjustmentAmount": 7500,
+      "AdjustmentDate": "2024-03-10",
+      "Reason": "Adjustment due to increased loan requirements"
+    }
+  }
+}

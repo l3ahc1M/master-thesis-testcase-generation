@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "What is the total number of bank accounts in EUR currency that are associated with a specific bank routing ID 90419917?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankAccount WHERE CurrencyCode = 'EUR' AND BankRoutingID = '90419917';"
+  }
+}

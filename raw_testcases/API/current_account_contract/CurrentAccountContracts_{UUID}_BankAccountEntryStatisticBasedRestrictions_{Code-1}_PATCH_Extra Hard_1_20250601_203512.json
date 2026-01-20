@@ -1,0 +1,14 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please update the statistic-based restriction for my current account contract with UUID 45678901-23ab-cdef-0123-456789abcdef to allow 15 transactions and set a total amount limit of 10000 GBP per month, including a note about seasonal limits.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions/4",
+    "body": {
+      "transactionLimit": 15,
+      "totalAmountLimit": 10000,
+      "currency": "GBP",
+      "note": "Includes seasonal limits"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "difficulty": "Medium",
+    "input": "Can you help me figure out the details for a partial payoff request for my loan with the ID of 71? I need to know when the payment is expected to be made and the total amount I need to pay.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/CalculatePartialLoanContractPayoffRequest",
+        "body": {
+            "ID": "71",
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "ExpectedPaymentDate": "2024-06-01",
+            "FullPayoffRequiredIndicator": false
+        }
+    }
+}

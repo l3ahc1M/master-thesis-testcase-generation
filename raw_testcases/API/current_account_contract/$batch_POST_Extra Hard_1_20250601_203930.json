@@ -1,0 +1,37 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please create a batch request to update multiple current account contracts with UUIDs 56789012-34ab-cdef-0123-456789abcdef and 67890123-45ab-cdef-0123-456789abcdef, ensuring to set adapted interest conditions and seasonal limits.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "PATCH",
+          "url": "/CurrentAccountContracts/56789012-34ab-cdef-0123-456789abcdef",
+          "body": {
+            "AdaptedInterestConditions": [
+              {
+                "rate": "1.8%",
+                "type": "seasonal"
+              }
+            ]
+          }
+        },
+        {
+          "method": "PATCH",
+          "url": "/CurrentAccountContracts/67890123-45ab-cdef-0123-456789abcdef",
+          "body": {
+            "SeasonalLimits": [
+              {
+                "limitAmount": 20000,
+                "currency": "GBP",
+                "validityPeriod": "summer"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

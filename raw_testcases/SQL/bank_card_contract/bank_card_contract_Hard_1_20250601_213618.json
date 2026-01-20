@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the average validity period of bank card contracts that are currently active.",
+  "output": {
+    "sql": "SELECT AVG(DATEDIFF(PaymentCardValidTo, PaymentCardValidFrom)) FROM BankCardContract WHERE PaymentCardLifeCycleStatusCode = '1';"
+  }
+}

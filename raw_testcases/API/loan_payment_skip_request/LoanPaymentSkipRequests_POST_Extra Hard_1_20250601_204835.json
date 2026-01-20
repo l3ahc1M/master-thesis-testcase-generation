@@ -1,0 +1,14 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I would like to request a loan payment skip for my contract with ID 47938. I want to skip payments for 3 months, and I request a waiver for the activation charge. The reason for this request is a temporary job loss.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanPaymentSkipRequests",
+    "body": {
+      "ID": "47938",
+      "SkipDatePeriod": "3 months",
+      "ActivationChargeWaiverRequestedIndicator": true,
+      "ReasonName": "Temporary Job Loss"
+    }
+  }
+}

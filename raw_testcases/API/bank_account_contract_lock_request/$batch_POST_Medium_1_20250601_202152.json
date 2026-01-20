@@ -1,0 +1,21 @@
+{
+  "difficulty": "Medium",
+  "input": "Please submit a batch request to create a lock for the bank account contract with UUID 01234567-89ab-cdef-0123-456789abcdef, including an event code of 4841 and a note about the customer being deceased.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/BankAccountContractLockRequests",
+          "body": {
+            "BankAccountContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "EventCode": "4841",
+            "Note": "Customer deceased April 01, 2019"
+          }
+        }
+      ]
+    }
+  }
+}

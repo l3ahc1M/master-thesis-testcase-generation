@@ -1,0 +1,15 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please update the individual interest conditions for my time deposit contract with UUID 45678901-23ab-cdef-0123-456789abcdef to exclude accounts with a balance below 500 EUR and calculate the average interest rate.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/IndividualInterestConditions/1",
+    "body": {
+      "exclude": {
+        "balanceThreshold": 500
+      },
+      "aggregation": "average",
+      "field": "interestRate"
+    }
+  }
+}

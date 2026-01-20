@@ -1,0 +1,13 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please update the payment transaction order request with UUID 01234567-89ab-cdef-0123-456789abcdef. I want to change the lifecycle status to inactive and set a new change state ID of 20220126091744.5563510.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/01234567-89ab-cdef-0123-456789abcdef",
+    "body": {
+      "LifeCycleStatusCode": "0",
+      "LifeCycleStatusName": "Inactive",
+      "ChangeStateID": "20220126091744.5563510"
+    }
+  }
+}

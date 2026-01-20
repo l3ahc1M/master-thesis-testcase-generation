@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "List the UUIDs of current account contracts that have been created with a draft status and have a specific product type.",
+  "output": {
+    "sql": "SELECT UUID FROM CurrentAccountContract WHERE CreateDraftRequestedIndicator = TRUE AND Product = 'Specific Product Type';"
+  }
+}

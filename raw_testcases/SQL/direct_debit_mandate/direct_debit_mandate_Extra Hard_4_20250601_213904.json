@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Find the total number of direct debit mandates grouped by their user status.",
+  "output": {
+    "sql": "SELECT UserStatusName, COUNT(*) FROM DirectDebitMandate GROUP BY UserStatusName;"
+  }
+}

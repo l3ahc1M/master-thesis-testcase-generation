@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the total transaction amounts for payment transaction order requests that were executed in the last month and have more than one recipient.",
+  "output": {
+    "sql": "SELECT SUM(TransactionCurrencyAmount) FROM BankAccountContractPaymentTransactionOrderRequest WHERE PlannedExecutionDate >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH) AND MoreRecipientsAvailableIndicator = TRUE;"
+  }
+}

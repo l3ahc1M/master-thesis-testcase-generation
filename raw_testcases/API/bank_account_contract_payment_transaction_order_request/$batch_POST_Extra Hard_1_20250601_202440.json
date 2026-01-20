@@ -1,0 +1,56 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please batch process four payment transaction order requests. The first is for UUID 01234567-89ab-cdef-0123-456789abcdef with an amount of 600.00 USD, the second for UUID 45678901-23ab-cdef-0123-456789abcdef with an amount of 700.00 USD, the third for UUID 56789012-34ab-cdef-0123-456789abcdef with an amount of 800.00 USD, and the fourth for UUID 67890123-45ab-cdef-0123-456789abcdef with an amount of 900.00 USD. Ensure all entries are valid before processing.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests",
+          "body": {
+            "BankAccountUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "TransactionCurrencyAmount": "600.00",
+            "PostOrCancelRequestedIndicator": true,
+            "LifeCycleStatusCode": "1",
+            "LifeCycleStatusName": "Active"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests",
+          "body": {
+            "BankAccountUUID": "45678901-23ab-cdef-0123-456789abcdef",
+            "TransactionCurrencyAmount": "700.00",
+            "PostOrCancelRequestedIndicator": true,
+            "LifeCycleStatusCode": "1",
+            "LifeCycleStatusName": "Active"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests",
+          "body": {
+            "BankAccountUUID": "56789012-34ab-cdef-0123-456789abcdef",
+            "TransactionCurrencyAmount": "800.00",
+            "PostOrCancelRequestedIndicator": true,
+            "LifeCycleStatusCode": "1",
+            "LifeCycleStatusName": "Active"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests",
+          "body": {
+            "BankAccountUUID": "67890123-45ab-cdef-0123-456789abcdef",
+            "TransactionCurrencyAmount": "900.00",
+            "PostOrCancelRequestedIndicator": true,
+            "LifeCycleStatusCode": "1",
+            "LifeCycleStatusName": "Active"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List the IDs and transaction amounts of payment transaction order requests that are planned for execution on '2017-04-13'.",
+  "output": {
+    "sql": "SELECT ID, TransactionCurrencyAmount FROM BankAccountContractPaymentTransactionOrderRequest WHERE PlannedExecutionDate = '2017-04-13';"
+  }
+}

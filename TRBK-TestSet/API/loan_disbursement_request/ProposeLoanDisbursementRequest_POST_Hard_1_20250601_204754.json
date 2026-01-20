@@ -1,0 +1,17 @@
+{
+    "difficulty": "Hard",
+    "input": "I'm looking to put together a request for a loan disbursement related to my loan contract. The total amount I'm asking for is $12,000, but I want to set aside $2,500 for future installments. The reason I'm making this request is that the customer asked for it, and right now, the status of this request is still being prepared.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/ProposeLoanDisbursementRequest",
+        "body": {
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "GrossAmount": "12000",
+            "ItemsWithheldAmount": "2500",
+            "ReasonCode": "1",
+            "ReasonName": "Customer Request",
+            "LifeCycleStatusCode": "1",
+            "LifeCycleStatusName": "In Preparation"
+        }
+    }
+}

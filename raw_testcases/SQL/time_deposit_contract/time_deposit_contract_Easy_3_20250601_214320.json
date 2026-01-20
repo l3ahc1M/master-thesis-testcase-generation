@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "How many time deposit contracts are there in total?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM TimeDepositContract;"
+  }
+}

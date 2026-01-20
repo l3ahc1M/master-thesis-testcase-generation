@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "I would like to get a proposal for my loan contract payoff request with ID 71. Please include the expected payment date and any activation charges.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/ProposeLoanContractPayoffRequest",
+    "body": {
+      "ID": "71",
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "ExpectedPaymentDate": "2024-05-01",
+      "ActivationChargeAmount": "100"
+    }
+  }
+}

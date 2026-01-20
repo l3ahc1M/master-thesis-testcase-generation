@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List all direct debit mandates along with their creditor party names.",
+  "output": {
+    "sql": "SELECT ID, CreditorParty FROM DirectDebitMandate;"
+  }
+}

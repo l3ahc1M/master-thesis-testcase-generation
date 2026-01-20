@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the loan disbursement requests that were canceled and their cancellation reasons.",
+  "output": {
+    "sql": "SELECT ID, CancellationReasonName FROM LoanDisbursementRequest WHERE CancellationReasonCode IS NOT NULL;"
+  }
+}

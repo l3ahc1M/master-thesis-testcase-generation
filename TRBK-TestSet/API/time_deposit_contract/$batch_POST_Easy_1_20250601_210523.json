@@ -1,0 +1,28 @@
+{
+    "difficulty": "Easy",
+    "input": "I want to create a batch request to open multiple time deposit accounts with US dollars for the account with the ID 11111 and the account with the ID 22222.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "/TimeDepositContracts",
+                    "body": {
+                        "CurrencyCode": "USD",
+                        "ID": "11111"
+                    }
+                },
+                {
+                    "method": "POST",
+                    "url": "/TimeDepositContracts",
+                    "body": {
+                        "CurrencyCode": "USD",
+                        "ID": "22222"
+                    }
+                }
+            ]
+        }
+    }
+}

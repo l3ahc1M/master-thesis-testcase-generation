@@ -1,9 +1,0 @@
-{
-    "difficulty": "Hard",
-    "input": "I want to remove the seasonal limit with the ID of 3 from my current account contract that has the UUID 34567890-12ab-cdef-0123-456789abcdef, since I don't need it anymore.",
-    "output": {
-        "method": "DELETE",
-        "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/SeasonalLimits/3",
-        "body": {}
-    }
-}

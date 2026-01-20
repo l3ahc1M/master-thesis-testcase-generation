@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "Please process a borrower change request for my loan contract. The ID is 47938, and the new borrower's UUID is 01234567-89ab-cdef-0123-456789abcdef. The reason for this change is due to a change of legal form, and I would like to know the status of this request.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests",
+    "body": {
+      "ID": "47938",
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "ReasonCode": "1",
+      "ReasonName": "Change of legal form",
+      "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+    }
+  }
+}

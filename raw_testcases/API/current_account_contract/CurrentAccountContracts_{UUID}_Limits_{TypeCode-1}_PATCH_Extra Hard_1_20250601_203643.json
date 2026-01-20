@@ -1,0 +1,13 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please update the limit for my current account contract with UUID 45678901-23ab-cdef-0123-456789abcdef to 15000 EUR, ensuring it includes a note about seasonal limits.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/Limits/4",
+    "body": {
+      "limitAmount": 15000,
+      "currency": "EUR",
+      "note": "Includes seasonal limits"
+    }
+  }
+}

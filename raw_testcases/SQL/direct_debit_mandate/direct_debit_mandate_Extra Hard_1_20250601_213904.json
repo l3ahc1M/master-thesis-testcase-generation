@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the average validity period of direct debit mandates grouped by creditor party.",
+  "output": {
+    "sql": "SELECT CreditorParty, AVG(ValidityPeriod) FROM DirectDebitMandate GROUP BY CreditorParty;"
+  }
+}

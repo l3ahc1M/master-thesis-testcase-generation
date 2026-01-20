@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List the event names for all bank customer lock requests that have a validity end date after 2023-01-01.",
+  "output": {
+    "sql": "SELECT EventName FROM BankCustomerLockRequest WHERE ValidityEndDate > '2023-01-01';"
+  }
+}

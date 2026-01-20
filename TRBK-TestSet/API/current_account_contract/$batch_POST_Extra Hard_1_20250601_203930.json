@@ -1,0 +1,37 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "Could you please put together a batch request to update a couple of current account contracts? The contracts have the IDs 56789012-34ab-cdef-0123-456789abcdef and 67890123-45ab-cdef-0123-456789abcdef. Make sure to adjust the interest conditions and set the seasonal limits accordingly.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "PATCH",
+                    "url": "/CurrentAccountContracts/56789012-34ab-cdef-0123-456789abcdef",
+                    "body": {
+                        "AdaptedInterestConditions": [
+                            {
+                                "rate": "1.8%",
+                                "type": "seasonal"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "method": "PATCH",
+                    "url": "/CurrentAccountContracts/67890123-45ab-cdef-0123-456789abcdef",
+                    "body": {
+                        "SeasonalLimits": [
+                            {
+                                "limitAmount": 20000,
+                                "currency": "GBP",
+                                "validityPeriod": "summer"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

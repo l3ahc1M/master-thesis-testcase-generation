@@ -1,0 +1,16 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to create a new loan contract for a customer with ID 11111 in USD currency.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts",
+    "body": {
+      "ID": "11111",
+      "CurrencyCode": "USD",
+      "BorrowerPartyIdentifyingElements": "Customer ID 11111",
+      "LifeCycleStatusCode": "1",
+      "LifeCycleStatusName": "Active",
+      "Product": "Personal Loan"
+    }
+  }
+}

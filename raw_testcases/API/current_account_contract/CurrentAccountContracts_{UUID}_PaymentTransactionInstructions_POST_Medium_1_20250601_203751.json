@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Please set up a payment transaction instruction for my current account contract with UUID 23456789-01ab-cdef-0123-456789abcdef, specifying that it should allow international transfers.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/23456789-01ab-cdef-0123-456789abcdef/PaymentTransactionInstructions",
+    "body": {
+      "allowInternationalTransfers": true
+    }
+  }
+}

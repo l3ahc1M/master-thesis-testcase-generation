@@ -1,0 +1,11 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to change the term specification of my time deposit contract with UUID 23456789-01ab-cdef-0123-456789abcdef to 24 months.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/23456789-01ab-cdef-0123-456789abcdef",
+    "body": {
+      "TermSpecification": "24 months"
+    }
+  }
+}

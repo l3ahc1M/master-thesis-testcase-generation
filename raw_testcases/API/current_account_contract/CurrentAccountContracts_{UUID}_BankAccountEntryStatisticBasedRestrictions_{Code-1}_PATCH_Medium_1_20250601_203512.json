@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you change the statistic-based restriction for my current account contract with UUID 23456789-01ab-cdef-0123-456789abcdef to limit the total amount to 3000 USD per month?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/23456789-01ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions/2",
+    "body": {
+      "totalAmountLimit": 3000,
+      "currency": "USD"
+    }
+  }
+}

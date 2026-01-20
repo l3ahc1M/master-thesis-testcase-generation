@@ -1,0 +1,17 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to set up a payment transaction instruction for my loan contract with the ID 12345678-90ab-cdef-0123-456789abcdef, where I\u00e2\u20ac\u2122ll be making an automatic payment of 300 every month.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts/12345678-90ab-cdef-0123-456789abcdef/PaymentTransactionInstructions",
+    "body": {
+      "InstructionType": "Automatic Payment",
+      "Amount": 300,
+      "Frequency": "Monthly"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

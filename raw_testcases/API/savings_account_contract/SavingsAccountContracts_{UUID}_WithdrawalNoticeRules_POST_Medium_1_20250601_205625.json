@@ -1,0 +1,14 @@
+{
+  "difficulty": "Medium",
+  "input": "Please create a withdrawal notice rule for my savings account contract with UUID 321e0987-e34b-12d3-a456-426614174003, requiring a notice period of 3 days and specifying that withdrawals over 1000 EUR need prior approval.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/WithdrawalNoticeRules",
+    "body": {
+      "NoticePeriod": "P3D",
+      "ApprovalRequired": true,
+      "ThresholdAmount": 1000,
+      "CurrencyCode": "EUR"
+    }
+  }
+}

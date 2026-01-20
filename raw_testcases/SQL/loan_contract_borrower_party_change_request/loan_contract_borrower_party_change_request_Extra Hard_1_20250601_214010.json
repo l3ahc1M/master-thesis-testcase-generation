@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Find the count of loan contract borrower party change requests grouped by reason name and only include those with a charge waiver requested.",
+  "output": {
+    "sql": "SELECT ReasonName, COUNT(*) FROM LoanContractBorrowerPartyChangeRequest WHERE ChargeWaiverRequestedIndicator = true GROUP BY ReasonName;"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to create a bank card contract for a credit card with ID 1234567890123456, and I want it to be marked as active.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContracts",
+    "body": {
+      "PaymentCardID": "1234567890123456",
+      "PaymentCardLifeCycleStatusName": "Active"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Get the total number of loan disbursement requests grouped by their reason names.",
+  "output": {
+    "sql": "SELECT ReasonName, COUNT(*) FROM LoanDisbursementRequest GROUP BY ReasonName;"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the average interest rate for all time deposit contracts that are active and have a planned end date after 2023-12-31.",
+  "output": {
+    "sql": "SELECT AVG(InterestRate) FROM TimeDepositContract WHERE LifeCycleStatusCode = '2' AND PlannedEndDate > '2023-12-31';"
+  }
+}

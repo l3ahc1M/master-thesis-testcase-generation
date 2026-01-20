@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "How many savings account contracts are there in total?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM SavingsAccountContract;"
+  }
+}

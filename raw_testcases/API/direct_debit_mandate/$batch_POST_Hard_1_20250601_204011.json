@@ -1,0 +1,16 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to amend my existing direct debit mandate with ID TEST5678 to change the debtor bank account and update the signature date.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/DirectDebitMandates",
+    "body": {
+      "ID": "TEST5678",
+      "DebtorBankAccount": "DE89370400440532013002",
+      "SignatureDate": "2023-11-01",
+      "ChangeStateID": "2023-11-01T10:00:00Z",
+      "UserStatusCode": "2",
+      "UserStatusName": "Mandate - Active"
+    }
+  }
+}

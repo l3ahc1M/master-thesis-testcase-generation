@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Get the loan disbursement requests along with their cancellation reasons where the activation charge amount is greater than 100.",
+  "output": {
+    "sql": "SELECT ID, CancellationReasonName FROM LoanDisbursementRequest WHERE ActivationChargeAmount > '100';"
+  }
+}

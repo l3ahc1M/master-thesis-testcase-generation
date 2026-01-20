@@ -1,0 +1,17 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to set a balance limit of 5000 dollars on my current account contract with the ID 34567890-12ab-cdef-0123-456789abcdef, and I need to make sure that overdrafts are not permitted.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions",
+    "body": {
+      "restrictionAmount": 5000,
+      "currency": "USD",
+      "allowOverdraft": false
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

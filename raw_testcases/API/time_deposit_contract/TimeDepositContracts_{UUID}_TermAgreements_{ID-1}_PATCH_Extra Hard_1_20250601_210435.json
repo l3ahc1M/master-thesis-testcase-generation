@@ -1,0 +1,13 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please update the term agreement for my time deposit contract with UUID 45678901-23ab-cdef-0123-456789abcdef to specify a duration of 36 months, an interest rate of 4%, and include a clause for automatic renewal.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/TermAgreements/1",
+    "body": {
+      "duration": "36 months",
+      "interestRate": 4,
+      "automaticRenewal": true
+    }
+  }
+}

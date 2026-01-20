@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Please change the statistic-based restriction for my savings account contract with UUID 321e0987-e34b-12d3-a456-426614174003 to allow transactions only if the average monthly spending is below 1000 GBP.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/BankAccountEntryStatisticBasedRestrictions/1",
+    "body": {
+      "AverageMonthlySpendingCondition": "LessThan",
+      "ThresholdAmount": 1000,
+      "CurrencyCode": "GBP"
+    }
+  }
+}

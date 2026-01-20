@@ -1,0 +1,13 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to propose a change of borrower for my loan contract. The loan contract ID is 47938 and the new borrower's UUID is 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/ProposedLoanContractBorrowerPartyChangeRequest",
+    "body": {
+      "ID": "47938",
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+    }
+  }
+}

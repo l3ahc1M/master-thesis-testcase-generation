@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the count of loan contract borrower party change requests grouped by life cycle status name.",
+  "output": {
+    "sql": "SELECT LifeCycleStatusName, COUNT(*) FROM LoanContractBorrowerPartyChangeRequest GROUP BY LifeCycleStatusName;"
+  }
+}

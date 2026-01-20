@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to set a transaction threshold of 500 EUR for my time deposit contract with UUID 12345678-90ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/12345678-90ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions",
+    "body": {
+      "transactionThreshold": 500
+    }
+  }
+}

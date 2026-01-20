@@ -1,0 +1,12 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please modify the incoming payment agreement with ID 4 for the loan contract with UUID 45678901-23ab-cdef-0123-456789abcdef to include a new payment method and adjust the frequency to Quarterly.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/LoanContracts/45678901-23ab-cdef-0123-456789abcdef/IncomingPaymentAgreements/4",
+    "body": {
+      "PaymentMethod": "Credit Card",
+      "Frequency": "Quarterly"
+    }
+  }
+}

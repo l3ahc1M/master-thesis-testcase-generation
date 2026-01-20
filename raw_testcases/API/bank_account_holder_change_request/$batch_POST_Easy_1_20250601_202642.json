@@ -1,0 +1,16 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to change the account holder for my savings account. The new account holder is Alice Cooper, and the former account holder was Bob Cooper. Please process this request.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": [
+      {
+        "BankAccountContractUUID": "abcdef12-3456-7890-abcd-ef1234567890",
+        "NewAccountHolderPartyIdentifyingElements": "Alice Cooper",
+        "FormerAccountHolderPartyIdentifyingElements": "Bob Cooper",
+        "ChargeWaiverRequestedIndicator": false
+      }
+    ]
+  }
+}

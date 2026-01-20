@@ -1,0 +1,22 @@
+{
+    "difficulty": "Easy",
+    "input": "I want to set up a direct debit mandate for my account with the ID TEST1234, please.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/DirectDebitMandates",
+        "body": {
+            "ID": "TEST1234",
+            "DebtorParty": "John Doe",
+            "CreditorParty": "Utility Company",
+            "CreditorPartyID": "DE123452345678901",
+            "DebtorBankAccount": "DE89370400440532013000",
+            "SignatureDate": "2023-10-01",
+            "SignatureCityName": "Berlin",
+            "ValidityPeriod": "2024-10-01",
+            "DirectDebitSchemeCode": "1",
+            "DirectDebitSchemeName": "SEPA Core",
+            "DirectDebitCollectionSEPASequenceTypeCode": "RCUR",
+            "DirectDebitCollectionSEPASequenceTypeName": "Recurring"
+        }
+    }
+}

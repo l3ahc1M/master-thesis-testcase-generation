@@ -1,0 +1,15 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to create a prenote entry for my bank account with ID 01234567-89ab-cdef-0123-456789abcdef. It should be a credit entry with a planned validity end date of 2024-06-30 and include a note about the transaction.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountPrenoteEntries",
+    "body": {
+      "BankAccountUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "RequesterBankAccountPrenoteEntryID": "PRENOTE-REFERENCE-5678",
+      "BankAccountDebitIndicator": false,
+      "PlannedValidityEndDate": "2024-06-30",
+      "Note": "This is a credit transaction for account management."
+    }
+  }
+}

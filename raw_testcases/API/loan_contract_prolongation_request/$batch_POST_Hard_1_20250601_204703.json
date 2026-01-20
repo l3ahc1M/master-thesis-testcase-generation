@@ -1,0 +1,23 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to prolong my loan contract with ID 71, and I want to set a new payment agreement with a planned balance of 5000 and an actual balance of 4500. Also, please include a penalty relevance indicator.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/LoanContractProlongationRequest",
+          "body": {
+            "ID": "71",
+            "LoanContract": "Loan12345",
+            "LoanContractPaymentPlanPlannedBalanceAmount": "5000",
+            "LoanContractPaymentPlanActualBalanceAmount": "4500",
+            "PenaltyRelevanceIndicator": true
+          }
+        }
+      ]
+    }
+  }
+}

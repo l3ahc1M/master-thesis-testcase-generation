@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Get the total number of loan contract payoff requests grouped by their cancellation reason.",
+  "output": {
+    "sql": "SELECT CancellationReasonName, COUNT(*) FROM LoanContractPayoffRequest GROUP BY CancellationReasonName;"
+  }
+}

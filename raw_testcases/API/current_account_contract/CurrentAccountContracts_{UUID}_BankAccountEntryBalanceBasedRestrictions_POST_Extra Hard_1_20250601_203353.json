@@ -1,0 +1,13 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please add a balance restriction of 2000 GBP to my current account contract with UUID 45678901-23ab-cdef-0123-456789abcdef, ensuring that it includes a note stating 'No withdrawals allowed'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions",
+    "body": {
+      "restrictionAmount": 2000,
+      "currency": "GBP",
+      "note": "No withdrawals allowed"
+    }
+  }
+}

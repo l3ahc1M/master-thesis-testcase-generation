@@ -1,0 +1,16 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to set up specific interest conditions for my time deposit contract with the ID 34567890-12ab-cdef-0123-456789abcdef. I'm looking to set a maximum interest rate of 5% and make sure it's currently active.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/IndividualInterestConditions",
+    "body": {
+      "maximumInterestRate": 5,
+      "LifeCycleStatusCode": "2"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

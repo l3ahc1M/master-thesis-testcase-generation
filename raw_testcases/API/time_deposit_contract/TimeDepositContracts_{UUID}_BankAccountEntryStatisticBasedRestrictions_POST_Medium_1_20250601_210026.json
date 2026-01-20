@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Please create a statistic-based restriction for my time deposit contract with UUID 23456789-01ab-cdef-0123-456789abcdef, and I want to set a minimum transaction count of 10.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/23456789-01ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions",
+    "body": {
+      "minimumTransactionCount": 10
+    }
+  }
+}

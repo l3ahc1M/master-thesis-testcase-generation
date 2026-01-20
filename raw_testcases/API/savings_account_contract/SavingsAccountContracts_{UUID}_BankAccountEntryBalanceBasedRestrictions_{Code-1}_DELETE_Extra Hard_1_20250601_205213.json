@@ -1,0 +1,8 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please delete the balance-based restriction for my savings account contract with UUID 789e0123-e45b-12d3-a456-426614174004, and confirm that it has been successfully removed.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/BankAccountEntryBalanceBasedRestrictions/1"
+  }
+}

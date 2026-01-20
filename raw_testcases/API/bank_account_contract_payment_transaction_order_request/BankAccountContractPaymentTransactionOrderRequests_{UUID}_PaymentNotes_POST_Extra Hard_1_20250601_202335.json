@@ -1,0 +1,13 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please add a detailed note to my payment transaction order request with UUID 01234567-89ab-cdef-0123-456789abcdef. The note should include 'This payment is for the project completed in March 2024, invoice #98765, and should be processed as soon as possible.'",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/01234567-89ab-cdef-0123-456789abcdef/PaymentNotes",
+    "body": {
+      "PaymentNotes": [
+        "This payment is for the project completed in March 2024, invoice #98765, and should be processed as soon as possible."
+      ]
+    }
+  }
+}

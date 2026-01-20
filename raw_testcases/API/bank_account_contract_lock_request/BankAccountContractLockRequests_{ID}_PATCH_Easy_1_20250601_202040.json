@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to update the lock request with ID 105 to change the user status code to 3.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/105",
+    "body": {
+      "UserStatusCode": "3"
+    }
+  }
+}

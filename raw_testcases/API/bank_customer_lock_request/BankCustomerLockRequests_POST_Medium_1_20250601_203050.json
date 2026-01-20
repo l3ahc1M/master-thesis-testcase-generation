@@ -1,0 +1,21 @@
+{
+  "difficulty": "Medium",
+  "input": "Please lock the account of customer with ID 202 due to the account holder's death on April 1, 2024.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCustomerLockRequests",
+    "body": {
+      "ID": "202",
+      "PartyIdentifyingElements": "Customer ID 202",
+      "ChangeStateID": "2024-04-01T10:30:00Z",
+      "EventCode": "104000",
+      "EventName": "Account Holder Deceased",
+      "UserStatusCode": "3",
+      "UserStatusName": "Deceased",
+      "ValidityStartDate": "2024-04-01",
+      "ValidityEndDate": "2025-04-01",
+      "BusinessProcessChainAssignment": "Lock Account Process",
+      "Note": "Customer deceased April 1, 2024."
+    }
+  }
+}

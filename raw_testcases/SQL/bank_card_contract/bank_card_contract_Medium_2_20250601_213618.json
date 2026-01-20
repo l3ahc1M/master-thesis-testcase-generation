@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "How many bank card contracts are there for each payment card type?",
+  "output": {
+    "sql": "SELECT PaymentCardTypeName, COUNT(*) FROM BankCardContract GROUP BY PaymentCardTypeName;"
+  }
+}

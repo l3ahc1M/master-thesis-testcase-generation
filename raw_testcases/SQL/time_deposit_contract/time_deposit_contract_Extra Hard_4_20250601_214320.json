@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "What is the total number of time deposit contracts that have been modified in the last six months and are linked to accounts with a balance greater than 1000?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM TimeDepositContract WHERE ModificationDate >= DATE_SUB(CURDATE(), INTERVAL 6 MONTH) AND BankAccountIdentifyingElements IN (SELECT ID FROM BankAccount WHERE Balance > 1000);"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to remove the balance restriction with the ID of 3 from my current account contract that has the UUID of 34567890-12ab-cdef-0123-456789abcdef, since I don't need it anymore.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions/3",
+    "body": {}
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

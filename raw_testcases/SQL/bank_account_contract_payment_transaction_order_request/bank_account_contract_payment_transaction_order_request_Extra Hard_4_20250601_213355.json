@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Find the payment transaction order requests that have a specific reference ID and were posted in the last month.",
+  "output": {
+    "sql": "SELECT * FROM BankAccountContractPaymentTransactionOrderRequest WHERE PaymentTransactionReferenceID = 'SpecificReferenceID' AND BankAccountPostingDate >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH);"
+  }
+}

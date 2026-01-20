@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Show me the UUIDs of all bank account contracts that have a planned cancellation date in the future.",
+  "output": {
+    "sql": "SELECT UUID FROM BankAccountContract WHERE PlannedCancellationDate > CURRENT_DATE;"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "How many current account contracts are there for the currency code EUR?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM CurrentAccountContract WHERE CurrencyCode = 'EUR';"
+  }
+}

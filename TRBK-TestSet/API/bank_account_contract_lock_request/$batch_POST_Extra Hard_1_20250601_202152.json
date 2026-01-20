@@ -1,0 +1,22 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "Could you please put together a detailed batch request to lock the bank account contract associated with the ID 01234567-89ab-cdef-0123-456789abcdef? Make sure to include an event code of 4841, a user status code of 2, and some instructions for locking the direct debit creditor.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "/BankAccountContractLockRequests",
+                    "body": {
+                        "BankAccountContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+                        "EventCode": "4841",
+                        "UserStatusCode": "2",
+                        "DirectDebitCreditorLockInstructions": []
+                    }
+                }
+            ]
+        }
+    }
+}

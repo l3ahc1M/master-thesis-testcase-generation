@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List the IDs and lifecycle status names of all bank credit facility contracts that have a product type of 'Loan'.",
+  "output": {
+    "sql": "SELECT ID, LifeCycleStatusName FROM BankCreditFacilityContract WHERE Product = 'Loan';"
+  }
+}

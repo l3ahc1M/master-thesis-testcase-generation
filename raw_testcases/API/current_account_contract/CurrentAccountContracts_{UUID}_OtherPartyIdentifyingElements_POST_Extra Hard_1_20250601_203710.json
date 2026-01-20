@@ -1,0 +1,13 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please add an other party identifying element with UUID '12345678-90ab-cdef-0123-456789abcdef' to my current account contract with UUID 45678901-23ab-cdef-0123-456789abcdef, ensuring it includes a detailed description of the relationship and any relevant documentation.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/OtherPartyIdentifyingElements",
+    "body": {
+      "UUID": "12345678-90ab-cdef-0123-456789abcdef",
+      "description": "This party is a co-signer on the account.",
+      "documentation": "Co-signer agreement attached."
+    }
+  }
+}

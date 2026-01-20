@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "What is the average transaction amount for bank account entries associated with the account contract ID 761?",
+  "output": {
+    "sql": "SELECT AVG(Amount) FROM BankAccountEntries AS T1 JOIN BankAccountContract AS T2 ON T1.BankAccountUUID = T2.UUID WHERE T2.ID = '761';"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "What is the currency code for the bank account with StandardID DE65904199170010000707?",
+  "output": {
+    "sql": "SELECT CurrencyCode FROM BankAccount WHERE StandardID = 'DE65904199170010000707';"
+  }
+}

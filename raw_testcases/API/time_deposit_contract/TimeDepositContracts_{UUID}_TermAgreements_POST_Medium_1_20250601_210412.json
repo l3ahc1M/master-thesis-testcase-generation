@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Please create a term agreement for my time deposit contract with UUID 23456789-01ab-cdef-0123-456789abcdef, specifying a duration of 12 months and an interest rate of 3%.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/23456789-01ab-cdef-0123-456789abcdef/TermAgreements",
+    "body": {
+      "duration": "12 months",
+      "interestRate": 3
+    }
+  }
+}

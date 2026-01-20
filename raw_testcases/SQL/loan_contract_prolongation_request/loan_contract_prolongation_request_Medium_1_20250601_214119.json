@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List all loan contract prolongation requests along with their cancellation reason names.",
+  "output": {
+    "sql": "SELECT LCPR.ID, LCPR.CancellationReasonName FROM LoanContractProlongationRequest AS LCPR;"
+  }
+}

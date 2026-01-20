@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List all bank card contracts along with their cancellation dates if they have been canceled.",
+  "output": {
+    "sql": "SELECT PaymentCardID, CancellationDate FROM BankCardContract WHERE CancellationDate IS NOT NULL;"
+  }
+}

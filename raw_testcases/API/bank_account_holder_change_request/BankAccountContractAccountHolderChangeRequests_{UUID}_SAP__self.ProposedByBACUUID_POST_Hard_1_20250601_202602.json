@@ -1,0 +1,14 @@
+{
+  "difficulty": "Hard",
+  "input": "Please process a change of account holder for my time deposit account. The new account holder is Tony Stark, and the former account holder was Pepper Potts. I would like to waive the activation charge for this request.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+    "body": {
+      "BankAccountContractUUID": "fedcba98-7654-3210-fedc-ba9876543210",
+      "NewAccountHolderPartyIdentifyingElements": "Tony Stark",
+      "FormerAccountHolderPartyIdentifyingElements": "Pepper Potts",
+      "ChargeWaiverRequestedIndicator": true
+    }
+  }
+}

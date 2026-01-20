@@ -1,0 +1,45 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to create three prenote entries for my bank account with ID 01234567-89ab-cdef-0123-456789abcdef. The first should be a debit entry with reference PRENOTE-REFERENCE-3001, the second a credit entry with reference PRENOTE-REFERENCE-3002, and the third a debit entry with reference PRENOTE-REFERENCE-3003, all valid until 2025.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/BankAccountPrenoteEntries",
+          "body": {
+            "BankAccountUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "RequesterBankAccountPrenoteEntryID": "PRENOTE-REFERENCE-3001",
+            "BankAccountDebitIndicator": true,
+            "ValidityStartDate": "2024-01-01",
+            "PlannedValidityEndDate": "2025-12-31"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/BankAccountPrenoteEntries",
+          "body": {
+            "BankAccountUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "RequesterBankAccountPrenoteEntryID": "PRENOTE-REFERENCE-3002",
+            "BankAccountDebitIndicator": false,
+            "ValidityStartDate": "2024-01-01",
+            "PlannedValidityEndDate": "2025-12-31"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/BankAccountPrenoteEntries",
+          "body": {
+            "BankAccountUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "RequesterBankAccountPrenoteEntryID": "PRENOTE-REFERENCE-3003",
+            "BankAccountDebitIndicator": true,
+            "ValidityStartDate": "2024-01-01",
+            "PlannedValidityEndDate": "2025-12-31"
+          }
+        }
+      ]
+    }
+  }
+}

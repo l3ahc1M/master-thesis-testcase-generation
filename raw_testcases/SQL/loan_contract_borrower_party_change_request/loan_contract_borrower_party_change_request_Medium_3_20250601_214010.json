@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List all loan contract borrower party change requests that have a completion date before 2020-01-01.",
+  "output": {
+    "sql": "SELECT * FROM LoanContractBorrowerPartyChangeRequest WHERE CompletionDate < '2020-01-01';"
+  }
+}

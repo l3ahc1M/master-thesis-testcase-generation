@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to see the IDs and lifecycle status names of all bank account contracts grouped by their type.",
+  "output": {
+    "sql": "SELECT TypeName, ID, LifeCycleStatusName FROM BankAccountContract GROUP BY TypeName, ID, LifeCycleStatusName;"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to change the individual interest conditions for my time deposit contract with UUID 34567890-12ab-cdef-0123-456789abcdef to set a maximum interest rate of 5% and ensure it is active.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/IndividualInterestConditions/1",
+    "body": {
+      "maximumInterestRate": 5,
+      "LifeCycleStatusCode": "2"
+    }
+  }
+}

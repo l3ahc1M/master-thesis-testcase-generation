@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "I need to update my bank account contract cancellation request. The UUID for my request is 01234567-89ab-cdef-0123-456789abcdef, and I want to change the reason to 'Account Closure'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractCancelRequests/01234567-89ab-cdef-0123-456789abcdef",
+    "body": {
+      "ReasonCode": "109",
+      "ReasonName": "Account Closure"
+    }
+  }
+}

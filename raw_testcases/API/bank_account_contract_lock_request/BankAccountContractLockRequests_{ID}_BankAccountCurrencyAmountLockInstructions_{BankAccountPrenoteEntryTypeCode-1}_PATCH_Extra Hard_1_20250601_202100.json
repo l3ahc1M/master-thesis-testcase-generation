@@ -1,0 +1,12 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please update the bank account currency amount lock instructions for the lock request with ID 105 to include a prenote entry type code of 4, set the validity end date to 2024-12-31, and add a note about the account holder's status.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractLockRequests/105/BankAccountCurrencyAmountLockInstructions/4",
+    "body": {
+      "ValidityEndDate": "2024-12-31",
+      "Note": "Account holder's status updated."
+    }
+  }
+}

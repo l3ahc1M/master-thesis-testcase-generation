@@ -1,0 +1,14 @@
+{
+    "difficulty": "Easy",
+    "input": "I want to change the account holder for my current account. The new account holder is John Doe, and the previous account holder was Jane Smith. Please take care of this request.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+        "body": {
+            "BankAccountContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "NewAccountHolderPartyIdentifyingElements": "John Doe",
+            "FormerAccountHolderPartyIdentifyingElements": "Jane Smith",
+            "ChargeWaiverRequestedIndicator": false
+        }
+    }
+}

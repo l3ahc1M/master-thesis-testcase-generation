@@ -1,0 +1,14 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "Please add a payment transaction instruction to my current account contract with the ID 45678901-23ab-cdef-0123-456789abcdef, and make sure to include a note that says we need dual authorization for any transactions that exceed 10,000 US dollars.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/PaymentTransactionInstructions",
+        "body": {
+            "dualAuthorizationRequired": true,
+            "transactionLimit": 10000,
+            "currency": "USD",
+            "note": "Requires dual authorization for transactions over 10000 USD."
+        }
+    }
+}

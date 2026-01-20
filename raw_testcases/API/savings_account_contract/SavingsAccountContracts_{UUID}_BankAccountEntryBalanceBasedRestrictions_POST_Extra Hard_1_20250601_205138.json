@@ -1,0 +1,13 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please set up complex balance-based restrictions for my savings account contract with UUID 789e0123-e45b-12d3-a456-426614174004, allowing withdrawals only if the balance is above 3000 EUR and setting a notification for any balance below that threshold.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/BankAccountEntryBalanceBasedRestrictions",
+    "body": {
+      "MinimumBalance": 3000,
+      "NotificationEnabled": true,
+      "CurrencyCode": "EUR"
+    }
+  }
+}

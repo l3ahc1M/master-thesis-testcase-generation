@@ -1,0 +1,31 @@
+{
+  "difficulty": "Medium",
+  "input": "I need to submit a batch request for loan disbursement. The first request should withhold 1500 from a gross amount of 8000 with a value date of 2024-12-20. The second request should have a gross amount of 10000 with a planned payment date of 2024-12-25.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/LoanDisbursementRequests",
+          "body": {
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "GrossAmount": "8000",
+            "ItemsWithheldAmount": "1500",
+            "ValueDate": "2024-12-20"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/LoanDisbursementRequests",
+          "body": {
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "GrossAmount": "10000",
+            "PlannedPaymentDate": "2024-12-25"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Please change the term agreement for my time deposit contract with UUID 23456789-01ab-cdef-0123-456789abcdef to a duration of 12 months and an interest rate of 3%.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/23456789-01ab-cdef-0123-456789abcdef/TermAgreements/1",
+    "body": {
+      "duration": "12 months",
+      "interestRate": 3
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Please modify the committed capital adjustment for the loan contract with UUID 23456789-01ab-cdef-0123-456789abcdef, changing the adjustment amount to 3000 and updating the reason to 'Adjustment for project completion'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/LoanContracts/23456789-01ab-cdef-0123-456789abcdef/CommittedCapitalAdjustments/2",
+    "body": {
+      "AdjustmentAmount": 3000,
+      "Reason": "Adjustment for project completion"
+    }
+  }
+}

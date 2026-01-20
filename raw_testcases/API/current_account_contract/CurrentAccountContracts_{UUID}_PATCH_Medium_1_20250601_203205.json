@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you change the currency of my current account contract with ID 98765 to GBP and add a usage note saying 'For international transactions'?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/98765",
+    "body": {
+      "CurrencyCode": "GBP",
+      "UsageNote": "For international transactions"
+    }
+  }
+}

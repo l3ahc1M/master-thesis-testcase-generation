@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to delete the payment transaction instructions for my savings account contract with UUID 456e7890-e12b-12d3-a456-426614174002. Please ensure it's completely removed.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/SavingsAccountContracts/456e7890-e12b-12d3-a456-426614174002/PaymentTransactionInstructions/1"
+  }
+}

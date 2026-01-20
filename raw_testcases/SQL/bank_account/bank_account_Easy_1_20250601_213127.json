@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you tell me the UUID of the bank account with the account number 0010000707?",
+  "output": {
+    "sql": "SELECT UUID FROM BankAccount WHERE ID = '0010000707';"
+  }
+}

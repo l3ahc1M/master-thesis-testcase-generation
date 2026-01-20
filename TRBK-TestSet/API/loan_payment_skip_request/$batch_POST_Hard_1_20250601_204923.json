@@ -1,0 +1,14 @@
+{
+    "difficulty": "Hard",
+    "input": "I'm looking to ask for a loan payment skip for my contract with the ID 47938. I'd like to skip my payments for a total of 5 months, and I'm also hoping to get a waiver for the activation charge because of some unexpected situations.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/LoanPaymentSkipRequests",
+        "body": {
+            "ID": "47938",
+            "SkipDatePeriod": "5 months",
+            "ActivationChargeWaiverRequestedIndicator": true,
+            "ReasonName": "Unforeseen Circumstances"
+        }
+    }
+}

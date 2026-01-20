@@ -1,0 +1,15 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Update my time deposit contract with UUID 34567890-12ab-cdef-0123-456789abcdef to include new interest conditions excluding accounts with a balance below 500 EUR.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef",
+    "body": {
+      "IndividualInterestConditions": {
+        "exclude": {
+          "balanceThreshold": 500
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Could you please change the bank account statement setup for my current account contract with the ID 45678901-23ab-cdef-0123-456789abcdef so that I receive statements every two weeks, and make sure it\u00e2\u20ac\u2122s set up for electronic delivery?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountStatementArrangements/4",
+    "body": {
+      "frequency": "bi-weekly",
+      "deliveryMethod": "electronic"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

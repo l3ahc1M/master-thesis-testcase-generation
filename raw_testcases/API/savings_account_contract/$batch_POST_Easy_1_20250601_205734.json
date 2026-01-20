@@ -1,0 +1,28 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to batch create multiple savings account contracts with currency set to EUR for account holders with IDs 12345 and 67890.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/SavingsAccountContracts",
+          "body": {
+            "CurrencyCode": "EUR",
+            "AccountHolderPartyIdentifyingElements": "12345"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/SavingsAccountContracts",
+          "body": {
+            "CurrencyCode": "EUR",
+            "AccountHolderPartyIdentifyingElements": "67890"
+          }
+        }
+      ]
+    }
+  }
+}

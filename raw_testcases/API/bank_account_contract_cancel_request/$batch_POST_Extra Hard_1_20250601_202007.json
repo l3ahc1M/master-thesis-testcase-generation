@@ -1,0 +1,18 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I want to cancel my bank account contract with UUID abcdef12-3456-7890-abcd-ef1234567890 and ensure that the residual balance is settled by cash. The cancellation reason is 'Financial Hardship'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractCancelRequests",
+    "body": {
+      "BankAccountContractUUID": "abcdef12-3456-7890-abcd-ef1234567890",
+      "ImmediateCompletionRequiredIndicator": true,
+      "BalancingByCashIndicator": true,
+      "ResidualBankAccountBalanceAmount": "500.00",
+      "CancellationChargeAmount": "25.00",
+      "ReasonCode": "110",
+      "ReasonName": "Financial Hardship",
+      "ReceiptDate": "2024-05-01"
+    }
+  }
+}

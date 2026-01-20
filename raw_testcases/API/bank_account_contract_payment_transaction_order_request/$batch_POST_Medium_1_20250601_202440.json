@@ -1,0 +1,32 @@
+{
+  "difficulty": "Medium",
+  "input": "Please batch process two payment transaction order requests. The first one is for UUID 01234567-89ab-cdef-0123-456789abcdef with an amount of 200.00 EUR, and the second one is for UUID 12345678-90ab-cdef-0123-456789abcdef with an amount of 150.00 EUR.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests",
+          "body": {
+            "BankAccountUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "TransactionCurrencyAmount": "200.00",
+            "LifeCycleStatusCode": "1",
+            "LifeCycleStatusName": "Active"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/BankAccountContractPaymentTransactionOrderRequests",
+          "body": {
+            "BankAccountUUID": "12345678-90ab-cdef-0123-456789abcdef",
+            "TransactionCurrencyAmount": "150.00",
+            "LifeCycleStatusCode": "1",
+            "LifeCycleStatusName": "Active"
+          }
+        }
+      ]
+    }
+  }
+}

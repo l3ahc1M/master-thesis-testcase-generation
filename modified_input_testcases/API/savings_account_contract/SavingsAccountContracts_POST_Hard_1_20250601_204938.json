@@ -1,0 +1,17 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to create a savings account contract that allows me to withdraw money without giving any prior notice. The account should be in British Pounds and has the unique identifier of 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts",
+    "body": {
+      "UUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "CurrencyCode": "GBP",
+      "WithdrawalAllowanceRule": "Allow withdrawals without prior notice"
+    }
+  },
+  "error_log": {
+    "status_code": 404,
+    "response_text": "{\n  \"error\": {\n    \"name\": \"mockRequestNotFoundError\",\n    \"message\": \"Double check your method and the request path and try again. Learn more here: https://learning.postman.com/docs/design-apis/mock-apis/matching-algorithm/\",\n    \"header\": \"No matching requests\"\n  }\n}"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to amend my existing direct debit mandate with ID TEST1234 to change the creditor to a new company and update the signature date.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/DirectDebitMandates",
+    "body": {
+      "ID": "TEST1234",
+      "CreditorParty": "New Company",
+      "CreditorPartyID": "DE987654321098765",
+      "SignatureDate": "2023-11-01",
+      "ChangeStateID": "2023-11-01T10:00:00Z",
+      "UserStatusCode": "2",
+      "UserStatusName": "Mandate - Active"
+    }
+  }
+}

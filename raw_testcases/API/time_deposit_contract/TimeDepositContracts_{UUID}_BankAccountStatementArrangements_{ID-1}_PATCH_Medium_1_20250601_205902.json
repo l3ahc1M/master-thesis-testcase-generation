@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Please change my bank account statement arrangements for the time deposit contract with UUID 23456789-01ab-cdef-0123-456789abcdef to include email notifications and set the frequency to bi-weekly.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/23456789-01ab-cdef-0123-456789abcdef/BankAccountStatementArrangements/1",
+    "body": {
+      "notificationMethod": "email",
+      "frequency": "bi-weekly"
+    }
+  }
+}

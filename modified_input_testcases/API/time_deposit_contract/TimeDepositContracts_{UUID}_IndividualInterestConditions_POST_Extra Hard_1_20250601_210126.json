@@ -1,0 +1,19 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please set up separate interest conditions for my time deposit contract with the ID 45678901-23ab-cdef-0123-456789abcdef, making sure to leave out any accounts that have a balance of less than 500 euros, and calculate the average interest rate.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/IndividualInterestConditions",
+    "body": {
+      "exclude": {
+        "balanceThreshold": 500
+      },
+      "aggregation": "average",
+      "field": "interestRate"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

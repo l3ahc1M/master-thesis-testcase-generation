@@ -1,0 +1,9 @@
+{
+  "difficulty": "Medium",
+  "input": "Please activate the current account contract with UUID 23456789-01ab-cdef-0123-456789abcdef and ensure it is set to active status.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/23456789-01ab-cdef-0123-456789abcdef/SAP__self.ActivateCurrentAccountContract",
+    "body": {}
+  }
+}

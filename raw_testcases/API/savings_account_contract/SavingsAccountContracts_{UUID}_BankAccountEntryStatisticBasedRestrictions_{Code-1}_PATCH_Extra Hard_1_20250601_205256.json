@@ -1,0 +1,15 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please establish a complex statistic-based restriction for my savings account contract with UUID 789e0123-e45b-12d3-a456-426614174004, allowing transactions only if the average balance is above 2500 EUR, and set a notification for any balance below that threshold, along with a maximum transaction limit of 1500 EUR.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/BankAccountEntryStatisticBasedRestrictions/1",
+    "body": {
+      "AverageBalanceCondition": "GreaterThan",
+      "ThresholdAmount": 2500,
+      "NotificationEnabled": true,
+      "MaximumTransactionLimit": 1500,
+      "CurrencyCode": "EUR"
+    }
+  }
+}

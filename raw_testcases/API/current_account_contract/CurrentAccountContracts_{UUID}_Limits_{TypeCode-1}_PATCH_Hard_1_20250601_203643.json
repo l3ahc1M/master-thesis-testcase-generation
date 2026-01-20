@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to change the limit for my current account contract with UUID 34567890-12ab-cdef-0123-456789abcdef to 10000 GBP and specify that it should not allow overdrafts.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/Limits/3",
+    "body": {
+      "limitAmount": 10000,
+      "currency": "GBP",
+      "allowOverdraft": false
+    }
+  }
+}

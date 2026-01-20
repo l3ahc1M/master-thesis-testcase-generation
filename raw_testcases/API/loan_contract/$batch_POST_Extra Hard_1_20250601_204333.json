@@ -1,0 +1,38 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please create a loan contract for borrower ID 44444 with a complex term agreement that includes multiple payment transaction instructions and excludes certain conditions.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts",
+    "body": {
+      "ID": "44444",
+      "CurrencyCode": "AUD",
+      "BorrowerPartyIdentifyingElements": "Customer ID 44444",
+      "TermAgreements": [
+        {
+          "TermSpecification": "60 months",
+          "InterestRate": "5.0%",
+          "Exclusions": {
+            "usedCoupon": true,
+            "inLoyaltyProgram": true
+          }
+        }
+      ],
+      "PaymentTransactionInstructions": [
+        {
+          "InstructionType": "Automatic Payment",
+          "Amount": "1000",
+          "Frequency": "Monthly"
+        },
+        {
+          "InstructionType": "Manual Payment",
+          "Amount": "2000",
+          "Frequency": "Quarterly"
+        }
+      ],
+      "LifeCycleStatusCode": "1",
+      "LifeCycleStatusName": "Active",
+      "Product": "Education Loan"
+    }
+  }
+}

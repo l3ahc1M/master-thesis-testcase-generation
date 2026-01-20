@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to propose a change of borrower for my loan contract. The UUID of the change request is 01234567-89ab-cdef-0123-456789abcdef and the new borrower's UUID is also 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContractBorrowerPartyChangeRequests/01234567-89ab-cdef-0123-456789abcdef/SAP__self.ProposedByLCUUID",
+    "body": {
+      "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+    }
+  }
+}

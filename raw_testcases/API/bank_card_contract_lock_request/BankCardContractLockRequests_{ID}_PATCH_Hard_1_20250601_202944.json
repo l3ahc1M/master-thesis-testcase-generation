@@ -1,0 +1,11 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to change my bank card contract lock request with ID 105 to specify that the lock should only be lifted upon my explicit request.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankCardContractLockRequests/105",
+    "body": {
+      "Note": "Customer requests that the lock should only be lifted upon explicit request."
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Please cancel my loan payment skip request for the contract with ID 47938. The reason for cancellation is that I no longer need to skip the payment.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanPaymentSkipRequests/47938/SAP__self.CancelLoanPaymentSkipRequest",
+    "body": {
+      "CancellationReasonName": "No Longer Needed"
+    }
+  }
+}

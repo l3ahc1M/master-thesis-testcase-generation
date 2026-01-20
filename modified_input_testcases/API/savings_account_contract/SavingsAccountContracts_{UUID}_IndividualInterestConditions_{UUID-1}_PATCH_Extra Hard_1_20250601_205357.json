@@ -1,0 +1,22 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Can you set up some complicated individual interest conditions for my savings account contract with the ID 789e0123-e45b-12d3-a456-426614174004? I\u00e2\u20ac\u2122d like a promotional interest rate of 2.5% for the first six months, and then a loyalty bonus of 0.75% for the following year.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/IndividualInterestConditions/1",
+    "body": {
+      "PromotionalRate": {
+        "Rate": 2.5,
+        "Duration": "P6M"
+      },
+      "LoyaltyBonus": {
+        "Rate": 0.75,
+        "Duration": "P1Y"
+      }
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

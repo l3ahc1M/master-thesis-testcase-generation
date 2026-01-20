@@ -1,0 +1,14 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to establish a complex statistic-based restriction for my savings account contract with UUID 456e7890-e12b-12d3-a456-426614174002, allowing transactions only if the average transaction amount is less than 500 USD and setting a notification for any transaction above that threshold.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts/456e7890-e12b-12d3-a456-426614174002/BankAccountEntryStatisticBasedRestrictions",
+    "body": {
+      "AverageTransactionCondition": "LessThan",
+      "ThresholdAmount": 500,
+      "NotificationEnabled": true,
+      "CurrencyCode": "USD"
+    }
+  }
+}

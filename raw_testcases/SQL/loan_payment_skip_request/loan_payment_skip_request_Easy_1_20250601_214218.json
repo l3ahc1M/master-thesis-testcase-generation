@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you tell me how many loan payment skip requests have been made?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM LoanPaymentSkipRequest;"
+  }
+}

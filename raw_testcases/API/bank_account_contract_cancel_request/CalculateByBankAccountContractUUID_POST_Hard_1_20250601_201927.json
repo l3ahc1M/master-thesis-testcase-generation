@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "Please calculate the financial results for my bank account contract with UUID 87654321-90ab-cdef-0123-456789abcdef, and ensure to exclude any transactions made after the cancellation request date.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CalculateByBankAccountContractUUID",
+    "body": {
+      "BankAccountContractUUID": "87654321-90ab-cdef-0123-456789abcdef",
+      "ExcludeRecentTransactions": true
+    }
+  }
+}

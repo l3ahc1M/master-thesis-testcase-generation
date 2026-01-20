@@ -1,0 +1,15 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I want to change the account holder for my current account. The new account holder is Emily Davis, and the former account holder was David Davis. This request is urgent, and I would like to waive the activation charge. The change state ID is 20200309121401.6154150.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+    "body": {
+      "BankAccountContractUUID": "fedcba98-7654-3210-fedc-ba9876543210",
+      "NewAccountHolderPartyIdentifyingElements": "Emily Davis",
+      "FormerAccountHolderPartyIdentifyingElements": "David Davis",
+      "ChargeWaiverRequestedIndicator": true,
+      "ChangeStateID": "20200309121401.6154150"
+    }
+  }
+}

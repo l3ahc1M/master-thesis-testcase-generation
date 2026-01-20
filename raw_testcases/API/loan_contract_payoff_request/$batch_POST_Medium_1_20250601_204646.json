@@ -1,0 +1,21 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you help me calculate the gross payoff amount for my loan contract with ID 71? I need the details for the payment transaction instruction as well.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/LoanContractPayoffRequests",
+          "body": {
+            "ID": "71",
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "GrossAmountCalculationResult": "true"
+          }
+        }
+      ]
+    }
+  }
+}

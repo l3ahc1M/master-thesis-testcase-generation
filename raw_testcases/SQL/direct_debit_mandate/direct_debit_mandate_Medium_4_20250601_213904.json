@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Find all direct debit mandates that have a signature date in the year 2020.",
+  "output": {
+    "sql": "SELECT * FROM DirectDebitMandate WHERE YEAR(SignatureDate) = 2020;"
+  }
+}

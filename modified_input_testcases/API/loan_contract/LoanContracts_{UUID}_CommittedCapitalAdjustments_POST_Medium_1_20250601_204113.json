@@ -1,0 +1,17 @@
+{
+  "difficulty": "Medium",
+  "input": "Could you please make a committed capital adjustment for the loan contract with the ID 23456789-01ab-cdef-0123-456789abcdef? I need to change the amount to 5000 because of a shift in my financial situation.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts/23456789-01ab-cdef-0123-456789abcdef/CommittedCapitalAdjustments",
+    "body": {
+      "AdjustmentAmount": 5000,
+      "AdjustmentDate": "2024-02-01",
+      "Reason": "Change in financial circumstances"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

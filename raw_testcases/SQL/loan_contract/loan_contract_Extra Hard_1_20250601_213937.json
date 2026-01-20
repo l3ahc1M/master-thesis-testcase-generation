@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the total gross amount of loan contract payoff requests for contracts that have been completed.",
+  "output": {
+    "sql": "SELECT SUM(GrossAmount) FROM LoanContractPayoffRequest AS T1 JOIN LoanContract AS T2 ON T1.LoanContractUUID = T2.UUID WHERE T2.LifeCycleStatusCode = '3';"
+  }
+}

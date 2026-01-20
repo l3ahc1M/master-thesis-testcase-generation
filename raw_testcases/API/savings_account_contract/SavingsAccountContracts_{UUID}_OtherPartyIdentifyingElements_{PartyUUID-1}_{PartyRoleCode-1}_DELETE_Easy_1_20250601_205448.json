@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to delete the co-signer identifying element from my savings account contract with UUID 123e4567-e89b-12d3-a456-426614174000.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/SavingsAccountContracts/123e4567-e89b-12d3-a456-426614174000/OtherPartyIdentifyingElements/1/CoSigner"
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "difficulty": "Easy",
+    "input": "I want to batch process a request to change the borrower for my loan contracts. The first loan contract has the ID 47938, and the new borrower's unique identifier is 01234567-89ab-cdef-0123-456789abcdef.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "/LoanContractBorrowerPartyChangeRequests",
+                    "body": {
+                        "ID": "47938",
+                        "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+                        "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+                    }
+                }
+            ]
+        }
+    }
+}

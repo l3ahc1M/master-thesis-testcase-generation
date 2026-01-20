@@ -1,0 +1,8 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to remove a party from my time deposit contract with UUID 12345678-90ab-cdef-0123-456789abcdef, specifically the party with role code 'Beneficiary'.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/TimeDepositContracts/12345678-90ab-cdef-0123-456789abcdef/OtherPartyIdentifyingElements/1/Beneficiary"
+  }
+}

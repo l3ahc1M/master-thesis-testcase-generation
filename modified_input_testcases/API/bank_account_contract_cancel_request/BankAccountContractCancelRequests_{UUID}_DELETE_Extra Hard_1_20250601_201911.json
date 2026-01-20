@@ -1,0 +1,12 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I would like to cancel my request to delete my bank account contract, which has the ID abcdef12-3456-7890-abcd-ef1234567890. Please make sure it gets taken out of the system.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/BankAccountContractCancelRequests/abcdef12-3456-7890-abcd-ef1234567890"
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

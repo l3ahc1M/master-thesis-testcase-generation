@@ -1,0 +1,14 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please configure a complex withdrawal notice rule for my savings account contract with UUID 789e0123-e45b-12d3-a456-426614174004, requiring a notice period of 7 days for withdrawals over 5000 EUR, and include a notification method via SMS for any withdrawal requests.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/WithdrawalNoticeRules",
+    "body": {
+      "NoticePeriod": "P7D",
+      "ThresholdAmount": 5000,
+      "CurrencyCode": "EUR",
+      "NotificationMethod": "SMS"
+    }
+  }
+}

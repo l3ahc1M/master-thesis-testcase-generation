@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you add an other party identifying element with the ID '98765' to my current account contract with UUID 23456789-01ab-cdef-0123-456789abcdef?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/23456789-01ab-cdef-0123-456789abcdef/OtherPartyIdentifyingElements",
+    "body": {
+      "ID": "98765"
+    }
+  }
+}

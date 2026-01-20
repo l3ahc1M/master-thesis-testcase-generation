@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to remove the statistic-based restriction from my time deposit contract that has the ID 34567890-12ab-cdef-0123-456789abcdef, because I don't need it anymore.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions/1"
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to update the payment note for my transaction order request with UUID 01234567-89ab-cdef-0123-456789abcdef. The note ID is 1 and the new note is 'Payment for service #54321'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/01234567-89ab-cdef-0123-456789abcdef/PaymentNotes/1",
+    "body": {
+      "PaymentNotes": [
+        "Payment for service #54321"
+      ]
+    }
+  }
+}

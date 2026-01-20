@@ -1,0 +1,32 @@
+{
+  "difficulty": "Medium",
+  "input": "Could you please update the lifecycle status of my savings account contracts with the IDs 123e4567-e89b-12d3-a456-426614174000 and 789e0123-e45b-12d3-a456-426614174004 to Inactive all at once?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "PATCH",
+          "url": "/SavingsAccountContracts/123e4567-e89b-12d3-a456-426614174000",
+          "body": {
+            "LifeCycleStatusCode": "0",
+            "LifeCycleStatusName": "Inactive"
+          }
+        },
+        {
+          "method": "PATCH",
+          "url": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004",
+          "body": {
+            "LifeCycleStatusCode": "0",
+            "LifeCycleStatusName": "Inactive"
+          }
+        }
+      ]
+    }
+  },
+  "error_log": {
+    "status_code": 404,
+    "response_text": "{\n  \"error\": {\n    \"name\": \"mockRequestNotFoundError\",\n    \"message\": \"Double check your method and the request path and try again. Learn more here: https://learning.postman.com/docs/design-apis/mock-apis/matching-algorithm/\",\n    \"header\": \"No matching requests\"\n  }\n}"
+  }
+}

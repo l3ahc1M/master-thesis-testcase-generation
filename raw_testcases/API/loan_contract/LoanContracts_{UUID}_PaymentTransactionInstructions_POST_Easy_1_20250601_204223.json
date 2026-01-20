@@ -1,0 +1,13 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to add a payment transaction instruction for the loan contract with UUID 12345678-90ab-cdef-0123-456789abcdef, specifying an automatic payment of 300 every month.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts/12345678-90ab-cdef-0123-456789abcdef/PaymentTransactionInstructions",
+    "body": {
+      "InstructionType": "Automatic Payment",
+      "Amount": 300,
+      "Frequency": "Monthly"
+    }
+  }
+}

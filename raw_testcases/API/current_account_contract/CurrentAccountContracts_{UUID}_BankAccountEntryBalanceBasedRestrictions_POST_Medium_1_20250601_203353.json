@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Please set a balance restriction of 1000 EUR on my current account contract with UUID 23456789-01ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/23456789-01ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions",
+    "body": {
+      "restrictionAmount": 1000,
+      "currency": "EUR"
+    }
+  }
+}

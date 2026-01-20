@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the UUIDs of loan payment skip requests that have a final payment date before 2023-12-31 and are in the 'Completed' status.",
+  "output": {
+    "sql": "SELECT UUID FROM LoanPaymentSkipRequest WHERE FinalPaymentDate < '2023-12-31' AND LifeCycleStatusName = 'Completed';"
+  }
+}

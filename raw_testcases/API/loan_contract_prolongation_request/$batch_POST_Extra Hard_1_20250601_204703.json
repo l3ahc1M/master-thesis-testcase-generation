@@ -1,0 +1,28 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please process a prolongation request for my loan contract with ID 71, including a new term agreement with a final payment amount of 2000 due on 2025-12-31, and I want to exclude any agreements that involve used coupons or loyalty programs.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/LoanContractProlongationRequest",
+          "body": {
+            "ID": "71",
+            "LoanContract": "Loan12345",
+            "FinalPaymentAmount": "2000",
+            "FinalPaymentDate": "2025-12-31",
+            "TermAgreements": {
+              "exclude": {
+                "usedCoupon": true,
+                "inLoyaltyProgram": true
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

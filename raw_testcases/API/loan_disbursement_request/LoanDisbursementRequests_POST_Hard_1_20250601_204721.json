@@ -1,0 +1,17 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to create a loan disbursement request for my loan contract. The gross amount is 15000, and I want to withhold 3000 for installments. The reason for the request is customer request, and the lifecycle status is in preparation.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanDisbursementRequests",
+    "body": {
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "GrossAmount": "15000",
+      "ItemsWithheldAmount": "3000",
+      "ReasonCode": "1",
+      "ReasonName": "Customer Request",
+      "LifeCycleStatusCode": "1",
+      "LifeCycleStatusName": "In Preparation"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please update the statistic-based restriction for my time deposit contract with the ID 45678901-23ab-cdef-0123-456789abcdef to require at least 15 transactions and calculate the average transaction amount, but only for accounts that have a balance of at least 1000 euros.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/TimeDepositContracts/45678901-23ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions/1",
+    "body": {
+      "minimumTransactionCount": 15,
+      "exclude": {
+        "balanceThreshold": 1000
+      },
+      "aggregation": "average",
+      "field": "transactionAmount"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

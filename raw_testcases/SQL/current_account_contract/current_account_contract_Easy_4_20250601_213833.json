@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "How many current account contracts are there with a dormancy status of active?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM CurrentAccountContract WHERE DormancyStatusCode = '01';"
+  }
+}

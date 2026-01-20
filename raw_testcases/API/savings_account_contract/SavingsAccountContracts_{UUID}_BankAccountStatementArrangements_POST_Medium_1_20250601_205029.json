@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you create bank account statement arrangements for my savings account contract with UUID 987e6543-e21b-12d3-a456-426614174001 and include monthly statements?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts/987e6543-e21b-12d3-a456-426614174001/BankAccountStatementArrangements",
+    "body": {
+      "Frequency": "Monthly"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to update the withdrawal notice rule for my savings account contract with UUID 456e7890-e12b-12d3-a456-426614174002, requiring a notice period of 6 days for withdrawals over 3000 USD and setting a maximum withdrawal limit of 1500 USD without notice.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/456e7890-e12b-12d3-a456-426614174002/WithdrawalNoticeRules/1",
+    "body": {
+      "NoticePeriod": "P6D",
+      "MaximumWithdrawalLimit": 1500,
+      "CurrencyCode": "USD",
+      "NoNoticeAllowed": true
+    }
+  }
+}

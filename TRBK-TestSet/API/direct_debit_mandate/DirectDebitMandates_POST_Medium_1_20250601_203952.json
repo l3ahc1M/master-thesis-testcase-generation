@@ -1,0 +1,21 @@
+{
+    "difficulty": "Medium",
+    "input": "Could you please help me set up a direct debit for my electricity bill? My account ID is TEST1234 and the creditor ID for the electricity provider is DE123452345678901.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/DirectDebitMandates",
+        "body": {
+            "ID": "TEST1234",
+            "CreditorPartyID": "DE123452345678901",
+            "DebtorParty": "Jane Smith",
+            "CreditorParty": "Electricity Provider",
+            "DebtorBankAccount": "DE89370400440532013000",
+            "SignatureDate": "2023-10-01",
+            "ValidityPeriod": "2025-10-01",
+            "DirectDebitSchemeCode": "1",
+            "DirectDebitSchemeName": "SEPA Core",
+            "DirectDebitCollectionSEPASequenceTypeCode": "RCUR",
+            "DirectDebitCollectionSEPASequenceTypeName": "Recurring"
+        }
+    }
+}

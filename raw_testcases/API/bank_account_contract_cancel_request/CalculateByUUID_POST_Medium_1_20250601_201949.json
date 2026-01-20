@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "I would like to calculate the financial results for my bank account contract with UUID 23456789-01ab-cdef-0123-456789abcdef. Please include any relevant charges.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CalculateByUUID",
+    "body": {
+      "BankAccountContractUUID": "23456789-01ab-cdef-0123-456789abcdef",
+      "IncludeCharges": true
+    }
+  }
+}

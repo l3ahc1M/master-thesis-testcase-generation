@@ -1,0 +1,8 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you remove the prenote entry with ID PRENOTE-REFERENCE-5678 from my account 01234567-89ab-cdef-0123-456789abcdef?",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/BankAccountPrenoteEntries/PRENOTE-REFERENCE-5678/01234567-89ab-cdef-0123-456789abcdef"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to modify my cancellation request with UUID 01234567-89ab-cdef-0123-456789abcdef to indicate that I do not require a bank account settlement and change the planned completion date to next month.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountContractCancelRequests/01234567-89ab-cdef-0123-456789abcdef",
+    "body": {
+      "BankAccountSettlementRequiredIndicator": false,
+      "PlannedCompletionDate": "2024-06-01"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Could you please remove the statistic-based restriction for my savings account contract with the ID 789e0123-e45b-12d3-a456-426614174004, and let me know once it's been successfully taken care of?",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/BankAccountEntryStatisticBasedRestrictions/1"
+  },
+  "error_log": {
+    "status_code": 404,
+    "response_text": "{\n  \"error\": {\n    \"name\": \"mockRequestNotFoundError\",\n    \"message\": \"Double check your method and the request path and try again. Learn more here: https://learning.postman.com/docs/design-apis/mock-apis/matching-algorithm/\",\n    \"header\": \"No matching requests\"\n  }\n}"
+  }
+}

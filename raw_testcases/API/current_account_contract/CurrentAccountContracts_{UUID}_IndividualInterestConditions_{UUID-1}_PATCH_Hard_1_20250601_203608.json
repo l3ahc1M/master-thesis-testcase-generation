@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to update the individual interest condition for my current account contract with UUID 34567890-12ab-cdef-0123-456789abcdef to a special rate of 2.0% and include a note stating 'Promotional offer'.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/IndividualInterestConditions/3",
+    "body": {
+      "rate": "2.0%",
+      "note": "Promotional offer"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to cancel my bank account contract immediately. My account ID is 01234567-89ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractCancelRequests",
+    "body": {
+      "BankAccountContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "ImmediateCompletionRequiredIndicator": true,
+      "ReasonCode": "107",
+      "ReasonName": "Other",
+      "ReceiptDate": "2024-05-01"
+    }
+  }
+}

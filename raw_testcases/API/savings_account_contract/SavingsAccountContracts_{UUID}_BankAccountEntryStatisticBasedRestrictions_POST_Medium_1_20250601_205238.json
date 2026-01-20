@@ -1,0 +1,13 @@
+{
+  "difficulty": "Medium",
+  "input": "Please create a statistic-based restriction for my savings account contract with UUID 321e0987-e34b-12d3-a456-426614174003, allowing transactions only if the average balance is above 2000 GBP.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/BankAccountEntryStatisticBasedRestrictions",
+    "body": {
+      "AverageBalanceCondition": "GreaterThan",
+      "ThresholdAmount": 2000,
+      "CurrencyCode": "GBP"
+    }
+  }
+}

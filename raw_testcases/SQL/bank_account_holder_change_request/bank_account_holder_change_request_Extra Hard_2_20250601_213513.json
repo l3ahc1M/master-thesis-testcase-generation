@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Find the UUIDs of account holder change requests that were completed and have a former account holder identified as 'John Doe'.",
+  "output": {
+    "sql": "SELECT UUID FROM BankAccountContractAccountHolderChangeRequest WHERE LifeCycleStatusName = 'Completed' AND FormerAccountHolderPartyIdentifyingElements = 'John Doe';"
+  }
+}

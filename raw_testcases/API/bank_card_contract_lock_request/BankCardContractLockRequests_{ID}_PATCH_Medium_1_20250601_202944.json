@@ -1,0 +1,11 @@
+{
+  "difficulty": "Medium",
+  "input": "Please update my bank card contract lock request with ID 105 to extend the validity end date to 2024-12-31.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankCardContractLockRequests/105",
+    "body": {
+      "ValidityEndDate": "2024-12-31"
+    }
+  }
+}

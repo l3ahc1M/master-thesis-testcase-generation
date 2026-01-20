@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you update the limit for my current account contract with UUID 23456789-01ab-cdef-0123-456789abcdef to 5000 USD?",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/23456789-01ab-cdef-0123-456789abcdef/Limits/2",
+    "body": {
+      "limitAmount": 5000,
+      "currency": "USD"
+    }
+  }
+}

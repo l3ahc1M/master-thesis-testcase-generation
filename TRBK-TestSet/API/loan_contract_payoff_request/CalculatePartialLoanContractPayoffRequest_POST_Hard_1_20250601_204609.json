@@ -1,0 +1,15 @@
+{
+    "difficulty": "Hard",
+    "input": "I need to put together a request to partially pay off my loan, which has the ID of 71. Please make sure to include the activation charge amount and any billing entries that haven't been paid yet.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/CalculatePartialLoanContractPayoffRequest",
+        "body": {
+            "ID": "71",
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "ActivationChargeAmount": "150",
+            "IncludeUnpaidBillingEntries": true,
+            "FullPayoffRequiredIndicator": false
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to remove the individual interest condition that has the ID of 3 from my current account contract, which is identified by the UUID 34567890-12ab-cdef-0123-456789abcdef, because I don't need it anymore.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/IndividualInterestConditions/3",
+    "body": {}
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

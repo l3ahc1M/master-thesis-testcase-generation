@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List the loan contract IDs and their corresponding borrower party identifying elements for contracts that are currently active.",
+  "output": {
+    "sql": "SELECT ID, BorrowerPartyIdentifyingElements FROM LoanContract WHERE LifeCycleStatusCode = '2';"
+  }
+}

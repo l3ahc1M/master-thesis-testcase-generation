@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to establish bank account statement arrangements for my savings account contract with UUID 456e7890-e12b-12d3-a456-426614174002, and I want to receive statements quarterly with email notifications.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts/456e7890-e12b-12d3-a456-426614174002/BankAccountStatementArrangements",
+    "body": {
+      "Frequency": "Quarterly",
+      "NotificationMethod": "Email"
+    }
+  }
+}

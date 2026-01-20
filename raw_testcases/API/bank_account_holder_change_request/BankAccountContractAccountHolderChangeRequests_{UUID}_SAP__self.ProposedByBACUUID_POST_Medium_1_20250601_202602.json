@@ -1,0 +1,15 @@
+{
+  "difficulty": "Medium",
+  "input": "I need to change the account holder for my current account. The new account holder is Bruce Wayne, and the former account holder was Alfred Pennyworth. The reason for this change is due to a legal agreement.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractAccountHolderChangeRequests",
+    "body": {
+      "BankAccountContractUUID": "12345678-90ab-cdef-0123-456789abcdef",
+      "NewAccountHolderPartyIdentifyingElements": "Bruce Wayne",
+      "FormerAccountHolderPartyIdentifyingElements": "Alfred Pennyworth",
+      "ReasonCode": "1",
+      "ChargeWaiverRequestedIndicator": false
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "difficulty": "Hard",
+  "input": "I'm looking to put in a request for a loan disbursement related to my loan contract. The total amount I need is $15,000, but I want to set aside $3,000 for future installments. The reason I'm making this request is that the customer asked for it, and right now, the status of this request is still being prepared.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanDisbursementRequests",
+    "body": {
+      "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "GrossAmount": "15000",
+      "ItemsWithheldAmount": "3000",
+      "ReasonCode": "1",
+      "ReasonName": "Customer Request",
+      "LifeCycleStatusCode": "1",
+      "LifeCycleStatusName": "In Preparation"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

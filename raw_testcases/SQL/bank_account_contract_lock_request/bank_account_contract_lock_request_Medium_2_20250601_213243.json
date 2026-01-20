@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you list the event names for all bank account contract lock requests that have a change state ID starting with '2019'?",
+  "output": {
+    "sql": "SELECT EventName FROM BankAccountContractLockRequest WHERE ChangeStateID LIKE '2019%';"
+  }
+}

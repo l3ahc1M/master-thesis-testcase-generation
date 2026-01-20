@@ -1,0 +1,11 @@
+{
+  "difficulty": "Hard",
+  "input": "I want to modify the loan contract with UUID 12345678-90ab-cdef-0123-456789abcdef to add a dunning process that sends reminders after 10 days of overdue payment.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/LoanContracts/12345678-90ab-cdef-0123-456789abcdef",
+    "body": {
+      "Dunning": "Send reminders after 10 days of overdue payment"
+    }
+  }
+}

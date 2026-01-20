@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the reason names for all account holder change requests that were completed and have a charge waiver requested.",
+  "output": {
+    "sql": "SELECT ReasonName FROM BankAccountContractAccountHolderChangeRequest WHERE LifeCycleStatusName = 'Completed' AND ChargeWaiverRequestedIndicator = TRUE;"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "difficulty": "Easy",
+  "input": "I need to update the payment transaction instruction with ID 1 for the loan contract with UUID 12345678-90ab-cdef-0123-456789abcdef to change the amount to 400.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/LoanContracts/12345678-90ab-cdef-0123-456789abcdef/PaymentTransactionInstructions/1",
+    "body": {
+      "Amount": 400
+    }
+  }
+}

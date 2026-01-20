@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Please create balance-based restrictions for my savings account contract with UUID 321e0987-e34b-12d3-a456-426614174003, setting a maximum withdrawal limit of 5000 GBP.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/BankAccountEntryBalanceBasedRestrictions",
+    "body": {
+      "MaximumWithdrawalLimit": 5000,
+      "CurrencyCode": "GBP"
+    }
+  }
+}

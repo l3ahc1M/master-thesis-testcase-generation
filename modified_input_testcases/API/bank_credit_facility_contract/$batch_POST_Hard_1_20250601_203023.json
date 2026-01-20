@@ -1,0 +1,18 @@
+{
+  "difficulty": "Hard",
+  "input": "Could you please change the bank credit facility contract with the ID 1234 to make its status 'Active' and set a limit of 50,000 euros?",
+  "output": {
+    "method": "PUT",
+    "endpoint": "/BankCreditFacilityContract/1234",
+    "body": {
+      "LifeCycleStatusCode": "1",
+      "Limits": [
+        50000
+      ]
+    }
+  },
+  "error_log": {
+    "status_code": 404,
+    "response_text": "{\n  \"error\": {\n    \"name\": \"mockRequestNotFoundError\",\n    \"message\": \"Double check your method and the request path and try again. Learn more here: https://learning.postman.com/docs/design-apis/mock-apis/matching-algorithm/\",\n    \"header\": \"No matching requests\"\n  }\n}"
+  }
+}

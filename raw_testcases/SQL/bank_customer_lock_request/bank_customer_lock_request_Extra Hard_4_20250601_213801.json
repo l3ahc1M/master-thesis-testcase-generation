@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Get the details of bank customer lock requests that have a note indicating a customer has passed away and are still valid.",
+  "output": {
+    "sql": "SELECT * FROM BankCustomerLockRequest WHERE Note LIKE '%passed away%' AND ValidityEndDate > CURRENT_DATE;"
+  }
+}

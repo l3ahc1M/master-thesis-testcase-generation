@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "List all loan contract payoff requests that are completed and have a net amount greater than 1000.",
+  "output": {
+    "sql": "SELECT * FROM LoanContractPayoffRequest WHERE LifeCycleStatusName = 'Completed' AND NetAmount > '1000';"
+  }
+}

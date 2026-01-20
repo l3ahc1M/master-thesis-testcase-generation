@@ -1,0 +1,8 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to remove the legal representative from my time deposit contract with UUID 34567890-12ab-cdef-0123-456789abcdef, and their role code is 'LegalRepresentative'.",
+  "output": {
+    "method": "DELETE",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/OtherPartyIdentifyingElements/3/LegalRepresentative"
+  }
+}

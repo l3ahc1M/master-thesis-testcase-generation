@@ -1,0 +1,9 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Can you activate the savings account contract with UUID 321e0987-e34b-12d3-a456-426614174003 and ensure that the account holder's conditions are satisfied?",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/SAP__self.ActivateSavingsAccountContract",
+    "body": {}
+  }
+}

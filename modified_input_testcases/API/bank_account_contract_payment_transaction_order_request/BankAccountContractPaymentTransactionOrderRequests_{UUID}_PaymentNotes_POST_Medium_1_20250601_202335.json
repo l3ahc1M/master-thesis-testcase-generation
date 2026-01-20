@@ -1,0 +1,17 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you please add a note to my payment transaction order request with the ID 01234567-89ab-cdef-0123-456789abcdef? The note should say, \"Urgent payment required by the end of the month.\"",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankAccountContractPaymentTransactionOrderRequests/01234567-89ab-cdef-0123-456789abcdef/PaymentNotes",
+    "body": {
+      "PaymentNotes": [
+        "Urgent payment required by end of the month"
+      ]
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you show me the total number of bank account entries for the account with ID 0010000707?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankAccountEntries WHERE BankAccountID = '0010000707';"
+  }
+}

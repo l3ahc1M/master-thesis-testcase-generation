@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Find the UUIDs of bank account contracts that have been canceled and were of type savings account.",
+  "output": {
+    "sql": "SELECT UUID FROM BankAccountContract WHERE TypeName = 'Savings Account Contract' AND LifeCycleStatusName = 'Canceled';"
+  }
+}

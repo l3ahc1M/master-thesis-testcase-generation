@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "Can you tell me how many time deposit contracts are currently active?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM TimeDepositContract WHERE LifeCycleStatusCode = '2';"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to update the prenote entry with ID PRENOTE-REFERENCE-9999 to change its rejection reason to 'Insufficient Funds' and mark it as invalid.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/BankAccountPrenoteEntries/PRENOTE-REFERENCE-9999/01234567-89ab-cdef-0123-456789abcdef",
+    "body": {
+      "RejectionReasonName": "Insufficient Funds",
+      "ValidIndicator": false
+    }
+  }
+}

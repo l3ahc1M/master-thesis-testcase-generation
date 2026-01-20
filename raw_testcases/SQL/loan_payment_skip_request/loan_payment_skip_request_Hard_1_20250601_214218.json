@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the average new installment amount for loan payment skip requests that have been completed.",
+  "output": {
+    "sql": "SELECT AVG(NewInstallmentAmount) FROM LoanPaymentSkipRequest WHERE LifeCycleStatusName = 'Completed';"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "I need to batch process several borrower change requests. The first request is for loan contract ID 47938 with a new borrower's UUID of 01234567-89ab-cdef-0123-456789abcdef, including a change state ID of 20200309121401.6154150 and a completion date of 2024-05-01. The second request is for loan contract ID 47939 with the same new borrower's UUID, a change state ID of 20200309121401.6154150, and a completion date of 2024-05-01.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/$batch",
+    "body": {
+      "requests": [
+        {
+          "method": "POST",
+          "url": "/LoanContractBorrowerPartyChangeRequests",
+          "body": {
+            "ID": "47938",
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "ChangeStateID": "20200309121401.6154150",
+            "CompletionDate": "2024-05-01",
+            "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "/LoanContractBorrowerPartyChangeRequests",
+          "body": {
+            "ID": "47939",
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "ChangeStateID": "20200309121401.6154150",
+            "CompletionDate": "2024-05-01",
+            "NewBorrowerPartyIdentifyingElements": "New Borrower Details"
+          }
+        }
+      ]
+    }
+  }
+}

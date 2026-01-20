@@ -1,0 +1,15 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please establish complex balance-based restrictions for my savings account contract with UUID 789e0123-e45b-12d3-a456-426614174004, allowing withdrawals only if the balance is above 4000 EUR, and set a notification for any balance below that threshold, along with a maximum withdrawal limit of 1000 EUR.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/SavingsAccountContracts/789e0123-e45b-12d3-a456-426614174004/BankAccountEntryBalanceBasedRestrictions/1",
+    "body": {
+      "TransactionCondition": "BalanceGreaterThan",
+      "ThresholdAmount": 4000,
+      "NotificationEnabled": true,
+      "MaximumWithdrawalLimit": 1000,
+      "CurrencyCode": "EUR"
+    }
+  }
+}

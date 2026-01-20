@@ -1,0 +1,12 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to create a new bank card contract for a debit card in EUR currency.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContracts",
+    "body": {
+      "PaymentCardTypeCode": "0010",
+      "CurrencyCode": "EUR"
+    }
+  }
+}

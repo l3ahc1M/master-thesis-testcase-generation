@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the count of bank card contracts grouped by their life cycle status.",
+  "output": {
+    "sql": "SELECT PaymentCardLifeCycleStatusName, COUNT(*) FROM BankCardContract GROUP BY PaymentCardLifeCycleStatusName;"
+  }
+}

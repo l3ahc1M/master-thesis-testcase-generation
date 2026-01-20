@@ -1,0 +1,16 @@
+{
+    "difficulty": "Extra Hard",
+    "input": "I'm looking to put in a request for a loan disbursement related to my loan contract. The total amount I'm asking for is $30,000, but I need to set aside $8,000 for fees and $2,000 for installments. I would like to have the activation charge waived, and I'm hoping to have the funds available starting on November 1, 2024. This request falls under the 'Loan Processing' business process.",
+    "output": {
+        "method": "POST",
+        "endpoint": "/ProposeLoanDisbursementRequest",
+        "body": {
+            "LoanContractUUID": "01234567-89ab-cdef-0123-456789abcdef",
+            "GrossAmount": "30000",
+            "ItemsWithheldAmount": "10000",
+            "ActivationChargeWaiverRequestedIndicator": true,
+            "ValueDate": "2024-11-01",
+            "BusinessProcessChainAssignment": "Loan Processing"
+        }
+    }
+}

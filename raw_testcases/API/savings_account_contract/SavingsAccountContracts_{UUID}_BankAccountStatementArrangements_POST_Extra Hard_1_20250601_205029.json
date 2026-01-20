@@ -1,0 +1,12 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Please set up bank account statement arrangements for my savings account contract with UUID 321e0987-e34b-12d3-a456-426614174003, ensuring that I receive detailed statements bi-annually and include a summary of transactions.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/SavingsAccountContracts/321e0987-e34b-12d3-a456-426614174003/BankAccountStatementArrangements",
+    "body": {
+      "Frequency": "Bi-Annual",
+      "IncludeTransactionSummary": true
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to establish a statistic-based restriction for my time deposit contract with UUID 34567890-12ab-cdef-0123-456789abcdef, setting a maximum transaction amount of 5000 EUR and ensuring it is active.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/TimeDepositContracts/34567890-12ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions",
+    "body": {
+      "maximumTransactionAmount": 5000,
+      "LifeCycleStatusCode": "2"
+    }
+  }
+}

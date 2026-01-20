@@ -1,0 +1,17 @@
+{
+  "difficulty": "Medium",
+  "input": "Can you set up a payment transaction instruction for the loan contract with the ID 23456789-01ab-cdef-0123-456789abcdef? I need to include a manual payment of 1500 that should be made every three months.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/LoanContracts/23456789-01ab-cdef-0123-456789abcdef/PaymentTransactionInstructions",
+    "body": {
+      "InstructionType": "Manual Payment",
+      "Amount": 1500,
+      "Frequency": "Quarterly"
+    }
+  },
+  "error_log": {
+    "status_code": 400,
+    "response_text": "{\n  \"error\": {\n    \"code\": \"<string>\",\n    \"message\": \"<string>\",\n    \"target\": \"<string>\",\n    \"details\": [\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      },\n      {\n        \"code\": \"<string>\",\n        \"message\": \"<string>\",\n        \"target\": \"<string>\"\n      }\n    ],\n    \"innererror\": {}\n  }\n}"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "I would like to add a bank account statement arrangement to my current account contract with UUID 12345678-90ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/12345678-90ab-cdef-0123-456789abcdef/BankAccountStatementArrangements",
+    "body": {}
+  }
+}

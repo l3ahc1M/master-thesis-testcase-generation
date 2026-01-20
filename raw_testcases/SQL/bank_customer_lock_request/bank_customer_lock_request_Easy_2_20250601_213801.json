@@ -1,0 +1,7 @@
+{
+  "difficulty": "Easy",
+  "input": "What is the user status name for the bank customer lock request with ID 105?",
+  "output": {
+    "sql": "SELECT UserStatusName FROM BankCustomerLockRequest WHERE ID = '105';"
+  }
+}

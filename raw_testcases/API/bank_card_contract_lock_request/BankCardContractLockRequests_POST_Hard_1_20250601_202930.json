@@ -1,0 +1,21 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to lock my bank card contract due to moving abroad. My ID is 105, and my user status is active. Please note that I will be moving permanently.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/BankCardContractLockRequests",
+    "body": {
+      "ID": "105",
+      "PartyIdentifyingElements": "Customer ID 12345",
+      "ChangeStateID": "2024-05-01T10:00:00Z",
+      "EventCode": "103000",
+      "EventName": "Card Dispatch Lock",
+      "UserStatusCode": "2",
+      "UserStatusName": "Active",
+      "ValidityStartDate": "2024-05-01",
+      "ValidityEndDate": "2024-05-01",
+      "BusinessProcessChainAssignment": "Locking Process",
+      "Note": "Customer permanently moved to another country."
+    }
+  }
+}

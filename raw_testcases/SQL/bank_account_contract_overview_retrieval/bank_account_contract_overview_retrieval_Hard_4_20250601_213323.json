@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "List the UUIDs of all bank account contracts that are currently active and have a specific product type.",
+  "output": {
+    "sql": "SELECT UUID FROM BankAccountContract WHERE LifeCycleStatusName = 'Active' AND Product = 'specific_product_type';"
+  }
+}

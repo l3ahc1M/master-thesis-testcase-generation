@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Find the total number of loan contracts that have been skipped and their new installment amount.",
+  "output": {
+    "sql": "SELECT COUNT(*), SUM(NewInstallmentAmount) FROM LoanPaymentSkipRequest AS T1 JOIN LoanContract AS T2 ON T1.LoanContractUUID = T2.UUID WHERE T2.LifeCycleStatusCode = '3';"
+  }
+}

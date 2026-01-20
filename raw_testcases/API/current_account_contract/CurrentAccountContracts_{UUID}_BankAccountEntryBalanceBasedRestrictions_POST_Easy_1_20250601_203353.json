@@ -1,0 +1,9 @@
+{
+  "difficulty": "Easy",
+  "input": "I want to add a balance restriction to my current account contract with UUID 12345678-90ab-cdef-0123-456789abcdef.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/12345678-90ab-cdef-0123-456789abcdef/BankAccountEntryBalanceBasedRestrictions",
+    "body": {}
+  }
+}

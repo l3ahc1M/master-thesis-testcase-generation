@@ -1,0 +1,7 @@
+{
+  "difficulty": "Hard",
+  "input": "Get the details of bank card contracts that have been canceled and their cancellation dates.",
+  "output": {
+    "sql": "SELECT * FROM BankCardContract WHERE CancellationDate IS NOT NULL;"
+  }
+}

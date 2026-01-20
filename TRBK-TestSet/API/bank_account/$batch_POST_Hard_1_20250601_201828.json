@@ -1,0 +1,20 @@
+{
+    "difficulty": "Hard",
+    "input": "Can you get me the UUID for the bank account that has the contract ID ABC123 and the bank routing ID 90419917?",
+    "output": {
+        "method": "POST",
+        "endpoint": "/$batch",
+        "body": {
+            "requests": [
+                {
+                    "method": "GET",
+                    "endpoint": "/GetBankAccount",
+                    "params": {
+                        "BankAccountContractID": "ABC123",
+                        "BankRoutingID": "90419917"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to create a current account contract with a UUID of 01234567-89ab-cdef-0123-456789abcdef, and I want to include a usage note stating 'For daily transactions'.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts",
+    "body": {
+      "UUID": "01234567-89ab-cdef-0123-456789abcdef",
+      "UsageNote": "For daily transactions"
+    }
+  }
+}

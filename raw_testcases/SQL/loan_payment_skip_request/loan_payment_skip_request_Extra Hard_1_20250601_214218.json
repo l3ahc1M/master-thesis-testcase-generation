@@ -1,0 +1,7 @@
+{
+  "difficulty": "Extra Hard",
+  "input": "Retrieve the loan contract UUIDs for all loan payment skip requests that have a skipped installment payment mode of 'Term Change' and were requested in 2022.",
+  "output": {
+    "sql": "SELECT LoanContractUUID FROM LoanPaymentSkipRequest WHERE LoanPaymentPlanSkippedInstallmentPaymentModeName = 'Term Change' AND ChangeStateID LIKE '2022%';"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "I need to find all bank account contract lock requests that are active and have a validity end date after today.",
+  "output": {
+    "sql": "SELECT * FROM BankAccountContractLockRequest WHERE UserStatusCode = '2' AND ValidityEndDate > CURRENT_DATE;"
+  }
+}

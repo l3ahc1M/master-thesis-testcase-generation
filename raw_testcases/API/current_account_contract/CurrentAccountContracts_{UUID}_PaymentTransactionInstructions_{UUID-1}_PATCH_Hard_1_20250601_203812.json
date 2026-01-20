@@ -1,0 +1,13 @@
+{
+  "difficulty": "Hard",
+  "input": "I need to update the payment transaction instruction for my current account contract with UUID 34567890-12ab-cdef-0123-456789abcdef to allow international transfers and set a limit of 10000 GBP.",
+  "output": {
+    "method": "PATCH",
+    "endpoint": "/CurrentAccountContracts/34567890-12ab-cdef-0123-456789abcdef/PaymentTransactionInstructions/3",
+    "body": {
+      "allowInternationalTransfers": true,
+      "transactionLimit": 10000,
+      "currency": "GBP"
+    }
+  }
+}

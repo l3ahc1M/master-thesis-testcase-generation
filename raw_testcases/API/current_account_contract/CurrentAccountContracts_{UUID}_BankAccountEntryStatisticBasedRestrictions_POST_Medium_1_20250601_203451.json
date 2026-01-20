@@ -1,0 +1,12 @@
+{
+  "difficulty": "Medium",
+  "input": "Please set a statistic-based restriction for my current account contract with UUID 23456789-01ab-cdef-0123-456789abcdef, and I want it to limit transactions to 10 per month.",
+  "output": {
+    "method": "POST",
+    "endpoint": "/CurrentAccountContracts/23456789-01ab-cdef-0123-456789abcdef/BankAccountEntryStatisticBasedRestrictions",
+    "body": {
+      "transactionLimit": 10,
+      "period": "monthly"
+    }
+  }
+}

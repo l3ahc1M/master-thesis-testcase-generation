@@ -1,0 +1,7 @@
+{
+  "difficulty": "Medium",
+  "input": "How many account holder change requests have been made for the bank account contract with UUID 01234567-89ab-cdef-0123-456789abcdef?",
+  "output": {
+    "sql": "SELECT COUNT(*) FROM BankAccountContractAccountHolderChangeRequest WHERE BankAccountContractUUID = '01234567-89ab-cdef-0123-456789abcdef';"
+  }
+}
